@@ -23,8 +23,16 @@ def compute_coverage_score(df: pd.DataFrame) -> pd.DataFrame:
         out[col] = out[col].astype(int)
 
     out["size_scaled"] = np.log1p(out["size_proxy"].astype(float))
-    denom = max(out["size_scaled"].max(), 1.0)
-    out["size_scaled"] = out["size_scaled"] / denom
+    if out.empty:
+        out["coverage_gap_score"] = pd.Series(dtype=float)
+        out["reason_flags"] = pd.Series(dtype=str)
+        return out
+
+    if out["size_scaled"].nunique(dropna=True) <= 1:
+        out["size_scaled"] = 0.0
+    else:
+        denom = max(out["size_scaled"].max(), 1.0)
+        out["size_scaled"] = out["size_scaled"] / denom
 
     out["coverage_gap_score"] = (
         0.30 * out["size_scaled"]

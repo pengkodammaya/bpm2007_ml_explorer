@@ -1,15 +1,59 @@
 from __future__ import annotations
 
 import pandas as pd
+from collections.abc import Iterable
 from typing import Any
 from src.utils import get_json, HTTPFetchError
 from config import GLEIF_BASE, USER_AGENT
 
 HEADERS = {"User-Agent": USER_AGENT}
 
+ENTITY_COLUMNS = [
+    "lei",
+    "legal_name",
+    "other_names",
+    "transliterated_other_names",
+    "category",
+    "legal_form",
+    "entity_status",
+    "registered_at",
+    "last_update_at",
+    "country_legal",
+    "city_legal",
+    "country_hq",
+    "city_hq",
+]
+
+RELATIONSHIP_COLUMNS = [
+    "source_lei",
+    "target_lei",
+    "relationship_type",
+    "relationship_status",
+    "accounting_standard",
+    "period_end",
+    "valid_from",
+    "valid_to",
+]
+
+
+def normalize_entity_records(df: pd.DataFrame) -> pd.DataFrame:
+    return df.reindex(columns=ENTITY_COLUMNS)
+
+
+def normalize_relationship_records(df: pd.DataFrame) -> pd.DataFrame:
+    return df.reindex(columns=RELATIONSHIP_COLUMNS)
+
 
 def fetch_lei_page(params: dict[str, Any]) -> dict[str, Any]:
     return get_json(f"{GLEIF_BASE}/lei-records", params=params, headers=HEADERS)
+
+
+def fetch_lei_record(lei: str) -> dict[str, Any] | None:
+    payload = get_json(f"{GLEIF_BASE}/lei-records/{lei}", headers=HEADERS, allow_404=True)
+    item = payload.get("data")
+    if not item:
+        return None
+    return _parse_lei_record(item)
 
 
 def _parse_lei_record(item: dict[str, Any]) -> dict[str, Any]:
@@ -53,7 +97,29 @@ def fetch_malaysia_lei_records(max_pages: int = 50, page_size: int = 200) -> pd.
 
         rows.extend(_parse_lei_record(item) for item in data)
 
-    return pd.DataFrame(rows).drop_duplicates(subset=["lei"])
+    return normalize_entity_records(pd.DataFrame(rows)).dropna(subset=["lei"]).drop_duplicates(subset=["lei"])
+
+
+def fetch_lei_records_by_lei(leis: Iterable[str]) -> pd.DataFrame:
+    rows: list[dict[str, Any]] = []
+    seen: set[str] = set()
+
+    for lei in leis:
+        if pd.isna(lei):
+            continue
+        lei_str = str(lei).strip()
+        if not lei_str or lei_str in seen:
+            continue
+        seen.add(lei_str)
+        try:
+            record = fetch_lei_record(lei_str)
+        except HTTPFetchError as e:
+            print(f"[WARN] LEI fetch failed for {lei_str}: {e}")
+            continue
+        if record:
+            rows.append(record)
+
+    return normalize_entity_records(pd.DataFrame(rows)).dropna(subset=["lei"]).drop_duplicates(subset=["lei"])
 
 
 def fetch_relationships_for_lei(lei: str) -> pd.DataFrame:
@@ -88,4 +154,4 @@ def fetch_relationships_for_lei(lei: str) -> pd.DataFrame:
                 "valid_to": attrs.get("validTo"),
             })
 
-    return pd.DataFrame(rows)
+    return normalize_relationship_records(pd.DataFrame(rows))

@@ -38,3 +38,10 @@ def load_df(path_base: str | Path) -> pd.DataFrame:
     if pkl.exists():
         return pd.read_pickle(pkl)
     raise FileNotFoundError(f"No parquet or pkl found for base path: {p}")
+
+
+def load_optional_df(path_base: str | Path, columns: list[str] | None = None) -> pd.DataFrame:
+    try:
+        return load_df(path_base)
+    except FileNotFoundError:
+        return pd.DataFrame(columns=columns)

@@ -1,0 +1,8 @@
+.env
+.venv/
+.venv-codex/
+.uv-cache/
+__pycache__/
+*.py[cod]
+data/
+.streamlit/

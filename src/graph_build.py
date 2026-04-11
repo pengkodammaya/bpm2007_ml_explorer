@@ -36,15 +36,27 @@ def build_di_graph(entities: pd.DataFrame, relationships: pd.DataFrame) -> nx.Di
     return g
 
 
-def _component_size(g: nx.DiGraph, node: str) -> int:
-    ug = g.to_undirected()
-    for component in nx.connected_components(ug):
-        if node in component:
-            return len(component)
-    return 1
-
-
 def graph_summary(g: nx.DiGraph) -> pd.DataFrame:
+    columns = [
+        "lei",
+        "legal_name",
+        "country",
+        "city",
+        "category",
+        "legal_form",
+        "in_degree",
+        "out_degree",
+        "weakly_connected_component_size",
+    ]
+    if len(g) == 0:
+        return pd.DataFrame(columns=columns)
+
+    component_sizes = {}
+    for component in nx.connected_components(g.to_undirected()):
+        size = len(component)
+        for node in component:
+            component_sizes[node] = size
+
     rows = []
     for node, attrs in g.nodes(data=True):
         rows.append({
@@ -56,9 +68,9 @@ def graph_summary(g: nx.DiGraph) -> pd.DataFrame:
             "legal_form": attrs.get("legal_form"),
             "in_degree": g.in_degree(node),
             "out_degree": g.out_degree(node),
-            "weakly_connected_component_size": _component_size(g, node),
+            "weakly_connected_component_size": component_sizes.get(node, 1),
         })
-    return pd.DataFrame(rows).sort_values(
+    return pd.DataFrame(rows, columns=columns).sort_values(
         ["weakly_connected_component_size", "in_degree", "out_degree"],
         ascending=False,
     )
