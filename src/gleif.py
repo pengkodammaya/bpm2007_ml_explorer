@@ -126,8 +126,8 @@ def fetch_relationships_for_lei(lei: str) -> pd.DataFrame:
     rows: list[dict[str, Any]] = []
 
     mapping = {
-        "is-directly-consolidated-by": "direct_parent",
-        "is-ultimately-consolidated-by": "ultimate_parent",
+        "direct-parent-relationship": "direct_parent",
+        "ultimate-parent-relationship": "ultimate_parent",
     }
 
     for endpoint, rel_label in mapping.items():
@@ -137,21 +137,27 @@ def fetch_relationships_for_lei(lei: str) -> pd.DataFrame:
         except HTTPFetchError:
             continue
 
-        for item in payload.get("data", []):
-            attrs = item.get("attributes", {}) or {}
-            relationships = item.get("relationships", {}) or {}
-            start = ((relationships.get("startNode") or {}).get("data") or {})
-            end = ((relationships.get("endNode") or {}).get("data") or {})
+        item = payload.get("data")
+        if not item or not isinstance(item, dict):
+            continue
 
-            rows.append({
-                "source_lei": start.get("id"),
-                "target_lei": end.get("id"),
-                "relationship_type": rel_label,
-                "relationship_status": attrs.get("relationshipStatus"),
-                "accounting_standard": attrs.get("accountingStandard"),
-                "period_end": attrs.get("periodEnd"),
-                "valid_from": attrs.get("validFrom"),
-                "valid_to": attrs.get("validTo"),
-            })
+        attrs = item.get("attributes", {}) or {}
+        rel = attrs.get("relationship", {}) or {}
+        start = rel.get("startNode", {}) or {}
+        end = rel.get("endNode", {}) or {}
+
+        periods = rel.get("periods") or []
+        latest_period = periods[-1] if periods else {}
+
+        rows.append({
+            "source_lei": start.get("id"),
+            "target_lei": end.get("id"),
+            "relationship_type": rel_label,
+            "relationship_status": rel.get("status"),
+            "accounting_standard": latest_period.get("accountingStandard"),
+            "period_end": latest_period.get("endDate"),
+            "valid_from": attrs.get("validFrom"),
+            "valid_to": attrs.get("validTo"),
+        })
 
     return normalize_relationship_records(pd.DataFrame(rows))
