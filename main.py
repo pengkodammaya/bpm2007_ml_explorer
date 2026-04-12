@@ -7,6 +7,9 @@ from src.pipeline import (
     run_gleif_pull,
     run_graph_and_scoring,
     run_mock_pipeline,
+    run_reporting_exceptions,
+    run_phase1_name_inference,
+    run_full_inference_pipeline,
 )
 
 
@@ -31,6 +34,12 @@ def main() -> None:
         metavar="CODES",
         help="Comma-separated ISO-2 codes for cross-country comparison (e.g. MY,SG,TH,ID,PH)",
     )
+
+    # Inference pipeline options
+    parser.add_argument("--run-inference", action="store_true", help="Run full parent inference pipeline (phases 0.5, 1)")
+    parser.add_argument("--phase1-only", action="store_true", help="Run only Phase 1 name inference")
+    parser.add_argument("--exceptions-only", action="store_true", help="Run only Phase 0.5 reporting exceptions")
+    parser.add_argument("--fuzzy-threshold", type=int, default=80, help="Phase 1 fuzzy match threshold (0-100, default 80)")
 
     args = parser.parse_args()
 
@@ -58,6 +67,25 @@ def main() -> None:
         print("CROSS-COUNTRY STRUCTURAL COMPARISON")
         print("=" * 70)
         print(comparison.to_string(index=False))
+        return
+
+    # --- Inference pipeline modes ---
+    if args.run_inference:
+        run_full_inference_pipeline(
+            threshold=args.fuzzy_threshold,
+            skip_pull=args.skip_pull,
+        )
+        return
+
+    if args.exceptions_only:
+        run_reporting_exceptions(skip_pull=args.skip_pull)
+        return
+
+    if args.phase1_only:
+        run_phase1_name_inference(
+            threshold=args.fuzzy_threshold,
+            skip_pull=args.skip_pull,
+        )
         return
 
     # --- Original pipeline modes ---

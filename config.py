@@ -6,7 +6,9 @@ RAW_DIR = DATA_DIR / "raw"
 INTERIM_DIR = DATA_DIR / "interim"
 PROCESSED_DIR = DATA_DIR / "processed"
 
-for p in [RAW_DIR, INTERIM_DIR, PROCESSED_DIR]:
+INFERENCE_DIR = PROCESSED_DIR / "inference"
+
+for p in [RAW_DIR, INTERIM_DIR, PROCESSED_DIR, INFERENCE_DIR]:
     p.mkdir(parents=True, exist_ok=True)
 
 USER_AGENT = "phase1-esie/0.1 research prototype"

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import pandas as pd
-from config import RAW_DIR, INTERIM_DIR, PROCESSED_DIR
+from config import RAW_DIR, INTERIM_DIR, PROCESSED_DIR, INFERENCE_DIR
 from src.gleif import (
     ENTITY_COLUMNS,
     RELATIONSHIP_COLUMNS,
@@ -17,6 +17,13 @@ from src.graph_build import build_di_graph, graph_summary, parent_flags, add_gra
 from src.io_helpers import save_df, save_csv, load_df, load_optional_df
 from src.edgar import fetch_company_tickers, match_entities_to_edgar
 from src.scoring import compute_coverage_score
+from src.reporting_exceptions import fetch_reporting_exceptions, enrich_with_exception_flags, EXCEPTION_COLUMNS
+from src.name_inference import (
+    extract_parent_brand_tokens,
+    fuzzy_match_names,
+    build_phase1_inferred_edges,
+    phase1_summary,
+)
 
 
 def _combine_entity_sets(*frames: pd.DataFrame) -> pd.DataFrame:
@@ -302,3 +309,131 @@ def run_mock_pipeline() -> pd.DataFrame:
     save_csv(scored.head(200), PROCESSED_DIR / "coverage_gap_scores_top200.csv")
 
     return scored
+
+
+# ---------------------------------------------------------------------------
+# Inference pipeline — phases 0.5, 1, (2, 3 to follow)
+# ---------------------------------------------------------------------------
+
+def run_reporting_exceptions(skip_pull: bool = False) -> pd.DataFrame:
+    """Phase 0.5: Fetch reporting exceptions for entities without known parents."""
+    cache_path = INTERIM_DIR / "gleif_reporting_exceptions"
+
+    if skip_pull:
+        try:
+            exceptions = load_df(cache_path)
+            print(f"[INFO] Loaded {len(exceptions):,} cached reporting exceptions")
+            return exceptions
+        except FileNotFoundError:
+            print("[WARN] No cached exceptions, fetching from API...")
+
+    entities = normalize_entity_records(load_df(RAW_DIR / "gleif_malaysia_lei"))
+    relationships = normalize_relationship_records(
+        load_optional_df(INTERIM_DIR / "gleif_malaysia_relationships", RELATIONSHIP_COLUMNS)
+    )
+
+    # Only scan entities without known parent relationships
+    known_leis = set(relationships["source_lei"].dropna().unique()) if not relationships.empty else set()
+    leis_to_scan = [lei for lei in entities["lei"].dropna().unique() if lei not in known_leis]
+
+    print(f"[INFO] Scanning {len(leis_to_scan):,} entities for reporting exceptions...")
+    exceptions = fetch_reporting_exceptions(leis_to_scan)
+    save_df(exceptions, cache_path)
+
+    # Summary
+    if not exceptions.empty:
+        reason_counts = exceptions["exception_reason"].value_counts()
+        print(f"\n--- Reporting Exception Summary ---")
+        for reason, count in reason_counts.items():
+            print(f"  {reason}: {count}")
+    else:
+        print("[INFO] No reporting exceptions found")
+
+    return exceptions
+
+
+def run_phase1_name_inference(
+    threshold: int = 80,
+    skip_pull: bool = False,
+) -> pd.DataFrame:
+    """Phase 1: Name pattern extraction and fuzzy matching."""
+    # Load required data
+    entities = normalize_entity_records(load_df(RAW_DIR / "gleif_malaysia_lei"))
+    parents = normalize_entity_records(load_optional_df(RAW_DIR / "gleif_related_lei", ENTITY_COLUMNS))
+    relationships = normalize_relationship_records(
+        load_optional_df(INTERIM_DIR / "gleif_malaysia_relationships", RELATIONSHIP_COLUMNS)
+    )
+
+    if parents.empty:
+        print("[WARN] No parent entities loaded. Run the full pipeline first.")
+        return pd.DataFrame()
+
+    # Extract brand tokens from known parents
+    brand_tokens = extract_parent_brand_tokens(parents)
+    print(f"[INFO] Extracted {len(brand_tokens)} brand tokens from {len(parents)} parent entities")
+
+    if brand_tokens.empty:
+        print("[WARN] No valid brand tokens extracted")
+        return pd.DataFrame()
+
+    # Get known LEIs to exclude
+    known_leis = set(relationships["source_lei"].dropna().unique()) if not relationships.empty else set()
+
+    # Run fuzzy matching
+    print(f"[INFO] Fuzzy matching {len(entities):,} entities against {len(brand_tokens)} brand tokens (threshold={threshold})...")
+    matches = fuzzy_match_names(entities, brand_tokens, known_leis=known_leis, threshold=threshold)
+
+    # Build inferred edges
+    edges = build_phase1_inferred_edges(matches, min_score=threshold)
+
+    # Save artifacts
+    save_df(matches, INFERENCE_DIR / "phase1_name_matches")
+    save_df(edges, INFERENCE_DIR / "phase1_inferred_edges")
+
+    if not matches.empty:
+        save_csv(matches, INFERENCE_DIR / "phase1_name_matches.csv")
+
+    # Print summary
+    summary = phase1_summary(matches)
+    print(f"\n--- Phase 1: Name Inference Summary ---")
+    print(f"  Total matches:      {summary['total_matches']}")
+    print(f"  High confidence:    {summary.get('high_confidence', 0)} (score >= 90)")
+    print(f"  Medium confidence:  {summary.get('medium_confidence', 0)} (score 80-89)")
+    print(f"  Unique brands:      {summary.get('unique_parent_brands', 0)}")
+    if summary['total_matches'] > 0:
+        print(f"  Average score:      {summary.get('avg_score', 0)}")
+
+    return matches
+
+
+def run_full_inference_pipeline(
+    threshold: int = 80,
+    skip_pull: bool = False,
+) -> dict:
+    """Run all inference phases sequentially.
+
+    Returns a dict with results from each phase.
+    """
+    results = {}
+
+    print("=" * 70)
+    print("PHASE 0.5: REPORTING EXCEPTIONS")
+    print("=" * 70)
+    results["exceptions"] = run_reporting_exceptions(skip_pull=skip_pull)
+
+    print("\n" + "=" * 70)
+    print("PHASE 1: NAME PATTERN MATCHING")
+    print("=" * 70)
+    results["name_matches"] = run_phase1_name_inference(threshold=threshold, skip_pull=skip_pull)
+
+    # Phases 2 and 3 will be added here
+    print("\n" + "=" * 70)
+    print("INFERENCE PIPELINE COMPLETE")
+    print("=" * 70)
+
+    total_inferred = len(results.get("name_matches", pd.DataFrame()))
+    total_exceptions = len(results.get("exceptions", pd.DataFrame()))
+    print(f"  Reporting exceptions found:  {total_exceptions}")
+    print(f"  Name-inferred subsidiaries:  {total_inferred}")
+
+    return results
