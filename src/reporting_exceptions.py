@@ -28,12 +28,11 @@ def fetch_reporting_exception(lei: str) -> dict | None:
         return None
 
     attrs = item.get("attributes", {}) or {}
-    exception = attrs.get("exception", {}) or {}
 
     return {
         "lei": lei,
-        "exception_reason": exception.get("reason"),
-        "exception_reference": exception.get("reference"),
+        "exception_reason": attrs.get("reason"),
+        "exception_reference": attrs.get("reference"),
     }
 
 
