@@ -17,6 +17,7 @@ def main() -> None:
     parser.add_argument("--lei-page-size", type=int, default=200)
     parser.add_argument("--skip-edgar", action="store_true")
     parser.add_argument("--skip-pull", action="store_true")
+    parser.add_argument("--scan-all", action="store_true", help="Scan all entities for parent relationships (not just first N)")
     parser.add_argument("--use-mock-data", action="store_true")
 
     # Entity analysis options
@@ -72,6 +73,7 @@ def main() -> None:
             max_relationship_entities=args.relationships_limit,
             lei_max_pages=args.lei_max_pages,
             lei_page_size=args.lei_page_size,
+            scan_all=args.scan_all,
         )
         print(f"[INFO] Entities: {len(entities):,}")
         print(f"[INFO] Relationships: {len(relationships):,}")

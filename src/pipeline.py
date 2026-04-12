@@ -182,18 +182,31 @@ def run_gleif_pull(
     max_relationship_entities: int = 100,
     lei_max_pages: int = 50,
     lei_page_size: int = 200,
+    scan_all: bool = False,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     entities = normalize_entity_records(fetch_malaysia_lei_records(max_pages=lei_max_pages, page_size=lei_page_size))
     save_df(entities, RAW_DIR / "gleif_malaysia_lei")
 
+    leis = entities["lei"].dropna().unique()
+    if not scan_all:
+        leis = leis[:max_relationship_entities]
+
     rels = []
-    for lei in entities["lei"].dropna().unique()[:max_relationship_entities]:
+    total = len(leis)
+    found = 0
+    for i, lei in enumerate(leis):
         try:
             df = fetch_relationships_for_lei(lei)
             if not df.empty:
                 rels.append(df)
+                found += 1
+                print(f"[{i+1}/{total}] {lei} - parent found ({found} total)", flush=True)
+            elif (i + 1) % 200 == 0:
+                print(f"[{i+1}/{total}] scanning... {found} with parents so far", flush=True)
         except Exception as e:
             print(f"[WARN] relationship fetch failed for {lei}: {e}")
+
+    print(f"[INFO] Relationship scan complete: {found}/{total} entities have parent data")
 
     relationships = normalize_relationship_records(pd.concat(rels, ignore_index=True) if rels else pd.DataFrame())
     save_df(relationships, INTERIM_DIR / "gleif_malaysia_relationships")
