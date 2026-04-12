@@ -24,6 +24,20 @@ from src.name_inference import (
     build_phase1_inferred_edges,
     phase1_summary,
 )
+from src.address_cluster import (
+    fetch_full_addresses,
+    cluster_by_address,
+    infer_shared_parent_from_cluster,
+    phase2_summary,
+    ADDRESS_COLUMNS,
+)
+from src.jurisdiction_predictor import (
+    prepare_training_features,
+    train_jurisdiction_model,
+    predict_parent_jurisdiction,
+    save_model_artifacts,
+    phase3_summary,
+)
 
 
 def _combine_entity_sets(*frames: pd.DataFrame) -> pd.DataFrame:
@@ -406,9 +420,145 @@ def run_phase1_name_inference(
     return matches
 
 
+def run_phase2_address_clustering(
+    skip_pull: bool = False,
+    min_cluster: int = 3,
+) -> pd.DataFrame:
+    """Phase 2: Address parsing and geospatial clustering."""
+    address_cache = INTERIM_DIR / "gleif_full_addresses"
+
+    # Load or fetch addresses
+    if skip_pull:
+        try:
+            addresses = load_df(address_cache)
+            print(f"[INFO] Loaded {len(addresses):,} cached addresses")
+        except FileNotFoundError:
+            print("[WARN] No cached addresses, fetching from API...")
+            skip_pull = False
+
+    if not skip_pull:
+        entities = normalize_entity_records(load_df(RAW_DIR / "gleif_malaysia_lei"))
+        leis = entities["lei"].dropna().unique().tolist()
+        print(f"[INFO] Fetching full addresses for {len(leis):,} entities...")
+        addresses = fetch_full_addresses(leis)
+        save_df(addresses, address_cache)
+
+    # Cluster by address
+    print(f"[INFO] Clustering addresses (min_cluster_size={min_cluster})...")
+    clusters = cluster_by_address(addresses, min_cluster_size=min_cluster)
+
+    # Infer shared parents within clusters
+    relationships = normalize_relationship_records(
+        load_optional_df(INTERIM_DIR / "gleif_malaysia_relationships", RELATIONSHIP_COLUMNS)
+    )
+    inferred = infer_shared_parent_from_cluster(clusters, relationships)
+
+    # Save artifacts
+    save_df(clusters, INFERENCE_DIR / "phase2_address_clusters")
+    save_df(inferred, INFERENCE_DIR / "phase2_inferred_edges")
+
+    if not clusters.empty:
+        save_csv(clusters, INFERENCE_DIR / "phase2_address_clusters.csv")
+
+    # Print summary
+    summary = phase2_summary(clusters)
+    print(f"\n--- Phase 2: Address Clustering Summary ---")
+    print(f"  Clustered entities:  {summary['total_clustered_entities']}")
+    print(f"  Number of clusters:  {summary['num_clusters']}")
+    if summary['total_clustered_entities'] > 0:
+        print(f"  Largest cluster:     {summary.get('largest_cluster', 0)}")
+        print(f"  Avg cluster size:    {summary.get('avg_cluster_size', 0)}")
+        print(f"  Office-hotel entities: {summary.get('office_hotel_entities', 0)}")
+    print(f"  Inferred parent links: {len(inferred)}")
+
+    return clusters
+
+
+def run_phase3_jurisdiction_prediction(skip_pull: bool = False) -> pd.DataFrame:
+    """Phase 3: Train jurisdiction predictor and predict parent countries."""
+    # Load all required data
+    entities = normalize_entity_records(load_df(RAW_DIR / "gleif_malaysia_lei"))
+    parents = normalize_entity_records(load_optional_df(RAW_DIR / "gleif_related_lei", ENTITY_COLUMNS))
+    relationships = normalize_relationship_records(
+        load_optional_df(INTERIM_DIR / "gleif_malaysia_relationships", RELATIONSHIP_COLUMNS)
+    )
+
+    # Optional enrichments
+    try:
+        graph_summary = load_df(PROCESSED_DIR / "di_graph_summary")
+    except FileNotFoundError:
+        graph_summary = None
+
+    try:
+        exceptions = load_df(INTERIM_DIR / "gleif_reporting_exceptions")
+    except FileNotFoundError:
+        exceptions = None
+
+    if relationships.empty or parents.empty:
+        print("[WARN] No relationship or parent data available. Cannot train model.")
+        return pd.DataFrame()
+
+    # Prepare training data
+    print("[INFO] Preparing training features...", flush=True)
+    X_train, y_train, label_encoder = prepare_training_features(
+        entities, relationships, parents, graph_summary, exceptions
+    )
+
+    if X_train.empty:
+        print("[WARN] No training data could be prepared")
+        return pd.DataFrame()
+
+    print(f"[INFO] Training set: {len(X_train)} samples, {y_train.nunique()} classes", flush=True)
+    print(f"[INFO] Classes: {list(label_encoder.classes_)}", flush=True)
+
+    # Train model
+    model, cv_metrics = train_jurisdiction_model(X_train, y_train)
+
+    # Predict on ALL entities (including labeled, for validation)
+    from src.jurisdiction_predictor import _build_features
+    all_features = _build_features(entities["lei"], entities, graph_summary, exceptions)
+
+    # Align columns with training set
+    for col in X_train.columns:
+        if col not in all_features.columns:
+            all_features[col] = 0
+    all_features = all_features[["lei"] + list(X_train.columns)]
+
+    leis = all_features["lei"]
+    X_all = all_features.drop(columns=["lei"])
+
+    print(f"[INFO] Predicting jurisdiction for {len(X_all):,} entities...", flush=True)
+    predictions = predict_parent_jurisdiction(model, label_encoder, X_all, leis)
+
+    # Save artifacts
+    save_model_artifacts(model, cv_metrics, list(X_train.columns), label_encoder, INFERENCE_DIR)
+    save_df(predictions, INFERENCE_DIR / "phase3_jurisdiction_predictions")
+    save_csv(predictions, INFERENCE_DIR / "phase3_jurisdiction_predictions.csv")
+
+    # Print summary
+    summary = phase3_summary(predictions, cv_metrics)
+    print(f"\n--- Phase 3: Jurisdiction Prediction Summary ---")
+    print(f"  Model type:          {summary.get('model_type', 'N/A')}")
+    print(f"  CV accuracy:         {summary.get('cv_accuracy_mean', 0):.3f} +/- {summary.get('cv_accuracy_std', 0):.3f}")
+    print(f"  Total predictions:   {summary.get('total_predictions', 0)}")
+    print(f"  Top predicted:       {summary.get('top_predicted_country', 'N/A')}")
+    print(f"  Avg confidence:      {summary.get('avg_confidence', 0):.3f}")
+    print(f"  High confidence:     {summary.get('high_confidence_predictions', 0)} (prob >= 0.5)")
+
+    # Show prediction distribution
+    if not predictions.empty:
+        print(f"\n  Predicted parent jurisdiction distribution:")
+        dist = predictions["predicted_parent_country"].value_counts().head(10)
+        for country, count in dist.items():
+            print(f"    {country}: {count}")
+
+    return predictions
+
+
 def run_full_inference_pipeline(
     threshold: int = 80,
     skip_pull: bool = False,
+    min_cluster: int = 3,
 ) -> dict:
     """Run all inference phases sequentially.
 
@@ -426,14 +576,27 @@ def run_full_inference_pipeline(
     print("=" * 70)
     results["name_matches"] = run_phase1_name_inference(threshold=threshold, skip_pull=skip_pull)
 
-    # Phases 2 and 3 will be added here
+    print("\n" + "=" * 70)
+    print("PHASE 2: ADDRESS CLUSTERING")
+    print("=" * 70)
+    results["address_clusters"] = run_phase2_address_clustering(skip_pull=skip_pull, min_cluster=min_cluster)
+
+    print("\n" + "=" * 70)
+    print("PHASE 3: JURISDICTION PREDICTION")
+    print("=" * 70)
+    results["predictions"] = run_phase3_jurisdiction_prediction(skip_pull=True)
+
     print("\n" + "=" * 70)
     print("INFERENCE PIPELINE COMPLETE")
     print("=" * 70)
 
-    total_inferred = len(results.get("name_matches", pd.DataFrame()))
+    total_name = len(results.get("name_matches", pd.DataFrame()))
     total_exceptions = len(results.get("exceptions", pd.DataFrame()))
+    total_clustered = len(results.get("address_clusters", pd.DataFrame()))
+    total_predicted = len(results.get("predictions", pd.DataFrame()))
     print(f"  Reporting exceptions found:  {total_exceptions}")
-    print(f"  Name-inferred subsidiaries:  {total_inferred}")
+    print(f"  Name-inferred subsidiaries:  {total_name}")
+    print(f"  Address-clustered entities:  {total_clustered}")
+    print(f"  Jurisdiction predictions:    {total_predicted}")
 
     return results

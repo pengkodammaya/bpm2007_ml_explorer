@@ -9,6 +9,8 @@ from src.pipeline import (
     run_mock_pipeline,
     run_reporting_exceptions,
     run_phase1_name_inference,
+    run_phase2_address_clustering,
+    run_phase3_jurisdiction_prediction,
     run_full_inference_pipeline,
 )
 
@@ -38,8 +40,11 @@ def main() -> None:
     # Inference pipeline options
     parser.add_argument("--run-inference", action="store_true", help="Run full parent inference pipeline (phases 0.5, 1)")
     parser.add_argument("--phase1-only", action="store_true", help="Run only Phase 1 name inference")
+    parser.add_argument("--phase2-only", action="store_true", help="Run only Phase 2 address clustering")
+    parser.add_argument("--phase3-only", action="store_true", help="Run only Phase 3 jurisdiction prediction")
     parser.add_argument("--exceptions-only", action="store_true", help="Run only Phase 0.5 reporting exceptions")
     parser.add_argument("--fuzzy-threshold", type=int, default=80, help="Phase 1 fuzzy match threshold (0-100, default 80)")
+    parser.add_argument("--min-cluster-size", type=int, default=3, help="Phase 2 minimum address cluster size (default 3)")
 
     args = parser.parse_args()
 
@@ -74,11 +79,23 @@ def main() -> None:
         run_full_inference_pipeline(
             threshold=args.fuzzy_threshold,
             skip_pull=args.skip_pull,
+            min_cluster=args.min_cluster_size,
         )
         return
 
     if args.exceptions_only:
         run_reporting_exceptions(skip_pull=args.skip_pull)
+        return
+
+    if args.phase2_only:
+        run_phase2_address_clustering(
+            skip_pull=args.skip_pull,
+            min_cluster=args.min_cluster_size,
+        )
+        return
+
+    if args.phase3_only:
+        run_phase3_jurisdiction_prediction(skip_pull=args.skip_pull)
         return
 
     if args.phase1_only:
