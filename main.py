@@ -11,6 +11,7 @@ from src.pipeline import (
     run_phase1_name_inference,
     run_phase2_address_clustering,
     run_phase3_jurisdiction_prediction,
+    run_phase4_graph_prediction,
     run_full_inference_pipeline,
 )
 
@@ -42,6 +43,7 @@ def main() -> None:
     parser.add_argument("--phase1-only", action="store_true", help="Run only Phase 1 name inference")
     parser.add_argument("--phase2-only", action="store_true", help="Run only Phase 2 address clustering")
     parser.add_argument("--phase3-only", action="store_true", help="Run only Phase 3 jurisdiction prediction")
+    parser.add_argument("--phase4-only", action="store_true", help="Run only Phase 4 graph link prediction")
     parser.add_argument("--exceptions-only", action="store_true", help="Run only Phase 0.5 reporting exceptions")
     parser.add_argument("--fuzzy-threshold", type=int, default=80, help="Phase 1 fuzzy match threshold (0-100, default 80)")
     parser.add_argument("--min-cluster-size", type=int, default=3, help="Phase 2 minimum address cluster size (default 3)")
@@ -92,6 +94,10 @@ def main() -> None:
             skip_pull=args.skip_pull,
             min_cluster=args.min_cluster_size,
         )
+        return
+
+    if args.phase4_only:
+        run_phase4_graph_prediction(skip_pull=args.skip_pull)
         return
 
     if args.phase3_only:

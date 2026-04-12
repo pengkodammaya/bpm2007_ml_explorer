@@ -38,6 +38,10 @@ from src.jurisdiction_predictor import (
     save_model_artifacts,
     phase3_summary,
 )
+from src.graph_link_prediction import (
+    run_phase4_analysis,
+    phase4_summary,
+)
 
 
 def _combine_entity_sets(*frames: pd.DataFrame) -> pd.DataFrame:
@@ -591,6 +595,106 @@ def run_phase3_jurisdiction_prediction(skip_pull: bool = False) -> pd.DataFrame:
     return predictions
 
 
+def run_phase4_graph_prediction(skip_pull: bool = False) -> dict:
+    """Phase 4: Graph-based link prediction and label propagation."""
+    # Load required data
+    entities = normalize_entity_records(load_df(RAW_DIR / "gleif_malaysia_lei"))
+    parents = normalize_entity_records(load_optional_df(RAW_DIR / "gleif_related_lei", ENTITY_COLUMNS))
+    relationships = normalize_relationship_records(
+        load_optional_df(INTERIM_DIR / "gleif_malaysia_relationships", RELATIONSHIP_COLUMNS)
+    )
+
+    if relationships.empty or parents.empty:
+        print("[WARN] No relationship or parent data available. Cannot run graph link prediction.")
+        return {}
+
+    # Build enriched graph — include inferred edges from Phase 1 and 2
+    all_relationships = relationships.copy()
+    for phase_file in ["phase1_inferred_edges", "phase2_inferred_edges"]:
+        try:
+            inferred = load_df(INFERENCE_DIR / phase_file)
+            if not inferred.empty:
+                # Normalize to match relationship columns
+                for col in RELATIONSHIP_COLUMNS:
+                    if col not in inferred.columns:
+                        inferred[col] = None
+                all_relationships = pd.concat(
+                    [all_relationships, inferred[RELATIONSHIP_COLUMNS]],
+                    ignore_index=True,
+                )
+                print(f"[INFO] Added {len(inferred)} inferred edges from {phase_file}")
+        except FileNotFoundError:
+            pass
+
+    all_relationships = all_relationships.drop_duplicates(
+        subset=["source_lei", "target_lei"], keep="first"
+    )
+
+    # Build graph with all edges
+    all_entities = _combine_entity_sets(entities, parents)
+    g = build_di_graph(all_entities, all_relationships)
+    print(f"[INFO] Enriched graph: {g.number_of_nodes()} nodes, {g.number_of_edges()} edges")
+
+    # Run Phase 4 analysis
+    results = run_phase4_analysis(
+        g, entities, all_relationships, parents,
+        neg_ratio=3,
+        min_link_probability=0.3,
+    )
+
+    # Save artifacts
+    link_preds = results.get("link_predictions", pd.DataFrame())
+    propagated = results.get("propagated_labels", pd.DataFrame())
+    feat_imp = results.get("feature_importance", pd.DataFrame())
+
+    if not link_preds.empty:
+        save_df(link_preds, INFERENCE_DIR / "phase4_link_predictions")
+        save_csv(link_preds, INFERENCE_DIR / "phase4_link_predictions.csv")
+
+    if not propagated.empty:
+        save_df(propagated, INFERENCE_DIR / "phase4_propagated_labels")
+        save_csv(propagated, INFERENCE_DIR / "phase4_propagated_labels.csv")
+
+    if not feat_imp.empty:
+        save_csv(feat_imp, INFERENCE_DIR / "phase4_feature_importance.csv")
+
+    # Save metrics
+    metrics = results.get("metrics", {})
+    if metrics and not metrics.get("skipped"):
+        pd.DataFrame([metrics]).to_csv(INFERENCE_DIR / "phase4_metrics.csv", index=False)
+
+    # Print summary
+    summary = phase4_summary(results)
+    print(f"\n--- Phase 4: Graph Link Prediction Summary ---")
+    print(f"  Graph nodes:           {summary.get('n_nodes', 0)}")
+    print(f"  Graph edges:           {summary.get('n_edges', 0)}")
+    print(f"  Labeled ratio:         {summary.get('labeled_ratio', 0):.3f}")
+    print(f"  Status:                {summary.get('status', 'unknown')}")
+
+    if summary.get("status") == "completed":
+        print(f"  Model type:            {summary.get('model_type', 'N/A')}")
+        print(f"  CV AUC:                {summary.get('cv_auc', 0):.3f}")
+        print(f"  Link predictions:      {summary.get('link_predictions_count', 0)}")
+        print(f"  High confidence links: {summary.get('high_confidence_links', 0)}")
+        print(f"  Propagated labels:     {summary.get('propagated_labels_count', 0)}")
+
+        if not link_preds.empty and "predicted_parent_country" in link_preds.columns:
+            print(f"\n  Predicted parent country distribution (top 10):")
+            dist = link_preds["predicted_parent_country"].value_counts().head(10)
+            for country, count in dist.items():
+                print(f"    {country}: {count}")
+
+        if not propagated.empty:
+            print(f"\n  Propagated jurisdiction distribution (top 10):")
+            dist = propagated["propagated_country"].value_counts().head(10)
+            for country, count in dist.items():
+                print(f"    {country}: {count}")
+    elif summary.get("status") == "skipped":
+        print(f"  Reason:                {summary.get('skip_reason', 'unknown')}")
+
+    return results
+
+
 def run_full_inference_pipeline(
     threshold: int = 80,
     skip_pull: bool = False,
@@ -623,6 +727,11 @@ def run_full_inference_pipeline(
     results["predictions"] = run_phase3_jurisdiction_prediction(skip_pull=True)
 
     print("\n" + "=" * 70)
+    print("PHASE 4: GRAPH LINK PREDICTION")
+    print("=" * 70)
+    results["graph_predictions"] = run_phase4_graph_prediction(skip_pull=True)
+
+    print("\n" + "=" * 70)
     print("INFERENCE PIPELINE COMPLETE")
     print("=" * 70)
 
@@ -630,9 +739,14 @@ def run_full_inference_pipeline(
     total_exceptions = len(results.get("exceptions", pd.DataFrame()))
     total_clustered = len(results.get("address_clusters", pd.DataFrame()))
     total_predicted = len(results.get("predictions", pd.DataFrame()))
+    graph_results = results.get("graph_predictions", {})
+    total_link_preds = len(graph_results.get("link_predictions", pd.DataFrame()))
+    total_propagated = len(graph_results.get("propagated_labels", pd.DataFrame()))
     print(f"  Reporting exceptions found:  {total_exceptions}")
     print(f"  Name-inferred subsidiaries:  {total_name}")
     print(f"  Address-clustered entities:  {total_clustered}")
     print(f"  Jurisdiction predictions:    {total_predicted}")
+    print(f"  Graph link predictions:      {total_link_preds}")
+    print(f"  Propagated labels:           {total_propagated}")
 
     return results
