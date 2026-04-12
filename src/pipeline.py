@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import pandas as pd
-from config import RAW_DIR, INTERIM_DIR, PROCESSED_DIR, INFERENCE_DIR
+from config import RAW_DIR, INTERIM_DIR, PROCESSED_DIR, INFERENCE_DIR, country_paths
 from src.gleif import (
     ENTITY_COLUMNS,
     RELATIONSHIP_COLUMNS,
@@ -44,6 +44,25 @@ from src.graph_link_prediction import (
 )
 
 
+def _load_with_fallback(
+    paths: dict, key: str, columns: list[str] | None = None
+) -> pd.DataFrame:
+    """Load from primary path, falling back to legacy path for MY data."""
+    primary = paths[key]
+    legacy = paths.get("legacy", {}).get(key)
+    try:
+        return load_df(primary)
+    except FileNotFoundError:
+        if legacy:
+            try:
+                return load_df(legacy)
+            except FileNotFoundError:
+                pass
+        if columns is not None:
+            return pd.DataFrame(columns=columns)
+        raise
+
+
 def _combine_entity_sets(*frames: pd.DataFrame) -> pd.DataFrame:
     normalized = [normalize_entity_records(frame) for frame in frames if frame is not None and not frame.empty]
     if not normalized:
@@ -84,7 +103,11 @@ def _as_int_flag(series: pd.Series) -> pd.Series:
     return pd.to_numeric(series, errors="coerce").fillna(0).astype(int)
 
 
-def _foreign_parent_flags(relationships: pd.DataFrame, entities: pd.DataFrame) -> pd.DataFrame:
+def _foreign_parent_flags(
+    relationships: pd.DataFrame,
+    entities: pd.DataFrame,
+    country: str = "MY",
+) -> pd.DataFrame:
     relationships = normalize_relationship_records(relationships)
     if relationships.empty:
         return pd.DataFrame(columns=["lei", "foreign_parent"])
@@ -106,7 +129,7 @@ def _foreign_parent_flags(relationships: pd.DataFrame, entities: pd.DataFrame) -
         relationship_targets.loc[
             relationship_targets["relationship_type"].isin(["direct_parent", "ultimate_parent"])
             & relationship_targets["target_country"].notna()
-            & (relationship_targets["target_country"] != "MY"),
+            & (relationship_targets["target_country"] != country),
             ["source_lei"],
         ]
         .drop_duplicates()
@@ -208,9 +231,14 @@ def run_gleif_pull(
     lei_max_pages: int = 50,
     lei_page_size: int = 200,
     scan_all: bool = False,
+    country: str = "MY",
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
-    entities = normalize_entity_records(fetch_malaysia_lei_records(max_pages=lei_max_pages, page_size=lei_page_size))
-    save_df(entities, RAW_DIR / "gleif_malaysia_lei")
+    paths = country_paths(country)
+
+    entities = normalize_entity_records(
+        fetch_country_lei_records(country, max_pages=lei_max_pages, page_size=lei_page_size)
+    )
+    save_df(entities, paths["raw_entities"])
 
     leis = entities["lei"].dropna().unique()
     if not scan_all:
@@ -234,22 +262,30 @@ def run_gleif_pull(
     print(f"[INFO] Relationship scan complete: {found}/{total} entities have parent data")
 
     relationships = normalize_relationship_records(pd.concat(rels, ignore_index=True) if rels else pd.DataFrame())
-    save_df(relationships, INTERIM_DIR / "gleif_malaysia_relationships")
+    save_df(relationships, paths["interim_relationships"])
 
     target_leis = relationships["target_lei"].dropna().unique()
     source_leis = set(entities["lei"].dropna().astype(str))
     related_leis = [lei for lei in target_leis if str(lei) not in source_leis]
     related_entities = fetch_lei_records_by_lei(related_leis)
-    save_df(related_entities, RAW_DIR / "gleif_related_lei")
+    save_df(related_entities, paths["raw_related"])
 
     return entities, relationships
 
 
-def run_graph_and_scoring(enrich_edgar: bool = True) -> pd.DataFrame:
-    malaysia_entities = normalize_entity_records(load_df(RAW_DIR / "gleif_malaysia_lei"))
-    related_entities = normalize_entity_records(load_optional_df(RAW_DIR / "gleif_related_lei", ENTITY_COLUMNS))
-    entities = _combine_entity_sets(malaysia_entities, related_entities)
-    relationships = normalize_relationship_records(load_optional_df(INTERIM_DIR / "gleif_malaysia_relationships", RELATIONSHIP_COLUMNS))
+def run_graph_and_scoring(enrich_edgar: bool = True, country: str = "MY") -> pd.DataFrame:
+    paths = country_paths(country)
+    inf_dir = paths["inference_dir"]
+    inf_dir.mkdir(parents=True, exist_ok=True)
+
+    domestic_entities = normalize_entity_records(_load_with_fallback(paths, "raw_entities"))
+    related_entities = normalize_entity_records(
+        _load_with_fallback(paths, "raw_related", columns=ENTITY_COLUMNS)
+    )
+    entities = _combine_entity_sets(domestic_entities, related_entities)
+    relationships = normalize_relationship_records(
+        _load_with_fallback(paths, "interim_relationships", columns=RELATIONSHIP_COLUMNS)
+    )
 
     g = build_di_graph(entities, relationships)
     summary = graph_summary(g)
@@ -278,14 +314,16 @@ def run_graph_and_scoring(enrich_edgar: bool = True) -> pd.DataFrame:
         summary["ticker"] = None
         summary["title"] = None
 
-    summary = summary.merge(_foreign_parent_flags(relationships, entities), on="lei", how="left")
+    summary = summary.merge(
+        _foreign_parent_flags(relationships, entities, country=country), on="lei", how="left"
+    )
     summary["foreign_parent"] = _as_int_flag(summary["foreign_parent"])
 
     # --- Merge inference signals (if available) ---
 
     # Phase 0.5: reporting exception flags
     try:
-        exceptions = load_df(INTERIM_DIR / "gleif_reporting_exceptions")
+        exceptions = _load_with_fallback(paths, "interim_exceptions")
         summary = enrich_with_exception_flags(summary, exceptions)
         nc_count = int(summary["is_non_consolidating"].sum())
         print(f"[INFO] Phase 0.5 enrichment: {nc_count} non-consolidating entities flagged")
@@ -295,33 +333,45 @@ def run_graph_and_scoring(enrich_edgar: bool = True) -> pd.DataFrame:
 
     # Phase 1: name-inferred parent flag
     try:
-        phase1 = load_df(INFERENCE_DIR / "phase1_name_matches")
-        if not phase1.empty and "lei" in phase1.columns:
-            inferred_leis = set(phase1["lei"].dropna().unique())
-            summary["has_inferred_parent"] = summary["lei"].isin(inferred_leis).astype(int)
-            print(f"[INFO] Phase 1 enrichment: {len(inferred_leis)} name-inferred parents merged")
-        else:
-            summary["has_inferred_parent"] = 0
-    except FileNotFoundError:
+        phase1 = _load_with_fallback(paths, "inference_dir")  # won't work as-is, use direct
+    except (FileNotFoundError, Exception):
+        phase1 = pd.DataFrame()
+    # Try inference dir for phase1 name matches
+    for p1_path in [inf_dir / "phase1_name_matches", paths.get("legacy", {}).get("inference_dir", inf_dir) / "phase1_name_matches"]:
+        try:
+            phase1 = load_df(p1_path)
+            break
+        except FileNotFoundError:
+            continue
+    if not phase1.empty and "lei" in phase1.columns:
+        inferred_leis = set(phase1["lei"].dropna().unique())
+        summary["has_inferred_parent"] = summary["lei"].isin(inferred_leis).astype(int)
+        print(f"[INFO] Phase 1 enrichment: {len(inferred_leis)} name-inferred parents merged")
+    else:
         summary["has_inferred_parent"] = 0
 
     # Phase 2: address cluster flag
-    try:
-        phase2 = load_df(INFERENCE_DIR / "phase2_address_clusters")
-        if not phase2.empty and "lei" in phase2.columns:
-            clustered_leis = set(phase2["lei"].dropna().unique())
-            summary["in_address_cluster"] = summary["lei"].isin(clustered_leis).astype(int)
-            print(f"[INFO] Phase 2 enrichment: {len(clustered_leis)} address-clustered entities merged")
-        else:
-            summary["in_address_cluster"] = 0
-    except FileNotFoundError:
+    phase2 = pd.DataFrame()
+    for p2_path in [inf_dir / "phase2_address_clusters", paths.get("legacy", {}).get("inference_dir", inf_dir) / "phase2_address_clusters"]:
+        try:
+            phase2 = load_df(p2_path)
+            break
+        except FileNotFoundError:
+            continue
+    if not phase2.empty and "lei" in phase2.columns:
+        clustered_leis = set(phase2["lei"].dropna().unique())
+        summary["in_address_cluster"] = summary["lei"].isin(clustered_leis).astype(int)
+        print(f"[INFO] Phase 2 enrichment: {len(clustered_leis)} address-clustered entities merged")
+    else:
         summary["in_address_cluster"] = 0
 
     scored = compute_coverage_score(summary)
 
-    save_df(summary, PROCESSED_DIR / "di_graph_summary")
-    save_df(scored, PROCESSED_DIR / "coverage_gap_scores")
-    save_csv(scored.head(200), PROCESSED_DIR / "coverage_gap_scores_top200.csv")
+    out_dir = PROCESSED_DIR / country.lower()
+    out_dir.mkdir(parents=True, exist_ok=True)
+    save_df(summary, out_dir / "di_graph_summary")
+    save_df(scored, out_dir / "coverage_gap_scores")
+    save_csv(scored.head(200), out_dir / "coverage_gap_scores_top200.csv")
 
     return scored
 
@@ -369,21 +419,22 @@ def run_mock_pipeline() -> pd.DataFrame:
 # Inference pipeline — phases 0.5, 1, (2, 3 to follow)
 # ---------------------------------------------------------------------------
 
-def run_reporting_exceptions(skip_pull: bool = False) -> pd.DataFrame:
+def run_reporting_exceptions(skip_pull: bool = False, country: str = "MY") -> pd.DataFrame:
     """Phase 0.5: Fetch reporting exceptions for entities without known parents."""
-    cache_path = INTERIM_DIR / "gleif_reporting_exceptions"
+    paths = country_paths(country)
+    cache_path = paths["interim_exceptions"]
 
     if skip_pull:
         try:
-            exceptions = load_df(cache_path)
+            exceptions = _load_with_fallback(paths, "interim_exceptions")
             print(f"[INFO] Loaded {len(exceptions):,} cached reporting exceptions")
             return exceptions
         except FileNotFoundError:
             print("[WARN] No cached exceptions, fetching from API...")
 
-    entities = normalize_entity_records(load_df(RAW_DIR / "gleif_malaysia_lei"))
+    entities = normalize_entity_records(_load_with_fallback(paths, "raw_entities"))
     relationships = normalize_relationship_records(
-        load_optional_df(INTERIM_DIR / "gleif_malaysia_relationships", RELATIONSHIP_COLUMNS)
+        _load_with_fallback(paths, "interim_relationships", columns=RELATIONSHIP_COLUMNS)
     )
 
     # Only scan entities without known parent relationships
@@ -409,13 +460,20 @@ def run_reporting_exceptions(skip_pull: bool = False) -> pd.DataFrame:
 def run_phase1_name_inference(
     threshold: int = 80,
     skip_pull: bool = False,
+    country: str = "MY",
 ) -> pd.DataFrame:
     """Phase 1: Name pattern extraction and fuzzy matching."""
+    paths = country_paths(country)
+    inf_dir = paths["inference_dir"]
+    inf_dir.mkdir(parents=True, exist_ok=True)
+
     # Load required data
-    entities = normalize_entity_records(load_df(RAW_DIR / "gleif_malaysia_lei"))
-    parents = normalize_entity_records(load_optional_df(RAW_DIR / "gleif_related_lei", ENTITY_COLUMNS))
+    entities = normalize_entity_records(_load_with_fallback(paths, "raw_entities"))
+    parents = normalize_entity_records(
+        _load_with_fallback(paths, "raw_related", columns=ENTITY_COLUMNS)
+    )
     relationships = normalize_relationship_records(
-        load_optional_df(INTERIM_DIR / "gleif_malaysia_relationships", RELATIONSHIP_COLUMNS)
+        _load_with_fallback(paths, "interim_relationships", columns=RELATIONSHIP_COLUMNS)
     )
 
     if parents.empty:
@@ -423,7 +481,7 @@ def run_phase1_name_inference(
         return pd.DataFrame()
 
     # Extract brand tokens from known parents
-    brand_tokens = extract_parent_brand_tokens(parents)
+    brand_tokens = extract_parent_brand_tokens(parents, country=country)
     print(f"[INFO] Extracted {len(brand_tokens)} brand tokens from {len(parents)} parent entities")
 
     if brand_tokens.empty:
@@ -435,17 +493,17 @@ def run_phase1_name_inference(
 
     # Run fuzzy matching
     print(f"[INFO] Fuzzy matching {len(entities):,} entities against {len(brand_tokens)} brand tokens (threshold={threshold})...")
-    matches = fuzzy_match_names(entities, brand_tokens, known_leis=known_leis, threshold=threshold)
+    matches = fuzzy_match_names(entities, brand_tokens, known_leis=known_leis, threshold=threshold, country=country)
 
     # Build inferred edges
     edges = build_phase1_inferred_edges(matches, min_score=threshold)
 
     # Save artifacts
-    save_df(matches, INFERENCE_DIR / "phase1_name_matches")
-    save_df(edges, INFERENCE_DIR / "phase1_inferred_edges")
+    save_df(matches, inf_dir / "phase1_name_matches")
+    save_df(edges, inf_dir / "phase1_inferred_edges")
 
     if not matches.empty:
-        save_csv(matches, INFERENCE_DIR / "phase1_name_matches.csv")
+        save_csv(matches, inf_dir / "phase1_name_matches.csv")
 
     # Print summary
     summary = phase1_summary(matches)
@@ -463,21 +521,25 @@ def run_phase1_name_inference(
 def run_phase2_address_clustering(
     skip_pull: bool = False,
     min_cluster: int = 3,
+    country: str = "MY",
 ) -> pd.DataFrame:
     """Phase 2: Address parsing and geospatial clustering."""
-    address_cache = INTERIM_DIR / "gleif_full_addresses"
+    paths = country_paths(country)
+    inf_dir = paths["inference_dir"]
+    inf_dir.mkdir(parents=True, exist_ok=True)
+    address_cache = paths["interim_addresses"]
 
     # Load or fetch addresses
     if skip_pull:
         try:
-            addresses = load_df(address_cache)
+            addresses = _load_with_fallback(paths, "interim_addresses")
             print(f"[INFO] Loaded {len(addresses):,} cached addresses")
         except FileNotFoundError:
             print("[WARN] No cached addresses, fetching from API...")
             skip_pull = False
 
     if not skip_pull:
-        entities = normalize_entity_records(load_df(RAW_DIR / "gleif_malaysia_lei"))
+        entities = normalize_entity_records(_load_with_fallback(paths, "raw_entities"))
         leis = entities["lei"].dropna().unique().tolist()
         print(f"[INFO] Fetching full addresses for {len(leis):,} entities...")
         addresses = fetch_full_addresses(leis)
@@ -485,20 +547,20 @@ def run_phase2_address_clustering(
 
     # Cluster by address
     print(f"[INFO] Clustering addresses (min_cluster_size={min_cluster})...")
-    clusters = cluster_by_address(addresses, min_cluster_size=min_cluster)
+    clusters = cluster_by_address(addresses, min_cluster_size=min_cluster, country=country)
 
     # Infer shared parents within clusters
     relationships = normalize_relationship_records(
-        load_optional_df(INTERIM_DIR / "gleif_malaysia_relationships", RELATIONSHIP_COLUMNS)
+        _load_with_fallback(paths, "interim_relationships", columns=RELATIONSHIP_COLUMNS)
     )
     inferred = infer_shared_parent_from_cluster(clusters, relationships)
 
     # Save artifacts
-    save_df(clusters, INFERENCE_DIR / "phase2_address_clusters")
-    save_df(inferred, INFERENCE_DIR / "phase2_inferred_edges")
+    save_df(clusters, inf_dir / "phase2_address_clusters")
+    save_df(inferred, inf_dir / "phase2_inferred_edges")
 
     if not clusters.empty:
-        save_csv(clusters, INFERENCE_DIR / "phase2_address_clusters.csv")
+        save_csv(clusters, inf_dir / "phase2_address_clusters.csv")
 
     # Print summary
     summary = phase2_summary(clusters)
@@ -514,23 +576,30 @@ def run_phase2_address_clustering(
     return clusters
 
 
-def run_phase3_jurisdiction_prediction(skip_pull: bool = False) -> pd.DataFrame:
+def run_phase3_jurisdiction_prediction(skip_pull: bool = False, country: str = "MY") -> pd.DataFrame:
     """Phase 3: Train jurisdiction predictor and predict parent countries."""
+    paths = country_paths(country)
+    inf_dir = paths["inference_dir"]
+    inf_dir.mkdir(parents=True, exist_ok=True)
+
     # Load all required data
-    entities = normalize_entity_records(load_df(RAW_DIR / "gleif_malaysia_lei"))
-    parents = normalize_entity_records(load_optional_df(RAW_DIR / "gleif_related_lei", ENTITY_COLUMNS))
+    entities = normalize_entity_records(_load_with_fallback(paths, "raw_entities"))
+    parents = normalize_entity_records(
+        _load_with_fallback(paths, "raw_related", columns=ENTITY_COLUMNS)
+    )
     relationships = normalize_relationship_records(
-        load_optional_df(INTERIM_DIR / "gleif_malaysia_relationships", RELATIONSHIP_COLUMNS)
+        _load_with_fallback(paths, "interim_relationships", columns=RELATIONSHIP_COLUMNS)
     )
 
     # Optional enrichments
+    out_dir = PROCESSED_DIR / country.lower()
     try:
-        graph_summary = load_df(PROCESSED_DIR / "di_graph_summary")
+        graph_summary_df = load_df(out_dir / "di_graph_summary")
     except FileNotFoundError:
-        graph_summary = None
+        graph_summary_df = None
 
     try:
-        exceptions = load_df(INTERIM_DIR / "gleif_reporting_exceptions")
+        exceptions = _load_with_fallback(paths, "interim_exceptions")
     except FileNotFoundError:
         exceptions = None
 
@@ -541,7 +610,7 @@ def run_phase3_jurisdiction_prediction(skip_pull: bool = False) -> pd.DataFrame:
     # Prepare training data
     print("[INFO] Preparing training features...", flush=True)
     X_train, y_train, label_encoder = prepare_training_features(
-        entities, relationships, parents, graph_summary, exceptions
+        entities, relationships, parents, graph_summary_df, exceptions, country=country
     )
 
     if X_train.empty:
@@ -556,7 +625,7 @@ def run_phase3_jurisdiction_prediction(skip_pull: bool = False) -> pd.DataFrame:
 
     # Predict on ALL entities (including labeled, for validation)
     from src.jurisdiction_predictor import _build_features
-    all_features = _build_features(entities["lei"], entities, graph_summary, exceptions)
+    all_features = _build_features(entities["lei"], entities, graph_summary_df, exceptions, country=country)
 
     # Align columns with training set
     for col in X_train.columns:
@@ -571,9 +640,9 @@ def run_phase3_jurisdiction_prediction(skip_pull: bool = False) -> pd.DataFrame:
     predictions = predict_parent_jurisdiction(model, label_encoder, X_all, leis)
 
     # Save artifacts
-    save_model_artifacts(model, cv_metrics, list(X_train.columns), label_encoder, INFERENCE_DIR)
-    save_df(predictions, INFERENCE_DIR / "phase3_jurisdiction_predictions")
-    save_csv(predictions, INFERENCE_DIR / "phase3_jurisdiction_predictions.csv")
+    save_model_artifacts(model, cv_metrics, list(X_train.columns), label_encoder, inf_dir)
+    save_df(predictions, inf_dir / "phase3_jurisdiction_predictions")
+    save_csv(predictions, inf_dir / "phase3_jurisdiction_predictions.csv")
 
     # Print summary
     summary = phase3_summary(predictions, cv_metrics)
@@ -595,13 +664,19 @@ def run_phase3_jurisdiction_prediction(skip_pull: bool = False) -> pd.DataFrame:
     return predictions
 
 
-def run_phase4_graph_prediction(skip_pull: bool = False) -> dict:
+def run_phase4_graph_prediction(skip_pull: bool = False, country: str = "MY") -> dict:
     """Phase 4: Graph-based link prediction and label propagation."""
+    paths = country_paths(country)
+    inf_dir = paths["inference_dir"]
+    inf_dir.mkdir(parents=True, exist_ok=True)
+
     # Load required data
-    entities = normalize_entity_records(load_df(RAW_DIR / "gleif_malaysia_lei"))
-    parents = normalize_entity_records(load_optional_df(RAW_DIR / "gleif_related_lei", ENTITY_COLUMNS))
+    entities = normalize_entity_records(_load_with_fallback(paths, "raw_entities"))
+    parents = normalize_entity_records(
+        _load_with_fallback(paths, "raw_related", columns=ENTITY_COLUMNS)
+    )
     relationships = normalize_relationship_records(
-        load_optional_df(INTERIM_DIR / "gleif_malaysia_relationships", RELATIONSHIP_COLUMNS)
+        _load_with_fallback(paths, "interim_relationships", columns=RELATIONSHIP_COLUMNS)
     )
 
     if relationships.empty or parents.empty:
@@ -611,20 +686,22 @@ def run_phase4_graph_prediction(skip_pull: bool = False) -> dict:
     # Build enriched graph — include inferred edges from Phase 1 and 2
     all_relationships = relationships.copy()
     for phase_file in ["phase1_inferred_edges", "phase2_inferred_edges"]:
-        try:
-            inferred = load_df(INFERENCE_DIR / phase_file)
-            if not inferred.empty:
-                # Normalize to match relationship columns
-                for col in RELATIONSHIP_COLUMNS:
-                    if col not in inferred.columns:
-                        inferred[col] = None
-                all_relationships = pd.concat(
-                    [all_relationships, inferred[RELATIONSHIP_COLUMNS]],
-                    ignore_index=True,
-                )
-                print(f"[INFO] Added {len(inferred)} inferred edges from {phase_file}")
-        except FileNotFoundError:
-            pass
+        # Try country-scoped path first, then legacy
+        for search_dir in [inf_dir, paths.get("legacy", {}).get("inference_dir", inf_dir)]:
+            try:
+                inferred = load_df(search_dir / phase_file)
+                if not inferred.empty:
+                    for col in RELATIONSHIP_COLUMNS:
+                        if col not in inferred.columns:
+                            inferred[col] = None
+                    all_relationships = pd.concat(
+                        [all_relationships, inferred[RELATIONSHIP_COLUMNS]],
+                        ignore_index=True,
+                    )
+                    print(f"[INFO] Added {len(inferred)} inferred edges from {phase_file}")
+                break
+            except FileNotFoundError:
+                continue
 
     all_relationships = all_relationships.drop_duplicates(
         subset=["source_lei", "target_lei"], keep="first"
@@ -648,20 +725,20 @@ def run_phase4_graph_prediction(skip_pull: bool = False) -> dict:
     feat_imp = results.get("feature_importance", pd.DataFrame())
 
     if not link_preds.empty:
-        save_df(link_preds, INFERENCE_DIR / "phase4_link_predictions")
-        save_csv(link_preds, INFERENCE_DIR / "phase4_link_predictions.csv")
+        save_df(link_preds, inf_dir / "phase4_link_predictions")
+        save_csv(link_preds, inf_dir / "phase4_link_predictions.csv")
 
     if not propagated.empty:
-        save_df(propagated, INFERENCE_DIR / "phase4_propagated_labels")
-        save_csv(propagated, INFERENCE_DIR / "phase4_propagated_labels.csv")
+        save_df(propagated, inf_dir / "phase4_propagated_labels")
+        save_csv(propagated, inf_dir / "phase4_propagated_labels.csv")
 
     if not feat_imp.empty:
-        save_csv(feat_imp, INFERENCE_DIR / "phase4_feature_importance.csv")
+        save_csv(feat_imp, inf_dir / "phase4_feature_importance.csv")
 
     # Save metrics
     metrics = results.get("metrics", {})
     if metrics and not metrics.get("skipped"):
-        pd.DataFrame([metrics]).to_csv(INFERENCE_DIR / "phase4_metrics.csv", index=False)
+        pd.DataFrame([metrics]).to_csv(inf_dir / "phase4_metrics.csv", index=False)
 
     # Print summary
     summary = phase4_summary(results)
@@ -699,6 +776,7 @@ def run_full_inference_pipeline(
     threshold: int = 80,
     skip_pull: bool = False,
     min_cluster: int = 3,
+    country: str = "MY",
 ) -> dict:
     """Run all inference phases sequentially.
 
@@ -707,29 +785,29 @@ def run_full_inference_pipeline(
     results = {}
 
     print("=" * 70)
-    print("PHASE 0.5: REPORTING EXCEPTIONS")
+    print(f"PHASE 0.5: REPORTING EXCEPTIONS  [{country}]")
     print("=" * 70)
-    results["exceptions"] = run_reporting_exceptions(skip_pull=skip_pull)
+    results["exceptions"] = run_reporting_exceptions(skip_pull=skip_pull, country=country)
 
     print("\n" + "=" * 70)
-    print("PHASE 1: NAME PATTERN MATCHING")
+    print(f"PHASE 1: NAME PATTERN MATCHING  [{country}]")
     print("=" * 70)
-    results["name_matches"] = run_phase1_name_inference(threshold=threshold, skip_pull=skip_pull)
+    results["name_matches"] = run_phase1_name_inference(threshold=threshold, skip_pull=skip_pull, country=country)
 
     print("\n" + "=" * 70)
-    print("PHASE 2: ADDRESS CLUSTERING")
+    print(f"PHASE 2: ADDRESS CLUSTERING  [{country}]")
     print("=" * 70)
-    results["address_clusters"] = run_phase2_address_clustering(skip_pull=skip_pull, min_cluster=min_cluster)
+    results["address_clusters"] = run_phase2_address_clustering(skip_pull=skip_pull, min_cluster=min_cluster, country=country)
 
     print("\n" + "=" * 70)
-    print("PHASE 3: JURISDICTION PREDICTION")
+    print(f"PHASE 3: JURISDICTION PREDICTION  [{country}]")
     print("=" * 70)
-    results["predictions"] = run_phase3_jurisdiction_prediction(skip_pull=True)
+    results["predictions"] = run_phase3_jurisdiction_prediction(skip_pull=True, country=country)
 
     print("\n" + "=" * 70)
-    print("PHASE 4: GRAPH LINK PREDICTION")
+    print(f"PHASE 4: GRAPH LINK PREDICTION  [{country}]")
     print("=" * 70)
-    results["graph_predictions"] = run_phase4_graph_prediction(skip_pull=True)
+    results["graph_predictions"] = run_phase4_graph_prediction(skip_pull=True, country=country)
 
     print("\n" + "=" * 70)
     print("INFERENCE PIPELINE COMPLETE")

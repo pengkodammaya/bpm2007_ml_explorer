@@ -67,8 +67,10 @@ class BuildFeaturesTests(unittest.TestCase):
         self.assertIn("city_frequency", features.columns)
         self.assertIn("registration_year", features.columns)
         self.assertIn("name_token_count", features.columns)
+        # Country-specific features for MY (default)
         self.assertIn("has_sdn_bhd", features.columns)
         self.assertIn("has_berhad", features.columns)
+        self.assertIn("has_local_country", features.columns)
 
     def test_feature_shape(self):
         entities = _sample_entities()

@@ -17,6 +17,8 @@ from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier
 from sklearn.model_selection import cross_val_score, StratifiedKFold
 from sklearn.preprocessing import LabelEncoder
 
+from src.country_config import get_country_config
+
 
 # Minimum training samples per country to keep as a distinct class
 MIN_COUNTRY_SAMPLES = 5
@@ -59,6 +61,7 @@ def prepare_training_features(
     parent_entities_df: pd.DataFrame,
     graph_summary_df: pd.DataFrame | None = None,
     exceptions_df: pd.DataFrame | None = None,
+    country: str = "MY",
 ) -> tuple[pd.DataFrame, pd.Series, LabelEncoder]:
     """Build feature matrix and target variable from labeled entities.
 
@@ -101,7 +104,7 @@ def prepare_training_features(
     )
 
     # Build features for labeled entities
-    features = _build_features(labeled["lei"], entities_df, graph_summary_df, exceptions_df)
+    features = _build_features(labeled["lei"], entities_df, graph_summary_df, exceptions_df, country=country)
 
     # Align features with labels
     merged = features.merge(labeled[["lei", "parent_bucket"]], on="lei", how="inner")
@@ -119,11 +122,13 @@ def _build_features(
     entities_df: pd.DataFrame,
     graph_summary_df: pd.DataFrame | None = None,
     exceptions_df: pd.DataFrame | None = None,
+    country: str = "MY",
 ) -> pd.DataFrame:
     """Build feature columns for a set of LEIs."""
     df = entities_df[entities_df["lei"].isin(leis)].copy()
 
     features = pd.DataFrame({"lei": df["lei"].values})
+    cfg = get_country_config(country)
 
     # Legal form — one-hot top forms, rest as "OTHER"
     if "legal_form" in df.columns:
@@ -154,17 +159,19 @@ def _build_features(
     else:
         features["registration_year"] = 0
 
-    # Name features
+    # Name features — country-specific legal-name patterns from config
     if "legal_name" in df.columns:
         names = df["legal_name"].fillna("")
         features["name_token_count"] = names.str.split().str.len().fillna(0).astype(int).values
-        features["has_sdn_bhd"] = names.str.upper().str.contains(r"\bSDN\b", regex=True).astype(int).values
-        features["has_berhad"] = names.str.upper().str.contains(r"\bBERHAD\b", regex=True).astype(int).values
-        features["has_malaysia"] = names.str.upper().str.contains(r"\bMALAYSIA\b", regex=True).astype(int).values
         features["name_length"] = names.str.len().fillna(0).astype(int).values
+        upper_names = names.str.upper()
+        for feat_name, pattern in cfg.name_features:
+            features[feat_name] = upper_names.str.contains(pattern, regex=True).astype(int).values
     else:
-        for col in ["name_token_count", "has_sdn_bhd", "has_berhad", "has_malaysia", "name_length"]:
-            features[col] = 0
+        features["name_token_count"] = 0
+        features["name_length"] = 0
+        for feat_name, _ in cfg.name_features:
+            features[feat_name] = 0
 
     # Graph features
     if graph_summary_df is not None and not graph_summary_df.empty:

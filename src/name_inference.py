@@ -1,7 +1,8 @@
 """Phase 1: Name pattern extraction and fuzzy matching for parent inference.
 
 Extracts brand tokens from known foreign parent entities and fuzzy-matches
-them against Malaysian entity names to identify likely subsidiaries.
+them against domestic entity names to identify likely subsidiaries.
+Country-agnostic — works with any nation's entity data.
 """
 from __future__ import annotations
 
@@ -9,6 +10,7 @@ import re
 import pandas as pd
 from rapidfuzz import fuzz
 from src.edgar import clean_company_name
+from src.country_config import get_country_config
 
 # Legal suffixes to strip when extracting brand tokens
 LEGAL_SUFFIX_PATTERN = re.compile(
@@ -38,12 +40,16 @@ GENERIC_TOKENS = {
 }
 
 
-def extract_parent_brand_tokens(parents_df: pd.DataFrame) -> pd.DataFrame:
+def extract_parent_brand_tokens(
+    parents_df: pd.DataFrame,
+    country: str = "MY",
+) -> pd.DataFrame:
     """Extract core brand tokens from parent entity legal names.
 
     Parameters
     ----------
     parents_df : DataFrame with at least 'lei' and 'legal_name' columns.
+    country : ISO-2 code — selects country-specific extra suffixes.
 
     Returns
     -------
@@ -52,6 +58,8 @@ def extract_parent_brand_tokens(parents_df: pd.DataFrame) -> pd.DataFrame:
     if parents_df.empty or "legal_name" not in parents_df.columns:
         return pd.DataFrame(columns=["parent_lei", "parent_name", "brand_token"])
 
+    suffix_pat = get_suffix_pattern(country)
+
     rows: list[dict] = []
     for _, row in parents_df.iterrows():
         lei = row.get("lei")
@@ -59,7 +67,7 @@ def extract_parent_brand_tokens(parents_df: pd.DataFrame) -> pd.DataFrame:
         if not lei or not name:
             continue
 
-        token = _extract_brand_token(name)
+        token = _extract_brand_token(name, suffix_pat)
         if len(token) >= MIN_BRAND_TOKEN_LENGTH and not _is_generic_token(token):
             rows.append({
                 "parent_lei": lei,
@@ -70,11 +78,26 @@ def extract_parent_brand_tokens(parents_df: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows).drop_duplicates(subset=["brand_token"])
 
 
-def _extract_brand_token(name: str) -> str:
+def get_suffix_pattern(country: str = "MY") -> re.Pattern:
+    """Return the legal suffix regex, augmented with country-specific extras."""
+    cfg = get_country_config(country)
+    if not cfg.extra_legal_suffixes:
+        return LEGAL_SUFFIX_PATTERN
+    extras = "|".join(cfg.extra_legal_suffixes)
+    combined = LEGAL_SUFFIX_PATTERN.pattern.rstrip(")\\b") + "|" + extras + r")\b"
+    return re.compile(combined, re.IGNORECASE)
+
+
+def _extract_brand_token(
+    name: str,
+    suffix_pattern: re.Pattern | None = None,
+) -> str:
     """Extract the core brand name by removing legal suffixes and cleaning."""
+    if suffix_pattern is None:
+        suffix_pattern = LEGAL_SUFFIX_PATTERN
     cleaned = clean_company_name(name)
     # Remove legal suffixes
-    token = LEGAL_SUFFIX_PATTERN.sub("", cleaned)
+    token = suffix_pattern.sub("", cleaned)
     # Remove extra whitespace
     token = re.sub(r"\s+", " ", token).strip()
     return token
@@ -129,15 +152,17 @@ def fuzzy_match_names(
     brand_tokens_df: pd.DataFrame,
     known_leis: set[str] | None = None,
     threshold: int = 80,
+    country: str = "MY",
 ) -> pd.DataFrame:
     """Fuzzy-match entity names against parent brand tokens.
 
     Parameters
     ----------
-    entities_df : Malaysian entities DataFrame.
+    entities_df : Domestic entities DataFrame.
     brand_tokens_df : Output from extract_parent_brand_tokens().
     known_leis : LEIs that already have known parents (excluded from results).
     threshold : Minimum fuzzy match score (0-100).
+    country : ISO-2 code — selects country-specific suffix pattern.
 
     Returns
     -------
@@ -148,6 +173,7 @@ def fuzzy_match_names(
 
     known_leis = known_leis or set()
     matches: list[dict] = []
+    suffix_pat = get_suffix_pattern(country)
 
     # Pre-clean entity names
     entities = entities_df.copy()
@@ -178,7 +204,7 @@ def fuzzy_match_names(
                 score = 100
             else:
                 # Fallback: fuzzy match on the extracted brand token
-                entity_token = _extract_brand_token(entity_name)
+                entity_token = _extract_brand_token(entity_name, suffix_pat)
                 score = fuzz.token_set_ratio(brand, entity_token)
 
                 # Penalize fuzzy matches where the brand isn't actually

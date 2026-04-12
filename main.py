@@ -17,7 +17,9 @@ from src.pipeline import (
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Phase 1 ESIE pipeline")
+    parser = argparse.ArgumentParser(description="BPM7 ESIE inference pipeline")
+    parser.add_argument("--country", type=str, default="MY",
+                        help="ISO-2 country code (default: MY). E.g. MY, SG, PH, TH, ID")
     parser.add_argument("--relationships-limit", type=int, default=100)
     parser.add_argument("--lei-max-pages", type=int, default=50)
     parser.add_argument("--lei-page-size", type=int, default=200)
@@ -39,7 +41,7 @@ def main() -> None:
     )
 
     # Inference pipeline options
-    parser.add_argument("--run-inference", action="store_true", help="Run full parent inference pipeline (phases 0.5, 1)")
+    parser.add_argument("--run-inference", action="store_true", help="Run full parent inference pipeline (phases 0.5-4)")
     parser.add_argument("--phase1-only", action="store_true", help="Run only Phase 1 name inference")
     parser.add_argument("--phase2-only", action="store_true", help="Run only Phase 2 address clustering")
     parser.add_argument("--phase3-only", action="store_true", help="Run only Phase 3 jurisdiction prediction")
@@ -49,6 +51,7 @@ def main() -> None:
     parser.add_argument("--min-cluster-size", type=int, default=3, help="Phase 2 minimum address cluster size (default 3)")
 
     args = parser.parse_args()
+    country = args.country.upper()
 
     # --- Entity analysis mode ---
     if args.entity_analysis:
@@ -82,32 +85,35 @@ def main() -> None:
             threshold=args.fuzzy_threshold,
             skip_pull=args.skip_pull,
             min_cluster=args.min_cluster_size,
+            country=country,
         )
         return
 
     if args.exceptions_only:
-        run_reporting_exceptions(skip_pull=args.skip_pull)
+        run_reporting_exceptions(skip_pull=args.skip_pull, country=country)
         return
 
     if args.phase2_only:
         run_phase2_address_clustering(
             skip_pull=args.skip_pull,
             min_cluster=args.min_cluster_size,
+            country=country,
         )
         return
 
     if args.phase4_only:
-        run_phase4_graph_prediction(skip_pull=args.skip_pull)
+        run_phase4_graph_prediction(skip_pull=args.skip_pull, country=country)
         return
 
     if args.phase3_only:
-        run_phase3_jurisdiction_prediction(skip_pull=args.skip_pull)
+        run_phase3_jurisdiction_prediction(skip_pull=args.skip_pull, country=country)
         return
 
     if args.phase1_only:
         run_phase1_name_inference(
             threshold=args.fuzzy_threshold,
             skip_pull=args.skip_pull,
+            country=country,
         )
         return
 
@@ -119,18 +125,19 @@ def main() -> None:
         return
 
     if not args.skip_pull:
-        print("[INFO] Pulling GLEIF Malaysia entities and relationships...")
+        print(f"[INFO] Pulling GLEIF {country} entities and relationships...")
         entities, relationships = run_gleif_pull(
             max_relationship_entities=args.relationships_limit,
             lei_max_pages=args.lei_max_pages,
             lei_page_size=args.lei_page_size,
             scan_all=args.scan_all,
+            country=country,
         )
         print(f"[INFO] Entities: {len(entities):,}")
         print(f"[INFO] Relationships: {len(relationships):,}")
 
     print("[INFO] Building graph and scoring...")
-    scored = run_graph_and_scoring(enrich_edgar=not args.skip_edgar)
+    scored = run_graph_and_scoring(enrich_edgar=not args.skip_edgar, country=country)
     print(scored.head(20).to_string(index=False))
 
 

@@ -9,6 +9,7 @@ from __future__ import annotations
 import re
 import pandas as pd
 from src.utils import get_json, HTTPFetchError
+from src.country_config import get_country_config
 from config import GLEIF_BASE, USER_AGENT
 
 HEADERS = {"User-Agent": USER_AGENT}
@@ -97,18 +98,29 @@ def fetch_full_addresses(leis: list[str]) -> pd.DataFrame:
     return pd.DataFrame(rows).reindex(columns=ADDRESS_COLUMNS)
 
 
-def normalize_address(addr: str | None) -> str:
-    """Normalize a Malaysian address string for clustering.
+def normalize_address(
+    addr: str | None,
+    abbreviations: dict[str, str] | None = None,
+) -> str:
+    """Normalize an address string for clustering.
 
     Uppercases, expands abbreviations, collapses whitespace, strips punctuation.
+
+    Parameters
+    ----------
+    abbreviations : address abbreviation expansions.  Defaults to
+        ``MY_ABBREVIATIONS`` for backward compatibility.
     """
     if not addr or pd.isna(addr):
         return ""
 
+    if abbreviations is None:
+        abbreviations = MY_ABBREVIATIONS
+
     result = str(addr).upper().strip()
 
     # Expand abbreviations (word-boundary aware)
-    for abbr, full in MY_ABBREVIATIONS.items():
+    for abbr, full in abbreviations.items():
         pattern = r"\b" + re.escape(abbr) + r"\b"
         result = re.sub(pattern, full, result)
 
@@ -120,13 +132,16 @@ def normalize_address(addr: str | None) -> str:
     return result
 
 
-def build_address_key(row: pd.Series) -> str:
+def build_address_key(
+    row: pd.Series,
+    abbreviations: dict[str, str] | None = None,
+) -> str:
     """Build a clustering key from address components.
 
     Uses normalized first address line + postal code for grouping.
     This catches entities at the exact same building/suite.
     """
-    line1 = normalize_address(row.get("address_line1"))
+    line1 = normalize_address(row.get("address_line1"), abbreviations)
     postal = str(row.get("postal_code", "")).strip()
 
     if not line1:
@@ -137,6 +152,7 @@ def build_address_key(row: pd.Series) -> str:
 def cluster_by_address(
     addresses_df: pd.DataFrame,
     min_cluster_size: int = 3,
+    country: str = "MY",
 ) -> pd.DataFrame:
     """Group entities by shared registered address.
 
@@ -144,6 +160,8 @@ def cluster_by_address(
     ----------
     addresses_df : DataFrame with ADDRESS_COLUMNS.
     min_cluster_size : Minimum entities per cluster to be flagged.
+    country : ISO-2 code — selects address abbreviations and office-hotel
+        markers from ``country_config``.
 
     Returns
     -------
@@ -156,8 +174,14 @@ def cluster_by_address(
     if addresses_df.empty:
         return pd.DataFrame(columns=output_cols)
 
+    cfg = get_country_config(country)
+    abbreviations = cfg.address_abbreviations or MY_ABBREVIATIONS
+    markers = cfg.office_hotel_markers or KNOWN_OFFICE_HOTELS
+
     df = addresses_df.copy()
-    df["address_key"] = df.apply(build_address_key, axis=1)
+    df["address_key"] = df.apply(
+        lambda row: build_address_key(row, abbreviations), axis=1
+    )
 
     # Drop empty keys
     df = df[df["address_key"].str.len() > 0]
@@ -179,15 +203,22 @@ def cluster_by_address(
     clustered["address_cluster_id"] = clustered["address_key"].map(cluster_map)
     clustered["cluster_size"] = clustered["address_key"].map(key_counts)
     clustered["cluster_address_key"] = clustered["address_key"]
-    clustered["is_office_hotel"] = clustered["address_key"].apply(_is_office_hotel)
+    clustered["is_office_hotel"] = clustered["address_key"].apply(
+        lambda k: _is_office_hotel(k, markers)
+    )
 
     return clustered[output_cols].reset_index(drop=True)
 
 
-def _is_office_hotel(address_key: str) -> bool:
+def _is_office_hotel(
+    address_key: str,
+    markers: list[str] | None = None,
+) -> bool:
     """Check if an address matches known office-hotel or corp-sec locations."""
+    if markers is None:
+        markers = KNOWN_OFFICE_HOTELS
     upper = address_key.upper()
-    return any(marker in upper for marker in KNOWN_OFFICE_HOTELS)
+    return any(marker in upper for marker in markers)
 
 
 def infer_shared_parent_from_cluster(
