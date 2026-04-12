@@ -5,12 +5,14 @@ from config import RAW_DIR, INTERIM_DIR, PROCESSED_DIR
 from src.gleif import (
     ENTITY_COLUMNS,
     RELATIONSHIP_COLUMNS,
+    fetch_country_lei_records,
     fetch_lei_records_by_lei,
     fetch_malaysia_lei_records,
     fetch_relationships_for_lei,
     normalize_entity_records,
     normalize_relationship_records,
 )
+from src.entity_analysis import full_structural_report, compare_countries
 from src.graph_build import build_di_graph, graph_summary, parent_flags, add_graph_features
 from src.io_helpers import save_df, save_csv, load_df, load_optional_df
 from src.edgar import fetch_company_tickers, match_entities_to_edgar
@@ -86,6 +88,94 @@ def _foreign_parent_flags(relationships: pd.DataFrame, entities: pd.DataFrame) -
         .assign(foreign_parent=1)
         .rename(columns={"source_lei": "lei"})
     )
+
+
+def run_entity_analysis(
+    country: str = "MY",
+    max_pages: int = 50,
+    page_size: int = 200,
+    skip_pull: bool = False,
+) -> dict:
+    """Fetch entities for a country and run full structural analysis."""
+    country = country.upper()
+    cache_path = RAW_DIR / f"gleif_{country.lower()}_lei"
+    # Backwards compatibility: MY data was previously saved as gleif_malaysia_lei
+    legacy_path = RAW_DIR / "gleif_malaysia_lei" if country == "MY" else None
+
+    if skip_pull:
+        try:
+            entities = normalize_entity_records(load_df(cache_path))
+        except FileNotFoundError:
+            if legacy_path:
+                entities = normalize_entity_records(load_df(legacy_path))
+            else:
+                raise
+        print(f"[INFO] Loaded {len(entities):,} cached entities for {country}")
+    else:
+        print(f"[INFO] Fetching LEI records for country={country}...")
+        entities = normalize_entity_records(
+            fetch_country_lei_records(country, max_pages=max_pages, page_size=page_size)
+        )
+        save_df(entities, cache_path)
+        print(f"[INFO] Fetched {len(entities):,} entities for {country}")
+
+    report = full_structural_report(entities, country)
+
+    # Save analysis artifacts
+    analysis_dir = PROCESSED_DIR / "entity_analysis"
+    analysis_dir.mkdir(parents=True, exist_ok=True)
+
+    for key in ["geographic_concentration", "legal_form_distribution",
+                "category_distribution", "entity_status_distribution",
+                "registration_timeline", "hq_vs_legal_mismatch"]:
+        df = report[key]
+        if isinstance(df, pd.DataFrame) and not df.empty:
+            save_csv(df, analysis_dir / f"{country.lower()}_{key}.csv")
+
+    return report
+
+
+def run_comparative_analysis(
+    countries: list[str],
+    max_pages: int = 50,
+    page_size: int = 200,
+    skip_pull: bool = False,
+) -> pd.DataFrame:
+    """Fetch entities for multiple countries and compare structural profiles."""
+    country_frames: dict[str, pd.DataFrame] = {}
+
+    for country in countries:
+        country = country.upper()
+        cache_path = RAW_DIR / f"gleif_{country.lower()}_lei"
+
+        if skip_pull:
+            try:
+                entities = normalize_entity_records(load_df(cache_path))
+                print(f"[INFO] Loaded {len(entities):,} cached entities for {country}")
+            except Exception:
+                print(f"[WARN] No cached data for {country}, fetching...")
+                entities = normalize_entity_records(
+                    fetch_country_lei_records(country, max_pages=max_pages, page_size=page_size)
+                )
+                save_df(entities, cache_path)
+                print(f"[INFO] Fetched {len(entities):,} entities for {country}")
+        else:
+            print(f"[INFO] Fetching LEI records for country={country}...")
+            entities = normalize_entity_records(
+                fetch_country_lei_records(country, max_pages=max_pages, page_size=page_size)
+            )
+            save_df(entities, cache_path)
+            print(f"[INFO] Fetched {len(entities):,} entities for {country}")
+
+        country_frames[country] = entities
+
+    comparison = compare_countries(country_frames)
+
+    analysis_dir = PROCESSED_DIR / "entity_analysis"
+    analysis_dir.mkdir(parents=True, exist_ok=True)
+    save_csv(comparison, analysis_dir / "cross_country_comparison.csv")
+
+    return comparison
 
 
 def run_gleif_pull(

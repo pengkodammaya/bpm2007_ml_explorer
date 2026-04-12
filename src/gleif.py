@@ -81,12 +81,12 @@ def _parse_lei_record(item: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def fetch_malaysia_lei_records(max_pages: int = 50, page_size: int = 200) -> pd.DataFrame:
+def fetch_country_lei_records(country: str = "MY", max_pages: int = 50, page_size: int = 200) -> pd.DataFrame:
     rows: list[dict[str, Any]] = []
 
     for page_number in range(1, max_pages + 1):
         params = {
-            "filter[entity.legalAddress.country]": "MY",
+            "filter[entity.legalAddress.country]": country.upper(),
             "page[size]": page_size,
             "page[number]": page_number,
         }
@@ -98,6 +98,10 @@ def fetch_malaysia_lei_records(max_pages: int = 50, page_size: int = 200) -> pd.
         rows.extend(_parse_lei_record(item) for item in data)
 
     return normalize_entity_records(pd.DataFrame(rows)).dropna(subset=["lei"]).drop_duplicates(subset=["lei"])
+
+
+def fetch_malaysia_lei_records(max_pages: int = 50, page_size: int = 200) -> pd.DataFrame:
+    return fetch_country_lei_records("MY", max_pages=max_pages, page_size=page_size)
 
 
 def fetch_lei_records_by_lei(leis: Iterable[str]) -> pd.DataFrame:

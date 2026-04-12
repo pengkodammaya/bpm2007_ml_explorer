@@ -1,7 +1,13 @@
 from __future__ import annotations
 
 import argparse
-from src.pipeline import run_gleif_pull, run_graph_and_scoring, run_mock_pipeline
+from src.pipeline import (
+    run_entity_analysis,
+    run_comparative_analysis,
+    run_gleif_pull,
+    run_graph_and_scoring,
+    run_mock_pipeline,
+)
 
 
 def main() -> None:
@@ -12,8 +18,48 @@ def main() -> None:
     parser.add_argument("--skip-edgar", action="store_true")
     parser.add_argument("--skip-pull", action="store_true")
     parser.add_argument("--use-mock-data", action="store_true")
+
+    # Entity analysis options
+    parser.add_argument(
+        "--entity-analysis",
+        metavar="COUNTRY",
+        help="Run entity discovery and structural analysis for a country (ISO-2 code, e.g. MY, SG, US)",
+    )
+    parser.add_argument(
+        "--compare-countries",
+        metavar="CODES",
+        help="Comma-separated ISO-2 codes for cross-country comparison (e.g. MY,SG,TH,ID,PH)",
+    )
+
     args = parser.parse_args()
 
+    # --- Entity analysis mode ---
+    if args.entity_analysis:
+        report = run_entity_analysis(
+            country=args.entity_analysis,
+            max_pages=args.lei_max_pages,
+            page_size=args.lei_page_size,
+            skip_pull=args.skip_pull,
+        )
+        _print_entity_report(report)
+        return
+
+    # --- Cross-country comparison mode ---
+    if args.compare_countries:
+        countries = [c.strip() for c in args.compare_countries.split(",")]
+        comparison = run_comparative_analysis(
+            countries=countries,
+            max_pages=args.lei_max_pages,
+            page_size=args.lei_page_size,
+            skip_pull=args.skip_pull,
+        )
+        print("\n" + "=" * 70)
+        print("CROSS-COUNTRY STRUCTURAL COMPARISON")
+        print("=" * 70)
+        print(comparison.to_string(index=False))
+        return
+
+    # --- Original pipeline modes ---
     if args.use_mock_data:
         print("[INFO] Running mock pipeline...")
         scored = run_mock_pipeline()
@@ -33,6 +79,47 @@ def main() -> None:
     print("[INFO] Building graph and scoring...")
     scored = run_graph_and_scoring(enrich_edgar=not args.skip_edgar)
     print(scored.head(20).to_string(index=False))
+
+
+def _print_entity_report(report: dict) -> None:
+    """Pretty-print a structural analysis report to stdout."""
+    disc = report["discovery"]
+    profile = report["profile"]
+
+    print("\n" + "=" * 70)
+    print(f"ENTITY DISCOVERY & STRUCTURAL ANALYSIS: {profile['country']}")
+    print("=" * 70)
+
+    print(f"\n--- Discovery Summary ---")
+    print(f"  Total entities:       {disc['total_records']:,}")
+    print(f"  Unique LEIs:          {disc['unique_leis']:,}")
+    print(f"  Active:               {disc['active_entities']:,}")
+    print(f"  Inactive:             {disc['inactive_entities']:,}")
+    print(f"  Legal form types:     {disc['legal_forms']}")
+    print(f"  Cities (legal addr):  {disc['cities_legal']}")
+    print(f"  Earliest registration: {disc['earliest_registration']}")
+    print(f"  Latest registration:   {disc['latest_registration']}")
+
+    print(f"\n--- Category Distribution ---")
+    print(report["category_distribution"].to_string(index=False))
+
+    print(f"\n--- Entity Status ---")
+    print(report["entity_status_distribution"].to_string(index=False))
+
+    print(f"\n--- Top Geographic Concentrations ---")
+    print(report["geographic_concentration"].to_string(index=False))
+
+    print(f"\n--- Legal Form Distribution (top 20) ---")
+    print(report["legal_form_distribution"].to_string(index=False))
+
+    print(f"\n--- Registration Timeline ---")
+    print(report["registration_timeline"].to_string(index=False))
+
+    mismatch = report["hq_vs_legal_mismatch"]
+    print(f"\n--- HQ vs Legal Address Mismatch ---")
+    print(f"  {len(mismatch)} entities ({profile['hq_mismatch_pct']}%) have HQ in a different country")
+    if not mismatch.empty:
+        print(mismatch.head(10).to_string(index=False))
 
 
 if __name__ == "__main__":
