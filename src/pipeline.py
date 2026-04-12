@@ -277,6 +277,42 @@ def run_graph_and_scoring(enrich_edgar: bool = True) -> pd.DataFrame:
     summary = summary.merge(_foreign_parent_flags(relationships, entities), on="lei", how="left")
     summary["foreign_parent"] = _as_int_flag(summary["foreign_parent"])
 
+    # --- Merge inference signals (if available) ---
+
+    # Phase 0.5: reporting exception flags
+    try:
+        exceptions = load_df(INTERIM_DIR / "gleif_reporting_exceptions")
+        summary = enrich_with_exception_flags(summary, exceptions)
+        nc_count = int(summary["is_non_consolidating"].sum())
+        print(f"[INFO] Phase 0.5 enrichment: {nc_count} non-consolidating entities flagged")
+    except FileNotFoundError:
+        summary["is_non_consolidating"] = 0
+        summary["has_exception_filed"] = 0
+
+    # Phase 1: name-inferred parent flag
+    try:
+        phase1 = load_df(INFERENCE_DIR / "phase1_name_matches")
+        if not phase1.empty and "lei" in phase1.columns:
+            inferred_leis = set(phase1["lei"].dropna().unique())
+            summary["has_inferred_parent"] = summary["lei"].isin(inferred_leis).astype(int)
+            print(f"[INFO] Phase 1 enrichment: {len(inferred_leis)} name-inferred parents merged")
+        else:
+            summary["has_inferred_parent"] = 0
+    except FileNotFoundError:
+        summary["has_inferred_parent"] = 0
+
+    # Phase 2: address cluster flag
+    try:
+        phase2 = load_df(INFERENCE_DIR / "phase2_address_clusters")
+        if not phase2.empty and "lei" in phase2.columns:
+            clustered_leis = set(phase2["lei"].dropna().unique())
+            summary["in_address_cluster"] = summary["lei"].isin(clustered_leis).astype(int)
+            print(f"[INFO] Phase 2 enrichment: {len(clustered_leis)} address-clustered entities merged")
+        else:
+            summary["in_address_cluster"] = 0
+    except FileNotFoundError:
+        summary["in_address_cluster"] = 0
+
     scored = compute_coverage_score(summary)
 
     save_df(summary, PROCESSED_DIR / "di_graph_summary")

@@ -5,6 +5,18 @@ import pandas as pd
 
 
 def compute_coverage_score(df: pd.DataFrame) -> pd.DataFrame:
+    """Compute coverage gap score incorporating inference signals.
+
+    Weight formula (sums to 1.0):
+    - 0.25 * size_scaled           — network prominence
+    - 0.15 * appears_in_edgar      — US filing presence
+    - 0.15 * foreign_parent        — confirmed foreign parent
+    - 0.10 * has_inferred_parent   — Phase 1 name-matched parent
+    - 0.05 * in_address_cluster    — Phase 2 address co-location
+    - 0.05 * is_non_consolidating  — Phase 0.5 confirmed subsidiary
+    - 0.15 * (1 - has_parent_link) — missing direct parent data
+    - 0.10 * (1 - has_ultimate_link) — missing ultimate parent data
+    """
     out = df.copy()
 
     defaults = {
@@ -13,13 +25,21 @@ def compute_coverage_score(df: pd.DataFrame) -> pd.DataFrame:
         "appears_in_edgar": 0,
         "foreign_parent": 0,
         "size_proxy": 0.0,
+        "has_inferred_parent": 0,
+        "in_address_cluster": 0,
+        "is_non_consolidating": 0,
     }
     for col, val in defaults.items():
         if col not in out.columns:
             out[col] = val
         out[col] = out[col].fillna(val)
 
-    for col in ["has_parent_link", "has_ultimate_link", "appears_in_edgar", "foreign_parent"]:
+    int_cols = [
+        "has_parent_link", "has_ultimate_link", "appears_in_edgar",
+        "foreign_parent", "has_inferred_parent", "in_address_cluster",
+        "is_non_consolidating",
+    ]
+    for col in int_cols:
         out[col] = out[col].astype(int)
 
     out["size_scaled"] = np.log1p(out["size_proxy"].astype(float))
@@ -35,11 +55,14 @@ def compute_coverage_score(df: pd.DataFrame) -> pd.DataFrame:
         out["size_scaled"] = out["size_scaled"] / denom
 
     out["coverage_gap_score"] = (
-        0.30 * out["size_scaled"]
-        + 0.20 * out["appears_in_edgar"]
-        + 0.20 * out["foreign_parent"]
+        0.25 * out["size_scaled"]
+        + 0.15 * out["appears_in_edgar"]
+        + 0.15 * out["foreign_parent"]
+        + 0.10 * out["has_inferred_parent"]
+        + 0.05 * out["in_address_cluster"]
+        + 0.05 * out["is_non_consolidating"]
         + 0.15 * (1 - out["has_parent_link"])
-        + 0.15 * (1 - out["has_ultimate_link"])
+        + 0.10 * (1 - out["has_ultimate_link"])
     )
 
     def explain(row: pd.Series) -> str:
@@ -50,6 +73,12 @@ def compute_coverage_score(df: pd.DataFrame) -> pd.DataFrame:
             reasons.append("us_filing_presence")
         if row["foreign_parent"] == 1:
             reasons.append("foreign_parent_signal")
+        if row["has_inferred_parent"] == 1:
+            reasons.append("inferred_parent_match")
+        if row["in_address_cluster"] == 1:
+            reasons.append("shared_address_cluster")
+        if row["is_non_consolidating"] == 1:
+            reasons.append("non_consolidating_entity")
         if row["has_parent_link"] == 0:
             reasons.append("missing_direct_parent")
         if row["has_ultimate_link"] == 0:
