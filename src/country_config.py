@@ -199,6 +199,46 @@ _KH = CountryConfig(
     ],
 )
 
+_BN = CountryConfig(
+    code="BN",
+    address_abbreviations={
+        "JLN": "JALAN",
+        "KG": "KAMPONG",
+        "SPG": "SIMPANG",
+    },
+    office_hotel_markers=[
+        "BANDAR SERI BEGAWAN",
+    ],
+    name_features=[
+        ("has_sdn_bhd", r"\bSDN\s*BHD\b"),
+        ("has_local_country", r"\bBRUNEI\b"),
+    ],
+)
+
+_LA = CountryConfig(
+    code="LA",
+    address_abbreviations={},
+    office_hotel_markers=[
+        "VIENTIANE",
+    ],
+    name_features=[
+        ("has_co_ltd", r"\bCO\.\s*LTD\b"),
+        ("has_local_country", r"\bLAO\b"),
+    ],
+)
+
+_MM = CountryConfig(
+    code="MM",
+    address_abbreviations={},
+    office_hotel_markers=[
+        "YANGON",
+    ],
+    name_features=[
+        ("has_co_ltd", r"\bCO\.\s*LTD\b"),
+        ("has_local_country", r"\bMYANMAR\b"),
+    ],
+)
+
 _REGISTRY: dict[str, CountryConfig] = {
     "MY": _MY,
     "SG": _SG,
@@ -207,6 +247,9 @@ _REGISTRY: dict[str, CountryConfig] = {
     "ID": _ID,
     "VN": _VN,
     "KH": _KH,
+    "BN": _BN,
+    "LA": _LA,
+    "MM": _MM,
 }
 
 _DEFAULT = CountryConfig(

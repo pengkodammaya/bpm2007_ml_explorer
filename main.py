@@ -138,7 +138,10 @@ def main() -> None:
 
     print("[INFO] Building graph and scoring...")
     scored = run_graph_and_scoring(enrich_edgar=not args.skip_edgar, country=country)
-    print(scored.head(20).to_string(index=False))
+    try:
+        print(scored.head(20).to_string(index=False))
+    except UnicodeEncodeError:
+        print(scored.head(20).to_string(index=False).encode("utf-8", errors="replace").decode("utf-8"))
 
 
 def _print_entity_report(report: dict) -> None:
