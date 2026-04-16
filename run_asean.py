@@ -24,7 +24,7 @@ from config import PROCESSED_DIR, country_paths
 
 CHECKPOINT_FILE = PROCESSED_DIR / "asean_run_checkpoint.json"
 
-ASEAN_COUNTRIES = ["MY", "SG", "TH", "ID", "PH", "VN", "KH", "BN", "LA", "MM"]
+ASEAN_COUNTRIES = ["MY", "SG", "TH", "ID", "PH", "VN", "KH", "BN", "LA", "MM", "TL"]
 
 # Stages in execution order
 STAGES = ["entity_pull", "inference", "scoring"]
@@ -79,12 +79,35 @@ def run_entity_pull(country: str, checkpoint: dict) -> dict:
     if _has_cached_data(country):
         paths = country_paths(country)
         rels_path = paths["interim_relationships"].with_suffix(".parquet")
+        related_path = paths["raw_related"].with_suffix(".parquet")
         legacy_rels = paths.get("legacy", {}).get("interim_relationships")
+        legacy_related = paths.get("legacy", {}).get("raw_related")
         has_rels = rels_path.exists() or (legacy_rels and legacy_rels.with_suffix(".parquet").exists())
+        has_related = related_path.exists() or (legacy_related and legacy_related.with_suffix(".parquet").exists())
 
-        if has_rels:
+        if has_rels and has_related:
             print(f"  [{country}] entity_pull: cached data found, marking done")
             return _mark(checkpoint, country, "entity_pull", "done", "cached")
+        elif has_rels and not has_related:
+            # Relationships exist but parent entities not yet fetched — do just that
+            print(f"  [{country}] entity_pull: relationships cached, fetching parent entities...")
+            import pandas as pd
+            from src.gleif import fetch_lei_records_by_lei
+            from src.io_helpers import save_df, load_df
+            try:
+                rels = load_df(rels_path if rels_path.exists() else legacy_rels)
+                entities = load_df(paths["raw_entities"] if paths["raw_entities"].with_suffix(".parquet").exists()
+                                   else paths.get("legacy", {}).get("raw_entities"))
+                target_leis = rels["target_lei"].dropna().unique()
+                source_leis = set(entities["lei"].dropna().astype(str))
+                related_leis = [lei for lei in target_leis if str(lei) not in source_leis]
+                related = fetch_lei_records_by_lei(related_leis)
+                save_df(related, paths["raw_related"])
+                detail = f"cached, fetched {len(related)} parent entities"
+                print(f"  [{country}] entity_pull: done ({detail})")
+                return _mark(checkpoint, country, "entity_pull", "done", detail)
+            except Exception as e:
+                print(f"  [{country}] entity_pull: parent fetch failed - {e}, running full pull")
 
     from src.pipeline import run_gleif_pull
     print(f"  [{country}] entity_pull: starting...")
@@ -202,22 +225,26 @@ def main() -> None:
         return
 
     if args.reset:
-        token = args.reset.upper()
+        token = args.reset.strip()
         if "_" in token:
-            # Reset specific stage
-            if token in checkpoint:
-                del checkpoint[token]
+            # Reset specific stage — e.g. "SG_inference"
+            # Normalise: country part uppercase, stage part lowercase
+            parts = token.split("_", 1)
+            key = f"{parts[0].upper()}_{parts[1].lower()}"
+            if key in checkpoint:
+                del checkpoint[key]
                 _save_checkpoint(checkpoint)
-                print(f"Reset {token}")
+                print(f"Reset {key}")
             else:
-                print(f"No checkpoint entry for {token}")
+                print(f"No checkpoint entry for {key}")
         else:
             # Reset all stages for a country
+            country = token.upper()
             for stage in STAGES:
-                key = f"{token}_{stage}"
+                key = f"{country}_{stage}"
                 checkpoint.pop(key, None)
             _save_checkpoint(checkpoint)
-            print(f"Reset all stages for {token}")
+            print(f"Reset all stages for {country}")
         return
 
     # Determine which countries to run

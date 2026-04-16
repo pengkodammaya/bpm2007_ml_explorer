@@ -219,7 +219,51 @@ def train_jurisdiction_model(
         print("[WARN] Very small training set — results will be unreliable", flush=True)
 
     n_classes = y.nunique()
-    n_splits = min(5, min(y.value_counts()))
+    min_class_count = int(min(y.value_counts()))
+
+    # GradientBoosting requires at least 2 classes.  If we have only 1,
+    # return a trivial constant predictor that always outputs that class.
+    if n_classes < 2:
+        print(f"[WARN] Only {n_classes} class in training data — returning constant predictor.", flush=True)
+        from sklearn.dummy import DummyClassifier
+        model = DummyClassifier(strategy="most_frequent")
+        model.fit(X, y)
+        metrics = {
+            "model_type": "DummyConstant",
+            "cv_accuracy_mean": 1.0,
+            "cv_accuracy_std": 0.0,
+            "n_training_samples": len(X),
+            "n_classes": int(n_classes),
+            "n_folds": 0,
+            "gb_cv_mean": float("nan"),
+            "rf_cv_mean": float("nan"),
+            "note": "single_class_constant_predictor",
+        }
+        return model, metrics
+
+    # If any class has fewer than 2 samples, CV is impossible — train
+    # directly without cross-validation.
+    if min_class_count < 2 or len(X) < 4:
+        print(f"[WARN] Too few samples for CV (min_class_count={min_class_count}, n={len(X)}). "
+              "Training without cross-validation.", flush=True)
+        model = GradientBoostingClassifier(
+            n_estimators=100, max_depth=4, learning_rate=0.1, random_state=42,
+        )
+        model.fit(X, y)
+        metrics = {
+            "model_type": "GradientBoosting",
+            "cv_accuracy_mean": float("nan"),
+            "cv_accuracy_std": float("nan"),
+            "n_training_samples": len(X),
+            "n_classes": int(n_classes),
+            "n_folds": 0,
+            "gb_cv_mean": float("nan"),
+            "rf_cv_mean": float("nan"),
+            "note": "no_cv_too_few_samples",
+        }
+        return model, metrics
+
+    n_splits = min(5, min_class_count)
     n_splits = max(2, n_splits)  # at least 2-fold
 
     cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=42)

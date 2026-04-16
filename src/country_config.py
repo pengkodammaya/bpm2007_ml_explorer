@@ -239,6 +239,23 @@ _MM = CountryConfig(
     ],
 )
 
+_TL = CountryConfig(
+    code="TL",
+    address_abbreviations={
+        "RUA": "RUA",           # Street (Portuguese, already full form)
+        "AV": "AVENIDA",        # Avenue
+    },
+    office_hotel_markers=[
+        "DILI",
+        "TIMOR PLAZA",
+    ],
+    name_features=[
+        ("has_lda", r"\bLDA\b"),          # Limitada (Portuguese limited company)
+        ("has_unipessoal", r"\bUNIPESSOAL\b"),
+        ("has_local_country", r"\bTIMOR|TIMOR.LESTE\b"),
+    ],
+)
+
 _REGISTRY: dict[str, CountryConfig] = {
     "MY": _MY,
     "SG": _SG,
@@ -250,6 +267,7 @@ _REGISTRY: dict[str, CountryConfig] = {
     "BN": _BN,
     "LA": _LA,
     "MM": _MM,
+    "TL": _TL,
 }
 
 _DEFAULT = CountryConfig(

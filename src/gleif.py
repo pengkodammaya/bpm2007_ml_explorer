@@ -81,23 +81,98 @@ def _parse_lei_record(item: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def fetch_country_lei_records(country: str = "MY", max_pages: int = 50, page_size: int = 200) -> pd.DataFrame:
+def _fetch_filtered_lei_records(
+    base_filters: dict[str, str],
+    max_pages: int = 50,
+    page_size: int = 200,
+    label: str = "",
+) -> tuple[list[dict[str, Any]], bool]:
+    """Fetch LEI records with arbitrary filters.
+
+    Returns (rows, hit_limit) where *hit_limit* is True when the last
+    requested page still returned data, indicating there may be more
+    records beyond the GLEIF pagination cap.
+    """
     rows: list[dict[str, Any]] = []
+    hit_limit = False
 
     for page_number in range(1, max_pages + 1):
         params = {
-            "filter[entity.legalAddress.country]": country.upper(),
+            **base_filters,
             "page[size]": page_size,
             "page[number]": page_number,
         }
-        payload = fetch_lei_page(params)
+        try:
+            payload = fetch_lei_page(params)
+        except HTTPFetchError as e:
+            # GLEIF returns 400 when page exceeds available range
+            if "400" in str(e):
+                hit_limit = True
+                break
+            raise
         data = payload.get("data", [])
         if not data:
             break
-
         rows.extend(_parse_lei_record(item) for item in data)
 
-    return normalize_entity_records(pd.DataFrame(rows)).dropna(subset=["lei"]).drop_duplicates(subset=["lei"])
+        if page_number == max_pages and len(data) == page_size:
+            hit_limit = True
+
+    if label and rows:
+        print(f"  [{label}] fetched {len(rows)} records (hit_limit={hit_limit})")
+    return rows, hit_limit
+
+
+# Categories used to split large country fetches when the page limit is hit
+_ENTITY_CATEGORIES = ["FUND", "BRANCH", "SOLE_PROPRIETOR", "GENERAL"]
+
+
+def fetch_country_lei_records(country: str = "MY", max_pages: int = 50, page_size: int = 200) -> pd.DataFrame:
+    """Fetch all LEI records for *country*, auto-splitting if the GLEIF
+    pagination limit (default 50 pages × 200 = 10 000) is exceeded.
+
+    Split strategy:
+    1. Try a single unfiltered query.
+    2. If the page limit is hit, split by entity status (ACTIVE / INACTIVE).
+    3. If any status bucket still hits the limit, further split by category.
+    """
+    c = country.upper()
+    base = {"filter[entity.legalAddress.country]": c}
+
+    # --- Attempt 1: single query ---
+    rows, hit_limit = _fetch_filtered_lei_records(
+        base, max_pages=max_pages, page_size=page_size, label=f"{c}"
+    )
+    if not hit_limit:
+        return normalize_entity_records(pd.DataFrame(rows)).dropna(subset=["lei"]).drop_duplicates(subset=["lei"])
+
+    print(f"[INFO] {c}: page limit reached ({len(rows)} records). Splitting by entity status...")
+
+    # --- Attempt 2: split by entity status ---
+    all_rows: list[dict[str, Any]] = []
+    for status in ["ACTIVE", "INACTIVE"]:
+        filters = {**base, "filter[entity.status]": status}
+        s_rows, s_hit = _fetch_filtered_lei_records(
+            filters, max_pages=max_pages, page_size=page_size,
+            label=f"{c}/{status}",
+        )
+        if not s_hit:
+            all_rows.extend(s_rows)
+            continue
+
+        # --- Attempt 3: split by category within this status ---
+        print(f"[INFO] {c}/{status}: still exceeds limit ({len(s_rows)}). Splitting by category...")
+        for cat in _ENTITY_CATEGORIES:
+            cat_filters = {**filters, "filter[entity.category]": cat}
+            c_rows, c_hit = _fetch_filtered_lei_records(
+                cat_filters, max_pages=max_pages, page_size=page_size,
+                label=f"{c}/{status}/{cat}",
+            )
+            if c_hit:
+                print(f"[WARN] {c}/{status}/{cat}: still exceeds limit ({len(c_rows)} records). Some entities may be missing.")
+            all_rows.extend(c_rows)
+
+    return normalize_entity_records(pd.DataFrame(all_rows)).dropna(subset=["lei"]).drop_duplicates(subset=["lei"])
 
 
 def fetch_malaysia_lei_records(max_pages: int = 50, page_size: int = 200) -> pd.DataFrame:
