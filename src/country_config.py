@@ -147,12 +147,66 @@ _ID = CountryConfig(
     ],
 )
 
+_VN = CountryConfig(
+    code="VN",
+    address_abbreviations={
+        "TP": "THANH PHO",       # City
+        "Q": "QUAN",             # District
+        "P": "PHUONG",           # Ward
+        "TX": "THI XA",          # Town
+        "TT": "THI TRAN",        # Township
+        "DUONG": "DUONG",        # Street (already full form)
+    },
+    office_hotel_markers=[
+        "DISTRICT 1",
+        "QUAN 1",
+        "BITEXCO",
+        "SAIGON TRADE CENTER",
+        "LOTTE CENTER",
+        "KEANGNAM",
+        "LANDMARK 72",
+    ],
+    name_features=[
+        ("has_co_ltd", r"\bCO\.\s*LTD\b"),
+        ("has_jsc", r"\bJSC\b"),        # Joint Stock Company
+        ("has_llc_vn", r"\bLLC\b"),
+        ("has_local_country", r"\bVIET\s*NAM|VIETNAM\b"),
+    ],
+    extra_legal_suffixes=[
+        r"JSC",
+        r"TNHH",               # Trach Nhiem Huu Han (Limited Liability)
+    ],
+)
+
+_KH = CountryConfig(
+    code="KH",
+    address_abbreviations={
+        "ST": "STREET",
+        "BLV": "BOULEVARD",
+        "KH": "KHAN",           # District
+        "SK": "SANGKAT",        # Commune
+    },
+    office_hotel_markers=[
+        "PHNOM PENH TOWER",
+        "EXCHANGE SQUARE",
+        "CANADIA TOWER",
+        "VATTANAC CAPITAL",
+    ],
+    name_features=[
+        ("has_co_ltd", r"\bCO\.\s*LTD\b"),
+        ("has_plc_kh", r"\bPLC\b"),
+        ("has_local_country", r"\bCAMBODIA|KAMPUCHEA\b"),
+    ],
+)
+
 _REGISTRY: dict[str, CountryConfig] = {
     "MY": _MY,
     "SG": _SG,
     "PH": _PH,
     "TH": _TH,
     "ID": _ID,
+    "VN": _VN,
+    "KH": _KH,
 }
 
 _DEFAULT = CountryConfig(
