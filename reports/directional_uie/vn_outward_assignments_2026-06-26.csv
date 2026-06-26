@@ -1,0 +1,7 @@
+direction,host_country,source_country,destination_country,lei,legal_name,entity_country,uie_country,uie_name,uie_lei,uie_source,evidence_tier,evidence_bucket,uie_confidence,is_known_uie,is_inferred_uie,direct_parent_country,ultimate_parent_country,chain_parent_country,ctos_registered_malaysia
+OUT,SG,VN,SG,98450061AC45979BHN19,VINGROUP INVESTMENT PTE. LTD.,SG,VN,TẬP ĐOÀN VINGROUP - CÔNG TY CP,254900MJ9C15O3O1V757,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,VN,,0.0
+OUT,SG,VN,SG,984500B9FS8C772H4A22,VINSMART TRADING AND INVESTMENT PTE. LTD.,SG,VN,TẬP ĐOÀN VINGROUP - CÔNG TY CP,254900MJ9C15O3O1V757,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,VN,,0.0
+OUT,SG,VN,SG,54930078K94RL1UOCJ47,HOA PHAT TRADING INTERNATIONAL PTE. LTD.,SG,VN,HOA PHAT GROUP JOINT STOCK COMPANY,549300ODJEFGL5CWKD32,gleif_upstream_ultimate_parent,A_known_upstream_ultimate_parent,A_hard_or_verified,0.97,1,0,VN,,VN,0.0
+OUT,SG,VN,SG,9845007679D10BI46718,ASIAN STAR TRADING & INVESTMENT PTE. LTD.,SG,VN,TẬP ĐOÀN VINGROUP - CÔNG TY CP,254900MJ9C15O3O1V757,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
+OUT,SG,VN,SG,984500C14DC56FAAD053,GEWU ASSET MANAGEMENT PTE. LTD.,SG,VN,TẬP ĐOÀN VINGROUP - CÔNG TY CP,254900MJ9C15O3O1V757,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
+OUT,SG,VN,SG,549300WT6S19Z00GBS85,SAKAMOTO CAPITAL PTE. LTD.,SG,VN,TẬP ĐOÀN VINGROUP - CÔNG TY CP,254900MJ9C15O3O1V757,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0

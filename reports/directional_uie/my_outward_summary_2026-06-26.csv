@@ -1,0 +1,11 @@
+source_country,destination_country,evidence_bucket,lei_count,known_uie_count,inferred_uie_count,model_only_count,avg_uie_confidence
+MY,SG,E_model_only,44,0,44,44,0.5798
+MY,SG,D_address_inferred,27,0,27,0,0.6
+MY,SG,A_hard_or_verified,15,15,0,0,1.0
+MY,TH,D_address_inferred,7,0,7,0,0.6
+MY,ID,A_hard_or_verified,4,4,0,0,1.0
+MY,TH,A_hard_or_verified,4,4,0,0,1.0
+MY,KH,A_hard_or_verified,3,3,0,0,1.0
+MY,SG,C_name_inferred,2,0,2,0,1.0
+MY,PH,A_hard_or_verified,1,1,0,0,1.0
+MY,VN,B_parent_or_exception,1,1,0,0,0.85

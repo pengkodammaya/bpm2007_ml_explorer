@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import warnings
 from datetime import date
 from pathlib import Path
 
@@ -119,7 +120,13 @@ def load_assignments(countries: list[str]) -> pd.DataFrame:
     frames = [df for df in frames if not df.empty]
     if not frames:
         return pd.DataFrame(columns=ASSIGNMENT_COLUMNS)
-    out = pd.concat(frames, ignore_index=True, sort=False)
+    with warnings.catch_warnings():
+        warnings.filterwarnings(
+            "ignore",
+            message="The behavior of DataFrame concatenation with empty or all-NA entries is deprecated",
+            category=FutureWarning,
+        )
+        out = pd.concat(frames, ignore_index=True, sort=False)
     out["host_country"] = out["host_country"].astype(str).str.upper()
     out["uie_country"] = out["uie_country"].fillna("").astype(str).str.upper()
     out["entity_country"] = out.get("entity_country", out["host_country"]).fillna(out["host_country"])
@@ -322,7 +329,7 @@ def build_results(countries: list[str]) -> dict[str, pd.DataFrame]:
         ["source_country", "destination_country", "evidence_bucket"],
     )
 
-    return {
+    frames = {
         "asean_inward_assignments": inward,
         "asean_inward_foreign_assignments": inward_foreign,
         "asean_inward_summary": inward_summary,
@@ -340,6 +347,31 @@ def build_results(countries: list[str]) -> dict[str, pd.DataFrame]:
             outward_bilateral_density["source_country"].eq("MY")
         ].copy(),
     }
+
+    for country in countries:
+        prefix = country.lower()
+        country_inward = inward[inward["host_country"].eq(country)].copy()
+        country_inward_foreign = inward_foreign[inward_foreign["host_country"].eq(country)].copy()
+        country_outward = outward[outward["source_country"].eq(country)].copy()
+        frames[f"{prefix}_inward_assignments"] = country_inward
+        frames[f"{prefix}_inward_foreign_assignments"] = country_inward_foreign
+        frames[f"{prefix}_inward_summary"] = summary_counts(
+            country_inward_foreign,
+            ["host_country", "uie_country", "evidence_bucket"],
+        )
+        frames[f"{prefix}_inward_density"] = inward_density[
+            inward_density["host_country"].eq(country)
+        ].copy()
+        frames[f"{prefix}_outward_assignments"] = country_outward
+        frames[f"{prefix}_outward_summary"] = summary_counts(
+            country_outward,
+            ["source_country", "destination_country", "evidence_bucket"],
+        )
+        frames[f"{prefix}_outward_bilateral_density"] = outward_bilateral_density[
+            outward_bilateral_density["source_country"].eq(country)
+        ].copy()
+
+    return frames
 
 
 def main() -> None:

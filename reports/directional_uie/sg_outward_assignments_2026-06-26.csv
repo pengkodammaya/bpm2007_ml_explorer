@@ -1,0 +1,412 @@
+direction,host_country,source_country,destination_country,lei,legal_name,entity_country,uie_country,uie_name,uie_lei,uie_source,evidence_tier,evidence_bucket,uie_confidence,is_known_uie,is_inferred_uie,direct_parent_country,ultimate_parent_country,chain_parent_country,ctos_registered_malaysia
+OUT,MY,SG,MY,254900MIUP0FYBJ8KJ17,BOS WEALTH MANAGEMENT MALAYSIA BERHAD,MY,SG,OVERSEA-CHINESE BANKING CORPORATION LIMITED,5493007O3QFXCPOGWK22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,1.0
+OUT,MY,SG,MY,213800TOT7DMM7SK8P75,DYSON MANUFACTURING SDN BHD,MY,SG,WEYBOURNE HOLDINGS PTE. LTD.,254900AZHJ583G4NOC24,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,1.0
+OUT,MY,SG,MY,254900X5EGF9MOJTFN14,GES Manufacturing Services (M) Sdn. Bhd.,MY,SG,VENTURE CORPORATION LIMITED,254900B1NLZC3J1MAE72,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,1.0
+OUT,MY,SG,MY,254900TDAUWDGCCEQ807,Great Eastern Labuan Company Limited,MY,SG,GREAT EASTERN HOLDINGS LIMITED,875500VP8E4GKG3B1P45,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,MY,SG,MY,2549008KIRUG60VE4H17,Great Eastern Life Assurance (Malaysia) Berhad,MY,SG,THE GREAT EASTERN LIFE ASSURANCE COMPANY LIMITED,XILNWRPRTWRS0ELWD465,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,1.0
+OUT,MY,SG,MY,2549006SLU3EWMCLT331,IFAST CAPITAL SDN. BHD.,MY,SG,IFAST CORPORATION LTD.,254900R8J6BPHWK23Z14,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,SG,SG,1.0
+OUT,MY,SG,MY,2549001HLLBHNM58YJ83,IFAST MALAYSIA SDN. BHD.,MY,SG,IFAST CORPORATION LTD.,254900R8J6BPHWK23Z14,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,1.0
+OUT,MY,SG,MY,254900J82XR9EXG7IP14,NIUM SDN. BHD.,MY,SG,NIUM PTE. LTD.,2549001M1QCD7NV2FL63,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,MY,SG,MY,549300XIBSIRYZHZ6U80,OCBC AL-AMIN BANK BERHAD,MY,SG,OVERSEA-CHINESE BANKING CORPORATION LIMITED,5493007O3QFXCPOGWK22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,SG,SG,0.0
+OUT,MY,SG,MY,549300BUY5TZ8OC68Y89,OCBC Bank (Malaysia) Berhad,MY,SG,OVERSEA-CHINESE BANKING CORPORATION LIMITED,5493007O3QFXCPOGWK22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,MY,SG,MY,549300M5129X1W13RA79,PGEO BIOTECH SDN. BHD.,MY,SG,Wilmar International Limited,549300H2EAI4YRLWBB20,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,SG,,0.0
+OUT,MY,SG,MY,254900N8H66R3F447N73,Pacific Asia Brands Fund,MY,SG,OVERSEA-CHINESE BANKING CORPORATION LIMITED,5493007O3QFXCPOGWK22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,SG,SG,0.0
+OUT,MY,SG,MY,254900RAHHJ2XOAKWO55,Pacific Dana Dividen,MY,SG,OVERSEA-CHINESE BANKING CORPORATION LIMITED,5493007O3QFXCPOGWK22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,SG,SG,0.0
+OUT,MY,SG,MY,254900LBE2UCR89J1478,Pacific Dynamic Global Islamic Fund,MY,SG,OVERSEA-CHINESE BANKING CORPORATION LIMITED,5493007O3QFXCPOGWK22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,SG,SG,0.0
+OUT,MY,SG,MY,254900DAE7FNTQ042P26,Pacific Focus18 Fund,MY,SG,OVERSEA-CHINESE BANKING CORPORATION LIMITED,5493007O3QFXCPOGWK22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,SG,SG,0.0
+OUT,MY,SG,MY,254900IFPA0UGKCDK194,"Pacific Global Agriculture, Infrastructure and Resources Fund",MY,SG,OVERSEA-CHINESE BANKING CORPORATION LIMITED,5493007O3QFXCPOGWK22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,SG,SG,0.0
+OUT,MY,SG,MY,254900SPAI6LDK7JSK59,Pacific Global Stars Fund,MY,SG,OVERSEA-CHINESE BANKING CORPORATION LIMITED,5493007O3QFXCPOGWK22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,SG,SG,0.0
+OUT,MY,SG,MY,254900R8HWEN2AZD6P05,Pacific Real Opportunities Absolute Return Fund,MY,SG,OVERSEA-CHINESE BANKING CORPORATION LIMITED,5493007O3QFXCPOGWK22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,SG,SG,0.0
+OUT,MY,SG,MY,5493000W4G7T3LKK9739,SANDAKAN EDIBLE OILS SDN. BHD.,MY,SG,Wilmar International Limited,549300H2EAI4YRLWBB20,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,0.0
+OUT,MY,SG,MY,254900IE5ZVD11LDDW80,TAI SIN ELECTRIC CABLES (MALAYSIA) SDN. BHD.,MY,SG,Tai Sin Electric Limited,2549004MSWDRXNFKH924,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,MY,SG,MY,254900L2GNWHCIM65P05,Technocom Systems Sdn Bhd,MY,SG,VENTURE CORPORATION LIMITED,254900B1NLZC3J1MAE72,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,MY,SG,MY,549300UELOOESZQLWV30,UNITED OVERSEAS BANK (MALAYSIA) BHD.,MY,SG,UNITED OVERSEAS BANK LIMITED,IO66REGK3RCBAMA8HR66,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,MY,SG,MY,5493003TYZT3IH12OG24,UOB ASSET MANAGEMENT (MALAYSIA) BERHAD,MY,SG,UNITED OVERSEAS BANK LIMITED,IO66REGK3RCBAMA8HR66,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,MY,SG,MY,254900KW4BIDLHLDNK31,Venture Electronics Services (Malaysia) Sdn. Bhd.,MY,SG,VENTURE CORPORATION LIMITED,254900B1NLZC3J1MAE72,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,MY,SG,MY,549300E6VVJ88WZSFX86,WILMAR KUANTAN EDIBLE OILS SDN. BHD.,MY,SG,Wilmar International Limited,549300H2EAI4YRLWBB20,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,0.0
+OUT,MY,SG,MY,254900EJGRI66ECVRG93,ACR RETAKAFUL BERHAD,MY,SG,ASIA CAPITAL REINSURANCE GROUP PTE. LTD.,549300MI8YS4IVFTKP23,gleif_direct_parent,B_known_direct_parent,B_parent_or_exception,0.85,1,0,SG,,,0.0
+OUT,MY,SG,MY,2549002FBZ9DJH90FX03,ASIA CAPITAL REINSURANCE MALAYSIA SDN. BHD.,MY,SG,ASIA CAPITAL REINSURANCE GROUP PTE. LTD.,549300MI8YS4IVFTKP23,phase1_name_match,C_name_match_high,C_name_inferred,1.0,0,1,,,,0.0
+OUT,MY,SG,MY,254900818621L65FSB10,GREAT EASTERN TAKAFUL BERHAD,MY,SG,GREAT EASTERN HOLDINGS LIMITED,875500VP8E4GKG3B1P45,phase1_name_match,C_name_match_high,C_name_inferred,1.0,0,1,,,,1.0
+OUT,MY,SG,MY,254900YGFFTQS4GX6H19,Great Eastern General Insurance (Malaysia) Berhad,MY,SG,GREAT EASTERN HOLDINGS LIMITED,875500VP8E4GKG3B1P45,phase1_name_match,C_name_match_high,C_name_inferred,1.0,0,1,,,,1.0
+OUT,MY,SG,MY,254900ZJKJ9FFO367K29,CFM Argos Pte. Ltd.,MY,SG,GREAT EASTERN HOLDINGS LIMITED,875500VP8E4GKG3B1P45,phase2_address_cluster,D_address_cluster,D_address_inferred,0.73,0,1,,,,0.0
+OUT,MY,SG,MY,984500E006ADA1378865,LRC SPECIALITY POLYMERS SDN. BHD.,MY,SG,IFAST CORPORATION LTD.,254900R8J6BPHWK23Z14,phase2_address_cluster,D_address_cluster,D_address_inferred,0.73,0,1,,,,0.0
+OUT,MY,SG,MY,5493009UTPZ6Q4AY4G59,WILMAR FERTILIZER MALAYSIA SDN. BHD.,MY,SG,Wilmar International Limited,549300H2EAI4YRLWBB20,phase2_address_cluster,D_address_cluster,D_address_inferred,0.73,0,1,,,,0.0
+OUT,MY,SG,MY,5493005HFZQUS8Q7H492,BINTULU EDIBLE OILS SDN. BHD.,MY,SG,Wilmar International Limited,549300H2EAI4YRLWBB20,phase2_address_cluster,D_address_cluster,D_address_inferred,0.7,0,1,,,,1.0
+OUT,MY,SG,MY,5493002V56CHA7DZ2M68,NATURAL OLEOCHEMICALS SDN. BHD.,MY,SG,Wilmar International Limited,549300H2EAI4YRLWBB20,phase2_address_cluster,D_address_cluster,D_address_inferred,0.7,0,1,,,,0.0
+OUT,MY,SG,MY,5493006ZOIKK9R9I4O70,PGEO EDIBLE OILS SDN. BHD.,MY,SG,Wilmar International Limited,549300H2EAI4YRLWBB20,phase2_address_cluster,D_address_cluster,D_address_inferred,0.7,0,1,,,,0.0
+OUT,MY,SG,MY,549300QVUTU3AUU1CP84,AMUNDI MALAYSIA SDN. BHD.,MY,SG,WOODPECKER ASIA TECH PTE. LTD,213800YL1WKCFM1LOQ12,phase2_address_cluster,D_address_cluster,D_address_inferred,0.61,0,1,,,,1.0
+OUT,MY,SG,MY,254900D9VWS492DWXX07,Halogen Shariah Ringgit Income Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9988,0,1,,,,0.0
+OUT,MY,SG,MY,2549003BP8563VCZU117,Manulife Shariah PRS NESTEGG Series,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9988,0,1,,,,0.0
+OUT,MY,SG,MY,25490086B7FEL8S03L06,AHAM World Series -Biotechnology Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9987,0,1,,,,0.0
+OUT,MY,SG,MY,2549007ULQRQR7YBEC10,Koperasi Pegwai Pejabat Pengarah Tanah Dan Galian Kuala Lumpur Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9984,0,1,,,,0.0
+OUT,MY,SG,MY,254900W4QYOAWWJSQQ11,AKKA SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9981,0,1,,,,1.0
+OUT,MY,SG,MY,2549008MN9GBTEASBX45,NAZA LEGACY SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.998,0,1,,,,0.0
+OUT,MY,SG,MY,9845004J5DFFD673FA18,IMTC SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9976,0,1,,,,1.0
+OUT,MY,SG,MY,254900IG559IXFSK0O58,AHAM Aiiman PRS Shariah Moderate Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9966,0,1,,,,0.0
+OUT,MY,SG,MY,254900NUIBMMZF9T1S82,PACIFIC & ORIENT BERHAD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9961,0,1,,,,0.0
+OUT,MY,SG,MY,254900MXIHC40TT9X511,CGS INTERNATIONAL SECURITIES MALAYSIA SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9959,0,1,,,,1.0
+OUT,MY,SG,MY,254900ZJZ7SDPC503F43,Key Development SDN BHD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9954,0,1,,,,1.0
+OUT,MY,SG,MY,2549005M3ZIBTVS3Z008,Manulife Shariah Dynamic Leaders Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9953,0,1,,,,0.0
+OUT,MY,SG,MY,254900N23ZD0N29YV049,JIMAH O&M SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9952,0,1,,,,1.0
+OUT,MY,SG,MY,254900H4PC7YTB82ZF54,AHAM PRS Growth Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.995,0,1,,,,0.0
+OUT,MY,SG,MY,254900QOGRD10AMUU407,KSC Strategic Fund 3,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.995,0,1,,,,0.0
+OUT,MY,SG,MY,2549001Q3BP4BW4LE619,MEX I CAPITAL BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9946,0,1,,,,0.0
+OUT,MY,SG,MY,254900CWYJ5K5CEF2812,AHAM Income Fund 8,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9942,0,1,,,,0.0
+OUT,MY,SG,MY,254900RYAIU1CI3YZK82,KSC High Yield Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9942,0,1,,,,0.0
+OUT,MY,SG,MY,254900WB25GJ9AFDWA22,JIMAH TEKNIK SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9935,0,1,,,,1.0
+OUT,MY,SG,MY,5493001V2HD1PZU5QH52,ABB MALAYSIA SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9926,0,1,,,,1.0
+OUT,MY,SG,MY,2549003K3LD9EAHMDG42,Affin Hwang Single Bond Series 6,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9917,0,1,,,,0.0
+OUT,MY,SG,MY,254900M65YDWOIITPR08,FMMG SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9915,0,1,,,,1.0
+OUT,MY,SG,MY,254900MLC3BZCKP7T208,Valuecap Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9914,0,1,,,,0.0
+OUT,MY,SG,MY,254900KL3HEWB9Y1DF96,Principal China-India-Indonesia Opportunities Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9912,0,1,,,,0.0
+OUT,MY,SG,MY,254900Q8XG5IR40IRA91,ARECA CAPITAL SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9908,0,1,,,,1.0
+OUT,MY,SG,MY,254900FPBN4MBHGPX212,AHAM World Series - Income Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9906,0,1,,,,0.0
+OUT,MY,SG,MY,9845007B71ABXFC5A015,MAYBANK GLOBAL STRATEGIC EQUITY-I FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9898,0,1,,,,0.0
+OUT,MY,SG,MY,254900UK70DAMFXA5Y90,Tafa Capital Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9897,0,1,,,,0.0
+OUT,MY,SG,MY,254900E3XI8XB2FBZO85,Trinity View Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9897,0,1,,,,0.0
+OUT,MY,SG,MY,254900OFWHXF34LZHU93,Principal Islamic PRS Plus Moderate,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9896,0,1,,,,0.0
+OUT,MY,SG,MY,25490037GTNGH2I4L484,Allied Hori Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9895,0,1,,,,1.0
+OUT,MY,SG,MY,2549007Z8OQI3K98WT45,Embun Edar Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9895,0,1,,,,1.0
+OUT,MY,SG,MY,254900QWQMXLVV614A93,AHAM Smart Invest Portfolio - Growth,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9882,0,1,,,,0.0
+OUT,MY,SG,MY,25490004A13GA23KXJ16,RHB I-ASIA PACIFIC WELLNESS FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9873,0,1,,,,0.0
+OUT,MY,SG,MY,2549007GD0DSG7B2JK90,MAYBANK AGEAS HOLDINGS BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9867,0,1,,,,0.0
+OUT,MY,SG,MY,894500PCQZFCAXNIB666,STGW SOLUTION SDN BHD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9862,0,1,,,,0.0
+OUT,MY,SG,MY,2549007UYL2M9LKIY969,Principal DALI Asia Pacific Equity Growth Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9859,0,1,,,,0.0
+OUT,MY,SG,MY,549300GMOHTUUPIUF525,MANULIFE SHARIAH PRS - MODERATE FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9858,0,1,,,,0.0
+OUT,MY,SG,MY,254900JSUFCD8B7WAL43,AmFunds Management Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9848,0,1,,,,1.0
+OUT,MY,SG,MY,254900ETZBL9KWK7JM61,DANAJAMIN NASIONAL BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9848,0,1,,,,1.0
+OUT,MY,SG,MY,254900V0BYM4VV8QK983,Affin Hwang Asia Equity ESG Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9846,0,1,,,,0.0
+OUT,MY,SG,MY,254900VH5AOK4HHV4I38,BURSA MALAYSIA SECURITIES BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9846,0,1,,,,1.0
+OUT,MY,SG,MY,254900FQD8OFFVY11L15,Principal Strategic Global Growth Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9846,0,1,,,,0.0
+OUT,MY,SG,MY,9845000C2FE3E86U2154,Maybank Global Wealth Moderate-I Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9843,0,1,,,,0.0
+OUT,MY,SG,MY,254900YF4MU9GLM67P97,Public Bank Group Officers' Retirement Benefits Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.984,0,1,,,,0.0
+OUT,MY,SG,MY,254900N9GWBJJBVH7Q96,Affin Hwang Income Focus Fund 4,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9836,0,1,,,,0.0
+OUT,MY,SG,MY,549300Y1VTO735R7ZI34,SMITH ZAIN (PENANG) SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9832,0,1,,,,0.0
+OUT,MY,SG,MY,254900R50UKIKT05HK63,AHAM Aiiman Income Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9828,0,1,,,,0.0
+OUT,MY,SG,MY,2549001DUPNFSV5K0I33,AMANAH RAYA BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9828,0,1,,,,1.0
+OUT,MY,SG,MY,254900ZM75BOPIGHIZ02,PUBLIC AGGRESSIVE GROWTH FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9828,0,1,,,,0.0
+OUT,MY,SG,MY,254900DVY2XNDUNTPR17,SIGNATURE DYNAMIC INCOME FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9828,0,1,,,,0.0
+OUT,MY,SG,MY,2549004XU9ENXP52Q969,ACB RESOURCES BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9827,0,1,,,,1.0
+OUT,MY,SG,MY,549300FV8X6UID6I1413,TENAGA NASIONAL BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9827,0,1,,,,0.0
+OUT,MY,SG,MY,254900DUHCR2ZPP20V38,Berjaya Mutual Global Momentum Equity Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9825,0,1,,,,0.0
+OUT,MY,SG,MY,254900NEJ2V7QUK6MY65,Principal Titans Growth & Income Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9813,0,1,,,,0.0
+OUT,MY,SG,MY,254900ZXPGXBO5RX2G32,Principal Islamic Asia Pacific Dynamic Equity Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9811,0,1,,,,0.0
+OUT,MY,SG,MY,2549007PS1EQFHVQDI98,Holiday Tours & Travel Sdn Bhd,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.981,0,1,,,,1.0
+OUT,MY,SG,MY,254900X5J6C3QJ2QF135,ECM Libra Group Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9807,0,1,,,,1.0
+OUT,MY,SG,MY,254900ZIW1H62JEXNG16,Principal Asia Pacific Dynamic Mixed Asset Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9807,0,1,,,,0.0
+OUT,MY,SG,MY,254900P75N6A02OIE837,The Affin Hwang Flexible Maturity Income Fund 8,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9807,0,1,,,,0.0
+OUT,MY,SG,MY,213800VC2S3ENPWQH290,PUBLIC E-ISLAMIC SUSTAINABLE MILLENNIAL FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9802,0,1,,,,0.0
+OUT,MY,SG,MY,98450038S2FC9E051565,Maybank Global Wealth Growth-I Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9799,0,1,,,,0.0
+OUT,MY,SG,MY,254900PCGO502BBFBE45,AmIncome Regular 3,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9797,0,1,,,,0.0
+OUT,MY,SG,MY,254900BFR13IIJELT818,AmIncome Regular 4,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9797,0,1,,,,0.0
+OUT,MY,SG,MY,254900EOAPCM664UH183,Principal Dynamic Enhanced Malaysia Income Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9784,0,1,,,,0.0
+OUT,MY,SG,MY,25490091RJAY2344O873,MANULIFE PRS NESTEGG SERIES,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9771,0,1,,,,0.0
+OUT,MY,SG,MY,254900HHB97QCJW2B603,Labuan Financial Services Authority,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9762,0,1,,,,0.0
+OUT,MY,SG,MY,254900S4KQV0I34ABM68,KSC Demeter Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9756,0,1,,,,0.0
+OUT,MY,SG,MY,254900UM6L8GKUAPR153,TA T-STRIPS Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9756,0,1,,,,0.0
+OUT,MY,SG,MY,549300EVXDMPVUKFHH11,Performa Core Growth and Income Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9731,0,1,,,,0.0
+OUT,MY,SG,MY,254900XG615HSFBNCT10,PERTUBUHAN PENGURUSAN PUSAT DIALISIS TUANKU SYED PUTRA JAMALULLAIL NEGERI PERLIS,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9723,0,1,,,,0.0
+OUT,MY,SG,MY,254900RVZM361K3R9065,TA South East Asia Equity Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9718,0,1,,,,0.0
+OUT,MY,SG,MY,254900Y8UNCJ91NEJS07,M & A REGULAR INCOME FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9709,0,1,,,,0.0
+OUT,MY,SG,MY,254900LEP4PVI26BUR27,Malaysian Community & Education Foundation,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9698,0,1,,,,0.0
+OUT,MY,SG,MY,9845002E505F8F3EEF30,Maybank Global Strategic Growth-I Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9696,0,1,,,,0.0
+OUT,MY,SG,MY,254900U67L2J6DLOOC31,Affin Hwang Flexible Maturity Income Fund 11,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9691,0,1,,,,0.0
+OUT,MY,SG,MY,254900IWPFOPXA818Y07,Affin Hwang Flexible Maturity Income Fund 12,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9691,0,1,,,,0.0
+OUT,MY,SG,MY,254900DL532T754MJT51,Affin Hwang Flexible Maturity Income Fund 13,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9691,0,1,,,,0.0
+OUT,MY,SG,MY,254900U800QXJ4QOG972,Affin Hwang Flexible Maturity Income Fund 14,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9691,0,1,,,,0.0
+OUT,MY,SG,MY,2549009RSS6RYYQOYO52,EPF Global Sukuk,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9691,0,1,,,,0.0
+OUT,MY,SG,MY,25490023LG6QKWCM9T71,KWAP Global Sukuk,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9691,0,1,,,,0.0
+OUT,MY,SG,MY,254900ERXAQY7W8SHU48,Shearn Delamore Staff Retirement Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9684,0,1,,,,0.0
+OUT,MY,SG,MY,549300EYWISEQLMD7754,TA Global Absolute ESG Alpha Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9676,0,1,,,,0.0
+OUT,MY,SG,MY,254900ODK6FM3XD1MB56,ALPHA SPECULATION CONSULTANCY,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9675,0,1,,,,0.0
+OUT,MY,SG,MY,984500DE36D8C7K9V526,Maybank Global Wealth Conservative-I Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.967,0,1,,,,0.0
+OUT,MY,SG,MY,2549008TNTDJL97BQA42,PRINCIPAL GLOBAL DYNAMIC INNOVATION FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9662,0,1,,,,0.0
+OUT,MY,SG,MY,254900QB0ZMI1LTAMQ71,Sun Life Malaysia Takaful Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9642,0,1,,,,0.0
+OUT,MY,SG,MY,254900XKQAKRWJCNGZ09,KSC Incrementum Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.963,0,1,,,,0.0
+OUT,MY,SG,MY,213800LY14PT5XNVOX18,PUBLIC ISLAMIC ASIA TACTICAL ALLOCATION FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.963,0,1,,,,0.0
+OUT,MY,SG,MY,254900CODAV988KIO119,AHAM PRS Moderate Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9627,0,1,,,,0.0
+OUT,MY,SG,MY,254900G7MAXLV16HDS30,Principal PRS Plus Moderate,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9612,0,1,,,,0.0
+OUT,MY,SG,MY,25490025UBNV39QQE537,Principal Lifetime Balanced Income Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9589,0,1,,,,0.0
+OUT,MY,SG,MY,254900ZLNJME9U53AF46,HONG LEONG GLOBAL SHARIAH ESG FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9585,0,1,,,,0.0
+OUT,MY,SG,MY,2549003O8604BKHTLK37,Hong Leong Global Equity Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9583,0,1,,,,0.0
+OUT,MY,SG,MY,254900HZ4ONXJEVSXB77,TA Total Return Income-i Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9583,0,1,,,,0.0
+OUT,MY,SG,MY,254900MAP3SZJKFATX67,Affin Hwang Flexible Maturity Income Fund 10,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9578,0,1,,,,0.0
+OUT,MY,SG,MY,2549006LHUXUB0P6EU57,PERBADANAN TABUNG PEMBANGUNAN KEMAHIRAN,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9575,0,1,,,,0.0
+OUT,MY,SG,MY,2549007UYTP08H0O3H83,Principal Wholesale Equity Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9558,0,1,,,,0.0
+OUT,MY,SG,MY,984500F866DFB9776F72,MAMG GLOBAL ENVIRONMENT FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.955,0,1,,,,0.0
+OUT,MY,SG,MY,2549008VXTL2HOZ55B02,Principal ASEAN Dynamic Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.955,0,1,,,,0.0
+OUT,MY,SG,MY,98450041D94VD8BD6B41,Maybank AsiaPac Ex-Japan Equity-I Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9537,0,1,,,,0.0
+OUT,MY,SG,MY,254900YU9M6VE8NGWL17,Affin Hwang Flexible Maturity Income Fund 22,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9524,0,1,,,,0.0
+OUT,MY,SG,MY,254900XY0KS5TH562D65,Lim Enterprises Sdn Bhd Senior Staff Provident Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9506,0,1,,,,0.0
+OUT,MY,SG,MY,254900I17ALBY977K655,CAGAMAS GLOBAL SUKUK BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9501,0,1,,,,1.0
+OUT,MY,SG,MY,254900B2OAZMPZXIXQ22,KAF INVESTMENT FUNDS BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9501,0,1,,,,1.0
+OUT,MY,SG,MY,549300IJ4FQVGG3OE944,MANULIFE SHARIAH PRS - GROWTH FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9499,0,1,,,,0.0
+OUT,MY,SG,MY,254900318M4FG27S7T83,ZURICH LIFE INSURANCE MALAYSIA BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9495,0,1,,,,0.0
+OUT,MY,SG,MY,254900K25AQTH8E7NW16,"Persatuan Binaan Rumah Berhala Chin Swee Caves, Genting Highlands",MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9479,0,1,,,,0.0
+OUT,MY,SG,MY,254900EG8P39IVBGIL54,BGSM Management Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9476,0,1,,,,1.0
+OUT,MY,SG,MY,254900NXLH373VK9DB02,Affin Hwang Strategic Opportunity Fund 2,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9444,0,1,,,,0.0
+OUT,MY,SG,MY,254900BEFOMBG0O3N664,Principal US High Conviction Equity Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9444,0,1,,,,0.0
+OUT,MY,SG,MY,254900W5XPESY7AI8422,Affin Hwang 18M Enhanced Income Fund 2,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9436,0,1,,,,0.0
+OUT,MY,SG,MY,254900966TJE2KUTMP41,LIBERTY GENERAL INSURANCE BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9435,0,1,,,,0.0
+OUT,MY,SG,MY,254900MGE9L0GUEIN004,ZURICH TAKAFUL MALAYSIA BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9424,0,1,,,,0.0
+OUT,MY,SG,MY,254900DFJN1HT813OZ07,Mah Sing Foundation,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9419,0,1,,,,0.0
+OUT,MY,SG,MY,254900UD4649CLRIC641,MAXMONEY SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9411,0,1,,,,0.0
+OUT,MY,SG,MY,254900GVMUASDSWYLF53,AHAM Aiiman World Series - Systematic World Equity Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9407,0,1,,,,0.0
+OUT,MY,SG,MY,254900O9BCCB7VZ6I184,FICORP SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9403,0,1,,,,1.0
+OUT,MY,SG,MY,98450069BAF3777DBD07,FOUNTAINBERRY SDN BHD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9376,0,1,,,,1.0
+OUT,MY,SG,MY,254900XWRJPEJTT4B388,AL RAJHI BANKING & INVESTMENT CORPORATION (MALAYSIA) BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9367,0,1,,,,1.0
+OUT,MY,SG,MY,254900ICU9SICU9CCR92,Principal Titans Income Plus Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9366,0,1,,,,0.0
+OUT,MY,SG,MY,254900PODE4JTTZA1D34,Hong Leong Asia Pacific Equity Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9357,0,1,,,,0.0
+OUT,MY,SG,MY,254900DWDMXNNMIDHV04,TA Rainbow Income Fund 18,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.935,0,1,,,,0.0
+OUT,MY,SG,MY,254900GSUCG0IFAZY314,Principal DALI Global Equity Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9348,0,1,,,,0.0
+OUT,MY,SG,MY,254900JI07HHKCH9GD87,Principal Islamic PRS Plus Growth,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9348,0,1,,,,0.0
+OUT,MY,SG,MY,549300ZCCV4RARF4MU77,BOP Trust 1,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9342,0,1,,,,0.0
+OUT,MY,SG,MY,549300KW7RDIXIMB7C18,Eastspring Investments Target Income Fund 12,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9317,0,1,,,,0.0
+OUT,MY,SG,MY,2549003FUN0J81X78908,FGV CAPITAL SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9313,0,1,,,,1.0
+OUT,MY,SG,MY,254900USU4PX2QZ5ZH76,Pertama Land & Development Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9305,0,1,,,,0.0
+OUT,MY,SG,MY,254900U0D622H1TIOS94,Eq8 Dow Jones US Titans 50 ETF,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9291,0,1,,,,0.0
+OUT,MY,SG,MY,254900OLCNXWO2L5A695,TA Rainbow Income Fund 12,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9276,0,1,,,,0.0
+OUT,MY,SG,MY,254900MG6RXU3BRHJA62,TA Rainbow Income Fund 13,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9276,0,1,,,,0.0
+OUT,MY,SG,MY,254900AU6HBUGKO29A41,TA Rainbow Income Fund 15,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9276,0,1,,,,0.0
+OUT,MY,SG,MY,2549007TN5BO66WKNI45,TA Rainbow Income Fund 16,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9276,0,1,,,,0.0
+OUT,MY,SG,MY,213800IQER3EFFURT224,PUBLIC ISLAMIC GLOBAL SUSTAINABLE GROWTH FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9272,0,1,,,,0.0
+OUT,MY,SG,MY,2549005VGBA580BGCO65,BURSA MALAYSIA SECURITIES CLEARING SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9266,0,1,,,,1.0
+OUT,MY,SG,MY,254900QGKJ9ZTUE95N04,MUFG BANK (MALAYSIA) BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9265,0,1,,,,0.0
+OUT,MY,SG,MY,254900RMCBR1B91DJ959,Malaysia Hengyuan International Limited,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9255,0,1,,,,0.0
+OUT,MY,SG,MY,254900KR2ZANAS23NV53,LPI CAPITAL BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9253,0,1,,,,0.0
+OUT,MY,SG,MY,254900390ZANJD0KWI24,MAA Group Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9249,0,1,,,,0.0
+OUT,MY,SG,MY,254900693H65FQWCKN68,UEM GROUP BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9249,0,1,,,,0.0
+OUT,MY,SG,MY,254900W82O2ANYGXU530,MTB - PERFORMA DIGITAL ASSET FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.924,0,1,,,,0.0
+OUT,MY,SG,MY,254900NQQPU503FJMV26,Principal Asia Pacific Renewables Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9209,0,1,,,,0.0
+OUT,MY,SG,MY,254900O0YGO63L6P7K82,Bank Kerjasama Rakyat Malaysia Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.92,0,1,,,,0.0
+OUT,MY,SG,MY,984500CQ39B73CC93D74,LANDASAN SIMFONI SDN BHD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9169,0,1,,,,0.0
+OUT,MY,SG,MY,254900D5W2QH435MV622,AHAM WORLD SERIES - GLOBAL CORPORATE BOND FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.915,0,1,,,,0.0
+OUT,MY,SG,MY,254900O45TSIT1W1SH19,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9122,0,1,,,,0.0
+OUT,MY,SG,MY,254900FEPHAOVEMH9X91,Aiiman Global Equity Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9112,0,1,,,,0.0
+OUT,MY,SG,MY,254900BU8X2DEVWEWE35,Principal PRS Plus Growth,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9112,0,1,,,,0.0
+OUT,MY,SG,MY,2549003IT4KCUEWUW132,BMC TRAVEL SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9102,0,1,,,,1.0
+OUT,MY,SG,MY,549300H6DHDI5LUTSK68,CMY CAPITAL SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9102,0,1,,,,1.0
+OUT,MY,SG,MY,254900K93WUA11MJ8C63,The Pacific Insurance Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9094,0,1,,,,0.0
+OUT,MY,SG,MY,254900BVBR8EG0SIRW27,TA Total Return Income Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9091,0,1,,,,0.0
+OUT,MY,SG,MY,549300IVPQX7BPI5NZ81,Farringdon Group Ltd,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.906,0,1,,,,0.0
+OUT,MY,SG,MY,254900QLV6IIW2CA5I23,Principal Islamic Lifetime Balanced Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9054,0,1,,,,0.0
+OUT,MY,SG,MY,984500540C9X913D3E09,MAYBANK GLOBAL TECHNOLOGY-I FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9045,0,1,,,,0.0
+OUT,MY,SG,MY,254900BRDB4QIM28JF45,RAMSI SHIPPING AND TRADING SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9016,0,1,,,,0.0
+OUT,MY,SG,MY,549300PHMY878EXB2V41,TA Global Absolute Alpha-i Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9005,0,1,,,,0.0
+OUT,MY,SG,MY,25490085KBVVUZ8PTD02,PHILLIP MUTUAL BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8999,0,1,,,,0.0
+OUT,MY,SG,MY,254900366IYLAX5QS523,CAGAMAS MBS BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8998,0,1,,,,1.0
+OUT,MY,SG,MY,254900OA8JTCHFU2GM15,CAGAMAS SRP BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8998,0,1,,,,1.0
+OUT,MY,SG,MY,254900R0GQB7U67SCH62,AMMB Holdings Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8993,0,1,,,,1.0
+OUT,MY,SG,MY,254900QYGIBN08CS0524,BERJAYA MUTUAL BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8993,0,1,,,,1.0
+OUT,MY,SG,MY,254900IC4GE1JMYZAI17,PMB Investment Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8993,0,1,,,,0.0
+OUT,MY,SG,MY,549300LN5S13FCY06J68,EASTSPRING INVESTMENTS TARGET INCOME FUND 9,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8992,0,1,,,,0.0
+OUT,MY,SG,MY,2549007RG3T2N39RJT86,AHAM World Series - Asia Ex China Equity Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8981,0,1,,,,0.0
+OUT,MY,SG,MY,254900Q05S2WPP3NSR79,Principal Asia Pacific Dynamic Income Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8962,0,1,,,,0.0
+OUT,MY,SG,MY,549300NVF81UFBCAYM39,TA Global Absolute Alpha Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8937,0,1,,,,0.0
+OUT,MY,SG,MY,254900HPASVIEAAYVX67,Insurans Islam Taib Family Takaful Sdn Bhd,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8914,0,1,,,,0.0
+OUT,MY,SG,MY,254900FD4F0LAAP9OB87,KOPERASI CO-OPBANK PERTAMA MALAYSIA BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8913,0,1,,,,0.0
+OUT,MY,SG,MY,254900GZ1PWXN46OPZ19,Skrine & Co. Provident Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8909,0,1,,,,0.0
+OUT,MY,SG,MY,549300XUWQI4BRPQGV04,STRAITS MARINE FUELS & ENERGY SDN BHD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.887,0,1,,,,0.0
+OUT,MY,SG,MY,254900BUO4JN6K62N834,Principal Global Titans Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8859,0,1,,,,0.0
+OUT,MY,SG,MY,21380031S3SXPF9IBH98,AMANAH SAHAM BUMIPUTERA 3 - DIDIK,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8823,0,1,,,,0.0
+OUT,MY,SG,MY,254900L4DO24R9IZT479,BEAUTIFUL GATE FOUNDATION FOR THE DISABLED,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8823,0,1,,,,1.0
+OUT,MY,SG,MY,254900TFXJDBQXW7Z243,Principal Dynamic Growth Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.881,0,1,,,,0.0
+OUT,MY,SG,MY,254900Q4QS0AXVPV1G74,Inter-Pacific Securities Sdn Bhd,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8806,0,1,,,,0.0
+OUT,MY,SG,MY,254900N9XYSR83YPST37,MICPA Educational Trust Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.879,0,1,,,,0.0
+OUT,MY,SG,MY,254900819ID7IHTTEG72,Pengurusan Danaharta Nasional Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8747,0,1,,,,0.0
+OUT,MY,SG,MY,254900K9829RR5HRCK52,Principal Islamic Small Cap Opportunities Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8738,0,1,,,,0.0
+OUT,MY,SG,MY,2549006T7ZP2TBZ8N030,IDEAL FORCE SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8719,0,1,,,,1.0
+OUT,MY,SG,MY,254900K4L6XU6SAZ7V76,RITZ CREST SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8719,0,1,,,,0.0
+OUT,MY,SG,MY,254900NV9PDIFA2UUL20,SIGNATURE DYNAMIC INCOME AND GROWTH FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8713,0,1,,,,0.0
+OUT,MY,SG,MY,254900UTBDNSZSOBHQ56,Affin Hwang Aiiman Fixed Maturity Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8666,0,1,,,,0.0
+OUT,MY,SG,MY,254900YGJ3TYXF84O719,PERBADANAN USAHAWAN NASIONAL BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8653,0,1,,,,0.0
+OUT,MY,SG,MY,9845008ATL14784D9526,Asia-Pacific Institute For Broadcasting Development,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8651,0,1,,,,0.0
+OUT,MY,SG,MY,2549004E4ZTQH4B95P96,Libra Invest Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8613,0,1,,,,0.0
+OUT,MY,SG,MY,549300YQMILBMQUUPG33,Mepro Holdings Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8613,0,1,,,,0.0
+OUT,MY,SG,MY,25490051RM1LPKQB7B33,Malaysia Blue Ocean Strategy Institute,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8595,0,1,,,,0.0
+OUT,MY,SG,MY,254900HTCGR24BJMIB25,Affin Hwang Flexible Maturity Income Fund 9,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8594,0,1,,,,0.0
+OUT,MY,SG,MY,2549005WDYJWGELJH605,Principal Asia Pacific Dynamic Growth Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8592,0,1,,,,0.0
+OUT,MY,SG,MY,254900KY92QMEOFGOO29,Affin Hwang Strategic Opportunity Fund 1,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8533,0,1,,,,0.0
+OUT,MY,SG,MY,2549004EDX8FLCL54F12,Amoy Enterprises (Malaysia) Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8517,0,1,,,,1.0
+OUT,MY,SG,MY,254900HN95II2992PL66,18M Enhanced Income Fund 1,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8443,0,1,,,,0.0
+OUT,MY,SG,MY,254900A1X32Q3OMXVU59,STF Resources Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8438,0,1,,,,0.0
+OUT,MY,SG,MY,875500I3MBIB5LTWP922,GPS Klang Terminal Sdn Bhd,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8428,0,1,,,,0.0
+OUT,MY,SG,MY,2549003NBM1LN55SZ370,Malaysia Airports Holdings Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8425,0,1,,,,0.0
+OUT,MY,SG,MY,254900H7BEA84A148553,Gibraltar BSN Life Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8414,0,1,,,,0.0
+OUT,MY,SG,MY,5493002FY7LZT5UWXN69,MANULIFE PRS - MODERATE FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8404,0,1,,,,0.0
+OUT,MY,SG,MY,254900NPKXMCQ67RYP45,Hong Leong Asia-Pacific Dividend Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8373,0,1,,,,0.0
+OUT,MY,SG,MY,213800XBUPUSKR99RV92,AMANAH SAHAM MALAYSIA 2 - WAWASAN,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8337,0,1,,,,0.0
+OUT,MY,SG,MY,875500XYZ9Z8IIOJN271,MTC Meranti Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.831,0,1,,,,0.0
+OUT,MY,SG,MY,254900CXCSGW8M52ZU27,BURSA MALAYSIA BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8304,0,1,,,,1.0
+OUT,MY,SG,MY,25490047O14E5QWWEY42,M & A Securities Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8263,0,1,,,,0.0
+OUT,MY,SG,MY,254900ZXSA4Q2MRF6B08,Andavar Metal Industry Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8258,0,1,,,,1.0
+OUT,MY,SG,MY,529900CFPYX1W5BDSX66,Pheim Asset Management Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8258,0,1,,,,0.0
+OUT,MY,SG,MY,254900AZ2901KPL1F946,DANAINFRA NASIONAL BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8233,0,1,,,,1.0
+OUT,MY,SG,MY,254900L8Q380V2YG5N67,Hong Leong Global ESG Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8182,0,1,,,,0.0
+OUT,MY,SG,MY,2549002IOXL4ISRU8J89,TA All Weather Income Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8182,0,1,,,,0.0
+OUT,MY,SG,MY,254900UK1EK77AQ12P35,AMOY CANNING CORPORATION (MALAYA) BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8146,0,1,,,,1.0
+OUT,MY,SG,MY,254900MRDP6OBC1LHR12,Black River Markets Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8101,0,1,,,,1.0
+OUT,MY,SG,MY,254900Z1XPB1NY1VKE79,PUBLIC BOND FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8037,0,1,,,,0.0
+OUT,MY,SG,MY,254900DB4TVZGQS0PZ60,Persatuan Soka Gakkai Malaysia,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8036,0,1,,,,0.0
+OUT,MY,SG,MY,5493007NVPI07004UV55,TA Asia High Conviction Mandate,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8009,0,1,,,,0.0
+OUT,MY,SG,MY,9845005B580E79541E06,KOPERASI GURU PULAU PINANG BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7931,0,1,,,,0.0
+OUT,MY,SG,MY,254900GE2Q5PAZYS4S10,M & A Value Partners Asset Management Malaysia Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7908,0,1,,,,0.0
+OUT,MY,SG,MY,254900U7KK5ATI64FT53,Principal Malaysia Enhanced Opportunities Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7899,0,1,,,,0.0
+OUT,MY,SG,MY,9845005AE62D49A74D63,KOPERASI KREDIT PEKERJA-PEKERJA MALAYSIA BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7898,0,1,,,,0.0
+OUT,MY,SG,MY,254900XCHOCHAHZYK985,Affin Hwang Flexible Maturity Income Fund III,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7854,0,1,,,,0.0
+OUT,MY,SG,MY,254900AUAH1QI61KXG80,Ichor Systems Malaysia Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7838,0,1,,,,1.0
+OUT,MY,SG,MY,549300U0TG9JMULQZB43,MASSIVE SOLUTIONS SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7835,0,1,,,,0.0
+OUT,MY,SG,MY,254900F6CEATES8CGF14,SQ DIGITAL SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7823,0,1,,,,0.0
+OUT,MY,SG,MY,254900PIFASJ03OESS22,Bank Muamalat Malaysia Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7774,0,1,,,,1.0
+OUT,MY,SG,MY,2549000UI4P7PR7YZH67,Mizuho Bank (Malaysia) Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7774,0,1,,,,0.0
+OUT,MY,SG,MY,254900OTE5EZU87YJM45,AVIAN DIVIDEND FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7615,0,1,,,,0.0
+OUT,MY,SG,MY,254900TZBLP16TCAJC54,BANK OF CHINA (MALAYSIA) BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.754,0,1,,,,1.0
+OUT,MY,SG,MY,9845001DIF97DAAC7C89,Lim Housing Sdn Bhd,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7505,0,1,,,,0.0
+OUT,MY,SG,MY,2549003XCCGMYJ3L2F34,Pembangunan Sumber Manusia Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7488,0,1,,,,0.0
+OUT,MY,SG,MY,254900SMUDZOFO5EZD76,Principal Asset Management Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7488,0,1,,,,0.0
+OUT,MY,SG,MY,2549004A4181G8S91D04,MSIG INSURANCE (MALAYSIA) BHD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7464,0,1,,,,0.0
+OUT,MY,SG,MY,213800GIOZ1NCB7B7G38,PUBLIC FAR-EAST CONSUMER THEMES FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7461,0,1,,,,0.0
+OUT,MY,SG,MY,254900X25IFFRMXN0058,Maxis Broadband Sdn Bhd,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.746,0,1,,,,0.0
+OUT,MY,SG,MY,9845002C984C954DB905,YAYASAN AMAL MAAEDICARE,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.742,0,1,,,,0.0
+OUT,MY,SG,MY,549300T07T8PX0B1ZC07,Chancery Lane Asset Management Ltd,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7409,0,1,,,,0.0
+OUT,MY,SG,MY,254900Q008VX636MMC35,Seri Cenderawasih (L) Private Limited,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7404,0,1,,,,0.0
+OUT,MY,SG,MY,254900SLCFRG2TVOO050,BERJAYA SOMPO INSURANCE BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7385,0,1,,,,1.0
+OUT,MY,SG,MY,254900HFYMUU7QMTGY16,AHAM World Series - India Equity Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7365,0,1,,,,0.0
+OUT,MY,SG,MY,213800ZTMJEZVHZV6537,PB SINGAPORE ADVANTAGE-30 EQUITY FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7339,0,1,,,,0.0
+OUT,MY,SG,MY,254900BCF3NYQJ0H3975,Affin Hwang Dana Malaysia,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7325,0,1,,,,0.0
+OUT,MY,SG,MY,213800IVEEOJLB8GI542,PUBLIC ISLAMIC GROWTH BALANCED FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7321,0,1,,,,0.0
+OUT,MY,SG,MY,254900MXKMWVUK2RV188,RHB STRATEGIC INCOME FUND - SERIES 12,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.732,0,1,,,,0.0
+OUT,MY,SG,MY,254900H4CBUMQZ9EBZ04,Kristal Mahamas Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7279,0,1,,,,1.0
+OUT,MY,SG,MY,2138002ZAEIWU4KEV288,PB ISLAMIC DYNAMIC ALLOCATION FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7246,0,1,,,,0.0
+OUT,MY,SG,MY,213800TQ599NVBTK8P53,PUBLIC E-ASIA EVOLVING GROWTH FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7246,0,1,,,,0.0
+OUT,MY,SG,MY,2138005HJ3JY3AEQC832,PUBLIC ISLAMIC OPTIMAL EQUITY FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7246,0,1,,,,0.0
+OUT,MY,SG,MY,213800XHNCRZX7GRQF56,PUBLIC LIFESTYLE & TECHNOLOGY FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7246,0,1,,,,0.0
+OUT,MY,SG,MY,213800996RQVKH6VDT19,PUBLIC REGULAR SAVINGS SEQUEL FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7246,0,1,,,,0.0
+OUT,MY,SG,MY,254900IAUXF6CA8JF738,SHARP INTUITION SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.721,0,1,,,,0.0
+OUT,MY,SG,MY,213800H85IZ3JJLWJL07,PUBLIC SOUTH-EAST ASIA SELECT FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7173,0,1,,,,0.0
+OUT,MY,SG,MY,254900QSK82CYT9SXX61,PRIMULA TERBILANG SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7157,0,1,,,,0.0
+OUT,MY,SG,MY,254900Q20NGNCM3PO535,ZURICH GENERAL TAKAFUL MALAYSIA BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7102,0,1,,,,0.0
+OUT,MY,SG,MY,25490058BDC0YZAEA542,Tune Insurance Malaysia Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7047,0,1,,,,0.0
+OUT,MY,SG,MY,254900IIYT9DIQAWQK96,Kenanga Investment Bank Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7027,0,1,,,,1.0
+OUT,MY,SG,MY,2549009LC8IG4QXKNG20,RHB Asia Sustainable Leaders Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6953,0,1,,,,0.0
+OUT,MY,SG,MY,254900KOXUK18SB1BZ82,PROJEK LINTASAN KOTA HOLDINGS SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6913,0,1,,,,0.0
+OUT,MY,SG,MY,254900L58CXR0BC3JN90,WANGI TERANG SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6871,0,1,,,,0.0
+OUT,MY,SG,MY,254900SXSA4B7QEA0T64,AHAM WORLD SERIES - SGD LIQUIDITY FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6747,0,1,,,,0.0
+OUT,MY,SG,MY,254900U2S7G5CQP6VS50,Azam Utama Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6629,0,1,,,,1.0
+OUT,MY,SG,MY,5493003MX0SWDIVWUD27,Maybank Global Sustainable Equity-I Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6614,0,1,,,,0.0
+OUT,MY,SG,MY,2549003ZTPWLZGHKA087,CAPITAL MARKET COMPENSATION FUND CORPORATION,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6575,0,1,,,,0.0
+OUT,MY,SG,MY,254900ACVMI7K9LCWR09,Phillip Dana Aman,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6574,0,1,,,,0.0
+OUT,MY,SG,MY,549300CC3V2SNSNPSZ29,CLC CROSS-ASSET STRATEGIC ALPHA FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6545,0,1,,,,0.0
+OUT,MY,SG,MY,254900RXLTARZE7FS676,Principal Lifetime Enhanced Bond Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6478,0,1,,,,0.0
+OUT,MY,SG,MY,254900UMVC0D4ORI4Y30,CYPARK REF SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6453,0,1,,,,1.0
+OUT,MY,SG,MY,213800CHSXPP5DF9LZ40,PUBLIC E-ISLAMIC FLEXI ALLOCATION FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6352,0,1,,,,0.0
+OUT,MY,SG,MY,213800EHN5V8726O2U08,PUBLIC E-WHOLESALE SUSTAINABLE 20 FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6352,0,1,,,,0.0
+OUT,MY,SG,MY,21380057FXPN8J5MOG54,PUBLIC ISLAMIC SUSTAINABLE GROWTH FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6352,0,1,,,,0.0
+OUT,MY,SG,MY,254900BJSKAD457TNQ04,Affin Hwang Flexible Maturity Income Fund IV,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6319,0,1,,,,0.0
+OUT,MY,SG,MY,9845002F591B5S11BC03,ANDALUSIA TRAVEL & TOURS SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6292,0,1,,,,1.0
+OUT,MY,SG,MY,254900817MMI6HPG5411,CGS INTERNATIONAL FUTURES MALAYSIA SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.626,0,1,,,,1.0
+OUT,MY,SG,MY,254900VFPIY6U485CI20,Mapletreelog (M) Holdings Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6245,0,1,,,,0.0
+OUT,MY,SG,MY,254900ZIFJTUDRJR7K53,Jentayu Capital SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.618,0,1,,,,1.0
+OUT,MY,SG,MY,2549008J7IKYLX4IAL48,VINTAGE CAPITAL SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.618,0,1,,,,0.0
+OUT,MY,SG,MY,254900MHWZ7Z8C34RL81,HARLOW'S & MGI SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6158,0,1,,,,1.0
+OUT,MY,SG,MY,254900119NUP4EE89A64,Persatuan Pemulihan Orang-Orang Cacat Selangor & Wilayah Persekutuan,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6124,0,1,,,,0.0
+OUT,MY,SG,MY,254900F4X4OR86GUWT59,ALPHA MANAGEMENT SERVICES,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.611,0,1,,,,0.0
+OUT,MY,SG,MY,98450010BA98DE560667,J & M SOLAR SYSTEMS SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6108,0,1,,,,1.0
+OUT,MY,SG,MY,213800QM7TS7JIFS1516,PUBLIC E-WORLDWIDE THEMATIC GROWTH BALANCED FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6045,0,1,,,,0.0
+OUT,MY,SG,MY,549300GZLEWJH5NOHN87,TA DANA PRINCIPAL PRESERVATION ROBOTIC THEME,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5983,0,1,,,,0.0
+OUT,MY,SG,MY,254900UOOKFOBX2TYQ23,Securities Commission Malaysia,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5922,0,1,,,,0.0
+OUT,MY,SG,MY,5493003J1FGNTTP8VP13,YE CHIU METAL SMELTING SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5887,0,1,,,,0.0
+OUT,MY,SG,MY,2549002VDTM8LW537D88,AHAM Enhanced Deposit Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5841,0,1,,,,0.0
+OUT,MY,SG,MY,254900LZZKXEBAOSMW82,Principal Asia Titans Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5841,0,1,,,,0.0
+OUT,MY,SG,MY,254900PDJM4UVO0M9G08,Principal DALI Equity Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5841,0,1,,,,0.0
+OUT,MY,SG,MY,213800XDX4ALFRQNPQ40,PB ISLAMIC ASIA STRATEGIC SECTOR FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5764,0,1,,,,0.0
+OUT,MY,SG,MY,213800E3GUWQ6NBG9176,PUBLIC MUTUAL PRS ISLAMIC GROWTH FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5764,0,1,,,,0.0
+OUT,MY,SG,MY,254900N0MHKHNCWLPS53,SUN LIFE MALAYSIA ASSURANCE BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5749,0,1,,,,0.0
+OUT,MY,SG,MY,254900SCON8NKW9FOV02,Perodua Manufacturing Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.573,0,1,,,,0.0
+OUT,MY,SG,MY,5493002F8FOLFD56VB06,Franklin Malaysia Sukuk Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5708,0,1,,,,0.0
+OUT,MY,SG,MY,894500M0NB92H9NFD989,Kanzun Growth Ventures SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5701,0,1,,,,1.0
+OUT,MY,SG,MY,549300Y4606GIEC3PQ35,Performa Balanced Cross-Asset Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5674,0,1,,,,0.0
+OUT,MY,SG,MY,254900QG2VS6C0687W02,Kumpulan Jetson Provident Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5637,0,1,,,,0.0
+OUT,MY,SG,MY,254900728C3X11V0R458,Hong Leong Growth Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5586,0,1,,,,0.0
+OUT,MY,SG,MY,254900UDVVJ8TRS6T396,Bursa Malaysia Depository Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5577,0,1,,,,1.0
+OUT,MY,SG,MY,254900Q7RMV3LN003B03,Sarawak Sovereign Wealth Future Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5474,0,1,,,,0.0
+OUT,MY,SG,MY,2549008SSAM6VKWQAT84,Saturna Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5468,0,1,,,,0.0
+OUT,MY,SG,MY,549300L2RSQCVMOHGM20,PUBLIC BANK BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5441,0,1,,,,0.0
+OUT,MY,SG,MY,2549007NM529NE56MU06,ASIA-PACIFIC BROADCASTING UNION,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5409,0,1,,,,0.0
+OUT,MY,SG,MY,254900KGUDYALZCSS165,MTC ASSET MANAGEMENT (M) SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.538,0,1,,,,0.0
+OUT,MY,SG,MY,213800APRL7CJXSMOP34,PUBLIC FAR-EAST TELCO & INFRASTRUCTURE FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5318,0,1,,,,0.0
+OUT,MY,SG,MY,213800NSA7DKBQQKJP19,PUBLIC SELECT MIXED ASSET CONSERVATIVE FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5318,0,1,,,,0.0
+OUT,MY,SG,MY,254900HIR77CR45MIK66,Lembaga Tabung Angkatan Tentera,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5271,0,1,,,,0.0
+OUT,MY,SG,MY,529900ZG3M3KDBVCS412,Draeger Malaysia Sdn. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5236,0,1,,,,1.0
+OUT,MY,SG,MY,254900N8C3BASTJLX787,Fortress Capital Asset Management (M) Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5228,0,1,,,,1.0
+OUT,MY,SG,MY,8945009Y4VOIZSG2VJ77,KUB-BERJAYA ENVIRO SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5226,0,1,,,,0.0
+OUT,MY,SG,MY,2549007H7O7S0KMBIC54,PRINCIPAL ISLAMIC GREATER CHINA GROWTH FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.519,0,1,,,,0.0
+OUT,MY,SG,MY,254900DM0V7OCPDUUC55,Axiata Group Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5179,0,1,,,,1.0
+OUT,MY,SG,MY,2549008UWOWGZC69BX22,PMB SHARIAH ESG GLOBAL EQUITY FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5178,0,1,,,,0.0
+OUT,MY,SG,MY,254900T3UR2IDVBZNO21,HOME MART PLUS (M) SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5161,0,1,,,,1.0
+OUT,MY,SG,MY,2549003WQXMOY5VUVH49,AET SHUTTLE TANKERS SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5135,0,1,,,,1.0
+OUT,MY,SG,MY,5493005RYNKLK6ETAT28,CROSS LIGHT CAPITAL SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5135,0,1,,,,1.0
+OUT,MY,SG,MY,254900JQQMP8WXMZG410,The Visitor In The Federation Of Malaya Of The Christian Brothers' Schools,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5113,0,1,,,,0.0
+OUT,MY,SG,MY,549300340ZYRC7HUF355,GARLIC CAPITAL SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5097,0,1,,,,1.0
+OUT,MY,SG,MY,2549002CF2VXGJQ4RW20,CIMB Islamic Greater China Equity Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5094,0,1,,,,0.0
+OUT,MY,SG,MY,254900R1ONPPCKT6FX76,PMB SHARIAH GLOBAL EQUITY FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5044,0,1,,,,0.0
+OUT,MY,SG,MY,254900ILMGBYCWO0BD72,LULU MONEY (MALAYSIA) SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4938,0,1,,,,0.0
+OUT,MY,SG,MY,2549002Y0AH6CNAT4H19,MAXIS HOLDINGS SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4925,0,1,,,,0.0
+OUT,MY,SG,MY,254900EPFQCDBRNYXH36,AHAM WORLD SERIES - US DOLLAR BOND FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4921,0,1,,,,0.0
+OUT,MY,SG,MY,549300M0UPZRXFB0BK16,PRINCIPAL GLOBAL REAL ESTATE FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4917,0,1,,,,0.0
+OUT,MY,SG,MY,254900IQ3KP655DSRK74,AHAM World Series - World Technology Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4905,0,1,,,,0.0
+OUT,MY,SG,MY,254900DOOJ4MC4S3A741,PACIFIC INTER-LINK SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4903,0,1,,,,0.0
+OUT,MY,SG,MY,254900E1X928SFWMHB65,Principal Small Cap Opportunities Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4881,0,1,,,,0.0
+OUT,MY,SG,MY,254900O8DVU6HPVF0B35,Elite Progress Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.487,0,1,,,,1.0
+OUT,MY,SG,MY,254900B0DP1W9BH51M82,Hong Leong MSIG Takaful Berhad,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4828,0,1,,,,1.0
+OUT,MY,SG,MY,254900XX9XWVZE0GDK88,PRINCIPAL SUSTAINABLE DYNAMIC BOND FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4672,0,1,,,,0.0
+OUT,MY,SG,MY,894500KSRUY9D85VGV20,SILVER BF VENTURES SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4529,0,1,,,,0.0
+OUT,MY,SG,MY,2549003DJKTL5M9KAK20,ZURICH GENERAL INSURANCE MALAYSIA BERHAD,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4529,0,1,,,,0.0
+OUT,MY,SG,MY,213800X2LHKQWO12DU08,PUBLIC E-ISLAMIC ASIA THEMATIC GROWTH FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4443,0,1,,,,0.0
+OUT,MY,SG,MY,549300V6BUJZV25O0P97,Maybank Flexi Income Fund,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4377,0,1,,,,0.0
+OUT,MY,SG,MY,254900UUSE6Y3ATY3561,Sarawak Sovereign Wealth Future Fund Board,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4323,0,1,,,,0.0
+OUT,MY,SG,MY,254900CULR8SE12VLE02,PUSAT REHABILITASI PERKESO SDN. BHD.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4041,0,1,,,,0.0
+OUT,MY,SG,MY,254900CYLDAL5BCEEU95,Nusantara Cempaka Sdn. Bhd.,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3672,0,1,,,,0.0
+OUT,MY,SG,MY,9845003FB503EET9C578,MAMG BITCOIN ACCESS FUND,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3659,0,1,,,,0.0
+OUT,MY,SG,MY,2549000N8IXK7RDIFT66,MIDF-TM TR FINITE FUND - 1,MY,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3514,0,1,,,,0.0
+OUT,TH,SG,TH,213800ZOTFDMLVPXCR50,GOBEAR (THAILAND) COMPANY LIMITED,TH,SG,WOODPECKER ASIA TECH PTE. LTD,213800YL1WKCFM1LOQ12,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,TH,SG,TH,549300V1F773E1PK6553,ชื่อนิติบุคคล : บริษัท ธนาคารยูโอบี จำกัด (มหาชน),TH,SG,UNITED OVERSEAS BANK LIMITED,IO66REGK3RCBAMA8HR66,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,TH,SG,TH,2549009823CRAOMMNR11,บริษัท หลักทรัพย์ เมย์แบงก์ (ประเทศไทย) จำกัด (มหาชน),TH,SG,MAYBANK SECURITIES PTE. LTD.,2138004J5VSRWX5VMN77,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,TH,SG,TH,254900TN6RM08I6BVP47,บริษัท หลักทรัพย์ เอเอฟเอส (ประเทศไทย) จำกัด,TH,SG,Amstel Financial Services (S) Pte. Ltd.,254900X17Q0HT8RQQ134,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,TH,SG,TH,254900SYV1XOLED98247,บริษัท เอเอฟเอส (ประเทศไทย) จำกัด,TH,SG,Amstel Financial Services (S) Pte. Ltd.,254900X17Q0HT8RQQ134,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,0.0
+OUT,TH,SG,TH,254900PCLN6FEHYPLJ55,บริษัทหลักทรัพย์จัดการกองทุน ยูโอบี (ประเทศไทย) จำกัด,TH,SG,UNITED OVERSEAS BANK LIMITED,IO66REGK3RCBAMA8HR66,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,TH,SG,TH,25490090PGXRI0E1ZB35,A. Menarini (Thailand) Limited,TH,SG,A. Menarini Asia-Pacific Pte. Ltd.,254900CPAQRDL9DMSN25,gleif_direct_parent,B_known_direct_parent,B_parent_or_exception,0.85,1,0,SG,,,0.0
+OUT,TH,SG,TH,5493000XDLL5XEJV4M60,THABTHIM HOLDINGS LIMITED,TH,SG,ANDERTON INVESTMENTS PTE. LTD.,5493001GKJEWOJR3QK21,gleif_direct_parent,B_known_direct_parent,B_parent_or_exception,0.85,1,0,SG,,,0.0
+OUT,TH,SG,TH,254900KROQVTHEV5CM45,กองทุนเปิด ยูไนเต็ด พันธบัตรรัฐบาลต่างประเทศ USD 3M1,TH,SG,UOB ASSET MANAGEMENT LTD,549300GEEUAN3BDKO421,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
+OUT,TH,SG,TH,549300VRFRBQ3RNVSJ42,กองทุนเปิด ยูไนเต็ด แพลตินัม อินคัม ออพพอร์ทูนิตี้ส์ พลัส ฟันด์,TH,SG,UOB ASSET MANAGEMENT LTD,549300GEEUAN3BDKO421,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
+OUT,TH,SG,TH,254900ZNO8FQ5WUQUC71,กองทุนเปิด ยูไนเต็ด ไพรเวท อิควิตี้ ฟันด์ 1 ห้ามขายผู้ลงทุนรายย่อย,TH,SG,UOB ASSET MANAGEMENT LTD,549300GEEUAN3BDKO421,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
+OUT,ID,SG,ID,254900CQFD7NV5X6I769,PT AGRI HIKAY INDONESIA,ID,SG,KUOK (SINGAPORE) LIMITED,254900H2ZSDSNSMBG688,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,0.0
+OUT,ID,SG,ID,254900E82XTWGT7EH960,PT AGRI INDOMAS,ID,SG,KUOK (SINGAPORE) LIMITED,254900H2ZSDSNSMBG688,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,0.0
+OUT,ID,SG,ID,254900LVK7RQKHE1T506,PT AGRI SUMBA MAS,ID,SG,KUOK (SINGAPORE) LIMITED,254900H2ZSDSNSMBG688,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,0.0
+OUT,ID,SG,ID,254900CMWNKBMZVOVX69,PT AGRI TIMUR MAS,ID,SG,KUOK (SINGAPORE) LIMITED,254900H2ZSDSNSMBG688,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,0.0
+OUT,ID,SG,ID,549300O6CSI01N2D1257,PT BANK DBS INDONESIA,ID,SG,DBS GROUP HOLDINGS LTD,5493007FKT78NKPM5V55,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,ID,SG,ID,549300RBYAFM3PQZB872,PT BANK OCBC NISP TBK.,ID,SG,OVERSEA-CHINESE BANKING CORPORATION LIMITED,5493007O3QFXCPOGWK22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,ID,SG,ID,549300EZ5250PHXCJ452,PT BANK UOB INDONESIA,ID,SG,UNITED OVERSEAS BANK LIMITED,IO66REGK3RCBAMA8HR66,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,ID,SG,ID,25490041Q7H8137J4786,PT CILIANDRA PERKASA,ID,SG,FIRST RESOURCES LIMITED,5493007RRD817HUP4O49,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,ID,SG,ID,2549001D1MK0SGGGCF22,PT CODA INDONESIA,ID,SG,CODA PAYMENTS PTE. LTD.,984500DB97EF65F4J761,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,ID,SG,ID,254900YY2P0TIC394P65,PT DBS Vickers Sekuritas Indonesia,ID,SG,DBS GROUP HOLDINGS LTD,5493007FKT78NKPM5V55,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,0.0
+OUT,ID,SG,ID,549300UNI41O19XN1T73,PT GREAT EASTERN LIFE INDONESIA,ID,SG,GREAT EASTERN HOLDINGS LIMITED,875500VP8E4GKG3B1P45,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,ID,SG,ID,254900OOFOCT01CN4870,PT NIUM MITRA INDONESIA,ID,SG,NIUM PTE. LTD.,2549001M1QCD7NV2FL63,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,ID,SG,ID,254900IYYW01Y2058737,PT OCBC SEKURITAS INDONESIA,ID,SG,OVERSEA-CHINESE BANKING CORPORATION LIMITED,5493007O3QFXCPOGWK22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,ID,SG,ID,5493004GMJLK1NY8UB07,PT OLAM INDONESIA,ID,SG,OLAM GROUP LIMITED,9845006F83F5EEC2A704,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,ID,SG,ID,254900ULRKAUA8DBWW08,PT UOB ASSET MANAGEMENT INDONESIA,ID,SG,UNITED OVERSEAS BANK LIMITED,IO66REGK3RCBAMA8HR66,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,ID,SG,ID,254900OXLY8H4R4DBG55,PT. AMSTEL INDONESIA,ID,SG,Amstel Financial Services (S) Pte. Ltd.,254900X17Q0HT8RQQ134,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,ID,SG,ID,254900YEWB52CR1XL575,PT. EcoOils Jaya Indonesia,ID,SG,Kewalram Singapore Limited,254900X7GGLSTOX29A91,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,SG,0.0
+OUT,ID,SG,ID,254900VHG8RQH7GMNW21,PT. Jebsen & Jessen Technology Indonesia,ID,SG,Jebsen & Jessen Pte. Ltd.,254900DHWOZ32SMCYQ10,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,ID,SG,ID,2549007JFQQ2014WAB54,PT. MHE-Demag Indonesia,ID,SG,MHE-Demag (S) Pte Ltd,254900CCWW7CTUWGW729,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0.0
+OUT,ID,SG,ID,254900E0CXYX6CF28N09,PT Transfarma Medica Indah,ID,SG,A. Menarini Asia-Pacific Pte. Ltd.,254900CPAQRDL9DMSN25,gleif_direct_parent,B_known_direct_parent,B_parent_or_exception,0.85,1,0,SG,,,0.0
+OUT,PH,SG,PH,254900GY1OKCCCG15831,Hyperion Storage Holdings Corporation,PH,SG,Keppel Infrastructure Fund Management Pte. Ltd. As Trustee-Manager Of Keppel Infrastructure Trust,254900BF7L1ZCMAZS467,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,
+OUT,PH,SG,PH,549300X2EEYYZ5G3C124,TRAFIGURA PHILIPPINES INC,PH,SG,TRAFIGURA GROUP PTE. LTD.,549300HJ8VS88NIO3006,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,
+OUT,PH,SG,PH,254900UYW8GM00QBBN27,"A. Menarini Philippines, Inc.",PH,SG,A. Menarini Asia-Pacific Pte. Ltd.,254900CPAQRDL9DMSN25,gleif_direct_parent,B_known_direct_parent,B_parent_or_exception,0.85,1,0,SG,,,
+OUT,VN,SG,VN,254900FCJLQJL298OI95,CÔNG TY TNHH CALOFIC,VN,SG,Wilmar International Limited,549300H2EAI4YRLWBB20,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,
+OUT,VN,SG,VN,549300PSPU84K2V2G268,CÔNG TY TNHH JJ-LAPP VIỆT NAM,VN,SG,Jebsen & Jessen Pte. Ltd.,254900DHWOZ32SMCYQ10,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,
+OUT,VN,SG,VN,549300OCNTAU97H8WD16,CÔNG TY TNHH MHE-DEMAG VIỆT NAM,VN,SG,Jebsen & Jessen Pte. Ltd.,254900DHWOZ32SMCYQ10,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,
+OUT,VN,SG,VN,254900K43MTEWCZNY371,CÔNG TY TNHH WILMAR MARKETING CLV,VN,SG,Wilmar International Limited,549300H2EAI4YRLWBB20,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,
+OUT,VN,SG,VN,549300NYDNBPHDIHGB47,JEBSEN & JESSEN (VIETNAM) COMPANY LIMITED,VN,SG,Jebsen & Jessen Pte. Ltd.,254900DHWOZ32SMCYQ10,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,
+OUT,VN,SG,VN,5493007R9MOMM3R5U536,JEBSEN & JESSEN VIET NAM LTD,VN,SG,Jebsen & Jessen Pte. Ltd.,254900DHWOZ32SMCYQ10,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,
+OUT,VN,SG,VN,2549009CJ5CK9MH82T13,Công ty TNHH Hino Motors Việt Nam,VN,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8342,0,1,,,,

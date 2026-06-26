@@ -98,3 +98,19 @@ malaysia_outward_assignments
 malaysia_outward_summary
 malaysia_outward_bilateral_density
 ```
+
+The same country-specific pattern is also generated for each ASEAN economy:
+
+```text
+{country}_inward_assignments
+{country}_inward_foreign_assignments
+{country}_inward_summary
+{country}_inward_density
+{country}_outward_assignments
+{country}_outward_summary
+{country}_outward_bilateral_density
+```
+
+For example, `sg_inward_summary` applies the Malaysia inward logic to Singapore
+as host, while `sg_outward_summary` reports Singapore-owned LEIs observed in
+other crawled ASEAN hosts.
