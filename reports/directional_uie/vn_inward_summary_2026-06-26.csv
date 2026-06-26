@@ -1,9 +1,9 @@
 host_country,uie_country,evidence_bucket,lei_count,known_uie_count,inferred_uie_count,model_only_count,avg_uie_confidence
-VN,EUROPE,E_model_only,123,0,123,123,0.9378
-VN,ASIA_OTHER,E_model_only,48,0,48,48,0.9713
-VN,US,A_hard_or_verified,29,29,0,0,1.0
+VN,EUROPE,E_model_only,122,0,122,122,0.9374
+VN,ASIA_OTHER,E_model_only,47,0,47,47,0.9707
+VN,US,A_hard_or_verified,30,30,0,0,1.0
 VN,DE,E_model_only,25,0,25,25,0.8633
-VN,DE,A_hard_or_verified,18,18,0,0,1.0
+VN,DE,A_hard_or_verified,19,19,0,0,1.0
 VN,OTHER,E_model_only,14,0,14,14,0.8818
 VN,GB,A_hard_or_verified,13,13,0,0,1.0
 VN,NL,A_hard_or_verified,12,12,0,0,1.0
@@ -11,8 +11,8 @@ VN,US,E_model_only,12,0,12,12,0.7494
 VN,FR,A_hard_or_verified,6,6,0,0,1.0
 VN,SG,A_hard_or_verified,6,6,0,0,1.0
 VN,CH,A_hard_or_verified,5,5,0,0,1.0
+VN,JP,A_hard_or_verified,4,4,0,0,1.0
 VN,KR,A_hard_or_verified,4,4,0,0,1.0
-VN,JP,A_hard_or_verified,3,3,0,0,1.0
 VN,CH,C_name_inferred,2,0,2,0,1.0
 VN,DK,A_hard_or_verified,2,2,0,0,1.0
 VN,FI,A_hard_or_verified,2,2,0,0,1.0
@@ -28,7 +28,7 @@ VN,GB,C_name_inferred,1,0,1,0,1.0
 VN,HK,A_hard_or_verified,1,1,0,0,1.0
 VN,IN,A_hard_or_verified,1,1,0,0,1.0
 VN,KR,B_parent_or_exception,1,1,0,0,0.85
-VN,MY,B_parent_or_exception,1,1,0,0,0.85
+VN,MY,A_hard_or_verified,1,1,0,0,0.97
 VN,NO,A_hard_or_verified,1,1,0,0,1.0
 VN,NZ,A_hard_or_verified,1,1,0,0,1.0
 VN,SE,A_hard_or_verified,1,1,0,0,1.0

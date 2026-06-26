@@ -1,38 +1,38 @@
 direction,host_country,source_country,destination_country,lei,legal_name,entity_country,uie_country,uie_name,uie_lei,uie_source,evidence_tier,evidence_bucket,uie_confidence,is_known_uie,is_inferred_uie,direct_parent_country,ultimate_parent_country,chain_parent_country,ctos_registered_malaysia
-IN,KH,US,KH,25490014ZYYDSY6IPW93,CROWN Beverage Cans (Cambodia) Limited,KH,US,"CROWN HOLDINGS, INC.",NYLWZIOY8PUNIT4JOE22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,US,,
-IN,KH,US,KH,254900W039RO9TMLMX94,Crown Khmer Beverage Cans Limited,KH,US,"CROWN HOLDINGS, INC.",NYLWZIOY8PUNIT4JOE22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,US,,
-IN,KH,MY,KH,254900STSDWSEK4YXQ71,ការបញ្ជូនកម្ពុជា មានកំណត់,KH,MY,HNG CAPITAL SDN. BHD,213800U4E6CA2NKI2931,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,MY,,
-IN,KH,KH,KH,984500Z3C988039BC262,តែលកូថេក,KH,KH,អ៊ីហ្សីខម ខូ អិលធីឌី,98450068458E48FBB746,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,KH,KH,,
-IN,KH,MY,KH,549300R2EX6BTYLO9246,ធនាគារ (ខេមបូឌា) ភីអិលស៊ី,KH,MY,HONG LEONG FINANCIAL GROUP BERHAD,549300EGI40XD5GGWS62,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,
-IN,KH,FR,KH,254900QR8KCOLLDHYO43,ធនាគារ BRED (កម្ពុជា) ភីអិលស៊ី,KH,FR,BPCE,9695005MSX1OYEMGDF46,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,FR,FR,,
-IN,KH,CA,KH,5493003OZ08PS8IJMR09,ធនាគារ ចំកាត់.,KH,CA,NATIONAL BANK OF CANADA,BSGEFEIOM18Y80CKCV46,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,CA,CA,,
-IN,KH,MY,KH,25490084P914AA0V8D84,ធនាគារ មេយប៊ែង (ខេមបូឌា) ភីអិលស៊ី,KH,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,
-IN,KH,GB,KH,21380072WOWXRC8SLO49,ព្រូដិនសល (ខេមបូឌា) ភីអិលស៊ី,KH,GB,Prudential Public Limited Company,5493001Z3ZE83NGK8Y12,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,
-IN,KH,US,KH,254900YA4OYIA2K9HH70,ភេសជ្ជៈ CROWN ខេត្តព្រះសីហនុ,KH,US,"CROWN HOLDINGS, INC.",NYLWZIOY8PUNIT4JOE22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,US,,
-IN,KH,EUROPE,KH,549300GEDZ0LT59B3H04,"F.U.G.I GOLD CO., LTD.",KH,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,KH,OTHER,KH,254900O1KZJEYTBO2413,ការផ្លាស់ប្តូរនិស្សន្ទវត្ថុនៃសំណាងមាស,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,KH,OTHER,KH,254900HJ5YSIDLWFZM09,ក្រសួងបរិស្ថានកម្ពុជា។,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,KH,AMERICAS_OTHER,KH,549300LXEIJH0EN1VL04,ក្រុមហ៊ុន,KH,AMERICAS_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,KH,OTHER,KH,9845006L21E7C09E3828,គ្រឹះស្ថានមីក្រូហិរញ្ញវត្ថុ ចម្រើន ម.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,KH,OTHER,KH,984500BBF3BDC6BE1D38,គ្រឹះស្ថានមីក្រូហិរញ្ញវត្ថុ ហ្វឺស ហ្វាយនែន ភីអិលសុី,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,KH,AMERICAS_OTHER,KH,5493001V58884LQBXZ84,ធនាគារ ម.ក,KH,AMERICAS_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,KH,OTHER,KH,9845007D83CD6D8DBH08,ប៊ី.អាយ.ស៊ី. ម៉ាឃីត ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,KH,OTHER,KH,254900C1695G2DWUKX93,ផ្លាយអ៊ីង ហ្វីតឌើរ (ខេមបូឌា) វូដ-អ៊ិនដាសស្រ្ទី ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,KH,OTHER,KH,254900ILPM7VT6UED003,សត្វល្អិត កម្ពុជា។ ភីអិលស៊ី,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,KH,OTHER,KH,254900D4X6TTK6EZPD60,ហ្គោល ហ្វាយនេនសល គ្លូប៊ល អុិនវេសមុិន,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,KH,OTHER,KH,98450068458E48FBB746,អ៊ីហ្សីខម ខូ អិលធីឌី,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,KH,OTHER,KH,984500F646C9DEE0ED55,អ៊ុំ វ៉ាឡង់តាំង អ៊ិនវេសម៉ិន ហ្វឺម ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,KH,OTHER,KH,254900ACRCPK5CT57495,អ៊ិច អេ យូ មើឡាយអិន ហ្វាយនែនសល ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9999,0,1,,,,
-IN,KH,OTHER,KH,254900T7IUIVN27JQD93,"ក្រុមហ៊ុន BROKER JET CO., LTD",KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9993,0,1,,,,
-IN,KH,OTHER,KH,9845004A66ABC51AE826,ឃ្យូប៊ីក ហ្វាយនែនសល សឺវីស ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9993,0,1,,,,
-IN,KH,OTHER,KH,254900HSOSIEJPSGLT73,ដុងណាន (ខេមបូឌា) វ៊ូដ ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9993,0,1,,,,
-IN,KH,AMERICAS_OTHER,KH,54930070651GI5ZVO302,SOCIETE GOLDEN RICE,KH,AMERICAS_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9934,0,1,,,,
-IN,KH,EUROPE,KH,549300FLGVMU8FMRCA54,គ្លូប៊ល លីឃ្វីឌីធី អ៊ិកឆេង ឯ.ក,KH,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9906,0,1,,,,
-IN,KH,OTHER,KH,98450037FEA6FBABUE46,កូម៉ូ ធី ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6202,0,1,,,,
-IN,KH,OTHER,KH,254900D716NN9I1FZ593,ធនាគារ ហត្ថា ម.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6202,0,1,,,,
-IN,KH,OTHER,KH,2138004286GPA4ZWDM78,ហ្គោលវែល ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6202,0,1,,,,
-IN,KH,OTHER,KH,9845004AS38701E3B964,អេសធី ម៉ាឃីត ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6202,0,1,,,,
-IN,KH,OTHER,KH,549300HCROFH7XCWZW75,អ៊ី ពេញ ខូ អិលធីឌី,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5593,0,1,,,,
-IN,KH,OTHER,KH,529900PQVCDBE6NA9O55,ធនាគារ អេស៊ីលីដា ភីអិលស៊ី,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5517,0,1,,,,
-IN,KH,OTHER,KH,300300070U4RZITBIV71,ភ្នំពេញ ដេរីវ៉េទីវ អ៊ិចឆេង ភីអិលស៊ី,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5482,0,1,,,,
-IN,KH,EUROPE,KH,549300ITSSRJFIRUHM73,ធនាគារជាតិនៃកម្ពុជា,KH,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5188,0,1,,,,
+IN,KH,US,KH,25490014ZYYDSY6IPW93,CROWN Beverage Cans (Cambodia) Limited,KH,US,"CROWN HOLDINGS, INC.",NYLWZIOY8PUNIT4JOE22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,US,,0
+IN,KH,US,KH,254900W039RO9TMLMX94,Crown Khmer Beverage Cans Limited,KH,US,"CROWN HOLDINGS, INC.",NYLWZIOY8PUNIT4JOE22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,US,,0
+IN,KH,MY,KH,254900STSDWSEK4YXQ71,ការបញ្ជូនកម្ពុជា មានកំណត់,KH,MY,HNG CAPITAL SDN. BHD,213800U4E6CA2NKI2931,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,MY,,0
+IN,KH,KH,KH,984500Z3C988039BC262,តែលកូថេក,KH,KH,អ៊ីហ្សីខម ខូ អិលធីឌី,98450068458E48FBB746,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,KH,KH,,0
+IN,KH,MY,KH,549300R2EX6BTYLO9246,ធនាគារ (ខេមបូឌា) ភីអិលស៊ី,KH,MY,HONG LEONG FINANCIAL GROUP BERHAD,549300EGI40XD5GGWS62,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+IN,KH,FR,KH,254900QR8KCOLLDHYO43,ធនាគារ BRED (កម្ពុជា) ភីអិលស៊ី,KH,FR,BPCE,9695005MSX1OYEMGDF46,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,FR,FR,,0
+IN,KH,CA,KH,5493003OZ08PS8IJMR09,ធនាគារ ចំកាត់.,KH,CA,NATIONAL BANK OF CANADA,BSGEFEIOM18Y80CKCV46,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,CA,CA,,0
+IN,KH,MY,KH,25490084P914AA0V8D84,ធនាគារ មេយប៊ែង (ខេមបូឌា) ភីអិលស៊ី,KH,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+IN,KH,GB,KH,21380072WOWXRC8SLO49,ព្រូដិនសល (ខេមបូឌា) ភីអិលស៊ី,KH,GB,Prudential Public Limited Company,5493001Z3ZE83NGK8Y12,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,KH,US,KH,254900YA4OYIA2K9HH70,ភេសជ្ជៈ CROWN ខេត្តព្រះសីហនុ,KH,US,"CROWN HOLDINGS, INC.",NYLWZIOY8PUNIT4JOE22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,US,,0
+IN,KH,EUROPE,KH,549300GEDZ0LT59B3H04,"F.U.G.I GOLD CO., LTD.",KH,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,KH,OTHER,KH,254900O1KZJEYTBO2413,ការផ្លាស់ប្តូរនិស្សន្ទវត្ថុនៃសំណាងមាស,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,KH,OTHER,KH,254900HJ5YSIDLWFZM09,ក្រសួងបរិស្ថានកម្ពុជា។,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,KH,AMERICAS_OTHER,KH,549300LXEIJH0EN1VL04,ក្រុមហ៊ុន,KH,AMERICAS_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,KH,OTHER,KH,9845006L21E7C09E3828,គ្រឹះស្ថានមីក្រូហិរញ្ញវត្ថុ ចម្រើន ម.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,KH,OTHER,KH,984500BBF3BDC6BE1D38,គ្រឹះស្ថានមីក្រូហិរញ្ញវត្ថុ ហ្វឺស ហ្វាយនែន ភីអិលសុី,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,KH,AMERICAS_OTHER,KH,5493001V58884LQBXZ84,ធនាគារ ម.ក,KH,AMERICAS_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,KH,OTHER,KH,9845007D83CD6D8DBH08,ប៊ី.អាយ.ស៊ី. ម៉ាឃីត ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,KH,OTHER,KH,254900C1695G2DWUKX93,ផ្លាយអ៊ីង ហ្វីតឌើរ (ខេមបូឌា) វូដ-អ៊ិនដាសស្រ្ទី ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,KH,OTHER,KH,254900ILPM7VT6UED003,សត្វល្អិត កម្ពុជា។ ភីអិលស៊ី,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,KH,OTHER,KH,254900D4X6TTK6EZPD60,ហ្គោល ហ្វាយនេនសល គ្លូប៊ល អុិនវេសមុិន,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,KH,OTHER,KH,98450068458E48FBB746,អ៊ីហ្សីខម ខូ អិលធីឌី,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,KH,OTHER,KH,984500F646C9DEE0ED55,អ៊ុំ វ៉ាឡង់តាំង អ៊ិនវេសម៉ិន ហ្វឺម ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,KH,OTHER,KH,254900ACRCPK5CT57495,អ៊ិច អេ យូ មើឡាយអិន ហ្វាយនែនសល ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9999,0,1,,,,0
+IN,KH,OTHER,KH,254900T7IUIVN27JQD93,"ក្រុមហ៊ុន BROKER JET CO., LTD",KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9993,0,1,,,,0
+IN,KH,OTHER,KH,9845004A66ABC51AE826,ឃ្យូប៊ីក ហ្វាយនែនសល សឺវីស ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9993,0,1,,,,0
+IN,KH,OTHER,KH,254900HSOSIEJPSGLT73,ដុងណាន (ខេមបូឌា) វ៊ូដ ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9993,0,1,,,,0
+IN,KH,AMERICAS_OTHER,KH,54930070651GI5ZVO302,SOCIETE GOLDEN RICE,KH,AMERICAS_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9934,0,1,,,,0
+IN,KH,EUROPE,KH,549300FLGVMU8FMRCA54,គ្លូប៊ល លីឃ្វីឌីធី អ៊ិកឆេង ឯ.ក,KH,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9906,0,1,,,,0
+IN,KH,OTHER,KH,98450037FEA6FBABUE46,កូម៉ូ ធី ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6202,0,1,,,,0
+IN,KH,OTHER,KH,254900D716NN9I1FZ593,ធនាគារ ហត្ថា ម.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6202,0,1,,,,0
+IN,KH,OTHER,KH,2138004286GPA4ZWDM78,ហ្គោលវែល ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6202,0,1,,,,0
+IN,KH,OTHER,KH,9845004AS38701E3B964,អេសធី ម៉ាឃីត ឯ.ក,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6202,0,1,,,,0
+IN,KH,OTHER,KH,549300HCROFH7XCWZW75,អ៊ី ពេញ ខូ អិលធីឌី,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5593,0,1,,,,0
+IN,KH,OTHER,KH,529900PQVCDBE6NA9O55,ធនាគារ អេស៊ីលីដា ភីអិលស៊ី,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5517,0,1,,,,0
+IN,KH,OTHER,KH,300300070U4RZITBIV71,ភ្នំពេញ ដេរីវ៉េទីវ អ៊ិចឆេង ភីអិលស៊ី,KH,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5482,0,1,,,,0
+IN,KH,EUROPE,KH,549300ITSSRJFIRUHM73,ធនាគារជាតិនៃកម្ពុជា,KH,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5188,0,1,,,,0

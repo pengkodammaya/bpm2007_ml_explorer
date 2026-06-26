@@ -6,8 +6,8 @@ SG,MY,D_address_inferred,7,0,7,0,0.7
 SG,TH,A_hard_or_verified,6,6,0,0,1.0
 SG,VN,A_hard_or_verified,6,6,0,0,1.0
 SG,MY,C_name_inferred,3,0,3,0,1.0
+SG,PH,A_hard_or_verified,3,3,0,0,1.0
 SG,TH,D_address_inferred,3,0,3,0,0.6
-SG,PH,A_hard_or_verified,2,2,0,0,1.0
 SG,TH,B_parent_or_exception,2,2,0,0,0.85
 SG,ID,B_parent_or_exception,1,1,0,0,0.85
 SG,MY,B_parent_or_exception,1,1,0,0,0.85

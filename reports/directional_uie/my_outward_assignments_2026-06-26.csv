@@ -1,109 +1,109 @@
 direction,host_country,source_country,destination_country,lei,legal_name,entity_country,uie_country,uie_name,uie_lei,uie_source,evidence_tier,evidence_bucket,uie_confidence,is_known_uie,is_inferred_uie,direct_parent_country,ultimate_parent_country,chain_parent_country,ctos_registered_malaysia
-OUT,SG,MY,SG,25490003U4R9K1O7A780,AET TANKERS VLCC V PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,BM,MY,,0.0
-OUT,SG,MY,SG,254900BL91JNT7H16S81,Amplus Energy Solutions Pte. Ltd.,SG,MY,PETROLIAM NASIONAL BERHAD (PETRONAS),5493003RZQYJM7QGNE15,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,MY,,0.0
-OUT,SG,MY,SG,254900SSM1KAN0HCFQ75,Arbitra Energy Asia Pte. Ltd.,SG,MY,PETROLIAM NASIONAL BERHAD (PETRONAS),5493003RZQYJM7QGNE15,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0.0
-OUT,SG,MY,SG,213800FG8NHW6WL98G66,CGS INTERNATIONAL SECURITIES PTE. LTD.,SG,MY,CIMB GROUP HOLDINGS BERHAD,549300FYDN5UD7USZW18,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0.0
-OUT,SG,MY,SG,549300MVSNEO4ZJUV031,ETIQA INSURANCE PTE. LTD.,SG,MY,MAYBANK AGEAS HOLDINGS BERHAD,2549007GD0DSG7B2JK90,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0.0
-OUT,SG,MY,SG,254900PTWOZH9DZ6TU77,GENTARI RENEWABLES INDIA PTE. LTD.,SG,MY,PETROLIAM NASIONAL BERHAD (PETRONAS),5493003RZQYJM7QGNE15,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,MY,,0.0
-OUT,SG,MY,SG,254900T4APAQTA2ZHC23,KSC (S) PTE. LTD.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0.0
-OUT,SG,MY,SG,254900XJSF3FJP298H11,MAC WORLD INC PTE. LTD.,SG,MY,MAC WORLD HOLDINGS LIMITED,254900OK0NQ7DQUQ6P38,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0.0
-OUT,SG,MY,SG,5493004JRASNMIKBPJ98,MAYBANK ASSET MANAGEMENT SINGAPORE PTE. LTD.,SG,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0.0
-OUT,SG,MY,SG,549300TVTVALJC1NA695,MAYBANK SINGAPORE LIMITED,SG,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0.0
-OUT,SG,MY,SG,254900SVKF3G9MH59C83,POLARIS LNG ONE PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,MY,,0.0
-OUT,SG,MY,SG,254900B9JIPW3KZ4G325,POLARIS LNG TWO PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,MY,,0.0
-OUT,SG,MY,SG,254900RGF78G2AET6269,PRINCIPAL ASSET MANAGEMENT (S) PTE. LTD.,SG,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0.0
-OUT,SG,MY,SG,2549009O6K3BQU1F0387,RHB Securities Singapore Pte. Ltd.,SG,MY,RHB BANK BERHAD,549300ZHRPSV7QIUJT80,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,MY,0.0
-OUT,SG,MY,SG,549300I8ZVA2TK7DBW19,SORAK FINANCIAL HOLDINGS PTE. LTD.,SG,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0.0
-OUT,SG,MY,SG,549300PLDYJMOW8QKZ45,CIMB BANK BERHAD,SG,MY,CIMB GROUP HOLDINGS BERHAD,549300FYDN5UD7USZW18,phase1_name_match,C_name_match_high,C_name_inferred,1.0,0,1,,,,0.0
-OUT,SG,MY,SG,984500A58B68AFCB9E54,MISC OFFSHORE (SINGAPORE) PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase1_name_match,C_name_match_high,C_name_inferred,1.0,0,1,,,,0.0
-OUT,SG,MY,SG,2549007S636W8AWKBE53,AET DP SHUTTLE II PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,254900ECIHWDFIJ6AB73,AET DP SHUTTLE PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,254900X218IHAURZIT89,AET SHUTTLE TANKERS II PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,2549006WFQ0GL67QKH98,AET SINGAPORE HOLDINGS PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,254900A8NU4JB6PQZA61,AET SINGAPORE ONE PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,254900TQ4AIT8OZA3Q96,AET Shuttle Tankers III PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,2549005IQ0SWCBTP3W93,AET TANKERS (SUEZMAX) PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,254900H9ZXYH3AIL6E73,AET TANKERS VLCC IV PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,2549000GKAED9FNTYP60,AET TANKERS VLCC PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,213800FYZBXI8EJC9628,BLUE HERON INVESTMENT PTE. LTD.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,984500C7A19EAC3O3E37,CGSI CAIP ID I PTE. LTD.,SG,MY,CIMB GROUP HOLDINGS BERHAD,549300FYDN5UD7USZW18,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,984500CC85A51ABDE715,CGSI CAIP PARTNERS I PTE.,SG,MY,CIMB GROUP HOLDINGS BERHAD,549300FYDN5UD7USZW18,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,984500XA5FDB876CD140,COCOASOURCE PTE. LTD.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,984500X960150CA7F255,CORA ENVIRONMENT GROUP PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,988400MZRK0XDJCREH59,DAMU INTERNATIONAL PTE.LTD,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,254900QX9AUY9EW7JP29,DUTY FREE INTERNATIONAL LIMITED,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,254900F54KUBEQFOW649,High Inspiration International Pte. Ltd.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,875500CAPZJIJSFK2078,INBISCO SINGAPORE PTE LTD,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,875500ITZZE0SKIHKU05,Maybank Income Fund A,SG,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,549300LLHSDHK215TC18,Maybank Money Market Fund,SG,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,254900B0737L4E5J3B56,McQuilling Energy Brokerage Asia Pte. Ltd.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,2549000OXYVG943OSH34,REDMOND CAPITAL PTE. LTD.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,98450000F6D07FY88D72,SINGX SINGAPORE PTE. LTD.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,254900R6KOSLWRD91757,Southern Ridges Capital Pte. Ltd.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,391200U4DGWQ3UQCMJ15,Transport Capital Holdings Pte. Ltd.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,9845006CLA5DAE58CF85,UNIFY SHIP MANAGEMENT PTE. LTD.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,984500CBI91E5A3D3895,VRV GLOBAL PTE. LTD.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,SG,MY,SG,2549001TD427UHAQWQ69,E3E LAB PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9002,0,1,,,,0.0
-OUT,SG,MY,SG,549300H5VQSP3PIKE631,GRAND VIN PTE LTD,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8358,0,1,,,,0.0
-OUT,SG,MY,SG,984500A4P5E27D07E841,VELCAN HOLDINGS SINGAPORE PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8,0,1,,,,0.0
-OUT,SG,MY,SG,9845000E2FDBEFE8A896,DL TECH PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7662,0,1,,,,0.0
-OUT,SG,MY,SG,254900JVPZZO7SSQRB19,EMAMI BIOTECH (SINGAPORE) PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7382,0,1,,,,0.0
-OUT,SG,MY,SG,984500V5SEE7FB9EFC62,DISNEY NETWORKS SINGAPORE PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7342,0,1,,,,0.0
-OUT,SG,MY,SG,9845004157CB381ABC50,MOLYCOP SINGAPORE TRADING PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7342,0,1,,,,0.0
-OUT,SG,MY,SG,984500EE8CEI7M36B765,METALMAN EXIM (SINGAPORE) PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.734,0,1,,,,0.0
-OUT,SG,MY,SG,254900WKXESSGJ0UWT43,NORCAS MARINE (SINGAPORE) PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.734,0,1,,,,0.0
-OUT,SG,MY,SG,984500489E97CBB4D342,OXYDE CHEMICALS SINGAPORE PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.734,0,1,,,,0.0
-OUT,SG,MY,SG,2549008FILZIDLGQDF07,Kaltimex Energy (Singapore) Pte Ltd,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7232,0,1,,,,0.0
-OUT,SG,MY,SG,549300SF4DFY4BFFJH38,INDIGO ATLANTIC PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6812,0,1,,,,0.0
-OUT,SG,MY,SG,549300JFNL120ILNJX31,INTERNATIONAL SOS PTE LTD,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6812,0,1,,,,0.0
-OUT,SG,MY,SG,254900T918BLSLZ9YS56,LIBERTY INSURANCE PTE LTD,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6812,0,1,,,,0.0
-OUT,SG,MY,SG,5493005AT0IS4XREHL83,SINOPPEL DEVICE PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6812,0,1,,,,0.0
-OUT,SG,MY,SG,549300B1XXYCRBDHH907,SURSUM HOLDINGS PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6812,0,1,,,,0.0
-OUT,SG,MY,SG,254900WSAXI6MI2XQU38,FOUNDATION HEALTHCARE HOLDINGS PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6667,0,1,,,,0.0
-OUT,SG,MY,SG,549300MOD6Y2YZTUAI37,EFFISSIMO CAPITAL MANAGEMENT PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6645,0,1,,,,0.0
-OUT,SG,MY,SG,9845000484C9CGFDFR55,EDDID FINANCIAL SINGAPORE PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6568,0,1,,,,0.0
-OUT,SG,MY,SG,549300E70OOGXFQVVK68,TA ACTIVITY SINGAPORE PRIVATE LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6519,0,1,,,,0.0
-OUT,SG,MY,SG,2549007EKVJL7KZ5CM54,KNOD Corp PTE Ltd,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6376,0,1,,,,0.0
-OUT,SG,MY,SG,213800EE4X75HPFWQI71,3D ADDA PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6329,0,1,,,,0.0
-OUT,SG,MY,SG,8755002Q0SUGAQAHUN70,W HOPES PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6242,0,1,,,,0.0
-OUT,SG,MY,SG,9845001585B12B384539,BDX (SINGAPORE) HOLDINGS PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6215,0,1,,,,0.0
-OUT,SG,MY,SG,2138007ATOCREWVB2Q76,ALIX AM PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5932,0,1,,,,0.0
-OUT,SG,MY,SG,5493008P3ERPVQ65S339,SWAN RE PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5766,0,1,,,,0.0
-OUT,SG,MY,SG,353800ZDX6Z9K2KHPC21,P2 TECH PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5464,0,1,,,,0.0
-OUT,SG,MY,SG,213800GI1GFNWM7MOQ72,CLUB 21 PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5322,0,1,,,,0.0
-OUT,SG,MY,SG,9845006B6E707F360796,BB WOLF PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4848,0,1,,,,0.0
-OUT,SG,MY,SG,549300MSKS6OYX7V3Y10,DYNAMIC TECHNOLOGY LAB PRIVATE LIMITED,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4812,0,1,,,,0.0
-OUT,SG,MY,SG,8755000ES89L6R1LKY02,BREP ASIA III INDIA HOLDING XV PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.478,0,1,,,,0.0
-OUT,SG,MY,SG,549300W5FHVYVMVG1119,RUIFENG CAPITAL PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4678,0,1,,,,0.0
-OUT,SG,MY,SG,2549003UTSTPKU4GFX73,ERA COMMODITIES SINGAPORE PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4531,0,1,,,,0.0
-OUT,SG,MY,SG,5493005NW0TGLG9Z5C22,TIGER BROKERS (SINGAPORE) PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4531,0,1,,,,0.0
-OUT,SG,MY,SG,213800EN9MSKR5GAG156,HYPERLINK INTERNET SOLUTIONS PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4522,0,1,,,,0.0
-OUT,SG,MY,SG,254900YK6VYEQXYUW306,GCL PETROLEUM (SINGAPORE) PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4255,0,1,,,,0.0
-OUT,SG,MY,SG,391200TBIGQP6EXBW293,JX Tech Pte. Ltd.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4193,0,1,,,,0.0
-OUT,SG,MY,SG,984500VDE62E7DY1A591,ESS KAY PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3961,0,1,,,,0.0
-OUT,SG,MY,SG,2138002VW1IW4ZN4QT98,SINGAPORE BORA PETROLEUM PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3927,0,1,,,,0.0
-OUT,SG,MY,SG,2138009LKZ2SJ23I2B09,KELLOGG TOLARAM PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2944,0,1,,,,0.0
-OUT,SG,MY,SG,875500RJHQ9J2UXGA033,Horizon Energy Singapore Pte. Ltd.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2878,0,1,,,,0.0
-OUT,SG,MY,SG,549300M8TN7YXDHJQ069,RSK (SINGAPORE) PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2701,0,1,,,,0.0
-OUT,SG,MY,SG,98450063965FE3CP7E28,"SINGAPORE ISLAND COUNTRY CLUB, THE",SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2651,0,1,,,,0.0
-OUT,SG,MY,SG,98450038FCR9277A7604,PONT DE SUERT PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2439,0,1,,,,0.0
-OUT,TH,MY,TH,549300R0ZPYS6LVTM523,ธนาคาร ซีไอเอ็มบี ไทย จำกัด (มหาชน),TH,MY,CIMB GROUP HOLDINGS BERHAD,549300FYDN5UD7USZW18,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,MY,0.0
-OUT,TH,MY,TH,254900PD012Q1YACSI26,บริษัท หลักทรัพย์ ซีจีเอส อินเตอร์เนชั่นแนล (ประเทศไทย) จำกัด,TH,MY,CIMB GROUP HOLDINGS BERHAD,549300FYDN5UD7USZW18,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,MY,MY,0.0
-OUT,TH,MY,TH,254900X3D45557VALT70,บริษัท หลักทรัพย์จัดการกองทุน พรินซิเพิล จำกัด,TH,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0.0
-OUT,TH,MY,TH,254900O3VGICUQDW9I76,บริษัทหลักทรัพย์ อาร์เอชบี (ประเทศไทย) จำกัด (มหาชน),TH,MY,RHB BANK BERHAD,549300ZHRPSV7QIUJT80,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,MY,0.0
-OUT,TH,MY,TH,2549009S7O6KSKOE7J36,กองทุนเปิดพรินซิเพิล การันตีสเต็ปอัพ,TH,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,TH,MY,TH,254900OPVKY6NLLKB649,กองทุนเปิดพรินซิเพิล คอร์ ฟิกซ์ อินคัม,TH,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,TH,MY,TH,2549007Y31P321YPM454,กองทุนเปิดพรินซิเพิล ตราสารหนี้,TH,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,TH,MY,TH,254900T8PM76C2PWFC95,กองทุนเปิดพรินซิเพิล มันนี่ มาร์เก็ตเพื่อการเลี้ยงชีพ,TH,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,TH,MY,TH,2549001IGVPZZ3V3AS58,กองทุนเปิดพรินซิเพิล มาเลเซียน ฟิกซ์ อินคัม อันเฮดจ์,TH,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,TH,MY,TH,254900MV8WD5NSYFVP45,กองทุนเปิดพรินซิเพิล เดลี่ อินคัม,TH,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,TH,MY,TH,254900RXSPRMWKMPCI83,กองทุนเปิดพรินซิเพิล เดลี่ อินคัม พลัส,TH,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0.0
-OUT,ID,MY,ID,549300NZ97UNGBXAPM35,BANK CIMB NIAGA,ID,MY,CIMB GROUP HOLDINGS BERHAD,549300FYDN5UD7USZW18,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0.0
-OUT,ID,MY,ID,549300RHDK5D1O3JHU60,PT BANK MAYBANK INDONESIA,ID,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0.0
-OUT,ID,MY,ID,549300RK1K905795P160,PT KAF SEKURITAS INDONESIA,ID,MY,AKKA SDN. BHD.,254900W4QYOAWWJSQQ11,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0.0
-OUT,ID,MY,ID,254900EVT56ZHA1VGZ28,PT. RHB Sekuritas Indonesia,ID,MY,RHB BANK BERHAD,549300ZHRPSV7QIUJT80,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,MY,0.0
-OUT,PH,MY,PH,254900G2P8DQYLCF8Y95,"Maybank Securities, Inc.",PH,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,
-OUT,VN,MY,VN,254900ND3AGXA6HSK906,Ngan Hang Trach Nhiem Huu Han Mot Thanh Vien Hong Leong Viet Nam,VN,MY,HONG LEONG BANK BERHAD,549300BUPYUQGB5BFX94,gleif_direct_parent,B_known_direct_parent,B_parent_or_exception,0.85,1,0,MY,,,
-OUT,KH,MY,KH,254900STSDWSEK4YXQ71,ការបញ្ជូនកម្ពុជា មានកំណត់,KH,MY,HNG CAPITAL SDN. BHD,213800U4E6CA2NKI2931,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,MY,,
-OUT,KH,MY,KH,549300R2EX6BTYLO9246,ធនាគារ (ខេមបូឌា) ភីអិលស៊ី,KH,MY,HONG LEONG FINANCIAL GROUP BERHAD,549300EGI40XD5GGWS62,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,
-OUT,KH,MY,KH,25490084P914AA0V8D84,ធនាគារ មេយប៊ែង (ខេមបូឌា) ភីអិលស៊ី,KH,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,
+OUT,SG,MY,SG,25490003U4R9K1O7A780,AET TANKERS VLCC V PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,BM,MY,,0
+OUT,SG,MY,SG,254900BL91JNT7H16S81,Amplus Energy Solutions Pte. Ltd.,SG,MY,PETROLIAM NASIONAL BERHAD (PETRONAS),5493003RZQYJM7QGNE15,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,MY,,0
+OUT,SG,MY,SG,254900SSM1KAN0HCFQ75,Arbitra Energy Asia Pte. Ltd.,SG,MY,PETROLIAM NASIONAL BERHAD (PETRONAS),5493003RZQYJM7QGNE15,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+OUT,SG,MY,SG,213800FG8NHW6WL98G66,CGS INTERNATIONAL SECURITIES PTE. LTD.,SG,MY,CIMB GROUP HOLDINGS BERHAD,549300FYDN5UD7USZW18,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+OUT,SG,MY,SG,549300MVSNEO4ZJUV031,ETIQA INSURANCE PTE. LTD.,SG,MY,MAYBANK AGEAS HOLDINGS BERHAD,2549007GD0DSG7B2JK90,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+OUT,SG,MY,SG,254900PTWOZH9DZ6TU77,GENTARI RENEWABLES INDIA PTE. LTD.,SG,MY,PETROLIAM NASIONAL BERHAD (PETRONAS),5493003RZQYJM7QGNE15,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,MY,,0
+OUT,SG,MY,SG,254900T4APAQTA2ZHC23,KSC (S) PTE. LTD.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+OUT,SG,MY,SG,254900XJSF3FJP298H11,MAC WORLD INC PTE. LTD.,SG,MY,MAC WORLD HOLDINGS LIMITED,254900OK0NQ7DQUQ6P38,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+OUT,SG,MY,SG,5493004JRASNMIKBPJ98,MAYBANK ASSET MANAGEMENT SINGAPORE PTE. LTD.,SG,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+OUT,SG,MY,SG,549300TVTVALJC1NA695,MAYBANK SINGAPORE LIMITED,SG,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+OUT,SG,MY,SG,254900SVKF3G9MH59C83,POLARIS LNG ONE PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,MY,,0
+OUT,SG,MY,SG,254900B9JIPW3KZ4G325,POLARIS LNG TWO PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,MY,,0
+OUT,SG,MY,SG,254900RGF78G2AET6269,PRINCIPAL ASSET MANAGEMENT (S) PTE. LTD.,SG,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+OUT,SG,MY,SG,2549009O6K3BQU1F0387,RHB Securities Singapore Pte. Ltd.,SG,MY,RHB BANK BERHAD,549300ZHRPSV7QIUJT80,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,MY,0
+OUT,SG,MY,SG,549300I8ZVA2TK7DBW19,SORAK FINANCIAL HOLDINGS PTE. LTD.,SG,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+OUT,SG,MY,SG,549300PLDYJMOW8QKZ45,CIMB BANK BERHAD,SG,MY,CIMB GROUP HOLDINGS BERHAD,549300FYDN5UD7USZW18,phase1_name_match,C_name_match_high,C_name_inferred,1.0,0,1,,,,0
+OUT,SG,MY,SG,984500A58B68AFCB9E54,MISC OFFSHORE (SINGAPORE) PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase1_name_match,C_name_match_high,C_name_inferred,1.0,0,1,,,,0
+OUT,SG,MY,SG,2549007S636W8AWKBE53,AET DP SHUTTLE II PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,254900ECIHWDFIJ6AB73,AET DP SHUTTLE PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,254900X218IHAURZIT89,AET SHUTTLE TANKERS II PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,2549006WFQ0GL67QKH98,AET SINGAPORE HOLDINGS PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,254900A8NU4JB6PQZA61,AET SINGAPORE ONE PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,254900TQ4AIT8OZA3Q96,AET Shuttle Tankers III PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,2549005IQ0SWCBTP3W93,AET TANKERS (SUEZMAX) PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,254900H9ZXYH3AIL6E73,AET TANKERS VLCC IV PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,2549000GKAED9FNTYP60,AET TANKERS VLCC PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,213800FYZBXI8EJC9628,BLUE HERON INVESTMENT PTE. LTD.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,984500C7A19EAC3O3E37,CGSI CAIP ID I PTE. LTD.,SG,MY,CIMB GROUP HOLDINGS BERHAD,549300FYDN5UD7USZW18,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,984500CC85A51ABDE715,CGSI CAIP PARTNERS I PTE.,SG,MY,CIMB GROUP HOLDINGS BERHAD,549300FYDN5UD7USZW18,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,984500XA5FDB876CD140,COCOASOURCE PTE. LTD.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,984500X960150CA7F255,CORA ENVIRONMENT GROUP PTE. LTD.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,988400MZRK0XDJCREH59,DAMU INTERNATIONAL PTE.LTD,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,254900QX9AUY9EW7JP29,DUTY FREE INTERNATIONAL LIMITED,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,254900F54KUBEQFOW649,High Inspiration International Pte. Ltd.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,875500CAPZJIJSFK2078,INBISCO SINGAPORE PTE LTD,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,875500ITZZE0SKIHKU05,Maybank Income Fund A,SG,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,549300LLHSDHK215TC18,Maybank Money Market Fund,SG,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,254900B0737L4E5J3B56,McQuilling Energy Brokerage Asia Pte. Ltd.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,2549000OXYVG943OSH34,REDMOND CAPITAL PTE. LTD.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,98450000F6D07FY88D72,SINGX SINGAPORE PTE. LTD.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,254900R6KOSLWRD91757,Southern Ridges Capital Pte. Ltd.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,391200U4DGWQ3UQCMJ15,Transport Capital Holdings Pte. Ltd.,SG,MY,MISC BERHAD,9845002055U77FF6B972,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,9845006CLA5DAE58CF85,UNIFY SHIP MANAGEMENT PTE. LTD.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,984500CBI91E5A3D3895,VRV GLOBAL PTE. LTD.,SG,MY,KUMPULAN SENTIASA CEMERLANG SDN. BHD.,254900O45TSIT1W1SH19,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,SG,MY,SG,2549001TD427UHAQWQ69,E3E LAB PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9002,0,1,,,,0
+OUT,SG,MY,SG,549300H5VQSP3PIKE631,GRAND VIN PTE LTD,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8358,0,1,,,,0
+OUT,SG,MY,SG,984500A4P5E27D07E841,VELCAN HOLDINGS SINGAPORE PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8,0,1,,,,0
+OUT,SG,MY,SG,9845000E2FDBEFE8A896,DL TECH PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7662,0,1,,,,0
+OUT,SG,MY,SG,254900JVPZZO7SSQRB19,EMAMI BIOTECH (SINGAPORE) PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7382,0,1,,,,0
+OUT,SG,MY,SG,984500V5SEE7FB9EFC62,DISNEY NETWORKS SINGAPORE PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7342,0,1,,,,0
+OUT,SG,MY,SG,9845004157CB381ABC50,MOLYCOP SINGAPORE TRADING PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7342,0,1,,,,0
+OUT,SG,MY,SG,984500EE8CEI7M36B765,METALMAN EXIM (SINGAPORE) PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.734,0,1,,,,0
+OUT,SG,MY,SG,254900WKXESSGJ0UWT43,NORCAS MARINE (SINGAPORE) PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.734,0,1,,,,0
+OUT,SG,MY,SG,984500489E97CBB4D342,OXYDE CHEMICALS SINGAPORE PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.734,0,1,,,,0
+OUT,SG,MY,SG,2549008FILZIDLGQDF07,Kaltimex Energy (Singapore) Pte Ltd,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7232,0,1,,,,0
+OUT,SG,MY,SG,549300SF4DFY4BFFJH38,INDIGO ATLANTIC PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6812,0,1,,,,0
+OUT,SG,MY,SG,549300JFNL120ILNJX31,INTERNATIONAL SOS PTE LTD,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6812,0,1,,,,0
+OUT,SG,MY,SG,254900T918BLSLZ9YS56,LIBERTY INSURANCE PTE LTD,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6812,0,1,,,,0
+OUT,SG,MY,SG,5493005AT0IS4XREHL83,SINOPPEL DEVICE PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6812,0,1,,,,0
+OUT,SG,MY,SG,549300B1XXYCRBDHH907,SURSUM HOLDINGS PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6812,0,1,,,,0
+OUT,SG,MY,SG,254900WSAXI6MI2XQU38,FOUNDATION HEALTHCARE HOLDINGS PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6667,0,1,,,,0
+OUT,SG,MY,SG,549300MOD6Y2YZTUAI37,EFFISSIMO CAPITAL MANAGEMENT PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6645,0,1,,,,0
+OUT,SG,MY,SG,9845000484C9CGFDFR55,EDDID FINANCIAL SINGAPORE PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6568,0,1,,,,0
+OUT,SG,MY,SG,549300E70OOGXFQVVK68,TA ACTIVITY SINGAPORE PRIVATE LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6519,0,1,,,,0
+OUT,SG,MY,SG,2549007EKVJL7KZ5CM54,KNOD Corp PTE Ltd,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6376,0,1,,,,0
+OUT,SG,MY,SG,213800EE4X75HPFWQI71,3D ADDA PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6329,0,1,,,,0
+OUT,SG,MY,SG,8755002Q0SUGAQAHUN70,W HOPES PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6242,0,1,,,,0
+OUT,SG,MY,SG,9845001585B12B384539,BDX (SINGAPORE) HOLDINGS PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6215,0,1,,,,0
+OUT,SG,MY,SG,2138007ATOCREWVB2Q76,ALIX AM PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5932,0,1,,,,0
+OUT,SG,MY,SG,5493008P3ERPVQ65S339,SWAN RE PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5766,0,1,,,,0
+OUT,SG,MY,SG,353800ZDX6Z9K2KHPC21,P2 TECH PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5464,0,1,,,,0
+OUT,SG,MY,SG,213800GI1GFNWM7MOQ72,CLUB 21 PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5322,0,1,,,,0
+OUT,SG,MY,SG,9845006B6E707F360796,BB WOLF PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4848,0,1,,,,0
+OUT,SG,MY,SG,549300MSKS6OYX7V3Y10,DYNAMIC TECHNOLOGY LAB PRIVATE LIMITED,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4812,0,1,,,,0
+OUT,SG,MY,SG,8755000ES89L6R1LKY02,BREP ASIA III INDIA HOLDING XV PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.478,0,1,,,,0
+OUT,SG,MY,SG,549300W5FHVYVMVG1119,RUIFENG CAPITAL PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4678,0,1,,,,0
+OUT,SG,MY,SG,2549003UTSTPKU4GFX73,ERA COMMODITIES SINGAPORE PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4531,0,1,,,,0
+OUT,SG,MY,SG,5493005NW0TGLG9Z5C22,TIGER BROKERS (SINGAPORE) PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4531,0,1,,,,0
+OUT,SG,MY,SG,213800EN9MSKR5GAG156,HYPERLINK INTERNET SOLUTIONS PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4522,0,1,,,,0
+OUT,SG,MY,SG,254900YK6VYEQXYUW306,GCL PETROLEUM (SINGAPORE) PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4255,0,1,,,,0
+OUT,SG,MY,SG,391200TBIGQP6EXBW293,JX Tech Pte. Ltd.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4193,0,1,,,,0
+OUT,SG,MY,SG,984500VDE62E7DY1A591,ESS KAY PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3961,0,1,,,,0
+OUT,SG,MY,SG,2138002VW1IW4ZN4QT98,SINGAPORE BORA PETROLEUM PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3927,0,1,,,,0
+OUT,SG,MY,SG,2138009LKZ2SJ23I2B09,KELLOGG TOLARAM PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2944,0,1,,,,0
+OUT,SG,MY,SG,875500RJHQ9J2UXGA033,Horizon Energy Singapore Pte. Ltd.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2878,0,1,,,,0
+OUT,SG,MY,SG,549300M8TN7YXDHJQ069,RSK (SINGAPORE) PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2701,0,1,,,,0
+OUT,SG,MY,SG,98450063965FE3CP7E28,"SINGAPORE ISLAND COUNTRY CLUB, THE",SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2651,0,1,,,,0
+OUT,SG,MY,SG,98450038FCR9277A7604,PONT DE SUERT PTE. LTD.,SG,MY,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2439,0,1,,,,0
+OUT,TH,MY,TH,549300R0ZPYS6LVTM523,ธนาคาร ซีไอเอ็มบี ไทย จำกัด (มหาชน),TH,MY,CIMB GROUP HOLDINGS BERHAD,549300FYDN5UD7USZW18,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,MY,0
+OUT,TH,MY,TH,254900PD012Q1YACSI26,บริษัท หลักทรัพย์ ซีจีเอส อินเตอร์เนชั่นแนล (ประเทศไทย) จำกัด,TH,MY,CIMB GROUP HOLDINGS BERHAD,549300FYDN5UD7USZW18,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,MY,MY,0
+OUT,TH,MY,TH,254900X3D45557VALT70,บริษัท หลักทรัพย์จัดการกองทุน พรินซิเพิล จำกัด,TH,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+OUT,TH,MY,TH,254900O3VGICUQDW9I76,บริษัทหลักทรัพย์ อาร์เอชบี (ประเทศไทย) จำกัด (มหาชน),TH,MY,RHB BANK BERHAD,549300ZHRPSV7QIUJT80,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,MY,0
+OUT,TH,MY,TH,2549009S7O6KSKOE7J36,กองทุนเปิดพรินซิเพิล การันตีสเต็ปอัพ,TH,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,TH,MY,TH,254900OPVKY6NLLKB649,กองทุนเปิดพรินซิเพิล คอร์ ฟิกซ์ อินคัม,TH,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,TH,MY,TH,2549007Y31P321YPM454,กองทุนเปิดพรินซิเพิล ตราสารหนี้,TH,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,TH,MY,TH,254900T8PM76C2PWFC95,กองทุนเปิดพรินซิเพิล มันนี่ มาร์เก็ตเพื่อการเลี้ยงชีพ,TH,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,TH,MY,TH,2549001IGVPZZ3V3AS58,กองทุนเปิดพรินซิเพิล มาเลเซียน ฟิกซ์ อินคัม อันเฮดจ์,TH,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,TH,MY,TH,254900MV8WD5NSYFVP45,กองทุนเปิดพรินซิเพิล เดลี่ อินคัม,TH,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,TH,MY,TH,254900RXSPRMWKMPCI83,กองทุนเปิดพรินซิเพิล เดลี่ อินคัม พลัส,TH,MY,Principal Asset Management Berhad,254900SMUDZOFO5EZD76,phase2_address_cluster,D_address_cluster,D_address_inferred,0.6,0,1,,,,0
+OUT,ID,MY,ID,549300NZ97UNGBXAPM35,BANK CIMB NIAGA,ID,MY,CIMB GROUP HOLDINGS BERHAD,549300FYDN5UD7USZW18,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+OUT,ID,MY,ID,549300RHDK5D1O3JHU60,PT BANK MAYBANK INDONESIA,ID,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+OUT,ID,MY,ID,549300RK1K905795P160,PT KAF SEKURITAS INDONESIA,ID,MY,AKKA SDN. BHD.,254900W4QYOAWWJSQQ11,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+OUT,ID,MY,ID,254900EVT56ZHA1VGZ28,PT. RHB Sekuritas Indonesia,ID,MY,RHB BANK BERHAD,549300ZHRPSV7QIUJT80,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,MY,0
+OUT,PH,MY,PH,254900G2P8DQYLCF8Y95,"Maybank Securities, Inc.",PH,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+OUT,VN,MY,VN,254900ND3AGXA6HSK906,Ngan Hang Trach Nhiem Huu Han Mot Thanh Vien Hong Leong Viet Nam,VN,MY,HONG LEONG FINANCIAL GROUP BERHAD,549300EGI40XD5GGWS62,gleif_upstream_ultimate_parent,A_known_upstream_ultimate_parent,A_hard_or_verified,0.97,1,0,MY,,MY,0
+OUT,KH,MY,KH,254900STSDWSEK4YXQ71,ការបញ្ជូនកម្ពុជា មានកំណត់,KH,MY,HNG CAPITAL SDN. BHD,213800U4E6CA2NKI2931,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,MY,,0
+OUT,KH,MY,KH,549300R2EX6BTYLO9246,ធនាគារ (ខេមបូឌា) ភីអិលស៊ី,KH,MY,HONG LEONG FINANCIAL GROUP BERHAD,549300EGI40XD5GGWS62,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+OUT,KH,MY,KH,25490084P914AA0V8D84,ធនាគារ មេយប៊ែង (ខេមបូឌា) ភីអិលស៊ី,KH,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0

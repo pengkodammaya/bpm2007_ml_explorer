@@ -1,22 +1,22 @@
 direction,host_country,source_country,destination_country,lei,legal_name,entity_country,uie_country,uie_name,uie_lei,uie_source,evidence_tier,evidence_bucket,uie_confidence,is_known_uie,is_inferred_uie,direct_parent_country,ultimate_parent_country,chain_parent_country,ctos_registered_malaysia
-IN,LA,DE,LA,213800P6JHYFYEHGV741,ALLIANZ GENERAL LAOS LTD.,LA,DE,Allianz SE,529900K9B0N5BT694847,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,FR,DE,,
-IN,LA,EUROPE,LA,54930093DT2KMJRJR528,ANZ (LAO) SOLE COMPANY LIMITED,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,254900AEL5N9WI606I28,"Abacus Capital Co., Ltd",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,254900AF8SQKEF3SYU61,"Alpilao International Sole Co., Ltd",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,549300AC3RD9IDVLRC39,BANK OF THE LAO PDR,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,213800W32J2ZOSOIOV05,EVONEX LAO CO. LTD,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,254900T6N32B5PFRV734,"Eightvanguard Co., Ltd",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,254900UGTMKOLSM5WG30,"Gen to Gen Holdings Co., Ltd",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,213800FQS475VILP5H85,"HONGSA POWER CO., LTD.",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,5493001DZK4SOOURCH56,HOUAY HO POWER COMPANY LIMITED,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,254900B30WSY6C7NY138,"LAO BULLION BANK CO., LTD",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,549300KJYLBYHCKIZL26,"NAM MANG 1 POWER CO., LTD",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,213800Y9HGAMUPINIT29,"NAM THEUN 2 POWER CO., LTD",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,213800Z1OEDYC7RETU96,PHONGSAVANH BANK LIMITED,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,213800F37FBEFUQ41K56,PHU BIA MINING LIMITED,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,213800434TZO81G53R63,PRUDENTIAL LIFE ASSURANCE (LAO) COMPANY LIMITED,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,5493004SN0KW8PAQJV84,"SOKDI CONSULTING AND INVESTMENT CO., LTD.",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,54930061QC6KI16BMJ60,THEUN-HINBOUN POWER COMPANY LIMITED,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,254900TR3BR51KY7S566,ກະຊວງການເງີນເເຫ່ງ ສປປ ລາວ,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,254900H53O7IE5OKIY74,ບໍລິສັດ ປີໂຕຣເທຣດ ນໍາເຂ ົ້າ-ສ ົ່ງອອກ ຈໍາກັດ,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,LA,EUROPE,LA,25490090GKYRHHMRME58,ບໍລິສັດ ເຈຈິຍີ ຈອຍ ໂກບຸລ່ຽນ ອີມພອດ-ເອັກສພອດ ຈຳກັດ,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
+IN,LA,DE,LA,213800P6JHYFYEHGV741,ALLIANZ GENERAL LAOS LTD.,LA,DE,Allianz SE,529900K9B0N5BT694847,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,FR,DE,,0
+IN,LA,EUROPE,LA,54930093DT2KMJRJR528,ANZ (LAO) SOLE COMPANY LIMITED,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,254900AEL5N9WI606I28,"Abacus Capital Co., Ltd",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,254900AF8SQKEF3SYU61,"Alpilao International Sole Co., Ltd",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,549300AC3RD9IDVLRC39,BANK OF THE LAO PDR,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,213800W32J2ZOSOIOV05,EVONEX LAO CO. LTD,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,254900T6N32B5PFRV734,"Eightvanguard Co., Ltd",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,254900UGTMKOLSM5WG30,"Gen to Gen Holdings Co., Ltd",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,213800FQS475VILP5H85,"HONGSA POWER CO., LTD.",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,5493001DZK4SOOURCH56,HOUAY HO POWER COMPANY LIMITED,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,254900B30WSY6C7NY138,"LAO BULLION BANK CO., LTD",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,549300KJYLBYHCKIZL26,"NAM MANG 1 POWER CO., LTD",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,213800Y9HGAMUPINIT29,"NAM THEUN 2 POWER CO., LTD",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,213800Z1OEDYC7RETU96,PHONGSAVANH BANK LIMITED,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,213800F37FBEFUQ41K56,PHU BIA MINING LIMITED,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,213800434TZO81G53R63,PRUDENTIAL LIFE ASSURANCE (LAO) COMPANY LIMITED,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,5493004SN0KW8PAQJV84,"SOKDI CONSULTING AND INVESTMENT CO., LTD.",LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,54930061QC6KI16BMJ60,THEUN-HINBOUN POWER COMPANY LIMITED,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,254900TR3BR51KY7S566,ກະຊວງການເງີນເເຫ່ງ ສປປ ລາວ,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,254900H53O7IE5OKIY74,ບໍລິສັດ ປີໂຕຣເທຣດ ນໍາເຂ ົ້າ-ສ ົ່ງອອກ ຈໍາກັດ,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,LA,EUROPE,LA,25490090GKYRHHMRME58,ບໍລິສັດ ເຈຈິຍີ ຈອຍ ໂກບຸລ່ຽນ ອີມພອດ-ເອັກສພອດ ຈຳກັດ,LA,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0

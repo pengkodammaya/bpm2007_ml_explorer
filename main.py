@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import sys
 from src.pipeline import (
     run_entity_analysis,
     run_comparative_analysis,
@@ -202,7 +203,12 @@ def main() -> None:
     try:
         print(scored.head(20).to_string(index=False))
     except UnicodeEncodeError:
-        print(scored.head(20).to_string(index=False).encode("utf-8", errors="replace").decode("utf-8"))
+        encoding = sys.stdout.encoding or "utf-8"
+        safe = scored.head(20).to_string(index=False).encode(
+            encoding,
+            errors="replace",
+        ).decode(encoding, errors="replace")
+        print(safe)
 
 
 def _print_entity_report(report: dict) -> None:

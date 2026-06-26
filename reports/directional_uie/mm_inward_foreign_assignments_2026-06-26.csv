@@ -1,7 +1,7 @@
 direction,host_country,source_country,destination_country,lei,legal_name,entity_country,uie_country,uie_name,uie_lei,uie_source,evidence_tier,evidence_bucket,uie_confidence,is_known_uie,is_inferred_uie,direct_parent_country,ultimate_parent_country,chain_parent_country,ctos_registered_malaysia
-IN,MM,US,MM,2549007G6GQGHMW3GT65,CROWN Beverage Cans Myanmar Limited,MM,US,"CROWN HOLDINGS, INC.",NYLWZIOY8PUNIT4JOE22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,US,,
-IN,MM,OTHER,MM,254900WY1CZERTJGUB56,CB Bank PCL,MM,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,MM,OTHER,MM,254900XXOWNQQB90Q164,Central Bank of Myanmar,MM,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,MM,OTHER,MM,254900UHXSUMHDDDZN06,GREENPLY INDUSTRIES (MYANMAR) PRIVATE LIMITED,MM,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,MM,OTHER,MM,254900JCIXG8ZZZR8B23,TREASURE LAND ASIA INVESTMENT COMPANY LIMITED,MM,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
-IN,MM,OTHER,MM,254900VT8WEMF93LUA88,UAB BANK LIMITED,MM,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,
+IN,MM,US,MM,2549007G6GQGHMW3GT65,CROWN Beverage Cans Myanmar Limited,MM,US,"CROWN HOLDINGS, INC.",NYLWZIOY8PUNIT4JOE22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,US,,0
+IN,MM,OTHER,MM,254900WY1CZERTJGUB56,CB Bank PCL,MM,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,MM,OTHER,MM,254900XXOWNQQB90Q164,Central Bank of Myanmar,MM,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,MM,OTHER,MM,254900UHXSUMHDDDZN06,GREENPLY INDUSTRIES (MYANMAR) PRIVATE LIMITED,MM,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,MM,OTHER,MM,254900JCIXG8ZZZR8B23,TREASURE LAND ASIA INVESTMENT COMPANY LIMITED,MM,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0
+IN,MM,OTHER,MM,254900VT8WEMF93LUA88,UAB BANK LIMITED,MM,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,1.0,0,1,,,,0

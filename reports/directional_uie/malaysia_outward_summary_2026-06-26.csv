@@ -8,4 +8,4 @@ MY,TH,A_hard_or_verified,4,4,0,0,1.0
 MY,KH,A_hard_or_verified,3,3,0,0,1.0
 MY,SG,C_name_inferred,2,0,2,0,1.0
 MY,PH,A_hard_or_verified,1,1,0,0,1.0
-MY,VN,B_parent_or_exception,1,1,0,0,0.85
+MY,VN,A_hard_or_verified,1,1,0,0,0.97

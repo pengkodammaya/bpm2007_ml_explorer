@@ -1,8 +1,8 @@
 direction,host_country,source_country,destination_country,lei,legal_name,entity_country,uie_country,uie_name,uie_lei,uie_source,evidence_tier,evidence_bucket,uie_confidence,is_known_uie,is_inferred_uie,direct_parent_country,ultimate_parent_country,chain_parent_country,ctos_registered_malaysia
-IN,TL,,TL,549300SJ7CE6KN8F1Q37,BANCO CENTRAL DE TIMOR-LESTE,TL,,,,reporting_exception_no_country,B_subsidiary_signal_no_uie,B_parent_or_exception,0.7,0,0,,,,
-IN,TL,,TL,213800G1VEC2Y4JYP527,"SENTINEL GROUP UNIPESSOAL, LDA",TL,,,,reporting_exception_no_country,B_subsidiary_signal_no_uie,B_parent_or_exception,0.7,0,0,,,,
-IN,TL,,TL,2549001XA1JHWNHF1X08,"CENTRO SUPERMERCADO, LDA.",TL,,,,unassigned,U_unassigned,U_unassigned,0.0,0,0,,,,
-IN,TL,,TL,25490073MJB6AIFEZ246,"EAST TIMOR TRADING, LDA",TL,,,,unassigned,U_unassigned,U_unassigned,0.0,0,0,,,,
-IN,TL,,TL,254900YII23QB7I1UC98,"EASTERN STAR MOTORS & DIVERSE TRADE, UNIPESSOAL, LDA",TL,,,,unassigned,U_unassigned,U_unassigned,0.0,0,0,,,,
-IN,TL,,TL,213800J1GG14ML5XC230,FUNDO DE RESERVA DA SEGURANCA SOCIAL,TL,,,,unassigned,U_unassigned,U_unassigned,0.0,0,0,,,,
-IN,TL,,TL,254900UXEAP0G4QPZB79,"KAEBAUK INVESTIMENTU NO FINANSAS, S.A.",TL,,,,unassigned,U_unassigned,U_unassigned,0.0,0,0,,,,
+IN,TL,,TL,549300SJ7CE6KN8F1Q37,BANCO CENTRAL DE TIMOR-LESTE,TL,,,,reporting_exception_no_country,B_subsidiary_signal_no_uie,B_parent_or_exception,0.7,0,0,,,,0
+IN,TL,,TL,213800G1VEC2Y4JYP527,"SENTINEL GROUP UNIPESSOAL, LDA",TL,,,,reporting_exception_no_country,B_subsidiary_signal_no_uie,B_parent_or_exception,0.7,0,0,,,,0
+IN,TL,,TL,2549001XA1JHWNHF1X08,"CENTRO SUPERMERCADO, LDA.",TL,,,,unassigned,U_unassigned,U_unassigned,0.0,0,0,,,,0
+IN,TL,,TL,25490073MJB6AIFEZ246,"EAST TIMOR TRADING, LDA",TL,,,,unassigned,U_unassigned,U_unassigned,0.0,0,0,,,,0
+IN,TL,,TL,254900YII23QB7I1UC98,"EASTERN STAR MOTORS & DIVERSE TRADE, UNIPESSOAL, LDA",TL,,,,unassigned,U_unassigned,U_unassigned,0.0,0,0,,,,0
+IN,TL,,TL,213800J1GG14ML5XC230,FUNDO DE RESERVA DA SEGURANCA SOCIAL,TL,,,,unassigned,U_unassigned,U_unassigned,0.0,0,0,,,,0
+IN,TL,,TL,254900UXEAP0G4QPZB79,"KAEBAUK INVESTIMENTU NO FINANSAS, S.A.",TL,,,,unassigned,U_unassigned,U_unassigned,0.0,0,0,,,,0
