@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Malaysia UIE In and Out Graph</title>
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --ink: #1f2933;
+      --muted: #6b7280;
+      --line: #d8dee7;
+      --in: #2563eb;
+      --out: #b45309;
+      --center: #0f766e;
+      --soft-in: #dbeafe;
+      --soft-out: #ffedd5;
+      --soft-center: #ccfbf1;
+      --shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 14px/1.45 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    header {
+      padding: 18px 22px 10px;
+      border-bottom: 1px solid var(--line);
+      background: var(--panel);
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+
+    .subhead {
+      margin: 0;
+      color: var(--muted);
+      max-width: 980px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 330px;
+      gap: 16px;
+      padding: 16px;
+    }
+
+    .toolbar,
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      margin-bottom: 12px;
+      min-height: 56px;
+    }
+
+    button,
+    select {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      min-height: 36px;
+      padding: 0 12px;
+      border-radius: 6px;
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    button.active {
+      border-color: #0f766e;
+      background: var(--soft-center);
+      color: #064e3b;
+      font-weight: 650;
+    }
+
+    .graph-wrap {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      min-height: 650px;
+      overflow: hidden;
+    }
+
+    svg {
+      width: 100%;
+      min-height: 650px;
+      display: block;
+      background:
+        linear-gradient(90deg, rgba(37, 99, 235, 0.06), transparent 42%),
+        linear-gradient(270deg, rgba(180, 83, 9, 0.08), transparent 42%),
+        #fbfcfe;
+    }
+
+    .edge {
+      fill: none;
+      stroke-linecap: round;
+      opacity: 0.78;
+      cursor: pointer;
+    }
+
+    .edge.dim,
+    .node.dim,
+    .label.dim {
+      opacity: 0.12;
+    }
+
+    .node {
+      cursor: pointer;
+      transition: opacity 150ms ease;
+    }
+
+    .label {
+      pointer-events: none;
+      font-size: 13px;
+      fill: var(--ink);
+      font-weight: 650;
+    }
+
+    .count-label {
+      pointer-events: none;
+      font-size: 11px;
+      fill: var(--muted);
+    }
+
+    .side-panel {
+      min-height: 650px;
+      padding: 16px;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 14px 0 18px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      background: #fafafa;
+      padding: 10px;
+      min-height: 74px;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 22px;
+      margin-bottom: 3px;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .detail-title {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .detail-body {
+      color: var(--muted);
+      margin: 0 0 14px;
+    }
+
+    .bar {
+      height: 9px;
+      background: #eef2f7;
+      overflow: hidden;
+      margin: 4px 0 10px;
+      border-radius: 99px;
+    }
+
+    .bar > span {
+      display: block;
+      height: 100%;
+      background: var(--center);
+    }
+
+    .list {
+      display: grid;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .list button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      min-height: 34px;
+      border-radius: 6px;
+      text-align: left;
+    }
+
+    .list button.in {
+      border-left: 4px solid var(--in);
+    }
+
+    .list button.out {
+      border-left: 4px solid var(--out);
+    }
+
+    .legend {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 12px;
+      margin-left: auto;
+    }
+
+    .swatch {
+      display: inline-block;
+      width: 11px;
+      height: 11px;
+      margin-right: 5px;
+      vertical-align: -1px;
+      border-radius: 50%;
+    }
+
+    .note {
+      border-top: 1px solid var(--line);
+      margin-top: 16px;
+      padding-top: 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (max-width: 980px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      .toolbar {
+        flex-wrap: wrap;
+      }
+
+      .legend {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Malaysia UIE In and Out Graph</h1>
+    <p class="subhead">
+      Current directional result set dated 2026-06-26. Inbound shows foreign ultimate investor economies for Malaysian host entities. Outbound shows ASEAN-observed destinations where Malaysia is assigned as UIE.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <div class="toolbar">
+        <button id="modeBoth" class="active" type="button">Both</button>
+        <button id="modeIn" type="button">In</button>
+        <button id="modeOut" type="button">Out</button>
+        <select id="nodeSelect" aria-label="Jump to node">
+          <option value="MY">Malaysia center</option>
+        </select>
+        <button id="reset" type="button">Reset</button>
+        <div class="legend">
+          <span><span class="swatch" style="background: var(--in)"></span>Inward UIE</span>
+          <span><span class="swatch" style="background: var(--out)"></span>Outward observed</span>
+          <span><span class="swatch" style="background: var(--center)"></span>Malaysia</span>
+        </div>
+      </div>
+      <div class="graph-wrap">
+        <svg id="graph" viewBox="0 0 1040 650" role="img" aria-label="Malaysia inward and outward UIE graph"></svg>
+      </div>
+    </section>
+
+    <aside class="panel side-panel">
+      <h2 class="detail-title" id="detailTitle">Malaysia UIE flows</h2>
+      <p class="detail-body" id="detailBody">Select a node or edge to inspect counts and evidence mix.</p>
+
+      <div class="metric-grid">
+        <div class="metric">
+          <strong>1,877</strong>
+          <span>foreign inward UIE LEIs</span>
+        </div>
+        <div class="metric">
+          <strong>108</strong>
+          <span>ASEAN-observed outward rows</span>
+        </div>
+        <div class="metric">
+          <strong>6.68</strong>
+          <span>inward LEI density per USD bn FDI</span>
+        </div>
+        <div class="metric">
+          <strong>77.1%</strong>
+          <span>Malaysia inward foreign model-only share</span>
+        </div>
+      </div>
+
+      <h3>Top Inward UIE Economies</h3>
+      <div id="inList" class="list"></div>
+
+      <h3>Observed Outward Destinations</h3>
+      <div id="outList" class="list"></div>
+
+      <p class="note">
+        Caveat: inbound is global by assigned UIE economy for Malaysian host entities. Outbound is ASEAN-observed only, so it is not a complete measure of all Malaysian investment abroad.
+      </p>
+    </aside>
+  </main>
+
+  <script>
+    const inbound = [
+      { id: "US", name: "US", count: 546, known: 74, inferred: 472, model: 445 },
+      { id: "SG_IN", name: "SG", count: 370, known: 26, inferred: 344, model: 334 },
+      { id: "DE", name: "DE", count: 323, known: 41, inferred: 282, model: 276 },
+      { id: "GB", name: "GB", count: 265, known: 59, inferred: 206, model: 186 },
+      { id: "OFFSHORE", name: "OFFSHORE", count: 94, known: 0, inferred: 94, model: 94 },
+      { id: "EUROPE", name: "EUROPE", count: 64, known: 0, inferred: 64, model: 64 },
+      { id: "ASIA_OTHER", name: "ASIA OTHER", count: 29, known: 0, inferred: 29, model: 29 },
+      { id: "FR", name: "FR", count: 23, known: 13, inferred: 10, model: 0 },
+      { id: "CH", name: "CH", count: 21, known: 14, inferred: 7, model: 0 },
+      { id: "MIDEAST_AFRICA", name: "MIDEAST AFRICA", count: 17, known: 0, inferred: 17, model: 17 },
+      { id: "JP", name: "JP", count: 14, known: 12, inferred: 2, model: 0 },
+      { id: "NL", name: "NL", count: 11, known: 7, inferred: 4, model: 0 }
+    ];
+
+    const outbound = [
+      { id: "SG_OUT", name: "SG", count: 88, known: 15, inferred: 73, model: 44 },
+      { id: "TH", name: "TH", count: 11, known: 4, inferred: 7, model: 0 },
+      { id: "ID", name: "ID", count: 4, known: 4, inferred: 0, model: 0 },
+      { id: "KH", name: "KH", count: 3, known: 3, inferred: 0, model: 0 },
+      { id: "VN", name: "VN", count: 1, known: 1, inferred: 0, model: 0 },
+      { id: "PH", name: "PH", count: 1, known: 1, inferred: 0, model: 0 }
+    ];
+
+    const svg = document.getElementById("graph");
+    const select = document.getElementById("nodeSelect");
+    const detailTitle = document.getElementById("detailTitle");
+    const detailBody = document.getElementById("detailBody");
+    const maxIn = Math.max(...inbound.map(d => d.count));
+    const maxOut = Math.max(...outbound.map(d => d.count));
+    let activeMode = "both";
+    let selected = "MY";
+
+    function radius(d, max) {
+      return 13 + Math.sqrt(d.count / max) * 24;
+    }
+
+    function edgeWidth(d, max) {
+      return 2 + Math.sqrt(d.count / max) * 11;
+    }
+
+    function pct(part, total) {
+      if (!total) return "0.0";
+      return ((part / total) * 100).toFixed(1);
+    }
+
+    function positions() {
+      const nodes = [{ id: "MY", name: "MY", type: "center", x: 520, y: 325, count: 2235 }];
+      inbound.forEach((d, i) => {
+        const y = 72 + i * 46;
+        nodes.push({ ...d, type: "in", x: 205, y });
+      });
+      outbound.forEach((d, i) => {
+        const y = 180 + i * 57;
+        nodes.push({ ...d, type: "out", x: 825, y });
+      });
+      return nodes;
+    }
+
+    function edgePath(from, to) {
+      const mid = (from.x + to.x) / 2;
+      return `M ${from.x} ${from.y} C ${mid} ${from.y}, ${mid} ${to.y}, ${to.x} ${to.y}`;
+    }
+
+    function modeAllows(type) {
+      return activeMode === "both" || activeMode === type || type === "center";
+    }
+
+    function isRelated(node) {
+      return selected === "MY" || node.id === selected || node.id === "MY";
+    }
+
+    function updateDetail(item, flowType) {
+      if (item.id === "MY") {
+        detailTitle.textContent = "Malaysia UIE flows";
+        detailBody.innerHTML = "Inbound foreign UIE count: <strong>1,877</strong>. ASEAN-observed outward count: <strong>108</strong>. Select a country node to see its evidence mix.";
+        return;
+      }
+
+      const label = flowType === "in" ? "Inward to Malaysia" : "Malaysia outward observed";
+      detailTitle.textContent = `${item.name}: ${label}`;
+      detailBody.innerHTML = `
+        <strong>${item.count}</strong> LEI rows<br>
+        Hard or verified: <strong>${item.known}</strong> (${pct(item.known, item.count)}%)<br>
+        Inferred: <strong>${item.inferred}</strong> (${pct(item.inferred, item.count)}%)<br>
+        Model-only: <strong>${item.model}</strong> (${pct(item.model, item.count)}%)
+        <div class="bar" title="Hard or verified share"><span style="width:${pct(item.known, item.count)}%"></span></div>
+      `;
+    }
+
+    function draw() {
+      svg.innerHTML = "";
+      const nodes = positions();
+      const byId = Object.fromEntries(nodes.map(n => [n.id, n]));
+      const center = byId.MY;
+
+      const defs = document.createElementNS("http://www.w3.org/2000/svg", "defs");
+      defs.innerHTML = `
+        <marker id="arrowIn" markerWidth="12" markerHeight="12" refX="8" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L9,3 z" fill="#2563eb"></path>
+        </marker>
+        <marker id="arrowOut" markerWidth="12" markerHeight="12" refX="8" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L9,3 z" fill="#b45309"></path>
+        </marker>
+      `;
+      svg.appendChild(defs);
+
+      inbound.forEach(d => {
+        if (!modeAllows("in")) return;
+        const n = byId[d.id];
+        const edge = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        edge.setAttribute("d", edgePath(n, center));
+        edge.setAttribute("class", `edge ${selected !== "MY" && selected !== d.id ? "dim" : ""}`);
+        edge.setAttribute("stroke", "#2563eb");
+        edge.setAttribute("stroke-width", edgeWidth(d, maxIn));
+        edge.setAttribute("marker-end", "url(#arrowIn)");
+        edge.addEventListener("click", () => {
+          selected = d.id;
+          updateDetail(d, "in");
+          draw();
+        });
+        svg.appendChild(edge);
+      });
+
+      outbound.forEach(d => {
+        if (!modeAllows("out")) return;
+        const n = byId[d.id];
+        const edge = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        edge.setAttribute("d", edgePath(center, n));
+        edge.setAttribute("class", `edge ${selected !== "MY" && selected !== d.id ? "dim" : ""}`);
+        edge.setAttribute("stroke", "#b45309");
+        edge.setAttribute("stroke-width", edgeWidth(d, maxOut));
+        edge.setAttribute("marker-end", "url(#arrowOut)");
+        edge.addEventListener("click", () => {
+          selected = d.id;
+          updateDetail(d, "out");
+          draw();
+        });
+        svg.appendChild(edge);
+      });
+
+      nodes.forEach(n => {
+        if (!modeAllows(n.type)) return;
+        const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
+        group.setAttribute("class", `node ${!isRelated(n) ? "dim" : ""}`);
+        const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        const r = n.type === "center" ? 42 : radius(n, n.type === "in" ? maxIn : maxOut);
+        circle.setAttribute("cx", n.x);
+        circle.setAttribute("cy", n.y);
+        circle.setAttribute("r", r);
+        circle.setAttribute("fill", n.type === "center" ? "#ccfbf1" : n.type === "in" ? "#dbeafe" : "#ffedd5");
+        circle.setAttribute("stroke", n.type === "center" ? "#0f766e" : n.type === "in" ? "#2563eb" : "#b45309");
+        circle.setAttribute("stroke-width", selected === n.id ? 4 : 2);
+        group.appendChild(circle);
+
+        const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        label.setAttribute("class", `label ${!isRelated(n) ? "dim" : ""}`);
+        label.setAttribute("x", n.x);
+        label.setAttribute("y", n.y - 2);
+        label.setAttribute("text-anchor", "middle");
+        label.textContent = n.name;
+        group.appendChild(label);
+
+        const count = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        count.setAttribute("class", `count-label ${!isRelated(n) ? "dim" : ""}`);
+        count.setAttribute("x", n.x);
+        count.setAttribute("y", n.y + 15);
+        count.setAttribute("text-anchor", "middle");
+        count.textContent = n.type === "center" ? "host" : n.count;
+        group.appendChild(count);
+
+        group.addEventListener("click", () => {
+          selected = n.id;
+          if (n.type === "center") updateDetail(n, "center");
+          if (n.type === "in") updateDetail(n, "in");
+          if (n.type === "out") updateDetail(n, "out");
+          select.value = n.id;
+          draw();
+        });
+        svg.appendChild(group);
+      });
+    }
+
+    function setMode(mode) {
+      activeMode = mode;
+      document.querySelectorAll(".toolbar button").forEach(b => b.classList.remove("active"));
+      document.getElementById(mode === "both" ? "modeBoth" : mode === "in" ? "modeIn" : "modeOut").classList.add("active");
+      selected = "MY";
+      select.value = "MY";
+      updateDetail({ id: "MY" }, "center");
+      draw();
+    }
+
+    function buildLists() {
+      const inList = document.getElementById("inList");
+      const outList = document.getElementById("outList");
+
+      inbound.forEach(d => {
+        const option = document.createElement("option");
+        option.value = d.id;
+        option.textContent = `In: ${d.name}`;
+        select.appendChild(option);
+
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "in";
+        button.innerHTML = `<span>${d.name}</span><strong>${d.count}</strong>`;
+        button.addEventListener("click", () => {
+          selected = d.id;
+          select.value = d.id;
+          activeMode = "both";
+          updateDetail(d, "in");
+          draw();
+        });
+        inList.appendChild(button);
+      });
+
+      outbound.forEach(d => {
+        const option = document.createElement("option");
+        option.value = d.id;
+        option.textContent = `Out: ${d.name}`;
+        select.appendChild(option);
+
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "out";
+        button.innerHTML = `<span>${d.name}</span><strong>${d.count}</strong>`;
+        button.addEventListener("click", () => {
+          selected = d.id;
+          select.value = d.id;
+          activeMode = "both";
+          updateDetail(d, "out");
+          draw();
+        });
+        outList.appendChild(button);
+      });
+    }
+
+    document.getElementById("modeBoth").addEventListener("click", () => setMode("both"));
+    document.getElementById("modeIn").addEventListener("click", () => setMode("in"));
+    document.getElementById("modeOut").addEventListener("click", () => setMode("out"));
+    document.getElementById("reset").addEventListener("click", () => setMode("both"));
+    select.addEventListener("change", event => {
+      selected = event.target.value;
+      const item = inbound.find(d => d.id === selected) || outbound.find(d => d.id === selected) || { id: "MY" };
+      const flow = inbound.some(d => d.id === selected) ? "in" : outbound.some(d => d.id === selected) ? "out" : "center";
+      updateDetail(item, flow);
+      draw();
+    });
+
+    buildLists();
+    draw();
+  </script>
+</body>
+</html>
