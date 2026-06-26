@@ -142,7 +142,7 @@ def run_inference(country: str, checkpoint: dict) -> dict:
 
     try:
         results = run_full_inference_pipeline(
-            threshold=80,
+            threshold=90,
             skip_pull=True,
             min_cluster=3,
             country=country,

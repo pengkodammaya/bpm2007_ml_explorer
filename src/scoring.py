@@ -5,7 +5,10 @@ import pandas as pd
 
 
 def compute_coverage_score(df: pd.DataFrame) -> pd.DataFrame:
-    """Compute coverage gap score incorporating inference signals.
+    """Compute a coverage-gap priority score from observable signals.
+
+    The result is a triage ranking score, not a calibrated probability of
+    missing coverage or a final Ultimate Investor Economy assignment.
 
     Weight formula (sums to 1.0):
     - 0.25 * size_scaled           — network prominence
@@ -45,6 +48,7 @@ def compute_coverage_score(df: pd.DataFrame) -> pd.DataFrame:
     out["size_scaled"] = np.log1p(out["size_proxy"].astype(float))
     if out.empty:
         out["coverage_gap_score"] = pd.Series(dtype=float)
+        out["coverage_gap_priority_score"] = pd.Series(dtype=float)
         out["reason_flags"] = pd.Series(dtype=str)
         return out
 
@@ -64,6 +68,7 @@ def compute_coverage_score(df: pd.DataFrame) -> pd.DataFrame:
         + 0.15 * (1 - out["has_parent_link"])
         + 0.10 * (1 - out["has_ultimate_link"])
     )
+    out["coverage_gap_priority_score"] = out["coverage_gap_score"]
 
     def explain(row: pd.Series) -> str:
         reasons = []

@@ -87,6 +87,26 @@ class InferSharedParentTests(unittest.TestCase):
         inferred_leis = set(result["lei"])
         self.assertIn("L2", inferred_leis)
         self.assertIn("L3", inferred_leis)
+        self.assertIn("confidence_basis", result.columns)
+
+    def test_large_office_hotel_cluster_has_lower_confidence(self):
+        clusters = pd.DataFrame([
+            {"lei": "S1", "address_cluster_id": 0, "cluster_size": 3, "cluster_address_key": "X|123", "is_office_hotel": False},
+            {"lei": "S2", "address_cluster_id": 0, "cluster_size": 3, "cluster_address_key": "X|123", "is_office_hotel": False},
+            {"lei": "B1", "address_cluster_id": 1, "cluster_size": 150, "cluster_address_key": "LABUAN|87000", "is_office_hotel": True},
+            {"lei": "B2", "address_cluster_id": 1, "cluster_size": 150, "cluster_address_key": "LABUAN|87000", "is_office_hotel": True},
+        ])
+        relationships = pd.DataFrame([
+            {"source_lei": "S1", "target_lei": "P1"},
+            {"source_lei": "B1", "target_lei": "P2"},
+        ])
+
+        result = infer_shared_parent_from_cluster(clusters, relationships)
+        small_conf = result.loc[result["lei"] == "S2", "confidence"].iloc[0]
+        large_conf = result.loc[result["lei"] == "B2", "confidence"].iloc[0]
+
+        self.assertGreater(small_conf, large_conf)
+        self.assertLessEqual(large_conf, 0.3)
 
     def test_no_anchor_no_inference(self):
         clusters = pd.DataFrame([

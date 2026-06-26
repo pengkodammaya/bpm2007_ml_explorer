@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import re
 import pandas as pd
-from src.utils import get_json, HTTPFetchError
 from src.country_config import get_country_config
 from config import GLEIF_BASE, USER_AGENT
 
@@ -50,6 +49,8 @@ KNOWN_OFFICE_HOTELS = [
 
 def fetch_single_address(lei: str) -> dict | None:
     """Fetch the full legal address for a single LEI."""
+    from src.utils import get_json, HTTPFetchError
+
     url = f"{GLEIF_BASE}/lei-records/{lei}"
     try:
         payload = get_json(url, headers=HEADERS, allow_404=True)
@@ -75,27 +76,74 @@ def fetch_single_address(lei: str) -> dict | None:
     }
 
 
-def fetch_full_addresses(leis: list[str]) -> pd.DataFrame:
+def fetch_full_addresses(
+    leis: list[str],
+    checkpoint_path=None,
+    batch_size: int = 500,
+) -> pd.DataFrame:
     """Bulk fetch full addresses for a list of LEIs.
+
+    Saves a checkpoint every *batch_size* entities so a crash doesn't lose
+    all progress.  Pass *checkpoint_path* (a Path or str) to enable; if the
+    file already exists, already-fetched LEIs are skipped.
 
     Returns DataFrame with ADDRESS_COLUMNS.
     """
+    from pathlib import Path
+    import pandas as pd
+
     rows: list[dict] = []
     total = len(leis)
+    seen: set[str] = set()
 
-    for i, lei in enumerate(leis):
+    # Resume from checkpoint if available
+    if checkpoint_path is not None:
+        cp = Path(checkpoint_path)
+        if cp.exists():
+            try:
+                existing = pd.read_parquet(cp)
+                rows = existing.to_dict("records")
+                seen = set(existing["lei"].dropna().astype(str))
+                print(f"[INFO] Resuming address fetch: {len(seen)} already cached", flush=True)
+            except Exception:
+                pass
+
+    remaining = [lei for lei in leis if str(lei) not in seen]
+
+    for i, lei in enumerate(remaining):
         result = fetch_single_address(lei)
         if result:
             rows.append(result)
 
-        if (i + 1) % 200 == 0:
-            print(f"[{i+1}/{total}] addresses fetched...", flush=True)
+        fetched_so_far = len(seen) + i + 1
+        if fetched_so_far % 200 == 0:
+            print(f"[{fetched_so_far}/{total}] addresses fetched...", flush=True)
+
+        # Incremental save every batch_size entities
+        if checkpoint_path is not None and (i + 1) % batch_size == 0:
+            _flush_address_checkpoint(rows, checkpoint_path)
+
+    # Final save
+    if checkpoint_path is not None and rows:
+        _flush_address_checkpoint(rows, checkpoint_path)
 
     print(f"[INFO] Address fetch complete: {len(rows)}/{total} addresses retrieved", flush=True)
 
     if not rows:
         return pd.DataFrame(columns=ADDRESS_COLUMNS)
     return pd.DataFrame(rows).reindex(columns=ADDRESS_COLUMNS)
+
+
+def _flush_address_checkpoint(rows: list[dict], path) -> None:
+    """Write current rows to a parquet checkpoint file."""
+    from pathlib import Path
+    import pandas as pd
+    try:
+        cp = Path(path)
+        cp.parent.mkdir(parents=True, exist_ok=True)
+        pd.DataFrame(rows).reindex(columns=ADDRESS_COLUMNS).to_parquet(cp, index=False)
+    except Exception as e:
+        print(f"[WARN] Address checkpoint save failed: {e}", flush=True)
 
 
 def normalize_address(
@@ -221,6 +269,35 @@ def _is_office_hotel(
     return any(marker in upper for marker in markers)
 
 
+def _cluster_parent_confidence(cluster: pd.DataFrame, anchor_count: int) -> tuple[float, str]:
+    """Score address-parent inference strength from cluster structure."""
+    cluster_size = int(cluster["cluster_size"].max()) if "cluster_size" in cluster else len(cluster)
+    is_office_hotel = bool(cluster.get("is_office_hotel", pd.Series([False])).fillna(False).any())
+
+    if cluster_size <= 5:
+        confidence = 0.70
+        basis = "small_shared_address"
+    elif cluster_size <= 20:
+        confidence = 0.55
+        basis = "medium_shared_address"
+    elif cluster_size <= 100:
+        confidence = 0.40
+        basis = "large_registered_address"
+    else:
+        confidence = 0.30
+        basis = "very_large_registered_address"
+
+    if is_office_hotel:
+        confidence -= 0.10
+        basis += "_office_hotel_discount"
+
+    if anchor_count > 1:
+        confidence += min(0.10, 0.03 * (anchor_count - 1))
+        basis += "_multi_anchor"
+
+    return round(max(0.20, min(confidence, 0.80)), 4), basis
+
+
 def infer_shared_parent_from_cluster(
     clusters_df: pd.DataFrame,
     relationships_df: pd.DataFrame,
@@ -232,7 +309,10 @@ def infer_shared_parent_from_cluster(
 
     Returns DataFrame with [lei, inferred_parent_lei, inference_source, confidence].
     """
-    output_cols = ["lei", "inferred_parent_lei", "inference_source", "confidence"]
+    output_cols = [
+        "lei", "inferred_parent_lei", "inference_source", "confidence",
+        "confidence_basis", "cluster_size", "is_office_hotel",
+    ]
 
     if clusters_df.empty or relationships_df.empty:
         return pd.DataFrame(columns=output_cols)
@@ -254,6 +334,9 @@ def infer_shared_parent_from_cluster(
 
         # Get the parent LEIs for anchor entities
         anchor_parents = known_parents[known_parents["source_lei"].isin(anchors)]
+        confidence, basis = _cluster_parent_confidence(cluster, len(anchors))
+        cluster_size = int(cluster["cluster_size"].max()) if "cluster_size" in cluster else len(cluster)
+        is_office_hotel = bool(cluster.get("is_office_hotel", pd.Series([False])).fillna(False).any())
 
         # For non-anchor entities in the cluster, infer the parent
         unknowns = cluster_leis - known_parent_leis
@@ -264,7 +347,10 @@ def infer_shared_parent_from_cluster(
                     "lei": lei,
                     "inferred_parent_lei": parent_row["target_lei"],
                     "inference_source": "address_cluster",
-                    "confidence": 0.6,  # moderate confidence
+                    "confidence": confidence,
+                    "confidence_basis": basis,
+                    "cluster_size": cluster_size,
+                    "is_office_hotel": is_office_hotel,
                 })
 
     if not inferred:

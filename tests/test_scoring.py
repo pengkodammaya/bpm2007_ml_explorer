@@ -11,6 +11,7 @@ class ScoringTests(unittest.TestCase):
 
         self.assertTrue(scored.empty)
         self.assertIn("coverage_gap_score", scored.columns)
+        self.assertIn("coverage_gap_priority_score", scored.columns)
         self.assertIn("reason_flags", scored.columns)
 
     def test_constant_size_proxy_is_not_large_presence(self) -> None:
@@ -44,7 +45,9 @@ class ScoringTests(unittest.TestCase):
         )
         score_a1 = scored.loc[scored["lei"] == "A1", "coverage_gap_score"].iloc[0]
         score_a2 = scored.loc[scored["lei"] == "A2", "coverage_gap_score"].iloc[0]
+        priority_a1 = scored.loc[scored["lei"] == "A1", "coverage_gap_priority_score"].iloc[0]
         self.assertGreater(score_a1, score_a2)
+        self.assertEqual(score_a1, priority_a1)
 
     def test_inference_reason_flags(self) -> None:
         scored = compute_coverage_score(

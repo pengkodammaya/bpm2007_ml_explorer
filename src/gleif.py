@@ -24,6 +24,19 @@ ENTITY_COLUMNS = [
     "city_hq",
 ]
 
+LEI_SEARCH_COLUMNS = [
+    "query",
+    "rank",
+    "lei",
+    "legal_name",
+    "country_legal",
+    "country_hq",
+    "category",
+    "entity_status",
+    "registration_status",
+    "total_results",
+]
+
 RELATIONSHIP_COLUMNS = [
     "source_lei",
     "target_lei",
@@ -46,6 +59,54 @@ def normalize_relationship_records(df: pd.DataFrame) -> pd.DataFrame:
 
 def fetch_lei_page(params: dict[str, Any]) -> dict[str, Any]:
     return get_json(f"{GLEIF_BASE}/lei-records", params=params, headers=HEADERS)
+
+
+def search_lei_records(
+    query: str,
+    *,
+    page_size: int = 5,
+    country: str | None = None,
+) -> pd.DataFrame:
+    """Search GLEIF LEI records using the API full-text filter.
+
+    This is an entity-resolution/candidate-generation helper. It does not imply
+    ownership or UIE by itself.
+    """
+    query = str(query or "").strip()
+    if not query:
+        return pd.DataFrame(columns=LEI_SEARCH_COLUMNS)
+
+    params: dict[str, Any] = {
+        "filter[fulltext]": query,
+        "page[size]": page_size,
+        "page[number]": 1,
+    }
+    if country:
+        params["filter[entity.legalAddress.country]"] = country.upper()
+
+    payload = fetch_lei_page(params)
+    total_results = (
+        payload.get("meta", {})
+        .get("pagination", {})
+        .get("total", 0)
+    )
+    rows = []
+    for rank, item in enumerate(payload.get("data", []) or [], start=1):
+        parsed = _parse_lei_record(item)
+        registration = (item.get("attributes", {}) or {}).get("registration", {}) or {}
+        rows.append({
+            "query": query,
+            "rank": rank,
+            "lei": parsed.get("lei"),
+            "legal_name": parsed.get("legal_name"),
+            "country_legal": parsed.get("country_legal"),
+            "country_hq": parsed.get("country_hq"),
+            "category": parsed.get("category"),
+            "entity_status": parsed.get("entity_status"),
+            "registration_status": registration.get("status"),
+            "total_results": total_results,
+        })
+    return pd.DataFrame(rows, columns=LEI_SEARCH_COLUMNS)
 
 
 def fetch_lei_record(lei: str) -> dict[str, Any] | None:

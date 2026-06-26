@@ -32,11 +32,39 @@ MIN_BRAND_TOKEN_LENGTH = 4
 # Common geographic/generic terms that cause false positive matches
 # when they appear as the primary brand token content
 GENERIC_TOKENS = {
+    # Geographic
     "ASIA", "ASIA PACIFIC", "PACIFIC", "GLOBAL", "INTERNATIONAL",
-    "MALAYSIA", "SINGAPORE", "SERVICES", "CAPITAL", "FINANCIAL",
-    "INVESTMENT", "MANAGEMENT", "TRADING", "TECHNOLOGY", "ENERGY",
-    "PROPERTY", "PROPERTIES", "DEVELOPMENT", "SOLUTIONS", "INDUSTRIES",
-    "RESOURCES", "VENTURES", "PARTNERS", "BANK", "CITY",
+    "MALAYSIA", "SINGAPORE", "INDONESIA", "THAILAND", "PHILIPPINES",
+    "VIETNAM", "CAMBODIA", "LAOS", "MYANMAR", "BRUNEI", "BURMA",
+    # Industry / function (singular AND plural — token_set_ratio doesn't stem)
+    "SERVICE", "SERVICES",
+    "CAPITAL", "FINANCIAL", "FINANCE",
+    "INVESTMENT", "INVESTMENTS",
+    "MANAGEMENT", "MANAGER", "MANAGERS",
+    "TRADING", "TRADE",
+    "TECHNOLOGY", "TECHNOLOGIES", "TECH",
+    "ENERGY", "POWER",
+    "PROPERTY", "PROPERTIES",
+    "DEVELOPMENT", "DEVELOPMENTS",
+    "SOLUTION", "SOLUTIONS",
+    "INDUSTRY", "INDUSTRIES",
+    "RESOURCE", "RESOURCES",
+    "VENTURE", "VENTURES",
+    "PARTNER", "PARTNERS", "PARTNERSHIP",
+    "BANK", "BANKING",
+    "CITY", "URBAN",
+    # Investment-vehicle / fund-y words
+    "FUND", "FUNDS",
+    "TRUST", "TRUSTS",
+    "EQUITY", "EQUITIES",
+    "ASSET", "ASSETS",
+    "ADVISOR", "ADVISORS", "ADVISERS",
+    "PORTFOLIO", "PORTFOLIOS",
+    "GROWTH", "INCOME", "VALUE",
+    # Holding-co words
+    "HOLDING", "HOLDINGS",
+    "ENTERPRISE", "ENTERPRISES",
+    "CORPORATE",
 }
 
 
@@ -151,7 +179,7 @@ def fuzzy_match_names(
     entities_df: pd.DataFrame,
     brand_tokens_df: pd.DataFrame,
     known_leis: set[str] | None = None,
-    threshold: int = 80,
+    threshold: int = 90,
     country: str = "MY",
 ) -> pd.DataFrame:
     """Fuzzy-match entity names against parent brand tokens.

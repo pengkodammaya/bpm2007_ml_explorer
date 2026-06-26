@@ -13,15 +13,19 @@ from pathlib import Path
 import joblib
 import numpy as np
 import pandas as pd
+from sklearn.base import clone
 from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier
-from sklearn.model_selection import cross_val_score, StratifiedKFold
+from sklearn.metrics import confusion_matrix
+from sklearn.model_selection import StratifiedKFold
 from sklearn.preprocessing import LabelEncoder
 
 from src.country_config import get_country_config
 
 
-# Minimum training samples per country to keep as a distinct class
-MIN_COUNTRY_SAMPLES = 5
+# Minimum training samples per country to keep as a distinct class.
+# Raised to 15: at MIN=5, rare-country classes with 1-4 samples break
+# StratifiedKFold for large registries (SG has 39 post-bucket classes).
+MIN_COUNTRY_SAMPLES = 15
 
 # Regional buckets for rare countries
 REGION_MAP = {
@@ -55,30 +59,47 @@ def _bucket_country(country: str, country_counts: dict[str, int]) -> str:
     return REGION_MAP.get(country, "OTHER")
 
 
+def _apply_second_pass_bucketing(labels: pd.Series) -> pd.Series:
+    """Collapse any post-first-pass bucket that still has < 2 samples into OTHER.
+
+    StratifiedKFold requires every class to have at least n_splits samples.
+    A single-sample class makes CV impossible even after the first bucketing pass.
+    This guarantees every surviving class has ≥ 2 samples.
+    """
+    counts = labels.value_counts()
+    singletons = set(counts[counts < 2].index)
+    if not singletons:
+        return labels
+    return labels.apply(lambda x: "OTHER" if x in singletons else x)
+
+
 def prepare_training_features(
     entities_df: pd.DataFrame,
     relationships_df: pd.DataFrame,
     parent_entities_df: pd.DataFrame,
     graph_summary_df: pd.DataFrame | None = None,
     exceptions_df: pd.DataFrame | None = None,
+    pseudo_labels_df: pd.DataFrame | None = None,
     country: str = "MY",
 ) -> tuple[pd.DataFrame, pd.Series, LabelEncoder]:
     """Build feature matrix and target variable from labeled entities.
 
     Parameters
     ----------
-    entities_df : Malaysian entities.
-    relationships_df : Known relationships.
-    parent_entities_df : Parent entities (with country data).
+    entities_df : Domestic entities.
+    relationships_df : Known relationships (source_lei → target_lei).
+    parent_entities_df : Parent entities (with country_legal data).
     graph_summary_df : Optional graph features to merge.
     exceptions_df : Optional reporting exception data.
+    pseudo_labels_df : Optional high-confidence Phase 1 matches with columns
+        [lei, matched_parent_lei, match_score]. Rows with score ≥ 95 are
+        added to the training set as pseudo-labels.
 
     Returns
     -------
     (X, y, label_encoder) where X is the feature DataFrame, y is the
     bucketed parent country, and label_encoder maps back to country names.
     """
-    # Get entities that have known parents
     if relationships_df.empty:
         return pd.DataFrame(), pd.Series(dtype=str), LabelEncoder()
 
@@ -97,11 +118,35 @@ def prepare_training_features(
     if labeled.empty:
         return pd.DataFrame(), pd.Series(dtype=str), LabelEncoder()
 
-    # Bucket rare countries
+    # --- Pseudo-labels from Phase 1 high-confidence matches ---
+    if pseudo_labels_df is not None and not pseudo_labels_df.empty:
+        HIGH_CONF = 95
+        high_conf = pseudo_labels_df[pseudo_labels_df["match_score"] >= HIGH_CONF].copy()
+        high_conf = high_conf.rename(columns={"matched_parent_lei": "target_lei", "lei": "source_lei"})
+        pseudo = (
+            high_conf[["source_lei", "target_lei"]]
+            .merge(parent_countries, on="target_lei", how="inner")
+            .drop_duplicates(subset=["source_lei"], keep="first")
+            .rename(columns={"source_lei": "lei"})
+        )
+        # Don't overwrite existing ground-truth labels
+        existing_leis = set(labeled["lei"])
+        pseudo = pseudo[~pseudo["lei"].isin(existing_leis)]
+        if not pseudo.empty:
+            labeled = pd.concat([labeled, pseudo], ignore_index=True)
+            print(f"[INFO] Phase 3: added {len(pseudo)} pseudo-labels from Phase 1 (score >= {HIGH_CONF})", flush=True)
+
+    # Bucket rare countries — first pass
     country_counts = labeled["parent_country"].value_counts().to_dict()
     labeled["parent_bucket"] = labeled["parent_country"].apply(
         lambda c: _bucket_country(c, country_counts)
     )
+
+    # Second pass: collapse any post-bucketing class with < 2 samples into OTHER
+    labeled["parent_bucket"] = _apply_second_pass_bucketing(labeled["parent_bucket"])
+
+    n_classes = labeled["parent_bucket"].nunique()
+    print(f"[INFO] Phase 3 training: {len(labeled)} samples, {n_classes} classes after bucketing", flush=True)
 
     # Build features for labeled entities
     features = _build_features(labeled["lei"], entities_df, graph_summary_df, exceptions_df, country=country)
@@ -205,6 +250,66 @@ def _build_features(
     return features
 
 
+def _cross_validate_jurisdiction_model(
+    model,
+    X: pd.DataFrame,
+    y: pd.Series,
+    cv: StratifiedKFold,
+) -> dict:
+    """Evaluate a classifier with top-1/top-k CV metrics and confusion counts."""
+    classes = np.array(sorted(pd.Series(y).unique()))
+    top_k = min(3, len(classes))
+    top1_scores: list[float] = []
+    topk_scores: list[float] = []
+    y_true_all: list[int] = []
+    y_pred_all: list[int] = []
+
+    for train_idx, test_idx in cv.split(X, y):
+        X_train = X.iloc[train_idx]
+        X_test = X.iloc[test_idx]
+        y_train = y.iloc[train_idx]
+        y_test = y.iloc[test_idx].to_numpy()
+
+        fold_model = clone(model)
+        fold_model.fit(X_train, y_train)
+        proba = fold_model.predict_proba(X_test)
+        model_classes = np.array(fold_model.classes_)
+
+        pred = model_classes[np.argmax(proba, axis=1)]
+        top_order = np.argsort(proba, axis=1)[:, -top_k:]
+        top_candidates = model_classes[top_order]
+
+        top1_scores.append(float(np.mean(pred == y_test)))
+        topk_scores.append(float(np.mean([
+            true_label in candidate_row
+            for true_label, candidate_row in zip(y_test, top_candidates)
+        ])))
+        y_true_all.extend(int(v) for v in y_test)
+        y_pred_all.extend(int(v) for v in pred)
+
+    matrix = confusion_matrix(y_true_all, y_pred_all, labels=classes)
+    confusion_rows = []
+    for i, actual in enumerate(classes):
+        for j, predicted in enumerate(classes):
+            count = int(matrix[i, j])
+            if count:
+                confusion_rows.append({
+                    "actual_class": int(actual),
+                    "predicted_class": int(predicted),
+                    "count": count,
+                })
+
+    return {
+        "top1_scores": np.array(top1_scores),
+        "topk_scores": np.array(topk_scores),
+        "top_k": top_k,
+        "confusion_matrix": pd.DataFrame(
+            confusion_rows,
+            columns=["actual_class", "predicted_class", "count"],
+        ),
+    }
+
+
 def train_jurisdiction_model(
     X: pd.DataFrame,
     y: pd.Series,
@@ -220,6 +325,7 @@ def train_jurisdiction_model(
 
     n_classes = y.nunique()
     min_class_count = int(min(y.value_counts()))
+    majority_baseline = round(float(y.value_counts(normalize=True).max()), 4)
 
     # GradientBoosting requires at least 2 classes.  If we have only 1,
     # return a trivial constant predictor that always outputs that class.
@@ -237,6 +343,16 @@ def train_jurisdiction_model(
             "n_folds": 0,
             "gb_cv_mean": float("nan"),
             "rf_cv_mean": float("nan"),
+            "majority_class_baseline_accuracy": majority_baseline,
+            "cv_accuracy_lift_over_baseline": 0.0,
+            "cv_top3_accuracy_mean": 1.0,
+            "cv_top3_accuracy_std": 0.0,
+            "cv_top_k": 1,
+            "_cv_confusion_matrix": pd.DataFrame([{
+                "actual_class": int(y.iloc[0]) if len(y) else 0,
+                "predicted_class": int(y.iloc[0]) if len(y) else 0,
+                "count": int(len(y)),
+            }]),
             "note": "single_class_constant_predictor",
         }
         return model, metrics
@@ -259,6 +375,11 @@ def train_jurisdiction_model(
             "n_folds": 0,
             "gb_cv_mean": float("nan"),
             "rf_cv_mean": float("nan"),
+            "majority_class_baseline_accuracy": majority_baseline,
+            "cv_accuracy_lift_over_baseline": float("nan"),
+            "cv_top3_accuracy_mean": float("nan"),
+            "cv_top3_accuracy_std": float("nan"),
+            "cv_top_k": min(3, int(n_classes)),
             "note": "no_cv_too_few_samples",
         }
         return model, metrics
@@ -275,7 +396,8 @@ def train_jurisdiction_model(
         learning_rate=0.1,
         random_state=42,
     )
-    gb_scores = cross_val_score(gb, X, y, cv=cv, scoring="accuracy")
+    gb_eval = _cross_validate_jurisdiction_model(gb, X, y, cv)
+    gb_scores = gb_eval["top1_scores"]
 
     # RandomForest
     rf = RandomForestClassifier(
@@ -284,17 +406,20 @@ def train_jurisdiction_model(
         random_state=42,
         class_weight="balanced",
     )
-    rf_scores = cross_val_score(rf, X, y, cv=cv, scoring="accuracy")
+    rf_eval = _cross_validate_jurisdiction_model(rf, X, y, cv)
+    rf_scores = rf_eval["top1_scores"]
 
     # Pick the better model
     if gb_scores.mean() >= rf_scores.mean():
         model = gb
         model_name = "GradientBoosting"
         scores = gb_scores
+        eval_result = gb_eval
     else:
         model = rf
         model_name = "RandomForest"
         scores = rf_scores
+        eval_result = rf_eval
 
     # Fit on full training set
     model.fit(X, y)
@@ -308,9 +433,18 @@ def train_jurisdiction_model(
         "n_folds": n_splits,
         "gb_cv_mean": round(float(gb_scores.mean()), 4),
         "rf_cv_mean": round(float(rf_scores.mean()), 4),
+        "majority_class_baseline_accuracy": majority_baseline,
+        "cv_accuracy_lift_over_baseline": round(float(scores.mean()) - majority_baseline, 4),
+        "cv_top3_accuracy_mean": round(float(eval_result["topk_scores"].mean()), 4),
+        "cv_top3_accuracy_std": round(float(eval_result["topk_scores"].std()), 4),
+        "cv_top_k": int(eval_result["top_k"]),
+        "gb_top3_mean": round(float(gb_eval["topk_scores"].mean()), 4),
+        "rf_top3_mean": round(float(rf_eval["topk_scores"].mean()), 4),
+        "_cv_confusion_matrix": eval_result["confusion_matrix"],
     }
 
     print(f"[INFO] Best model: {model_name} (CV accuracy: {scores.mean():.3f} +/- {scores.std():.3f})", flush=True)
+    print(f"[INFO] Top-{eval_result['top_k']} CV accuracy: {eval_result['topk_scores'].mean():.3f}", flush=True)
     print(f"[INFO] GB: {gb_scores.mean():.3f}, RF: {rf_scores.mean():.3f}", flush=True)
 
     return model, metrics
@@ -330,7 +464,7 @@ def predict_parent_jurisdiction(
     if X_new.empty:
         return pd.DataFrame(columns=[
             "lei", "predicted_parent_country", "prediction_probability",
-            "top3_countries", "top3_probabilities",
+            "confidence_gap", "top3_countries", "top3_probabilities",
         ])
 
     proba = model.predict_proba(X_new)
@@ -342,7 +476,8 @@ def predict_parent_jurisdiction(
         sorted_idx = np.argsort(prob_row)[::-1]
 
         top1_class = classes[sorted_idx[0]]
-        top1_prob = prob_row[sorted_idx[0]]
+        top1_prob = float(prob_row[sorted_idx[0]])
+        top2_prob = float(prob_row[sorted_idx[1]]) if len(sorted_idx) > 1 else 0.0
 
         top3_classes = [classes[j] for j in sorted_idx[:3]]
         top3_probs = [round(float(prob_row[j]), 4) for j in sorted_idx[:3]]
@@ -350,7 +485,8 @@ def predict_parent_jurisdiction(
         predictions.append({
             "lei": leis.iloc[i],
             "predicted_parent_country": top1_class,
-            "prediction_probability": round(float(top1_prob), 4),
+            "prediction_probability": round(top1_prob, 4),
+            "confidence_gap": round(top1_prob - top2_prob, 4),  # high = confident, low = ambiguous
             "top3_countries": ";".join(top3_classes),
             "top3_probabilities": ";".join(str(p) for p in top3_probs),
         })
@@ -373,7 +509,25 @@ def save_model_artifacts(
     joblib.dump(label_encoder, output_dir / "phase3_label_encoder.joblib")
 
     # Save CV metrics
-    pd.DataFrame([cv_metrics]).to_csv(output_dir / "phase3_cv_metrics.csv", index=False)
+    confusion = cv_metrics.get("_cv_confusion_matrix")
+    metrics_for_csv = {
+        key: value for key, value in cv_metrics.items()
+        if not key.startswith("_")
+    }
+    pd.DataFrame([metrics_for_csv]).to_csv(output_dir / "phase3_cv_metrics.csv", index=False)
+
+    if isinstance(confusion, pd.DataFrame) and not confusion.empty:
+        confusion_out = confusion.copy()
+        confusion_out["actual_country"] = label_encoder.inverse_transform(
+            confusion_out["actual_class"].astype(int)
+        )
+        confusion_out["predicted_country"] = label_encoder.inverse_transform(
+            confusion_out["predicted_class"].astype(int)
+        )
+        confusion_out = confusion_out[
+            ["actual_country", "predicted_country", "count", "actual_class", "predicted_class"]
+        ].sort_values(["actual_country", "count"], ascending=[True, False])
+        confusion_out.to_csv(output_dir / "phase3_cv_confusion_matrix.csv", index=False)
 
     # Save feature importance
     if hasattr(model, "feature_importances_"):
@@ -389,10 +543,13 @@ def phase3_summary(predictions_df: pd.DataFrame, cv_metrics: dict) -> dict:
     if predictions_df.empty:
         return {"total_predictions": 0, **cv_metrics}
 
+    high_probability = int((predictions_df["prediction_probability"] >= 0.5).sum())
     return {
         "total_predictions": len(predictions_df),
         "top_predicted_country": predictions_df["predicted_parent_country"].value_counts().index[0],
         "avg_confidence": round(predictions_df["prediction_probability"].mean(), 4),
-        "high_confidence_predictions": int((predictions_df["prediction_probability"] >= 0.5).sum()),
+        "high_confidence_predictions": high_probability,
+        "uncalibrated_high_probability_predictions": high_probability,
+        "probability_note": "Model probabilities are uncalibrated ranking signals, not validated confidence.",
         **cv_metrics,
     }

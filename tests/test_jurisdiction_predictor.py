@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 import unittest
+from tempfile import TemporaryDirectory
+from pathlib import Path
+
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
@@ -10,6 +13,7 @@ from src.jurisdiction_predictor import (
     _build_features,
     train_jurisdiction_model,
     predict_parent_jurisdiction,
+    save_model_artifacts,
     phase3_summary,
 )
 
@@ -45,7 +49,7 @@ def _sample_parents():
 class BucketCountryTests(unittest.TestCase):
 
     def test_high_count_country_keeps_itself(self):
-        counts = {"US": 10, "GB": 3}
+        counts = {"US": 15, "GB": 3}
         self.assertEqual(_bucket_country("US", counts), "US")
 
     def test_low_count_country_bucketed(self):
@@ -111,7 +115,26 @@ class TrainModelTests(unittest.TestCase):
         model, metrics = train_jurisdiction_model(X, y)
         self.assertIn("cv_accuracy_mean", metrics)
         self.assertIn("model_type", metrics)
+        self.assertIn("majority_class_baseline_accuracy", metrics)
+        self.assertIn("cv_accuracy_lift_over_baseline", metrics)
+        self.assertIn("cv_top3_accuracy_mean", metrics)
+        self.assertIn("cv_top_k", metrics)
         self.assertIsNotNone(model)
+
+    def test_saves_confusion_matrix_artifact(self):
+        X, y, le = prepare_training_features(
+            _sample_entities(),
+            _sample_relationships(),
+            _sample_parents(),
+        )
+        if X.empty:
+            self.skipTest("No training data")
+        model, metrics = train_jurisdiction_model(X, y)
+        with TemporaryDirectory() as tmp:
+            out = Path(tmp)
+            save_model_artifacts(model, metrics, list(X.columns), le, out)
+            self.assertTrue((out / "phase3_cv_metrics.csv").exists())
+            self.assertTrue((out / "phase3_cv_confusion_matrix.csv").exists())
 
 
 class PredictTests(unittest.TestCase):
@@ -147,6 +170,8 @@ class SummaryTests(unittest.TestCase):
         summary = phase3_summary(preds, metrics)
         self.assertEqual(summary["total_predictions"], 1)
         self.assertEqual(summary["top_predicted_country"], "US")
+        self.assertEqual(summary["uncalibrated_high_probability_predictions"], 1)
+        self.assertIn("probability_note", summary)
 
     def test_empty_summary(self):
         preds = pd.DataFrame(columns=["lei", "predicted_parent_country", "prediction_probability", "top3_countries", "top3_probabilities"])

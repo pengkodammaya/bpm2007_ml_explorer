@@ -141,6 +141,7 @@ class TrainLinkPredictorTests(unittest.TestCase):
         self.assertIsNotNone(model)
         self.assertIn("cv_auc_mean", metrics)
         self.assertIn("model_type", metrics)
+        self.assertEqual(metrics["cv_method"], "edge_holdout_remove_validation_positives")
 
     def test_empty_training_data(self):
         g = _build_test_graph()

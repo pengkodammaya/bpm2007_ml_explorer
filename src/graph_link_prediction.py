@@ -15,7 +15,9 @@ import numpy as np
 import pandas as pd
 import networkx as nx
 from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier
-from sklearn.model_selection import cross_val_score, StratifiedKFold
+from sklearn.base import clone
+from sklearn.metrics import roc_auc_score
+from sklearn.model_selection import StratifiedKFold
 from sklearn.preprocessing import StandardScaler
 
 
@@ -199,6 +201,52 @@ _FEATURE_COLS = [
 ]
 
 
+def _edge_holdout_cv_scores(
+    model: Any,
+    g: nx.DiGraph,
+    training_pairs: pd.DataFrame,
+    cv: StratifiedKFold,
+) -> np.ndarray:
+    """Compute ROC-AUC with validation positive edges removed from the graph."""
+    y = training_pairs["label"].astype(int).to_numpy()
+    scores: list[float] = []
+
+    for train_idx, test_idx in cv.split(training_pairs, y):
+        train_pairs = training_pairs.iloc[train_idx].reset_index(drop=True)
+        test_pairs = training_pairs.iloc[test_idx].reset_index(drop=True)
+
+        fold_graph = g.copy()
+        heldout_edges = [
+            (row["source_lei"], row["target_lei"])
+            for _, row in test_pairs[test_pairs["label"].eq(1)].iterrows()
+        ]
+        fold_graph.remove_edges_from(heldout_edges)
+
+        train_pair_list = list(zip(train_pairs["source_lei"], train_pairs["target_lei"]))
+        test_pair_list = list(zip(test_pairs["source_lei"], test_pairs["target_lei"]))
+
+        X_train = compute_pair_features(fold_graph, train_pair_list)[_FEATURE_COLS].fillna(0)
+        X_test = compute_pair_features(fold_graph, test_pair_list)[_FEATURE_COLS].fillna(0)
+        y_train = train_pairs["label"].astype(int).to_numpy()
+        y_test = test_pairs["label"].astype(int).to_numpy()
+
+        scaler = StandardScaler()
+        X_train_scaled = pd.DataFrame(
+            scaler.fit_transform(X_train), columns=_FEATURE_COLS
+        )
+        X_test_scaled = pd.DataFrame(
+            scaler.transform(X_test), columns=_FEATURE_COLS
+        )
+
+        fold_model = clone(model)
+        fold_model.fit(X_train_scaled, y_train)
+        pos_idx = list(fold_model.classes_).index(1)
+        y_score = fold_model.predict_proba(X_test_scaled)[:, pos_idx]
+        scores.append(float(roc_auc_score(y_test, y_score)))
+
+    return np.array(scores)
+
+
 def generate_training_pairs(
     relationships: pd.DataFrame,
     domestic_leis: list[str],
@@ -292,10 +340,6 @@ def train_link_predictor(
     if len(X_scaled) < 10:
         print("[WARN] Very small training set for link prediction", flush=True)
 
-    # Cross-validate two models
-    n_splits = min(5, max(2, min(pd.Series(y).value_counts())))
-    cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=42)
-
     gb = GradientBoostingClassifier(
         n_estimators=100, max_depth=3, learning_rate=0.1, random_state=42
     )
@@ -303,32 +347,52 @@ def train_link_predictor(
         n_estimators=200, max_depth=4, random_state=42, class_weight="balanced"
     )
 
-    gb_scores = cross_val_score(gb, X_scaled, y, cv=cv, scoring="roc_auc")
-    rf_scores = cross_val_score(rf, X_scaled, y, cv=cv, scoring="roc_auc")
-
-    if gb_scores.mean() >= rf_scores.mean():
+    label_counts = pd.Series(y).value_counts()
+    if len(label_counts) < 2 or label_counts.min() < 2:
+        print("[WARN] Too few positive/negative pairs for link-prediction CV", flush=True)
+        gb_scores = np.array([np.nan])
+        rf_scores = np.array([np.nan])
         model = gb
         model_name = "GradientBoosting"
         scores = gb_scores
+        n_splits = 0
     else:
-        model = rf
-        model_name = "RandomForest"
-        scores = rf_scores
+        # Cross-validate with edge holdout so graph features cannot see
+        # the validation positive edge they are meant to predict.
+        n_splits = min(5, max(2, int(label_counts.min())))
+        cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=42)
+        gb_scores = _edge_holdout_cv_scores(gb, g, training_pairs, cv)
+        rf_scores = _edge_holdout_cv_scores(rf, g, training_pairs, cv)
 
+        if np.nanmean(gb_scores) >= np.nanmean(rf_scores):
+            model = gb
+            model_name = "GradientBoosting"
+            scores = gb_scores
+        else:
+            model = rf
+            model_name = "RandomForest"
+            scores = rf_scores
+
+    # Fit the final production model on the full graph and all training pairs.
     model.fit(X_scaled, y)
 
     metrics = {
         "model_type": model_name,
-        "cv_auc_mean": round(float(scores.mean()), 4),
-        "cv_auc_std": round(float(scores.std()), 4),
+        "cv_auc_mean": round(float(np.nanmean(scores)), 4),
+        "cv_auc_std": round(float(np.nanstd(scores)), 4),
         "n_positive_pairs": int(y.sum()),
         "n_negative_pairs": int(len(y) - y.sum()),
         "n_folds": n_splits,
-        "gb_auc_mean": round(float(gb_scores.mean()), 4),
-        "rf_auc_mean": round(float(rf_scores.mean()), 4),
+        "gb_auc_mean": round(float(np.nanmean(gb_scores)), 4),
+        "rf_auc_mean": round(float(np.nanmean(rf_scores)), 4),
+        "cv_method": "edge_holdout_remove_validation_positives",
     }
 
-    print(f"[INFO] Link predictor: {model_name} (CV AUC: {scores.mean():.3f} +/- {scores.std():.3f})", flush=True)
+    print(
+        f"[INFO] Link predictor: {model_name} "
+        f"(edge-holdout CV AUC: {np.nanmean(scores):.3f} +/- {np.nanstd(scores):.3f})",
+        flush=True,
+    )
 
     return model, metrics, scaler
 

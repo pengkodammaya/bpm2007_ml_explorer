@@ -13,6 +13,8 @@ from src.pipeline import (
     run_phase3_jurisdiction_prediction,
     run_phase4_graph_prediction,
     run_full_inference_pipeline,
+    run_ctos_malaysia_enrichment,
+    run_gleif_search_benchmark,
 )
 
 
@@ -25,7 +27,9 @@ def main() -> None:
     parser.add_argument("--lei-page-size", type=int, default=200)
     parser.add_argument("--skip-edgar", action="store_true")
     parser.add_argument("--skip-pull", action="store_true")
+    parser.add_argument("--force-pull", action="store_true", help="Ignore cached GLEIF pulls/checkpoints and refresh from API")
     parser.add_argument("--scan-all", action="store_true", help="Scan all entities for parent relationships (not just first N)")
+    parser.add_argument("--rel-checkpoint-every", type=int, default=500, help="Relationship scan checkpoint interval in entities (default 500)")
     parser.add_argument("--use-mock-data", action="store_true")
 
     # Entity analysis options
@@ -47,11 +51,29 @@ def main() -> None:
     parser.add_argument("--phase3-only", action="store_true", help="Run only Phase 3 jurisdiction prediction")
     parser.add_argument("--phase4-only", action="store_true", help="Run only Phase 4 graph link prediction")
     parser.add_argument("--exceptions-only", action="store_true", help="Run only Phase 0.5 reporting exceptions")
-    parser.add_argument("--fuzzy-threshold", type=int, default=80, help="Phase 1 fuzzy match threshold (0-100, default 80)")
+    parser.add_argument("--fuzzy-threshold", type=int, default=90, help="Phase 1 fuzzy match threshold (0-100, default 90)")
     parser.add_argument("--min-cluster-size", type=int, default=3, help="Phase 2 minimum address cluster size (default 3)")
+    parser.add_argument("--ctos-my", action="store_true", help="Run CTOS Malaysia directory enrichment")
+    parser.add_argument("--ctos-letters", type=str, default="A", help="CTOS letters/digits to fetch, comma-separated or compact (default A)")
+    parser.add_argument("--ctos-all", action="store_true", help="Fetch CTOS listings for A-Z and 0-9")
+    parser.add_argument("--ctos-pages", type=int, default=1, help="CTOS pages per letter/digit (default 1)")
+    parser.add_argument("--ctos-details-limit", type=int, default=0, help="Number of CTOS detail pages to fetch for registration numbers")
+    parser.add_argument("--ctos-threshold", type=int, default=95, help="CTOS fuzzy match threshold (default 95)")
+    parser.add_argument("--ctos-sleep", type=float, default=0.5, help="Seconds to sleep between CTOS requests (default 0.5)")
+    parser.add_argument("--ctos-timeout", type=int, default=60, help="CTOS request timeout in seconds (default 60)")
+    parser.add_argument("--ctos-max-retries", type=int, default=3, help="CTOS request retries per page/detail (default 3)")
+    parser.add_argument("--ctos-max-consecutive-failures", type=int, default=5, help="Stop a CTOS letter/digit after this many consecutive failed pages (default 5)")
+    parser.add_argument("--ctos-source-parquet", type=str, help="Load a local CTOS-derived Malaysia company snapshot parquet instead of crawling")
+    parser.add_argument("--ctos-no-duckdb", action="store_true", help="Use pandas instead of optional DuckDB for local CTOS snapshot loading")
+    parser.add_argument("--ctos-exact-only", action="store_true", help="Disable CTOS fuzzy matching and use normalized exact matches only")
+    parser.add_argument("--gleif-benchmark", action="store_true", help="Benchmark GLEIF full-text search against UIE review targets")
+    parser.add_argument("--gleif-benchmark-limit", type=int, default=50, help="Number of review targets to query in GLEIF benchmark")
+    parser.add_argument("--gleif-benchmark-page-size", type=int, default=5, help="GLEIF candidate records per review target")
 
     args = parser.parse_args()
     country = args.country.upper()
+    if args.skip_pull and args.force_pull:
+        print("[WARN] Both --skip-pull and --force-pull were set; --skip-pull wins for API calls.")
 
     # --- Entity analysis mode ---
     if args.entity_analysis:
@@ -86,11 +108,16 @@ def main() -> None:
             skip_pull=args.skip_pull,
             min_cluster=args.min_cluster_size,
             country=country,
+            force_pull=args.force_pull and not args.skip_pull,
         )
         return
 
     if args.exceptions_only:
-        run_reporting_exceptions(skip_pull=args.skip_pull, country=country)
+        run_reporting_exceptions(
+            skip_pull=args.skip_pull,
+            country=country,
+            force_refresh=args.force_pull and not args.skip_pull,
+        )
         return
 
     if args.phase2_only:
@@ -117,6 +144,38 @@ def main() -> None:
         )
         return
 
+    if args.ctos_my:
+        if args.ctos_all:
+            letters = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
+        elif "," in args.ctos_letters:
+            letters = [x.strip() for x in args.ctos_letters.split(",") if x.strip()]
+        else:
+            letters = list(args.ctos_letters.strip())
+        run_ctos_malaysia_enrichment(
+            letters=letters,
+            pages_per_letter=args.ctos_pages,
+            fetch_details_limit=args.ctos_details_limit,
+            match_threshold=args.ctos_threshold,
+            sleep_s=args.ctos_sleep,
+            timeout=args.ctos_timeout,
+            max_retries=args.ctos_max_retries,
+            max_consecutive_failures=args.ctos_max_consecutive_failures,
+            skip_pull=args.skip_pull,
+            source_parquet=args.ctos_source_parquet,
+            use_duckdb=not args.ctos_no_duckdb,
+            fuzzy=not args.ctos_exact_only,
+        )
+        return
+
+    if args.gleif_benchmark:
+        benchmark = run_gleif_search_benchmark(
+            country=country,
+            limit=args.gleif_benchmark_limit,
+            page_size=args.gleif_benchmark_page_size,
+        )
+        print(benchmark.head(30).to_string(index=False))
+        return
+
     # --- Original pipeline modes ---
     if args.use_mock_data:
         print("[INFO] Running mock pipeline...")
@@ -132,6 +191,8 @@ def main() -> None:
             lei_page_size=args.lei_page_size,
             scan_all=args.scan_all,
             country=country,
+            rel_checkpoint_every=args.rel_checkpoint_every,
+            force_refresh=args.force_pull,
         )
         print(f"[INFO] Entities: {len(entities):,}")
         print(f"[INFO] Relationships: {len(relationships):,}")
