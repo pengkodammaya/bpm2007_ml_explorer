@@ -114,6 +114,7 @@ python -m unittest discover -s tests
 - `data/processed/{country}/investor_economy_summary.parquet` or `.pkl`
 - `data/processed/{country}/investor_economy_summary.csv`
 - `data/processed/my/ctos_entity_matches.parquet` or `.pkl` when CTOS enrichment is run
+- `reports/directional_uie/*_{YYYY-MM-DD}.csv` and `.parquet` for IN/OUT UIE result packs
 
 ## Goal
 Prototype discovery layer for BPM7 external-sector compilation:
