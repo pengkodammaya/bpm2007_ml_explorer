@@ -1,0 +1,9 @@
+host_country,direct_parent_country,uie_country,evidence_bucket,lei_count,known_uie_count,inferred_uie_count,model_only_count,pass_through_count,non_asean_uie_count,avg_uie_confidence
+MY,SG,SG,A_hard_or_verified,11,11,0,0,0,0,1.0
+MY,SG,US,A_hard_or_verified,3,3,0,0,3,3,1.0
+MY,SG,DE,A_hard_or_verified,2,2,0,0,2,2,1.0
+MY,SG,GB,A_hard_or_verified,2,2,0,0,2,2,1.0
+MY,SG,JP,A_hard_or_verified,2,2,0,0,2,2,1.0
+MY,SG,IT,B_parent_or_exception,1,1,0,0,1,1,0.9
+MY,SG,NL,A_hard_or_verified,1,1,0,0,1,1,1.0
+MY,SG,SG,B_parent_or_exception,1,1,0,0,0,0,0.85

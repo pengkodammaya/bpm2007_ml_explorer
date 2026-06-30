@@ -1,0 +1,2 @@
+host_country,direct_parent_country,lei_count,known_uie_count,inferred_uie_count,model_only_count,pass_through_count,non_asean_uie_count,avg_uie_confidence,pass_through_share,non_asean_uie_share
+MY,SG,23,23,0,0,11,11,0.9891,0.4783,0.4783
