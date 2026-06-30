@@ -1,0 +1,3 @@
+host_country,uie_country,evidence_bucket,lei_count,known_uie_count,inferred_uie_count,model_only_count,avg_uie_confidence
+LA,EUROPE,E_model_only,20,0,20,20,1.0
+LA,DE,A_hard_or_verified,1,1,0,0,1.0

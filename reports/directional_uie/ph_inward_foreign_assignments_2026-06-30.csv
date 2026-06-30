@@ -1,0 +1,695 @@
+direction,host_country,source_country,destination_country,lei,legal_name,entity_country,uie_country,uie_name,uie_lei,uie_source,evidence_tier,evidence_bucket,uie_confidence,is_known_uie,is_inferred_uie,direct_parent_country,ultimate_parent_country,chain_parent_country,ctos_registered_malaysia
+IN,PH,US,PH,549300JBDVIIMW4FW262,ABBOTT LABORATORIES.,PH,US,ABBOTT LABORATORIES,HQD377W2YR662HK5JX27,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,PH,US,PH,5493005RFT8TSVQA8J94,"ABBOTT PRODUCTS (PHILIPPINES), INC.",PH,US,ABBOTT LABORATORIES,HQD377W2YR662HK5JX27,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,PH,IE,PH,9845005786C3ECS39075,ACCENTURE INC.,PH,IE,ACCENTURE PUBLIC LIMITED COMPANY,5493000EWHDSR3MZWH98,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,IE,IE,,0
+IN,PH,US,PH,254900C2BIGFW3G5WX22,"ACI WORLDWIDE PHILIPPINE ISLANDS, INC.",PH,US,"ACI WORLDWIDE, INC.",5493003BPVMZUJ6F5C02,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,PH,SG,PH,2549002EYT5NOBQDD489,"AFS PHILIPPINES, INC.",PH,SG,Amstel Financial Services (S) Pte. Ltd.,254900X17Q0HT8RQQ134,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0
+IN,PH,HK,PH,54930002LN93NOB84W02,AIA PHILIPPINES LIFE AND GENERAL INSURANCE COMPANY INC.,PH,HK,AIA Group Limited,ZP5ILWVSYE4LJGMMVD57,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,HK,HK,,0
+IN,PH,NL,PH,549300HP5KXSGMEBD023,ALASKA MILK CORPORATION,PH,NL,Koninklijke FrieslandCampina N.V.,724500CDWM1CHYS8AP31,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,NL,,0
+IN,PH,US,PH,549300TLRUTK27L3TH44,"ALERE PHILIPPINES, INC.",PH,US,ABBOTT LABORATORIES,HQD377W2YR662HK5JX27,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,PH,DE,PH,529900SU3LHDITZGTC93,ALTAIR TECHNOLOGIES PHILIPPINES INC.,PH,DE,Siemens Aktiengesellschaft,W38RGI023J3WT1HWRP32,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,US,PH,549300BVSUOI0J2YXU30,ANALOG DEVICES GEN. TRIAS INC.,PH,US,"ANALOG DEVICES, INC.",GYVOE5EZ4GDAVTU4CQ61,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,IE,US,,0
+IN,PH,US,PH,549300EZPX8NWSISAK56,"ARCHER-DANIELS-MIDLAND PHILIPPINES, INC.",PH,US,ARCHER-DANIELS-MIDLAND COMPANY,549300LO13MQ9HYSTR83,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,FR,PH,549300PRF2ZVTZAISR23,ATOS INFORMATION TECHNOLOGY INC.,PH,FR,ATOS SE,5493001EZOOA66PTBR68,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,FR,,0
+IN,PH,US,PH,254900918VDFWTXZH131,"Amazon Data Services Philippines, Inc.",PH,US,"AMAZON.COM, INC.",ZXTILKJKG63JELOEG630,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,PH,JP,PH,529900WJORQIU7CF7M92,Avaloq Philippines Inc.,PH,JP,日本電気株式会社,5493000QYMPFRTEY4K28,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,JP,JP,,0
+IN,PH,DE,PH,529900UZ0B2A7SEU1J14,B. BRAUN MEDICAL SUPPLIES INC.,PH,DE,B. Braun Holding GmbH & Co. KG,5299004E1B0DK73UIY59,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,DE,PH,529900BKH3GMCPXNLD09,"B. Braun Avitum Philippines, Inc.",PH,DE,B. Braun Holding GmbH & Co. KG,5299004E1B0DK73UIY59,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,DE,PH,254900BWJ34HNGS6OD95,BAYER CROPSCIENCE INC.,PH,DE,Bayer Aktiengesellschaft,549300J4U55H3WP1XT59,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,US,PH,213800WP5WWX8D57WM03,BBDO GUERRERO. INC.,PH,US,OMNICOM GROUP INC.,HKUPACFHSSASQK8HLS17,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,DE,PH,9845007886664FEVF406,BD AGRICULTURE (PHILIPPINES) INC.,PH,DE,Big Dutchman AktiengeselIschaft,529900AXOUPVP04QCG44,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,DE,,0
+IN,PH,HK,PH,549300Q89L7HJNOFLC15,BPI AIA LIFE ASSURANCE CORPORATION,PH,HK,AIA Group Limited,ZP5ILWVSYE4LJGMMVD57,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,PH,HK,HK,0
+IN,PH,CH,PH,254900J7PNZASJY5AE13,BUNGE AGRIBUSINESS PHILS. I,PH,CH,Bunge Global SA,254900IVXSV9K0B7PO26,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,CH,,0
+IN,PH,DE,PH,529900IZCOKCTPEKN750,"Bayan Delinquent Loan Recovery 1 (SPV-AMC), Inc.",PH,DE,DEUTSCHE BANK AKTIENGESELLSCHAFT,7LTWFZYICNSX8D621K86,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,DE,PH,549300GQEEZG5VTX0E74,"Bayer Philippines, Inc.",PH,DE,Bayer Aktiengesellschaft,549300J4U55H3WP1XT59,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,DE,PH,529900TE0BWP16FPP635,Beiersdorf Philippines Inc.,PH,DE,maxingvest GmbH & Co. KGaA,529900DV1ODI5C2GRH81,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,US,PH,549300ZDW59MS56DDJ22,"C-JOY POULTRY MEATS PRODUCTION, INC.",PH,US,"CARGILL, INCORPORATED",QXZYQNMR4JZ5RIRN4T31,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,PH,US,US,0
+IN,PH,US,PH,549300NEC760MV3RT251,"CARGILL OIL MILLS PHILIPPINES, INC.",PH,US,"CARGILL, INCORPORATED",QXZYQNMR4JZ5RIRN4T31,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,PH,US,US,0
+IN,PH,US,PH,5493001CQ1KBLU1LES39,"CARGILL PHILIPPINES, INC.",PH,US,"CARGILL, INCORPORATED",QXZYQNMR4JZ5RIRN4T31,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,US,PH,549300NWSXO6S2OVQU21,"CARGILL TEXTURIZING SOLUTIONS PHILIPPINES, INC.",PH,US,"CARGILL, INCORPORATED",QXZYQNMR4JZ5RIRN4T31,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,US,,0
+IN,PH,US,PH,549300SB2QQF7TMLMW58,CATERPILLAR FINANCIAL SERVICES PHILIPPINES INC.,PH,US,CATERPILLAR INC.,WRJR7GS4GTRECRRTVX92,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,US,PH,549300EI5HZ7VTY4HY04,"CCBC HOLDINGS, INC.",PH,US,CITIGROUP INC.,6SHGI4ZSSLCXXQSBB395,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,CA,PH,9845005B415A048E5804,CGI PHILIPPINES INC.,PH,CA,CGI INC.,549300WSRCZY73ZG3090,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,CA,,0
+IN,PH,TH,PH,2549000OSZJHJQL5PD04,CHAROEN POKPHAND FOODS PHILIPPINES CORPORATION,PH,TH,บริษัท เจริญโภคภัณฑ์อาหาร จำกัด (มหาชน),529900FJ3AI2GKGIWK15,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,TH,TH,,0
+IN,PH,US,PH,549300R6FZ9QQ1PL5K39,CITI CENTER BUILDING CORP.,PH,US,CITIGROUP INC.,6SHGI4ZSSLCXXQSBB395,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,PH,US,US,0
+IN,PH,US,PH,5493005N8SO956E2XN22,CITI SQUARE BUILDING CORPORATION,PH,US,CITIGROUP INC.,6SHGI4ZSSLCXXQSBB395,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,PH,US,US,0
+IN,PH,US,PH,549300BEKR7IJPYSEV09,CITIBANK SQUARE CONDOMINIUM CORP.,PH,US,CITIGROUP INC.,6SHGI4ZSSLCXXQSBB395,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,PH,US,PH,549300NDS7HFDT3XNP71,CITICORP CAPITAL PHILS. INC.,PH,US,CITIGROUP INC.,6SHGI4ZSSLCXXQSBB395,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,HK,PH,2138009SZ4USUGP1IM38,"CLSA PHILIPPINES, INC.",PH,HK,CITIC Limited,2549006I3Q3M98KHOT11,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,HK,HK,,0
+IN,PH,MX,PH,549300VL0ZZQR3MMTU71,"COCA-COLA FEMSA PHILIPPINES, INC.",PH,MX,FOMENTO ECONOMICO MEXICANO S A B DE C V,549300A8MDWDJNMLV153,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MX,MX,,0
+IN,PH,US,PH,9845005ZC382FA36ED90,CONCEPCION-CARRIER AIR CONDITIONING COMPANY,PH,US,CARRIER GLOBAL CORPORATION,549300JE3W6CWY2NAN77,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,TW,PH,5493006PIE84IBN3EQ03,CTBC BANK (PHILIPPINES) CORPORATION,PH,TW,中國信託金融控股股份有限公司,549300IWDYIFW6JXM387,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,TW,TW,,0
+IN,PH,GB,PH,254900B0TWVO6GN5XT78,"Coca-Cola Europacific Aboitiz Philippines, Inc.",PH,GB,COCA-COLA EUROPACIFIC PARTNERS PLC,549300LTH67W4GWMRF57,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,GB,,0
+IN,PH,DE,PH,529900WQPM2EF62LB597,DB Schenker Global Services Asia Pacific Inc.,PH,DE,Deutsche Bahn Aktiengesellschaft,52990063S23N13HU4E98,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,DE,PH,529900DD5SKKGUNXWV81,"DB Strategic Advisors, Inc.",PH,DE,DEUTSCHE BANK AKTIENGESELLSCHAFT,7LTWFZYICNSX8D621K86,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,CH,PH,213800MQ61QF6W3I8P24,"DKSH PHILIPPINES, INC.",PH,CH,DKSH HOLDING AG,549300HUUUNHO6FJUS42,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,CH,CH,,0
+IN,PH,DE,PH,5299008UIYLEG3E9AV28,Draeger Philippines Corporation,PH,DE,Drägerwerk AG & Co. KGaA,5493005UFVHY0PPNKD75,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,IT,PH,529900ZUJLMWMXIP7W71,"Draka Philippines, Inc.",PH,IT,PRYSMIAN S.P.A.,529900X0H1IO3RS1A464,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,IT,IT,,0
+IN,PH,CH,PH,213800MCE13K93NZ9D27,EDWARD KELLER (PHILS.) INC.,PH,CH,DKSH HOLDING AG,549300HUUUNHO6FJUS42,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,CH,CH,,0
+IN,PH,SE,PH,529900R20W785TIKND93,"ESSITY PHILIPPINES, INC.",PH,SE,Essity Aktiebolag (publ),549300G8E6YUVJ1DA153,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SE,SE,,0
+IN,PH,US,PH,549300PMN6ID9UF7JU59,"EXLSERVICE PHILIPPINES, INC.",PH,US,"EXLSERVICE HOLDINGS, INC.",81E3DTNF6OSH489ZOV15,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,DE,PH,5299008AKLLL1T0YSS54,Evonik (Philippines) Inc.,PH,DE,Evonik Industries AG,41GUOJQTALQHLF39XJ34,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,FR,PH,89450021LGT76D9E9J49,"Exclusive Networks - PH, Inc",PH,FR,EXCLUSIVE NETWORKS CORPORATE,969500GFM1C4M1KMPL74,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,FR,,0
+IN,PH,GB,PH,213800U31R1D7X3A4R13,FCF MINERALS CORPORATION,PH,GB,METALS EXPLORATION PLC,2138006CFXWG2OPRV987,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,GB,,0
+IN,PH,US,PH,254900XY1PALF7PUB281,"FIS GLOBAL SOLUTIONS PHILIPPINES, INC.",PH,US,"FIDELITY NATIONAL INFORMATION SERVICES, INC.",6WQI0GK1PRFVBA061U48,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,US,PH,254900PVUWR2BOBBU241,FIS SG SYSTEMS PHILIPPINES INC.,PH,US,"FIDELITY NATIONAL INFORMATION SERVICES, INC.",6WQI0GK1PRFVBA061U48,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,PH,LU,PH,5493000E2BPZYMXKJW91,"FOUNDEVER ASIA, INC.",PH,LU,Foundever Group,549300BCU0GW2NDZ8U96,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,LU,LU,,0
+IN,PH,KY,PH,254900GY628YEK8EZL09,Falcon SG Holding (Philippines) Inc.,PH,KY,"Gateway Fund II, L.P.",254900YCYY2GED20AT50,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,KY,KY,0
+IN,PH,NZ,PH,254900CLB0C6Z44NK507,Fonterra Brands Phils. Inc.,PH,NZ,FONTERRA CO-OPERATIVE GROUP LIMITED,549300NCQQ9E4O5JX172,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,NZ,,0
+IN,PH,DE,PH,529900T2DH2TGSW2EE39,"Fresenius Kabi Philippines, Inc.",PH,DE,Fresenius SE & Co. KGaA,XDFJ0CYCOO1FXRFTQS51,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,DE,PH,529900YTY5Q7H4K14X02,"Fresenius Medical Care Philippines, Inc.",PH,DE,Fresenius Medical Care AG,549300CP8NY40UP89Q40,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,US,PH,549300X7WCODFWF5QH78,"GCP APPLIED TECHNOLOGIES OPERATIONS CENTER, INC.",PH,US,GCP APPLIED TECHNOLOGIES INC.,5493007G654QKQVEKV09,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,US,PH,549300PH53AOYHBZML40,GCP APPLIED TECHNOLOGIES PRODUCTS (PHILS.) INC.,PH,US,GCP APPLIED TECHNOLOGIES INC.,5493007G654QKQVEKV09,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,NL,PH,2549009734QAKDUHM468,GEMALTO PHILIPPINES INC.,PH,NL,Gemalto Holding B.V.,724500Z5BLF00QVUM832,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,NL,,0
+IN,PH,US,PH,549300042UVGFHUQZ649,GFI GROUP (PHILIPPINES) INC.,PH,US,"BGC Group, Inc.",2549001IGRCG4F0RLD36,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,NL,PH,2138004DEJ98RVJEB150,GOBEAR (PHILIPPINES) INC.,PH,NL,Woodpecker Holding B.V.,72450085ROINJRUDAT34,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,NL,,0
+IN,PH,US,PH,5493002T0BWZ71SQY132,"GOODYEAR PHILIPPINES, INC.",PH,US,THE GOODYEAR TIRE & RUBBER COMPANY,5493002BI0S2ZQUY3437,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,NL,PH,254900OWJPJCZHDP2D50,"Gemalto Technologies, Inc.",PH,NL,Gemalto Holding B.V.,724500Z5BLF00QVUM832,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,NL,,0
+IN,PH,US,PH,98450095A7ACA2DER517,HGST PHILIPPINES CORP.,PH,US,WESTERN DIGITAL CORPORATION,549300QQXOOYEF89IC56,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,GB,PH,213800EQWLQD8JB2W919,HSBC ELECTRONIC DATA PROCESSING (PHILIPPINES) INC.,PH,GB,HSBC HOLDINGS PLC,MLU0ZO3ML4LN2LL2TL39,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,PH,GB,PH,213800HTIMK4Z26RGD83,"HSBC INVESTMENT AND INSURANCE BROKERAGE, PHILIPPINES INC.",PH,GB,HSBC HOLDINGS PLC,MLU0ZO3ML4LN2LL2TL39,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,HK,GB,,0
+IN,PH,GB,PH,5493007R03ET9XE50N08,HSBC SAVINGS BANK (PHILIPPINES) INC.,PH,GB,HSBC HOLDINGS PLC,MLU0ZO3ML4LN2LL2TL39,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,HK,GB,,0
+IN,PH,DE,PH,529900ADMJY8XXQQIB36,"Heidelberg Philippines, Inc.",PH,DE,Heidelberger Druckmaschinen Aktiengesellschaft,529900ZM98OISTG16932,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,DE,PH,52990038JTKGBU5A9G94,"Henkel Philippines, Inc.",PH,DE,Henkel AG & Co. KGaA,549300VZCL1HTH4O4Y49,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,CH,PH,529900QW7D78BZHLMO54,"Holcim Philippines, Inc.",PH,CH,Holcim AG,529900EHPFPYHV6IQO98,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,CH,CH,,0
+IN,PH,SG,PH,254900GY1OKCCCG15831,Hyperion Storage Holdings Corporation,PH,SG,Keppel Infrastructure Fund Management Pte. Ltd. As Trustee-Manager Of Keppel Infrastructure Trust,254900BF7L1ZCMAZS467,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,0
+IN,PH,GB,PH,254900NPWQY0SUL2U072,IC AUTOMOTIVE INC.,PH,GB,INCHCAPE PLC,213800RGEH1MPPNM2T57,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,GB,,0
+IN,PH,GB,PH,254900CLWGVL55ECJ307,IC LAND AUTOMOTIVE INC.,PH,GB,INCHCAPE PLC,213800RGEH1MPPNM2T57,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,GB,,0
+IN,PH,GB,PH,254900962C74PUJ5VI64,IC STAR AUTOMOTIVE INC.,PH,GB,INCHCAPE PLC,213800RGEH1MPPNM2T57,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,GB,,0
+IN,PH,JE,PH,213800NU5HPFBKRNMJ28,ICAP PHILIPPINES INC,PH,JE,TP ICAP GROUP PLC,2138006YAA7IRVKKGE63,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,JE,,0
+IN,PH,GB,PH,254900XRI8M32IDFBX31,ICATS MOTORCYCLES INC.,PH,GB,INCHCAPE PLC,213800RGEH1MPPNM2T57,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,GB,,0
+IN,PH,MU,PH,549300SNSFDLDA798O40,INDORAMA VENTURES PACKAGING (PHILIPPINES) CORPORATION,PH,MU,Canopus International Limited,25490039L6M8ZV6PQV25,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,MU,,0
+IN,PH,NL,PH,5493009LU9RU1K87ZW02,"ING GLOBAL SERVICES AND OPERATIONS, INC.",PH,NL,ING GROEP N.V.,549300NYKK9MWM7GGW15,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,NL,,0
+IN,PH,US,PH,54930092JHCR7KND6M14,"J.P. Morgan Securities Philippines, Inc.",PH,US,JPMORGAN CHASE & CO.,8I5DZWZKVSZI1NUHU748,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,US,PH,5493002OYK1ETB00SV81,JOHNSON & JOHNSON (PHILS.) INC.,PH,US,Johnson & Johnson,549300G0CFPGEF6X2043,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,US,PH,54930012HEGT6FC14150,KNOWLES ELECTRONICS (PHILIPPINES) CORPORATION,PH,US,KNOWLES CORPORATION,5493003EO323TDZQU148,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,PH,FI,PH,213800IGKHAWS225I154,"KPI ELEVATORS, INC.",PH,FI,KONE OYJ,2138001CNF45JP5XZK38,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,FI,FI,,0
+IN,PH,CH,PH,894500592XYJVVOO0D43,"KUEHNE + NAGEL, INC.",PH,CH,Kühne + Nagel International AG,529900Q0YED3805QXQ66,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,CH,CH,,0
+IN,PH,CH,PH,984500044EA3E7F92A89,Kuehne + Nagel Global Services Inc.,PH,CH,Kühne + Nagel International AG,529900Q0YED3805QXQ66,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,CH,CH,,0
+IN,PH,FR,PH,529900RV262YHM6SWJ32,"L'Oreal Philippines, Inc.",PH,FR,L'OREAL,529900JI1GG6F7RKVI53,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,FR,FR,,0
+IN,PH,AE,PH,2549005BZL5S92UQEF42,"Lulu Financial Services (Phils.), Inc.",PH,AE,Lulu Financial Holdings Ltd,254900ZKUUG5N5HC3X48,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,AE,AE,,0
+IN,PH,NL,PH,5493001V0ITTX5DZPE20,"MAGNUM RFM ICE CREAM, INC.",PH,NL,THE MAGNUM ICE CREAM COMPANY N.V.,25490052LLF3XH6G9847,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,NL,,0
+IN,PH,DE,PH,529900H5PN4WILIL5A55,MAHLE Filter Systems Philippines Corporation,PH,DE,MAHLE GmbH,52990098TR1QJBWIYG58,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,LU,PH,2549008EMOJ17D8BY791,MAJOREL PHILIPPINES CORP.,PH,LU,Majorel Group Luxembourg S.A.,529900M90DFPXG97IJ03,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,LU,LU,,0
+IN,PH,CA,PH,549300U2FYKM8UKYHH54,MANULIFE FINANCIAL PLANS INC.,PH,CA,Manulife Financial Corporation,5493007GBX87QOZACS27,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,CA,,0
+IN,PH,GB,PH,549300HB7WZ2EN6P4M68,"MEAD JOHNSON NUTRITION (PHILIPPINES), INC.",PH,GB,RECKITT BENCKISER GROUP PLC,5493003JFSMOJG48V108,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,PH,US,PH,549300VE1GXJ3T27HJ35,"MONDELEZ PHILIPPINES, INC.",PH,US,"MONDELEZ INTERNATIONAL, INC.",549300DV9GIB88LZ5P30,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,PH,DK,PH,549300TMBDXIMLSOUY44,"Maersk Filipinas, Inc.",PH,DK,A.P. MØLLER HOLDING A/S,5493000HKHWS15XW2C38,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DK,DK,,0
+IN,PH,DK,PH,549300YGQSRGKKWJX829,Maersk Global Service Centres (Philippines) Ltd.,PH,DK,A.P. MØLLER HOLDING A/S,5493000HKHWS15XW2C38,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DK,DK,,0
+IN,PH,KY,PH,5493007GUMSN1M6VM945,"MariBank Philippines, Inc.",PH,KY,Sea Limited,529900OM6JLLW44YKI15,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,KY,,0
+IN,PH,MY,PH,254900G2P8DQYLCF8Y95,"Maybank Securities, Inc.",PH,MY,MALAYAN BANKING BERHAD,5493004OT3TOY404V310,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,MY,,0
+IN,PH,DE,PH,529900MXA4R4WJZKZY36,Merck Business Solutions Asia Inc.,PH,DE,E. Merck KG,529900YCCXD7AIHXU523,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,DE,PH,529900EQZZXDGDIF9Q10,Merck Inc.,PH,DE,E. Merck KG,529900YCCXD7AIHXU523,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,US,PH,549300BUK7VE2AZSWO63,NEOVIA PHILIPPINES INC.,PH,US,ARCHER-DANIELS-MIDLAND COMPANY,549300LO13MQ9HYSTR83,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,JP,PH,549300S3X3VQS8LQIB25,"Nomura Securities Philippines, Inc.",PH,JP,野村ホールディングス株式会社,549300B3CEAHYG7K8164,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,JP,,0
+IN,PH,AU,PH,254900SSV4MEOPDH7322,PEPPERMINT BIZMOTO INC.,PH,AU,Peppermint Innovation Limited,2549006H1MPAONCAR644,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,AU,AU,,0
+IN,PH,LU,PH,875500Y6EWVOXUH9BJ36,PERFETTI VAN MELLE PHILS. INC.,PH,LU,C+F CONFECTIONERY AND FOODS S.A.,875500UMCWW2X77MW772,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,LU,,0
+IN,PH,JP,PH,254900E18S1Z58DLK316,"PERMASTEELISA PHILIPPINES, INC.",PH,JP,株式会社 LIXIL,353800KB8G4F9WUJJ886,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,JP,IT,0
+IN,PH,US,PH,5493003BFRUR0A7NYN35,"PHILIPPINE ASSET INVESTMENT (SPV-AMC), INC.",PH,US,MORGAN STANLEY,IGJSJL3JD5P30I6NJZ34,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,FR,PH,2549009BIA22Q14RY435,PHILIPPINE AXA LIFE INSURANCE CORPORATION,PH,FR,AXA,F5WCUMTUM4RKZ1MAIE39,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,FR,FR,,0
+IN,PH,US,PH,549300B50LSG97JLU459,PMFTC INC.,PH,US,Philip Morris International Inc.,HL3H1H2BGXWVG3BSWR90,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,GB,PH,2138003TJV5HGIYNAP93,PRU LIFE INSURANCE CORPORATION OF U.K.,PH,GB,Prudential Public Limited Company,5493001Z3ZE83NGK8Y12,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,PH,GB,PH,213800KD24LQ7DEJV642,PRU LIFE UK ASSET MANAGEMENT AND TRUST CORPORATION,PH,GB,Prudential Public Limited Company,5493001Z3ZE83NGK8Y12,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,PH,US,PH,2549002LRCR2LEUGEE97,Philip Morris Philippines Manufacturing Inc.,PH,US,Philip Morris International Inc.,HL3H1H2BGXWVG3BSWR90,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,CH,US,,0
+IN,PH,DE,PH,529900WE0D9FIB4EQI28,"Philippine Opportunities for Growth and Income (SPV-AMC), INC.",PH,DE,DEUTSCHE BANK AKTIENGESELLSCHAFT,7LTWFZYICNSX8D621K86,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,IE,PH,549300S7KRBUU4JYPE14,"REPUBLIC CEMENT ILIGAN, INC.",PH,IE,CRH PUBLIC LIMITED COMPANY,549300MIDJNNTH068E74,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,PH,IE,,0
+IN,PH,IE,PH,549300T8Q4XT07ELRW32,"REPUBLIC CEMENT SERVICES, INC.",PH,IE,CRH PUBLIC LIMITED COMPANY,549300MIDJNNTH068E74,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,IE,IE,,0
+IN,PH,DE,PH,549300TVOFR2ZQBHBM51,ROBERT BOSCH INC.,PH,DE,R o b e r t B o s c h S t i f t u n g Gesellschaft mit beschränkter Haftung,391200PC2CUISRHYLV81,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,DE,,0
+IN,PH,DE,PH,5299005H7XQV496SL009,ROHDE & SCHWARZ (PHILIPPINES) INC,PH,DE,Rohde & Schwarz GmbH & Co. Kommanditgesellschaft,529900156OVPNZXFJ655,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,DE,,0
+IN,PH,US,PH,549300NX7KEBM2WIGQ32,RR DONNELLEY PHILIPPINES INC.,PH,US,R. R. DONNELLEY & SONS COMPANY,SU4X0P4WWRGOQDTSV032,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,PH,GB,PH,254900048CHAB6OWGR70,Reed Elsevier Shared Services (Philippines) Inc.,PH,GB,RELX PLC,549300WSX3VBUFFJOO66,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,GB,,0
+IN,PH,US,PH,549300Q5TI70V55VNY77,"S.C. JOHNSON & SON, INC.",PH,US,"S. C. JOHNSON & SON, INC.",PH5ZFDENRYXEVLP50443,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,PH,DE,PH,5299007A1U8QOKBC8756,"SAP Philippines, Inc.",PH,DE,SAP SE,529900D6BF99LW9R2E68,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,US,PH,254900NRFQS6T8YJAY32,"SAS Institute (Philippines), Inc.",PH,US,SAS INSTITUTE INC.,54930038Z4LRJWWZ1746,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,GB,PH,213800ADVLA2CADC7P84,"SCHUURMANS & VAN GINNEKEN PHILIPPINES, INC.",PH,GB,AGMAN GROUP LIMITED,213800YFKYIGIALBMK91,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,PH,US,PH,549300JSVDZIR2CPTP95,SECURITY BANK CORPORATION,PH,US,"ANALOG DEVICES, INC.",GYVOE5EZ4GDAVTU4CQ61,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,PH,GB,PH,213800HWMZMN3KCGN612,"SHELL ENERGY PHILIPPINES, INC.",PH,GB,SHELL PLC,21380068P1DRHMJ8KU70,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,PH,GB,PH,54930056H8W5F37SB423,SHELL PILIPINAS CORPORATION,PH,GB,SHELL PLC,21380068P1DRHMJ8KU70,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,PH,KY,PH,549300SMQGQ2I2LIKU85,"SHOPEEPAY PHILIPPINES, INC.",PH,KY,Sea Limited,529900OM6JLLW44YKI15,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,KY,,0
+IN,PH,DE,PH,5299006WWC6T0PMEDY27,SIEMENS ENERGY INC.,PH,DE,Siemens Energy AG,5299005CHJZ14D4FDJ62,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,DE,PH,5299003UHQ607ADYRE09,SIEMENS INC.,PH,DE,Siemens Aktiengesellschaft,W38RGI023J3WT1HWRP32,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,CH,PH,5299006FI3YMXGRTDX55,SOFTWAREONE PHILIPPINES CORPORATION,PH,CH,SoftwareOne Holding AG,529900GBI88JKWXLGI05,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,CH,CH,,0
+IN,PH,GB,PH,54930005Q6EHQ4ZD1I79,"STANDARD CHARTERED GROUP SERVICES, MANILA INCORPORATED",PH,GB,STANDARD CHARTERED PLC,U4LOSYZ7YG4W3S5F2G91,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,PH,CA,PH,5493003XDQGARZDSS341,"SUN LIFE ASSET MANAGEMENT COMPANY, INC.",PH,CA,Sun Life Financial Inc.,549300V040JZX5S66Z78,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,CA,CA,,0
+IN,PH,CA,PH,549300S8HRTUNY2F3541,SUN LIFE INVESTMENT MANAGEMENT AND TRUST CORPORATION,PH,CA,Sun Life Financial Inc.,549300V040JZX5S66Z78,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,CA,,0
+IN,PH,DE,PH,5299004XESA80R34S962,Schenker Manila Administrative Competence Center Inc.,PH,DE,Deutsche Bahn Aktiengesellschaft,52990063S23N13HU4E98,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,FR,PH,549300D2ZXK0IURVVK65,"Schneider Electric (Philippines), Inc.",PH,FR,SCHNEIDER ELECTRIC SE,969500A1YF1XUYYXS284,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,FR,FR,,0
+IN,PH,DE,PH,529900PM23OJGYA9KV37,Siemens Healthcare Inc.,PH,DE,Siemens Aktiengesellschaft,W38RGI023J3WT1HWRP32,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,DE,PH,529900RD9YSAWCBQ2W55,SimCorp Philippines Inc.,PH,DE,Deutsche Börse Aktiengesellschaft,529900G3SW56SHYNPR95,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,GB,PH,549300Q6ZG12PUZSTD12,"TABANGAO REALTY, INC.",PH,GB,SHELL PLC,21380068P1DRHMJ8KU70,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,GB,,0
+IN,PH,AT,PH,529900L2YZIHOMD5YG22,"TANN Philippines, Inc.",PH,AT,Mayr-Melnhof Karton Aktiengesellschaft,5299001AMHDLKUM80611,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,AT,,0
+IN,PH,US,PH,5493003DCSBY7A60NL46,TONG LUNG PHILS. METAL INDUSTRY CO. INC.,PH,US,"SPECTRUM BRANDS HOLDINGS, INC.",549300JM0MJETDD30O20,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,TW,US,,0
+IN,PH,FR,PH,5493005M4ZCQI95JP460,TOTAL (PHILIPPINES) CORPORATION,PH,FR,TotalEnergies SE,529900S21EQ1BO4ESM68,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,FR,FR,,0
+IN,PH,SG,PH,549300X2EEYYZ5G3C124,TRAFIGURA PHILIPPINES INC,PH,SG,TRAFIGURA GROUP PTE. LTD.,549300HJ8VS88NIO3006,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0
+IN,PH,FR,PH,549300TCEMHQ8ZPOQN53,"TRANSITIONS OPTICAL PHILIPPINES, INC.",PH,FR,ESSILORLUXOTTICA,549300M3VH1A3ER1TB49,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,FR,FR,,0
+IN,PH,JE,PH,254900SE2ZB3HPBTI064,TULLETT PREBON (PHILIPPINES) INC.,PH,JE,TP ICAP GROUP PLC,2138006YAA7IRVKKGE63,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,JE,,0
+IN,PH,JP,PH,254900XT9AC8T3VD5P25,Toyota Financial Services Philippines Corporation,PH,JP,トヨタ自動車株式会社,5493006W3QUS5LMH6R84,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,JP,JP,,0
+IN,PH,FR,PH,254900LD0ANSL564NI70,"Tradition Financial Services Philippines, Inc.",PH,FR,VIEL ET COMPAGNIE-FINANCE,969500CWFF1XKRFIXJ90,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,FR,,0
+IN,PH,CH,PH,5493005YMRKJOY211K77,UBS Securities Philippines Inc.,PH,CH,UBS Group AG,549300SZJ9VS8SGXAN81,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,CH,CH,,0
+IN,PH,GB,PH,549300I0GSVZLESF0374,"UNILEVER PHILIPPINES, INC.",PH,GB,UNILEVER PLC,549300MKFYEKVRWML317,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,PH,IN,PH,2549009MHQG2U740WL90,"VCUSTOMER PHILIPPINES, INC.",PH,IN,TECH MAHINDRA LIMITED,3358005FZUZ1I25XQH69,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,IN,IN,,0
+IN,PH,DE,PH,529900S8578KC6AWQI42,"Varian Medical Systems Philippines, Inc.",PH,DE,Siemens Aktiengesellschaft,W38RGI023J3WT1HWRP32,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,JE,PH,254900U0G5XMRUDCQU52,"WNS Global Services Philippines, Inc.",PH,JE,WNS (HOLDINGS) LIMITED,529900RM7QHUD3W9DM42,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,JE,,0
+IN,PH,JE,PH,2549007GVDWABA6SWP38,"WPP Business Services, Inc",PH,JE,WPP PLC,549300LSGBXPYHXGDT93,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,JE,,0
+IN,PH,CH,PH,5493009MTRCMMCHEAD31,WYETH PHILIPPINES INC.,PH,CH,NESTLÉ S.A.,KY37LUS27QQX7BB93L28,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,CH,CH,,0
+IN,PH,NL,PH,984500E8D4CQ6ZF63A54,"Wolters Kluwer Philippines, Inc.",PH,NL,Wolters Kluwer N.V.,724500TEM53I0U077B74,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,NL,,0
+IN,PH,NO,PH,213800VUZL9783Z2TY21,YARA FERTILIZERS PHILIPPINES INC.,PH,NO,YARA INTERNATIONAL ASA,213800WKOUWXWFJ5Z514,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NO,NO,,0
+IN,PH,US,PH,5493005D5JHW1N0OV823,"ZOETIS PHILIPPINES, INC.",PH,US,ZOETIS INC.,549300HD9Q1LOC9KLJ48,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,PH,DE,PH,529900I1GT5HWJ1T7947,"Zama Precision Industry Manufacturing Philippines, Inc.",PH,DE,Stihl Holding AG & Co. KG,529900LOL2507QBA4E90,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,PH,SG,PH,254900UYW8GM00QBBN27,"A. Menarini Philippines, Inc.",PH,SG,A. Menarini Asia-Pacific Pte. Ltd.,254900CPAQRDL9DMSN25,gleif_direct_parent,B_known_direct_parent,B_parent_or_exception,0.85,1,0,SG,,,0
+IN,PH,NL,PH,254900V8PU4E2IMBBS34,"ED & F MAN PHILIPPINES, INC.",PH,NL,E D & F MAN HOLDINGS B.V.,213800OHA6JWDS2DCO81,gleif_direct_parent,B_known_direct_parent,B_parent_or_exception,0.85,1,0,NL,,,0
+IN,PH,DE,PH,549300PICCHVO5NDH035,"Big Big Holdings, Inc.",PH,DE,Big Dutchman AktiengeselIschaft,529900AXOUPVP04QCG44,phase1_name_match,C_name_match_high,C_name_inferred,1.0,0,1,,,,0
+IN,PH,US,PH,5493006BYGZ68C274O46,GCP APPLIED TECHNOLOGIES (PHILIPPINES) INC.,PH,US,GCP APPLIED TECHNOLOGIES INC.,5493007G654QKQVEKV09,phase1_name_match,C_name_match_high,C_name_inferred,1.0,0,1,,,,0
+IN,PH,US,PH,213800GRAMBVBBL7R837,"JOHNSON CONTROLS-HITACHI AIR CONDITIONING PHILIPPINES, INC.",PH,US,Johnson & Johnson,549300G0CFPGEF6X2043,phase1_name_match,C_name_match_high,C_name_inferred,1.0,0,1,,,,0
+IN,PH,US,PH,549300S6EYGTMPUPKN97,Johnson & Johnson International (Singapore) Pte. Ltd.,PH,US,Johnson & Johnson,549300G0CFPGEF6X2043,phase1_name_match,C_name_match_high,C_name_inferred,1.0,0,1,,,,0
+IN,PH,CA,PH,549300CZ4VA63RMQHT75,SUN LIFE GREPA FINANCIAL INC.,PH,CA,Sun Life Financial Inc.,549300V040JZX5S66Z78,phase1_name_match,C_name_match_high,C_name_inferred,1.0,0,1,,,,0
+IN,PH,US,PH,549300HY401LDQOZOC45,"GENERAL MOTORS AUTOMOBILES PHILIPPINES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7807,0,1,,,,0
+IN,PH,US,PH,5493003ETXRC42NSZX90,GENERALI PILIPINAS INSURANCE CO. INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7693,0,1,,,,0
+IN,PH,US,PH,549300CGJ6FN2TXZ6I20,GENERALI PILIPINAS LIFE ASSURANCE CO. INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7679,0,1,,,,0
+IN,PH,US,PH,549300DJTBMG87CO0C94,"GENERALI PILIPINAS HOLDING CO., INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7562,0,1,,,,0
+IN,PH,US,PH,5493001J8RU03FCPMO11,"STREAM INTERNATIONAL GLOBAL SERVICES PHILIPPINES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7415,0,1,,,,0
+IN,PH,US,PH,549300UD7QHBLNQZWK41,"HC CONSUMER FINANCE PHILIPPINES, INC",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.74,0,1,,,,0
+IN,PH,US,PH,549300DSNKY0W2OYG961,"XEROX SHARED SERVICES PHILIPPINES INC., ROHQ",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7144,0,1,,,,0
+IN,PH,US,PH,549300CCPKT6GUH53V54,"GENERAL ELECTRIC PHILIPPINES METER AND INSTRUMENT COMPANY, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7119,0,1,,,,0
+IN,PH,US,PH,549300MOT5OUKZIY4P34,XEROX BUSINESS SERVICES PHILIPPINES INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6915,0,1,,,,0
+IN,PH,US,PH,549300FQFLY6N6DXP164,DEV. BANK OF THE PHILS.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6885,0,1,,,,0
+IN,PH,US,PH,549300J15CT1IJIU5N40,GENPACT SERVICES LLC - PHILIPPINE BRANCH,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6872,0,1,,,,0
+IN,PH,US,PH,5493003PTW2SF8UBNN66,American Power Conversion Land Holdings Inc.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6866,0,1,,,,0
+IN,PH,US,PH,549300H3WDH2PQVUWG15,IBM PHILIPPINES EMPLOYEES RETIREMENT BENEFITS PLAN,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6854,0,1,,,,0
+IN,PH,US,PH,549300NI7FHWD8BMEP98,"TOWERS WATSON GLOBAL BUSINESS SERVICES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6748,0,1,,,,0
+IN,PH,DE,PH,5493003GSP8B01W71W62,TAYOCASH INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6741,0,1,,,,0
+IN,PH,US,PH,549300JMNWRDZXX4OH32,ASSURANCE SOLUTIONS INSURANCE AGENCY INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6738,0,1,,,,0
+IN,PH,DE,PH,549300YQ5JXFGRO3QS03,PRIMUS HOLDINGS INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6736,0,1,,,,0
+IN,PH,DE,PH,254900Q1MZZ1I7L4W103,"Vantage Equities, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.666,0,1,,,,0
+IN,PH,US,PH,549300875HPA9QJ5G398,CONNELL BROS. CO. PILIPINAS INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6628,0,1,,,,0
+IN,PH,US,PH,254900FO9VFC2G82TD67,"Philippine Business Bank, Inc. A Savings Bank",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6601,0,1,,,,0
+IN,PH,US,PH,2138007Z7GVJ5FWOX549,"LA SALLIAN EDUCATIONAL INNOVATORS FOUNDATION (DE LA SALLE-COLLEGE OF SAINT BENILDE), INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6563,0,1,,,,0
+IN,PH,US,PH,549300M7B26SWBKT5H28,CREDIT GUARANTEE AND INVESTMENT FACILITY,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6494,0,1,,,,0
+IN,PH,DE,PH,254900M2T9JIVGSZBM44,"Asiasec Equities, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.646,0,1,,,,0
+IN,PH,DE,PH,5493005IKXICEEJZJ743,"CEBU AIR, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.645,0,1,,,,0
+IN,PH,DE,PH,2549001BKCV7CPLCC484,"Philam Fund, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6422,0,1,,,,0
+IN,PH,DE,PH,254900QCRP1VBHY5H743,"2GO Group, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6397,0,1,,,,0
+IN,PH,DE,PH,213800ETIM34Z1DJWF23,"GILMON HOLDINGS, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6392,0,1,,,,0
+IN,PH,US,PH,549300ADYY2EIZ0UVB36,"SUN LIFE OF CANADA (PHILIPPINES), INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6356,0,1,,,,0
+IN,PH,DE,PH,254900Y3QHG4KRIBZ524,JJ-LAPP (P) INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6349,0,1,,,,0
+IN,PH,US,PH,2549001V1J7D8YY7NT53,"The Roman Catholic Vicar Apostolic Of San Jose In Mindoro, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.634,0,1,,,,0
+IN,PH,US,PH,549300K53SQ27VPN2691,SOUTHERN MINDANAO AGRI RESOURCES TRADING INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6324,0,1,,,,0
+IN,PH,DE,PH,254900LKYWI0SHD85V92,"ABB, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6294,0,1,,,,0
+IN,PH,US,PH,5299008XZALKLRR0HN65,Air Liquide Pipeline Utilities Services (Alplus) Inc.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6291,0,1,,,,0
+IN,PH,DE,PH,549300500PE4IG2M2V98,BSP PROVIDENT FUND,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6255,0,1,,,,0
+IN,PH,DE,PH,254900GPWI1816YIM923,Globe Telecom Inc.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6255,0,1,,,,0
+IN,PH,DE,PH,5493004SJIK0GOUIZM45,MANILA WATER CO. INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6244,0,1,,,,0
+IN,PH,US,PH,549300YXH3QHIFXJXG18,"XYLEM WATER SYSTEMS INTERNATIONAL, INC PHILIPPINE BRANCH",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6188,0,1,,,,0
+IN,PH,US,PH,5493004OFPUHDX35UX68,"TOWERS WATSON ASIA PACIFIC SHARED SERVICES CENTER, INC",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6171,0,1,,,,0
+IN,PH,US,PH,549300QOEKEDZQWDU224,"ALSTOM (Shared Services) Philippines, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6157,0,1,,,,0
+IN,PH,DE,PH,2549009JPNPZ6KJA6V28,"SOLIDARITAS FUND, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.612,0,1,,,,0
+IN,PH,DE,PH,894500XRGKYPCCE6PF12,TRAXION PAY INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6116,0,1,,,,0
+IN,PH,DE,PH,549300MW9E8PLD2DIN09,ZYBI TECH INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6116,0,1,,,,0
+IN,PH,DE,PH,254900LD9GMYM59G8571,MALARAYAT RBANK. INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.611,0,1,,,,0
+IN,PH,DE,PH,894500EPIDPGE9BYPF63,MARCOPAY Inc.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6075,0,1,,,,0
+IN,PH,DE,PH,254900J3O6QNVQOZRB26,Ecashpay Asia Inc.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6073,0,1,,,,0
+IN,PH,US,PH,W5JZ665WALY3VJMKO883,"GENERAL ELECTRIC PHILIPPINES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6058,0,1,,,,0
+IN,PH,US,PH,549300CJFG5WEXKMGJ76,"BANGKO MONTANOSA, INC. (A RURAL BANK)",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.604,0,1,,,,0
+IN,PH,US,PH,549300L3UDXJ3W6I6I87,"Sutherland Global Services Philippines, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5914,0,1,,,,0
+IN,PH,DE,PH,549300FDYYIWV81VD442,"CIS BAYAD CENTER, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5905,0,1,,,,0
+IN,PH,DE,PH,894500PR811IB6O5TF50,SPEEDYPAY INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5897,0,1,,,,0
+IN,PH,DE,PH,549300DJX4SP2B5GJN45,BANK OF COMMERCE,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5893,0,1,,,,0
+IN,PH,DE,PH,254900ZF0X8EN5N7BW76,"MBG Capital, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5886,0,1,,,,0
+IN,PH,US,PH,254900KD6O9VDMNIDG55,Alipay Connect Pte. Ltd. (Philippines Branch),PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5882,0,1,,,,0
+IN,PH,DE,PH,8945001X4M0HRQ2NPP42,"MAYA BANK, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.586,0,1,,,,0
+IN,PH,US,PH,5493002NQSYK6RZLJF82,ING BUSINESS SHARED SERVICES B.V. BRANCH OFFICE,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5856,0,1,,,,0
+IN,PH,US,PH,254900CT1I2XSXORGV80,"ATRAM Philippine Balanced Fund, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5851,0,1,,,,0
+IN,PH,US,PH,549300LDE6CIQJ9C5F75,UNITED OVERSEAS BANK PHILIPPINES,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5848,0,1,,,,0
+IN,PH,DE,PH,254900ADE8GQHM5P2648,PLDT Inc.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5844,0,1,,,,0
+IN,PH,US,PH,254900AXIAS2E5YJQQ30,MONDELEZ BUSINESS SERVICES AP PTE. LTD. PHILIPPINE BRANCH,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5843,0,1,,,,0
+IN,PH,US,PH,33PKCEICENEN06SF1H69,Asian Development Bank Staff Retirement Plan,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5839,0,1,,,,0
+IN,PH,DE,PH,254900HRLJFNOZBOK921,"REGIS PARTNERS, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5837,0,1,,,,0
+IN,PH,DE,PH,254900FVS439T7QUL346,"SB EQUITIES, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5836,0,1,,,,0
+IN,PH,DE,PH,254900PIHH1NONGBZT41,"PHILAM BOND FUND, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5825,0,1,,,,0
+IN,PH,DE,PH,254900UPR6SHGY5ZBV44,PIONEER LIFE INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5793,0,1,,,,0
+IN,PH,US,PH,98450052EBIE7CCE5J80,Genesys Cloud Services Cayman Ltd. - Philippine Branch,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5787,0,1,,,,0
+IN,PH,DE,PH,254900RQTH8MFAUMCK87,MHE-DEMAG (P) INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5781,0,1,,,,0
+IN,PH,DE,PH,254900VMAEOR1RCGQ473,"PAMI Horizon Fund, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5777,0,1,,,,0
+IN,PH,US,PH,25490017VWZYS30ZP074,JEBSEN AND JESSEN TECHNOLOGY PHILIPPINES INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5765,0,1,,,,0
+IN,PH,US,PH,549300916MKGF326WP56,O.M. MANUFACTURING PHILIPPINES INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5754,0,1,,,,0
+IN,PH,US,PH,254900A9VBZXRXZWSN75,"Rural Bank of Itogon (Benguet), Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5736,0,1,,,,0
+IN,PH,DE,PH,549300GQQ2D4K92I8L54,"NOVEL CAPITAL, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5723,0,1,,,,0
+IN,PH,US,PH,M1XS4BBMT08DKF4N4F24,"GE LIGHTING PHILIPPINES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5721,0,1,,,,0
+IN,PH,US,PH,549300VPT7GPFQ7V5Q40,Asian Development Bank Retiree Medical Plan Fund,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5708,0,1,,,,0
+IN,PH,DE,PH,254900QLMW32I9UC0U43,"I-Remit, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5681,0,1,,,,0
+IN,PH,DE,PH,254900LD17EHACT2KE83,Blackrock Resources Inc.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5661,0,1,,,,0
+IN,PH,US,PH,549300IN5K5G4EZYIB84,XEROX SOLUTIONS PHILIPPINES INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5648,0,1,,,,0
+IN,PH,US,PH,5493007XEQFIM5QCIU42,STERLING BANK OF ASIA INC. (A SAVINGS BANK),PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5646,0,1,,,,0
+IN,PH,US,PH,5493007GZNKB0EW24K85,CREDIT SUISSE SECURITIES (PHILIPPINES) INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5644,0,1,,,,0
+IN,PH,DE,PH,894500IFRWIX212P9V66,TAGCASH LTD. INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5643,0,1,,,,0
+IN,PH,DE,PH,549300J1Q15BRPI6U552,BOUNTY FRESH FOOD INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5634,0,1,,,,0
+IN,PH,US,PH,5493008F1Q8V4LUGJK40,MANULIFE PHILIPPINES ASIA PACIFIC BOND FUND,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5634,0,1,,,,0
+IN,PH,US,PH,549300PKBTWAJOSBG383,Land Bank of the Philippines,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5597,0,1,,,,0
+IN,PH,US,PH,9845007A8C7R2C6E8E44,"SAINT-GOBAIN PHILIPPINES CO. LTD., INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.559,0,1,,,,0
+IN,PH,US,PH,213800INZ8NYZP3P3867,AMKOR TECHNOLOGY PHILIPPINES INC. EMPLOYEES' MULTI-EMPLOYER RETIREMENT BENEFIT PLAN (MERP),PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5583,0,1,,,,0
+IN,PH,DE,PH,25490059M9QSKGQDDQ45,SOLDIVO BOND FUND INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5583,0,1,,,,0
+IN,PH,US,PH,254900LI748H7KY4PE34,"THE INSULAR LIFE ASSURANCE COMPANY, LTD.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5576,0,1,,,,0
+IN,PH,US,PH,254900K86PVARJ2IFF34,INTEGRATED MARKET SERVICES (PHILIPPINES) INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5575,0,1,,,,0
+IN,PH,US,PH,254900NPK2XQCAG2H897,Associated Marine Officers' and Seamen's Union of the Philippines,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5555,0,1,,,,0
+IN,PH,DE,PH,549300XIY2M2AQ6B1K02,INFOSERVE INCORPORATED,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5543,0,1,,,,0
+IN,PH,US,PH,9845009B82FEDFYF0549,"DKSH Market Expansion Services Philippines, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5521,0,1,,,,0
+IN,PH,US,PH,549300PKHQSU7PED2T78,NETSUITE (PHILIPPINES) INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5504,0,1,,,,0
+IN,PH,US,PH,5493004GOGGY9KO0KA32,MANULIFE PHILIPPINES - GLOBAL TARGET INCOME FUND,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5498,0,1,,,,0
+IN,PH,DE,PH,254900EW0WUZXJVMF012,"Biñan Rural Bank, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5496,0,1,,,,0
+IN,PH,US,PH,5493004IV52FDH6OQZ18,"TRANSCOM WORLDWIDE (PHILIPPINES), INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5492,0,1,,,,0
+IN,PH,US,PH,549300W86N4HT5SZO450,PHILIPPINE BANK OF COMMUNICATIONS,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5471,0,1,,,,0
+IN,PH,DE,PH,549300YU0W08QA7IHH82,"BANCO MEXICO, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5458,0,1,,,,0
+IN,PH,US,PH,5493007ANY4H2MBWT639,PHILIPPINE DIGITAL ASSET EXCHANGE (PDAX) INC,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5429,0,1,,,,0
+IN,PH,US,PH,254900WA056EEAGGLT29,"Rural Bank of Sanchez Mira, Cagayan Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5409,0,1,,,,0
+IN,PH,US,PH,254900YK7QJM2ZYL7Q15,"Rural Bank of Solano (N.V.), Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5407,0,1,,,,0
+IN,PH,US,PH,2549002RDK7GAVZRDR10,PHILAM STRATEGIC GROWTH FUND INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5384,0,1,,,,0
+IN,PH,DE,PH,549300SKW1JTUC7QSK14,Hdi Securites Inc.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5373,0,1,,,,0
+IN,PH,DE,PH,2549001UCJ10AR345H88,"ABB, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5365,0,1,,,,0
+IN,PH,US,PH,894500WONXWSEI6ETQ23,"Rural Bank of Porac (Pamp), Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5361,0,1,,,,0
+IN,PH,DE,PH,254900P24RO3PVCKV074,"Aboitiz & Company, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5338,0,1,,,,0
+IN,PH,DE,PH,529900JWF36CH7HZ8B80,"AIR LIQUIDE PHILS., INC",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5333,0,1,,,,0
+IN,PH,US,PH,254900YDF6ILHK6ZLD13,"Philam Managed Income Fund, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5324,0,1,,,,0
+IN,PH,US,PH,254900FU1MWK0I0Q4J61,"International Container Terminal Services, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5319,0,1,,,,0
+IN,PH,US,PH,894500JFI38L36KI3128,LVB PHILIPPINES CONSULTANCY SERVICES INC,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5306,0,1,,,,0
+IN,PH,DE,PH,2549007S3D0B3GHBX979,"Dole Philippines, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5305,0,1,,,,0
+IN,PH,DE,PH,213800XK5IZXBRJR6R53,RBS ASIA SECURITIES INC,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5296,0,1,,,,0
+IN,PH,DE,PH,984500476YC98FTAA886,"OPTODEV, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5282,0,1,,,,0
+IN,PH,US,PH,2549004B3V7BP3K12Z49,"PAMI Global Bond Fund, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5278,0,1,,,,0
+IN,PH,DE,PH,254900KNBED09ESQ5932,"Paymongo Payments, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5266,0,1,,,,0
+IN,PH,DE,PH,254900C58OELBKYY7C82,UNObank Inc.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5265,0,1,,,,0
+IN,PH,US,PH,2549005L6VGT61WGC066,"PAMI Equity Index Fund, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5247,0,1,,,,0
+IN,PH,DE,PH,254900EGY2V6NF185Q74,"Therma Visayas, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5246,0,1,,,,0
+IN,PH,DE,PH,549300RYB1GASW5KV818,DOUBLEDRAGON CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5244,0,1,,,,0
+IN,PH,DE,PH,549300E31HOXGFRB1623,USSC MONEY SERVICES INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5232,0,1,,,,0
+IN,PH,DE,PH,984500C1CEE9D475BC11,"STMICROELECTRONICS, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5231,0,1,,,,0
+IN,PH,US,PH,SSFVF4P2TSJZYCOTL647,PHILIPPINE FOREMOST MILLING CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5224,0,1,,,,0
+IN,PH,DE,PH,254900771I6WUUYNL314,"EMERGING POWER, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5211,0,1,,,,0
+IN,PH,DE,PH,894500AF7YB6X94VHV82,HRDP Group Corporation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5209,0,1,,,,0
+IN,PH,DE,PH,254900RDFLCM12O8SK69,Manila Electric Company,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5198,0,1,,,,0
+IN,PH,DE,PH,54930071KB5MC8K69123,"BASF PHILIPPINES, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.519,0,1,,,,0
+IN,PH,DE,PH,254900YVSUE8KE25BN27,Schenker Philippines Inc,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5177,0,1,,,,0
+IN,PH,US,PH,984500836B5E4B4C3730,"MMS BULKSHIP MANAGEMENT (PHILIPPINES), INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5153,0,1,,,,0
+IN,PH,US,PH,5493008T5L43C5KMMQ97,"ECOLAB PHILIPPINES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5149,0,1,,,,0
+IN,PH,US,PH,549300F19E6UK44UXX20,"SUN LIFE PROSPERITY PHILIPPINE STOCK INDEX FUND, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5147,0,1,,,,0
+IN,PH,US,PH,2138001U8MYNRWWHPA69,"DE LA SALLE UNIVERSITY, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5144,0,1,,,,0
+IN,PH,US,PH,5493007DVMJXYV6Y2N65,"KUEHNE + NAGEL SHARED SERVICE CENTER, INC",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5124,0,1,,,,0
+IN,PH,DE,PH,254900Y30EM7QBM50W13,"HEDCOR, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5119,0,1,,,,0
+IN,PH,US,PH,529900Y4KT6JPZLR5D91,"LUFTHANSA TECHNIK PHILIPPINES, INC.- A JOINT VENTURE WITH MACROASIA CORPORATION",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5111,0,1,,,,0
+IN,PH,US,PH,254900YA6DFXF3AFC534,"BORAL PLASTERBOARD PHILIPPINES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.509,0,1,,,,0
+IN,PH,US,PH,549300FJQGBU8XR44X07,UNITED COCONUT PLANTERS BANK,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5087,0,1,,,,0
+IN,PH,DE,PH,254900LQWRS9U1BE2C92,"ALFM GROWTH FUND, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5062,0,1,,,,0
+IN,PH,US,PH,254900NJO99E7KVAA748,"Philam Dollar Bond Fund, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5062,0,1,,,,0
+IN,PH,US,PH,984500E0742FE3814198,ESSILOR PHILIPPINES OPTICAL DISTRIBUTION INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5057,0,1,,,,0
+IN,PH,US,PH,5493006U7EG6N6C84U65,"SUN LIFE PROSPERITY ACHIEVER FUND 2028, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5056,0,1,,,,0
+IN,PH,US,PH,5493006OI1QRXCVMQH94,"SUN LIFE PROSPERITY ACHIEVER FUND 2038, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5056,0,1,,,,0
+IN,PH,US,PH,549300NOR39NKCM7ID33,"SUN LIFE PROSPERITY ACHIEVER FUND 2048, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5056,0,1,,,,0
+IN,PH,US,PH,5493001HD2V5PAUIVU66,"HONEYWELL CEASA (SUBIC BAY) COMPANY, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5042,0,1,,,,0
+IN,PH,US,PH,5493007N60LP1051JD84,HAVI LOGISTICS PHILIPPINES INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5041,0,1,,,,0
+IN,PH,US,PH,549300M84SUI453HO042,"MARIA FRANCESCA TAN (MFT) GROUP OF COMPANIES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5041,0,1,,,,0
+IN,PH,US,PH,549300ULL2QWE0EP8M04,"ROP INVESTMENTS LIMITED, PHILIPPINES BRANCH",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5029,0,1,,,,0
+IN,PH,DE,PH,549300QSYPW3F9H2C337,JANUARIUS HOLDINGS INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5027,0,1,,,,0
+IN,PH,US,PH,2549006Q0HAZIJT9E809,REPUBLIC OF THE PHILIPPINES SOCIAL SECURITY SYSTEM,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5016,0,1,,,,0
+IN,PH,US,PH,5493004J77Q7Z7590S60,SMBF PROVIDENT FUND ASSOCIATION INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5015,0,1,,,,0
+IN,PH,DE,PH,549300AFS0UU6SDK2K95,Philippine National Bank,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4995,0,1,,,,0
+IN,PH,DE,PH,549300FYQJAVLTUPRN13,GINEBRA SAN MIGUEL INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.499,0,1,,,,0
+IN,PH,US,PH,254900YH8IWTJV49YV85,"Wilmar Edible Oils Philippines, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4984,0,1,,,,0
+IN,PH,US,PH,549300CAD33VKDJBDH39,"PDM PHILIPPINES INDUSTRIES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4979,0,1,,,,0
+IN,PH,DE,PH,254900EK2URNE8DCRU14,"Wipro Philippines, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4975,0,1,,,,0
+IN,PH,US,PH,549300ZB5ZHB5KT1A941,BENTLY NEVADA (PHILIPPINES) CORP.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.497,0,1,,,,0
+IN,PH,DE,PH,254900RB1RTZ84ZMF446,ROP Sukuk Trust,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4949,0,1,,,,0
+IN,PH,DE,PH,894500IADSFLTHWOSU37,Starpay Corporation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4933,0,1,,,,0
+IN,PH,US,PH,213800OOGNCEPHGCQ412,BROADRIDGE CONNECTIVITY SOLUTIONS PHILIPPINES INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.493,0,1,,,,0
+IN,PH,US,PH,894500F5OAHMJ4D1U580,PPS-PEPP FINANCIAL SERVICES CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4916,0,1,,,,0
+IN,PH,US,PH,5493004LMCWFB8HLNI10,GREPALIFE FIXED INCOME FUND CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4902,0,1,,,,0
+IN,PH,US,PH,894500OV1QLLTJN72M46,"RURAL BANK OF LANUZA (Surigao del Sur), INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.488,0,1,,,,0
+IN,PH,US,PH,549300TZ4TUGQ11AMO24,"PRICE SOLUTIONS PHILIPPINES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4879,0,1,,,,0
+IN,PH,US,PH,549300WJRIVY626H7D76,PHIL. VETERANS BANK,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4863,0,1,,,,0
+IN,PH,US,PH,5493000FDUJEXLCBKX50,POWER FILL INTERNATIONAL SUBIC INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4862,0,1,,,,0
+IN,PH,US,PH,8945006Y1O7KUUSTJH16,MLC Pharma and Medical Supplies Corp.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4844,0,1,,,,0
+IN,PH,DE,PH,984500M603C10656BF36,VICTORIA SHIPMGT. INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4833,0,1,,,,0
+IN,PH,DE,PH,89450031XMEDTZ4WOI62,AVITEK ANIMAL HEALTH INC,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4831,0,1,,,,0
+IN,PH,DE,PH,2549002IG9KKYPCM7A31,8 Profit Hub Inc.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.483,0,1,,,,0
+IN,PH,AMERICAS_OTHER,PH,2549002E5VAZNEJI1W35,BPI Asset Management and Trust Corporation,PH,AMERICAS_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.482,0,1,,,,0
+IN,PH,US,PH,984500E9E7B76B7X5720,CENTURY PACIFIC AGRICULTURAL VENTURES INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4816,0,1,,,,0
+IN,PH,US,PH,549300VZWIZE3158W321,SUN LIFE OF CANADA PROSPERITY PHIL. EQUITY FUND INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4813,0,1,,,,0
+IN,PH,DE,PH,254900BV13YPQSKRUF86,"San Puente Holdings, Inc",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4813,0,1,,,,0
+IN,PH,US,PH,984500DAFECDA81DUC35,ESSILOR SHARED SERVICES PHILIPPINES INCORPORATED,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4809,0,1,,,,0
+IN,PH,US,PH,2549008UAPVK62Y7NE43,Highpoint Services Network Philippines Inc.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4786,0,1,,,,0
+IN,PH,US,PH,984500CFDDB891EBTS69,ONLINE LOANS PILIPINAS FINANCING INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4781,0,1,,,,0
+IN,PH,US,PH,254900WZWKW7X55POZ05,AMCOR FLEXIBLES PHILIPPINES CORP.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4775,0,1,,,,0
+IN,PH,US,PH,984500D6XE87C07U8332,Al Amanah Islamic Investment Bank of the Philippines,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4774,0,1,,,,0
+IN,PH,US,PH,254900S86FNA9H907696,Roman Catholic Archbishop Of Manila,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4771,0,1,,,,0
+IN,PH,DE,PH,549300I6LL37A9M7RL60,"LINDE PHILIPPINES, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4759,0,1,,,,0
+IN,PH,DE,PH,254900DGZ6EGTLT63535,"Nestle Philippines, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4756,0,1,,,,0
+IN,PH,US,PH,894500WOI360XVAHL953,"Rural Bank of Sipocot(Camarines Sur), Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4754,0,1,,,,0
+IN,PH,US,PH,2549008UISYVGCYYV048,"ATRAM Philippine Equity Opportunity Fund, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4747,0,1,,,,0
+IN,PH,US,PH,549300H7T6LGL1RBVY83,"PHILIPS PHILIPPINES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4738,0,1,,,,0
+IN,PH,DE,PH,549300QGS1XOA2UIFQ86,BRENNTAG INGREDIENTS INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4734,0,1,,,,0
+IN,PH,DE,PH,89450002GSG26FQYZ239,"LifeBank, A Rural Bank",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4715,0,1,,,,0
+IN,PH,DE,PH,254900S4W7WQEC4U5U98,"PALOO FINANCING, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4713,0,1,,,,0
+IN,PH,US,PH,894500S0ZKXQ7RTV9Q62,"MONEY MALL RURAL BANK, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.471,0,1,,,,0
+IN,PH,US,PH,549300W4805DTM3PL558,"Investments 2234 Philippines Fund I (SPV-AMC), Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.469,0,1,,,,0
+IN,PH,US,PH,549300E4Y7JN7VN8P057,MANULIFE INVESTMENT MANAGEMENT AND TRUST CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4684,0,1,,,,0
+IN,PH,US,PH,529900K4HG81TB5OEN26,Henkel Asia Pacific Service Centre,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.468,0,1,,,,0
+IN,PH,US,PH,254900VA32LYZZNXQF50,"Banco San Vicente, Inc. (A Rural Bank)",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4672,0,1,,,,0
+IN,PH,DE,PH,5493002A4AR5XK37G321,"PHILIPPINE AIRLINES, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4669,0,1,,,,0
+IN,PH,DE,PH,254900PKCHQJCFQUCE62,EKKLESIA MUTUAL FUND INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4668,0,1,,,,0
+IN,PH,US,PH,254900145SOJJFPUPU84,Acer Global Merchandise Philippines Inc.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4663,0,1,,,,0
+IN,PH,US,PH,5493008WQY4CY84QGL98,PHIL. GOLD PROCESSING & REFINING CORP.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4649,0,1,,,,0
+IN,PH,DE,PH,254900AHGSPBPS34T495,PPI PAZIFIK POWER INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4648,0,1,,,,0
+IN,PH,DE,PH,549300JWFZ2NJWYJ8X67,SAN MIGUEL AEROCITY INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4647,0,1,,,,0
+IN,PH,US,PH,549300SQYI82RVWFN715,METROPOLITAN BANK & TRUST COMPANY,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4645,0,1,,,,0
+IN,PH,AMERICAS_OTHER,PH,549300U3SV5LV88YPI34,GREPALIFE DOLLAR BOND FUND CORPORATION,PH,AMERICAS_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4635,0,1,,,,0
+IN,PH,US,PH,549300G6J4PN39HDJC57,THOMSON REUTERS CORPORATION PTE. LTD. - PHILIPPINE BRANCH,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4632,0,1,,,,0
+IN,PH,US,PH,254900SLFSH0EYWZ8W48,"SCHENEIDER ELECTRIC IT PHILIPPINES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4631,0,1,,,,0
+IN,PH,DE,PH,984500D8DFTAE2B99F36,ACER PHILIPPINES INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.463,0,1,,,,0
+IN,PH,US,PH,254900C70M4NHRI85812,"ATRAM Dynamic Allocation Fund, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4621,0,1,,,,0
+IN,PH,US,PH,894500YSQ761RB6S2689,"Cantilan Bank, Inc. (A Rural Bank)",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4618,0,1,,,,0
+IN,PH,US,PH,635400ECABCKLTJVME44,TRANSFERMATE PHILIPPINES CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4615,0,1,,,,0
+IN,PH,US,PH,254900FIIA71EWVPNL25,"First Metro Save and Learn F.O.C.C.U.S. Dynamic Fund, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.461,0,1,,,,0
+IN,PH,US,PH,9845003DO90D2B871D10,OMEGA HEALTHCARE MANAGEMENT SERVICES INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4609,0,1,,,,0
+IN,PH,US,PH,254900NMHK1LQWO5H733,"ALFM PESO BOND FUND, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4608,0,1,,,,0
+IN,PH,US,PH,549300V444MLLOL40V54,"SUN LIFE PROSPERITY DYNAMIC FUND, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.46,0,1,,,,0
+IN,PH,DE,PH,98450096FZC4703L5160,"PUBLICIS MANILA, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4599,0,1,,,,0
+IN,PH,US,PH,98450079CB5E6FOEKT54,"ESSILOR MANUFACTURING PHILIPPINES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4591,0,1,,,,0
+IN,PH,US,PH,254900UO1U1IEHCVF528,ALFM EURO BOND FUND INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.459,0,1,,,,0
+IN,PH,DE,PH,254900S1D4UAUERXGL63,SPI TECHNOLOGIES INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.459,0,1,,,,0
+IN,PH,DE,PH,9845004DG48940AY0820,SUN REACHERS INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4585,0,1,,,,0
+IN,PH,US,PH,549300UB8238Q8UPD648,PAMI Asia Balanced Fund Inc.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4578,0,1,,,,0
+IN,PH,US,PH,8945004HCVXD5KQCNI06,"RURAL BANK OF SAN MATEO (ISABELA), INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4578,0,1,,,,0
+IN,PH,DE,PH,2549002PHMN9701C0T60,"UNAHCO, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4577,0,1,,,,0
+IN,PH,DE,PH,549300Q859563J09SC88,31988 Foundation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4572,0,1,,,,0
+IN,PH,DE,PH,984500DB90BFRD7TB627,"Araw Technologies, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4571,0,1,,,,0
+IN,PH,US,PH,8945004AQJBCPDJJIM66,RBANK. OF ROSARIO (LA UNION) INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4568,0,1,,,,0
+IN,PH,US,PH,894500X6D6QIVW6Q2C69,"Own Bank, The Rural Bank of Cavite City, Inc",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4557,0,1,,,,0
+IN,PH,DE,PH,213800I63HUPTGAFY559,"SEAOIL PHILIPPINES, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4554,0,1,,,,0
+IN,PH,DE,PH,2549001PBA2MCQAWHX33,VSL International Ltd.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4551,0,1,,,,0
+IN,PH,US,PH,254900BQRWJR4V1XY226,"MBG Equity Investment Fund, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4537,0,1,,,,0
+IN,PH,US,PH,549300F9ESZBV3DZ6E78,MANULIFE CHINA BANK LIFE ASSURANCE CORP - GLOBAL TARGET INCOME FUND,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4534,0,1,,,,0
+IN,PH,US,PH,254900H2P6KET1UZLF84,PMFTC Inc. Philip Morris Philippines Manufacturing Inc. Multi Employer Retirement Benefit Plan,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4529,0,1,,,,0
+IN,PH,US,PH,549300LOTFYYCSIC4770,AIA INVESTMENT MANAGEMENT AND TRUST CORPORATION PHILIPPINES UNDER THE NAMEAND STYLE OF AIAIM PH,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4527,0,1,,,,0
+IN,PH,DE,PH,2138009XN3KTAAKUPR35,JOLLIBEE FOODS CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4524,0,1,,,,0
+IN,PH,DE,PH,254900Z505LF1NK52V56,AICOM MANPOWER SERVICES,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4522,0,1,,,,0
+IN,PH,DE,PH,254900CG8L5H405C9063,GOTYME BANK CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4515,0,1,,,,0
+IN,PH,DE,PH,549300NZIGN6CQ6F9A46,INTEGRATED MICRO-ELECTRONICS INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4509,0,1,,,,0
+IN,PH,DE,PH,254900P57OOZ5AY5C521,Megaworld Corporation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4504,0,1,,,,0
+IN,PH,US,PH,5299001D8AFME8C20Q29,Schaeffler Philippines Inc.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4501,0,1,,,,0
+IN,PH,DE,PH,2138002VZ5BXPOMO9J32,"FLY ACE HOLDINGS, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4493,0,1,,,,0
+IN,PH,DE,PH,2549003WBGIWUSNRZX59,PHILEX MINING CORP.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4492,0,1,,,,0
+IN,PH,DE,PH,549300IU4MWWNXLYOH47,SITEL PHILIPPINES CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4492,0,1,,,,0
+IN,PH,DE,PH,9845006E6C16YS9ED470,HH CONSULTING INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4485,0,1,,,,0
+IN,PH,US,PH,549300TH4BNEB622D314,"WRIGLEY PHILIPPINES, INCORPORATED",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4484,0,1,,,,0
+IN,PH,US,PH,549300HBCE80QXKII590,SAN MIGUEL GLOBAL POWER HOLDINGS CORP.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4472,0,1,,,,0
+IN,PH,DE,PH,549300DXFOJWFCYAGP78,NALCO PHILIPPINES INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4466,0,1,,,,0
+IN,PH,AMERICAS_OTHER,PH,254900ZDHUHW37PF0W24,"NCM MUTUAL FUND OF THE PHILS., INC.",PH,AMERICAS_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4465,0,1,,,,0
+IN,PH,US,PH,254900JLQP5HFUXXQK21,"Phoenix Petroleum Philippines, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4455,0,1,,,,0
+IN,PH,US,PH,8945006FKM6W59TJLJ32,AHAV Business Process Outsourcing Services,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4443,0,1,,,,0
+IN,PH,DE,PH,254900DFNVPKG3WZ7O76,"GPay Network PH, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4443,0,1,,,,0
+IN,PH,US,PH,213800YFUFE2K89R2B54,PHILIPPINE TRANSMARINE CARRIERS INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4443,0,1,,,,0
+IN,PH,DE,PH,54930093ZQNC5BY7OG92,"SIGNIFY PHILIPPINES, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4443,0,1,,,,0
+IN,PH,US,PH,25490084Z4Q8FRMJH837,"DENTSU PERFORMANCE PHILIPPINES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4441,0,1,,,,0
+IN,PH,DE,PH,254900B0YAIKCLF7J154,FGP CORP.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4437,0,1,,,,0
+IN,PH,US,PH,254900L1EIR1CG28MR52,Amkor Technology Philippines Inc,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4434,0,1,,,,0
+IN,PH,DE,PH,254900RANKFNVI0V3653,Pagbilao Energy Corporation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4431,0,1,,,,0
+IN,PH,US,PH,549300X0MVH42CY8Q105,ASIAN DEVELOPMENT BANK,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4424,0,1,,,,0
+IN,PH,DE,PH,2549008F5QI7Y2FDN526,Nickel Asia Corporation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4423,0,1,,,,0
+IN,PH,DE,PH,984500CRF3FY5537B310,"GIGA ACE 6, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4419,0,1,,,,0
+IN,PH,US,PH,4IDQTQC5NXVM3WSFHR30,BANGKO SENTRAL NG PILIPINAS,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4414,0,1,,,,0
+IN,PH,DE,PH,549300BTNWR3X658Z105,TOPJUAN TECH CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4412,0,1,,,,0
+IN,PH,US,PH,254900HKNTC2EEHEGL80,Ryonan Electric Philippines Corporation,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4403,0,1,,,,0
+IN,PH,DE,PH,254900RO3ZZOHC1RCJ04,Puratos (Philippines) Inc.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.44,0,1,,,,0
+IN,PH,US,PH,254900C2V1YEVU0VVB68,"Top Bank Philippines, Inc. (A Rural Bank)",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4396,0,1,,,,0
+IN,PH,US,PH,54930051TIGNGQ4Z3Y02,"SUN LIFE PROSPERITY DOLLAR ABUNDANCE FUND, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4395,0,1,,,,0
+IN,PH,US,PH,549300DHFHCIQ6Y51250,SUN LIFE PROSPERITY DOLLAR ADVANTAGE FUND INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4395,0,1,,,,0
+IN,PH,US,PH,549300SCSSLGV0B02X36,"SUN LIFE PROSPERITY DOLLAR WELLSPRING FUND, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4395,0,1,,,,0
+IN,PH,DE,PH,98450094B1BE7BD9CX59,SGS PHILS. INC,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4389,0,1,,,,0
+IN,PH,DE,PH,984500F12BESDDE70K05,SKILLS INTL. CO. INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4385,0,1,,,,0
+IN,PH,US,PH,254900OTYUG8YYDAQ761,"VICAR APOSTOLIC OF CALAPAN, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4385,0,1,,,,0
+IN,PH,DE,PH,2549006F0WW5IJ235H35,"AMERTRON, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4384,0,1,,,,0
+IN,PH,US,PH,549300UW4UH6XT2X8C50,BANK OF THE PHIL. ISLANDS,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4382,0,1,,,,0
+IN,PH,DE,PH,8945009OA4JE4ZBSZY50,"Tonik Digital Bank, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4371,0,1,,,,0
+IN,PH,US,PH,549300NLRS64LAXIVL17,SUN LIFE OF CANADA PROSPERITY BALANCED FUND INC,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.437,0,1,,,,0
+IN,PH,US,PH,894500P2KTZOCIBFJN67,Metro Pacific Investments Corporation,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4367,0,1,,,,0
+IN,PH,DE,PH,254900DBWM1NTQKYXP89,Eramen Minerals Inc.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4362,0,1,,,,0
+IN,PH,DE,PH,2549001QRWOO8212OQ71,Isla LPG Corporation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4362,0,1,,,,0
+IN,PH,US,PH,894500RO1YT8LC40B281,MAKILING DEVELOPMENT BANK CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4358,0,1,,,,0
+IN,PH,US,PH,2549006F70TZGVZBLL71,Future Innovation Management Academy (FINMAC) Inc.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4357,0,1,,,,0
+IN,PH,US,PH,254900UT7YQ6PEG7MU44,JEBSEN & JESSEN INGREDIENTS (P) INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4351,0,1,,,,0
+IN,PH,US,PH,2549009ME4AK3ADZE687,MEGA INTERNATIONAL COMMERCIAL BANK CO. LTD.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4343,0,1,,,,0
+IN,PH,DE,PH,9845005C0D0A15ZCDF51,"PNB Securities, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4341,0,1,,,,0
+IN,PH,DE,PH,254900TMWW9DC8K4TE36,"PRYCE GASES, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4339,0,1,,,,0
+IN,PH,US,PH,549300V9K708TICWWC92,"RURAL BANK OF LA PAZ, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4336,0,1,,,,0
+IN,PH,DE,PH,5299006JDPQU5NI23Q41,Vega International Shipmanagement Inc,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4328,0,1,,,,0
+IN,PH,DE,PH,2138006GJ4HIOQZSVX71,CARMEN COPPER CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4322,0,1,,,,0
+IN,PH,US,PH,9845009783E9705DA385,Jship Management Philippines OPC,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.432,0,1,,,,0
+IN,PH,DE,PH,984500641DDEEF61FB22,"VIRTUS SYSTEMS, INC",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4316,0,1,,,,0
+IN,PH,US,PH,984500B38C07A5B03B25,"7107 ISLANDS PLACEMENT & PROMOTIONS, INC",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4311,0,1,,,,0
+IN,PH,US,PH,549300JORLBR93L7K611,"SUN LIFE PROSPERITY DOLLAR STARTER FUND, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4309,0,1,,,,0
+IN,PH,US,PH,254900W7RO197GWSHB05,"ALFM MONEY MARKET FUND, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4305,0,1,,,,0
+IN,PH,US,PH,549300TJ3L4M9JTBEW53,"SUN LIFE PROSPERITY PESO VOYAGER FEEDER FUND, INC",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4303,0,1,,,,0
+IN,PH,US,PH,894500ADOQ52GWRVYJ54,SP ADVISORY & CONSULTING SERVICES INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4301,0,1,,,,0
+IN,PH,US,PH,254900R498ZMCZ2LOF96,FIRST METRO SAVE & LEARN PHILIPPINE INDEX FUND (SALPHIN) INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4296,0,1,,,,0
+IN,PH,US,PH,254900463B5GB7LU9K81,"First Metro Philippine Equity Exchange Traded Fund, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4296,0,1,,,,0
+IN,PH,US,PH,8945007PRF1RRI73BI14,"GM BANK OF LUZON, INC. ( A RURAL BANK)",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4289,0,1,,,,0
+IN,PH,US,PH,8945005H8IQOSF8GOJ66,"Rural Bank of Bacolod City, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4285,0,1,,,,0
+IN,PH,US,PH,549300RTOPP4NYEQXI84,APAC BUSINESS SUPPORT SERVICES,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4284,0,1,,,,0
+IN,PH,DE,PH,894500FJU9099EPY1A42,ASIANINVEST CONSULTANTS INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4277,0,1,,,,0
+IN,PH,DE,PH,254900P0ZPSRAHUO2131,"GT Capital Holdings, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4271,0,1,,,,0
+IN,PH,US,PH,254900LYER8M78KTRQ04,"ATRAM Total Return Dollar Bond Fund, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4264,0,1,,,,0
+IN,PH,US,PH,5493007O4ESHWQIJQ015,"SUN LIFE PROSPERITY PESO STARTER FUND, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4259,0,1,,,,0
+IN,PH,US,PH,254900MZ524GKRDF5V85,"Welcome Bank, Rural Bank Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4256,0,1,,,,0
+IN,PH,DE,PH,549300MW9OVMRJKCB072,ROBINSONS BANK CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4249,0,1,,,,0
+IN,PH,DE,PH,98450037A05D65W5CE39,SIKA PHILIPPINE INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4249,0,1,,,,0
+IN,PH,US,PH,529900IXDGCCLXPZDB73,Cronimet Metal Philippines Inc.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4238,0,1,,,,0
+IN,PH,US,PH,549300KYZ7XXY62NYK52,SUN LIFE OF CANADA PROSPERITY BOND FUND INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4235,0,1,,,,0
+IN,PH,AMERICAS_OTHER,PH,549300A7SWFQC7TXDQ26,GREPALIFE BALANCED FUND CORPORATION,PH,AMERICAS_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4222,0,1,,,,0
+IN,PH,US,PH,8945004771OP0SYBGU80,Cooperative Bank of Cagayan,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4217,0,1,,,,0
+IN,PH,US,PH,52990029B29N9YX3EH05,"Brenntag Chemicals Philippines, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4206,0,1,,,,0
+IN,PH,DE,PH,984500D6C0BE78C0E897,"BOSTIK PHILIPPINES, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4196,0,1,,,,0
+IN,PH,DE,PH,2549006O24D4ZUP2X838,"AIPH Merchant Services, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4174,0,1,,,,0
+IN,PH,US,PH,549300G0XRQ3LH2MSQ49,MANULIFE CHINA BANK LIFE ASSURANCE CORP - ASIA PACIFIC BOND FUND,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4166,0,1,,,,0
+IN,PH,US,PH,254900PDDLNNMSYV1217,SAMSUNG ELECTRONICS PHILIPPINES CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4166,0,1,,,,0
+IN,PH,DE,PH,9845000DB6C6E97D5D81,Probe CX Philippines Inc,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4155,0,1,,,,0
+IN,PH,US,PH,254900L6SRE70EKZOE81,Ni Ao Software Limited Corp.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4154,0,1,,,,0
+IN,PH,DE,PH,98450005081LC44D1595,"NEC PHILIPPINES, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4151,0,1,,,,0
+IN,PH,DE,PH,254900YF6C9T330IOE07,Sky Cable Corporation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.415,0,1,,,,0
+IN,PH,US,PH,5493008BR4EC6IEUBG57,"SUN LIFE PROSPERITY GS FUND, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4149,0,1,,,,0
+IN,PH,DE,PH,2549001LKYZJC418SS88,"ATR Asset Management, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4141,0,1,,,,0
+IN,PH,US,PH,894500UT2JUR5OBEKU28,MVSM BANK (A RURAL BANK SINCE 1953) INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.414,0,1,,,,0
+IN,PH,DE,PH,213800SWFIM2MUXO4221,ASIASOURCE FINANCIAL INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4137,0,1,,,,0
+IN,PH,US,PH,254900RAZ9PYPWCDIW56,PHILIPPINE EQUITY PARTNERS INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4137,0,1,,,,0
+IN,PH,US,PH,8945009S4HY161MZCJ55,IGT TECHNOLOGIES PHILIPPINES INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4136,0,1,,,,0
+IN,PH,US,PH,529900CAISEMS1D0FV45,"Sisters of Mary of Banneux, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4129,0,1,,,,0
+IN,PH,DE,PH,984500E4E7XC8CCF6059,PILIPINAS KAO INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4119,0,1,,,,0
+IN,PH,US,PH,984500550AA771MCE452,"21ST CENTURY MANPOWER RESOURCES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.41,0,1,,,,0
+IN,PH,DE,PH,894500HH4M3QJ17MHA74,IMMUGANDA TRADING CORP.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4089,0,1,,,,0
+IN,PH,DE,PH,894500VHPFPLAP439Q03,"Rural Bank of Bay, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4089,0,1,,,,0
+IN,PH,US,PH,5493005KVQB0Q5B5EP81,"Maybank Philippines, Incorporated",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4087,0,1,,,,0
+IN,PH,US,PH,254900BHW0XWR18ITJ45,INDUSTRIAL AND COMMERCIAL BANK OF CHINA LIMITED - MANILA BRANCH,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.408,0,1,,,,0
+IN,PH,DE,PH,254900NFV7QTJB821G52,"CENTURY PACIFIC FOOD, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4079,0,1,,,,0
+IN,PH,US,PH,894500EKFNWO9CDR4B68,"Southeast Country Bank, Inc. (A Rural Bank)",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4076,0,1,,,,0
+IN,PH,US,PH,254900X4ZMKI345ZS168,"Katipunan Banking Corporation ""A Rural Bank""",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4073,0,1,,,,0
+IN,PH,US,PH,254900YQBA93BUFL6I05,Amcor Specialty Cartons Rizal Corp.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4071,0,1,,,,0
+IN,PH,US,PH,549300U56PTCFW4ZGC72,"TELLABS PHILIPPINES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4068,0,1,,,,0
+IN,PH,US,PH,2549007J5WLP4CJSJ346,"PHILEQUITY MANAGEMENT, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4065,0,1,,,,0
+IN,PH,DE,PH,549300CUOTXJCLZ00K49,MONDE NISSIN CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4062,0,1,,,,0
+IN,PH,DE,PH,2549005UQT00PB6M7H55,ISTANA DEV. CORP.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4061,0,1,,,,0
+IN,PH,AMERICAS_OTHER,PH,549300LF0ECT0YGJTB41,BANANA FINTECH SERVICES CORPORATION,PH,AMERICAS_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4057,0,1,,,,0
+IN,PH,US,PH,984500E544064C38D056,"NESTLE BUSINESS SERVICES AOA, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.405,0,1,,,,0
+IN,PH,DE,PH,2549004F9YLYB98MYC36,I'L PRIMO ILLUMINATI INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4046,0,1,,,,0
+IN,PH,US,PH,254900SP161IWE9MPN41,"ALFM DOLLAR BOND FUND, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4042,0,1,,,,0
+IN,PH,US,PH,549300HH4X3ONRTWA138,GOVERNMENT SERVICE INSURANCE SYSTEM,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4042,0,1,,,,0
+IN,PH,DE,PH,549300B14PK448EZ1Q88,PHILIPPINE TRUST COMPANY,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4029,0,1,,,,0
+IN,PH,US,PH,8945005KRWHWKT7G5Q36,NORTH STAR BANK (A RURAL BANK) INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4024,0,1,,,,0
+IN,PH,DE,PH,984500E9FAAMVCCF7D55,"CHINA BANK SAVINGS, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4023,0,1,,,,0
+IN,PH,US,PH,2549008WUABSW5YX6X96,Denso Ten Solutions Philippines Corporation,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4006,0,1,,,,0
+IN,PH,US,PH,549300TXGWDN7R2DMQ15,MANULIFE CHINABANK LIFE ASSURANCE CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4,0,1,,,,0
+IN,PH,US,PH,254900EAVAYF2A6P5U65,Chartres Combine Holdings Inc,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3996,0,1,,,,0
+IN,PH,US,PH,254900WRBIIZ8LO4LA38,SCG INTERNATIONAL (PHILIPPINES) CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3979,0,1,,,,0
+IN,PH,DE,PH,254900BUUS5N9MUSIS52,Robinsons Land Corporation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3978,0,1,,,,0
+IN,PH,US,PH,549300M0NN29T4F38J57,"CTS GLOBAL EQUITY GROUP, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3976,0,1,,,,0
+IN,PH,DE,PH,5493005X8D8YRVOM8I04,"STRONGVIEW, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3973,0,1,,,,0
+IN,PH,DE,PH,2138009RXTCUCF6Q2P23,BANANA CORP.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3971,0,1,,,,0
+IN,PH,DE,PH,8945007GIMS5J5GJ1V54,KIBOU NIHON TRADING CORP.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3965,0,1,,,,0
+IN,PH,DE,PH,2549008F3USMZFJAJ303,AB MAURI PHILIPPINES INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3959,0,1,,,,0
+IN,PH,DE,PH,549300WAONYUUQXBUK29,EZP DEVELOPMENT INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3959,0,1,,,,0
+IN,PH,DE,PH,254900RA3BJAI8VCP284,FIRST GAS POWER CORP.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.395,0,1,,,,0
+IN,PH,DE,PH,549300IFQMLWM2X26612,CHINA BANKING CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3945,0,1,,,,0
+IN,PH,DE,PH,984500C6DI3A8BB54149,ELTEE CONSTRUCTION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.392,0,1,,,,0
+IN,PH,US,PH,2549008QQU0CJLWUXL04,"Netbank (A Rural Bank), Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3915,0,1,,,,0
+IN,PH,DE,PH,984500AAF41A59DX3758,WISE PILIPINAS INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3911,0,1,,,,0
+IN,PH,DE,PH,9845003K38A1CC991V73,MEGA MAN. CORP,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3908,0,1,,,,0
+IN,PH,DE,PH,984500EF50744DX8D512,"ADC PHILIPPINES, INC",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3901,0,1,,,,0
+IN,PH,US,PH,9845006EC3C9EAFA0D06,MT. ZION INTERNATIONAL PLACEMENT AGENCY INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.39,0,1,,,,0
+IN,PH,DE,PH,254900UWG4AO9VMTZD56,MANDARIN SECURITIES CORP.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3891,0,1,,,,0
+IN,PH,US,PH,254900VD5O8AL4INWC59,ALFM GLOBAL MULTI-ASSET INCOME FUND INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3884,0,1,,,,0
+IN,PH,US,PH,894500TUQGEJSTQBNY10,"RURAL BANK OF MONTALBAN, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3878,0,1,,,,0
+IN,PH,US,PH,254900ECMSLS21XGF173,"Atram Alpha Opportunity Fund, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3869,0,1,,,,0
+IN,PH,US,PH,254900ZK8SFW86NAUX17,NATIONAL REINSURANCE CORPORATION OF THE PHILIPPINES,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3865,0,1,,,,0
+IN,PH,US,PH,2549002DU9IWEXT2QZ52,"MBG Asia Frontier Feeder UMF, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3845,0,1,,,,0
+IN,PH,US,PH,254900TH9XAHNZA9N034,MEGAWIDE CONSTRUCTION CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3839,0,1,,,,0
+IN,PH,US,PH,549300QHUZF6T8414J93,UPVISOR BUSINESS SOLUTIONS LTD. CO.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3831,0,1,,,,0
+IN,PH,DE,PH,549300AGC9NFF12PHN68,SAN MIGUEL CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3828,0,1,,,,0
+IN,PH,US,PH,254900SLKWQ1ESNNEZ50,"AFFINITY GLOBAL MULTI-ASSET FUND, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3819,0,1,,,,0
+IN,PH,US,PH,9845004B56FC4FDC1B78,DENSO PHILIPPINES CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3819,0,1,,,,0
+IN,PH,US,PH,984500D5B6F95C45B962,CARZIQO CAR RENTAL SERVICES,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3817,0,1,,,,0
+IN,PH,US,PH,984500E37BFA5FA5FE45,DENSO TEN PHILIPPINES CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3809,0,1,,,,0
+IN,PH,US,PH,254900OPOSJ1F48FDN63,Intelenet Global Philippines Inc,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3804,0,1,,,,0
+IN,PH,DE,PH,5493001IIQX5TWILOL22,ERICSSON TELECOMMUNICATIONS INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3801,0,1,,,,0
+IN,PH,US,PH,549300HEDGJ0YSWCDQ76,"SUN LIFE PROSPERITY WORLD VOYAGER FUND, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3799,0,1,,,,0
+IN,PH,US,PH,254900ZBS4C7EFTFG503,"ATRAM Corporate Bond Fund, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3796,0,1,,,,0
+IN,PH,US,PH,25490054BE7ZTL2NPG05,"Atram AsiaPlus Equity Fund, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3796,0,1,,,,0
+IN,PH,US,PH,54930006FXU34VZRXM40,DECATHLON PHILIPPINES INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3796,0,1,,,,0
+IN,PH,US,PH,CIKZWI6KV077KV2E2J69,Rizal Commercial Banking Corporation,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3786,0,1,,,,0
+IN,PH,DE,PH,254900VS17SW1TTQ6P06,ITO-Seisakusho Phillippines Corporation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3777,0,1,,,,0
+IN,PH,US,PH,254900I6XR5VZ08PH636,"First Metro Consumer Fund, Inc.,",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3767,0,1,,,,0
+IN,PH,US,PH,529900KKKGKIVWE70241,San Ignacio Energy Resources Development Corporation,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3766,0,1,,,,0
+IN,PH,US,PH,984500B6C79R6C705C41,"SUMMIT BANK (RURAL BANK OF TUBLAY, INC.)",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3763,0,1,,,,0
+IN,PH,US,PH,9845009552FF5A1D8F40,BLUEOCEAN SHIPMANAGEMENT INTERNATIONAL INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3759,0,1,,,,0
+IN,PH,US,PH,529900S5MGXV4GMWY310,"DWS Global Business Services, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3756,0,1,,,,0
+IN,PH,DE,PH,984500C68DB006082A18,VAULT OUTSOURCING OPC,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3754,0,1,,,,0
+IN,PH,US,PH,894500PYG8NLHNMFZN37,LOLC Bank Philippines Inc.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3749,0,1,,,,0
+IN,PH,DE,PH,254900YDDB694NPELO08,AbbVie Philippines Inc.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3734,0,1,,,,0
+IN,PH,DE,PH,9845001F9646059LA023,SYNPULSE PHILIPPINES INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3727,0,1,,,,0
+IN,PH,US,PH,2549008L4Q3WEVC2H093,"First Metro Save and Learn Balanced Fund, Inc.,",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3724,0,1,,,,0
+IN,PH,US,PH,9ZOQDHZEWZ35STU41A29,LA FILIPINA UY GONGCO CORP.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3718,0,1,,,,0
+IN,PH,US,PH,529900RAHBALMYIJ3T08,Republic of the Philippines,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3717,0,1,,,,0
+IN,PH,DE,PH,894500G1K0CJHX83UY28,Honeyworth Corporation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3715,0,1,,,,0
+IN,PH,US,PH,549300DDB3T47QH1O698,"PHILAM EQUITABLE LIFE ASSURANCE COMPANY, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.371,0,1,,,,0
+IN,PH,DE,PH,984500573BE11592E677,"CHRYSO PHILIPPINES, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3705,0,1,,,,0
+IN,PH,AMERICAS_OTHER,PH,5493003F2R03I6R05M35,MANUFACTURERS LIFE INSURANCE CO. PHILS. INC.,PH,AMERICAS_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3703,0,1,,,,0
+IN,PH,US,PH,549300DIAG42G1P8L472,Sunshine Star Holding Corporation,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3694,0,1,,,,0
+IN,PH,US,PH,25490077A2E5SGKTH526,SteelAsia Manufacturing Corporation,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3692,0,1,,,,0
+IN,PH,DE,PH,254900YYOD0ZCCUJ6668,FIRST NATGAS POWER CORP.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3689,0,1,,,,0
+IN,PH,DE,PH,984500EFE37904C38646,SPACE LOGIC OPC,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3676,0,1,,,,0
+IN,PH,US,PH,254900QDD5K95CNENT89,Kanepackage Philippine Inc.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3671,0,1,,,,0
+IN,PH,US,PH,2549006QY9VRIC0G7L23,"DOW CHEMICAL PHILIPPINES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3655,0,1,,,,0
+IN,PH,US,PH,254900Y66LT76VBXTH29,"PHILIPPINE STOCK INDEX FUND, CORP.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.365,0,1,,,,0
+IN,PH,US,PH,98450078E8AA6C2AF176,ISHI 2926 VEHICLE TRADING,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3635,0,1,,,,0
+IN,PH,DE,PH,2549000OA9TD0UEZKZ48,"CEMCO HOLDINGS, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3633,0,1,,,,0
+IN,PH,DE,PH,254900KTPCTKZ5BBXQ83,Peak United Group Corp.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3617,0,1,,,,0
+IN,PH,US,PH,254900UBMR9OQ6CROL25,TEAM (PHILIPPINES) ENERGY CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3617,0,1,,,,0
+IN,PH,DE,PH,984500E997DA4SF42F78,"MYNT, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3588,0,1,,,,0
+IN,PH,US,PH,549300J97JXR3URQK322,UNION BANK OF THE PHILIPPINES,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3587,0,1,,,,0
+IN,PH,US,PH,254900FHXOR4ZLVHSU42,"First Metro Save and Learn Dollar Bond Fund, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3581,0,1,,,,0
+IN,PH,DE,PH,549300OXF76YB1HQ1490,MORNING STAR MILLING CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3579,0,1,,,,0
+IN,PH,US,PH,254900ROK3SCRTHI7Y69,"The Andresons Group, Incorporated",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3577,0,1,,,,0
+IN,PH,US,PH,894500598A6RLE2QNN11,"Rural Bank of Sagay, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3574,0,1,,,,0
+IN,PH,US,PH,984500A87E1ED6687T53,VEER-O-METALS (PHILIPPINES) INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3553,0,1,,,,0
+IN,PH,US,PH,9845007A98EF2998BC71,"ENCORE RECEIVABLE MANAGEMENT, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.355,0,1,,,,0
+IN,PH,US,PH,98450019BB9CED264C19,"RURAL BANK OF SAN NARCISO, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3549,0,1,,,,0
+IN,PH,DE,PH,2549001NILAZ2IS02Y35,FIRST GEN CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3543,0,1,,,,0
+IN,PH,US,PH,549300HEENDPDEG51X58,SIMON AGRIVENTURES CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3543,0,1,,,,0
+IN,PH,DE,PH,894500G861RK4GUVF094,EASYPAY GLOBAL EMI CORP.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3536,0,1,,,,0
+IN,PH,US,PH,984500A5IE3CF9B9AB97,NORTHCOM SECURITY & INVESTIGATION AGENCY INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3531,0,1,,,,0
+IN,PH,DE,PH,254900EWBCRKFAD5D452,J&K IMPEX GROUP CORP.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3525,0,1,,,,0
+IN,PH,DE,PH,25490020YWM5TTT8OZ70,IXUS SOLAR ENERGY CORP.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3524,0,1,,,,0
+IN,PH,DE,PH,254900Z1HZTP35ISGS52,OPUS SOLAR ENERGY CORP.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3524,0,1,,,,0
+IN,PH,US,PH,549300UJRT4KE08RIS90,PHILIPPINE DEPOSITORY & TRUST CORP.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3521,0,1,,,,0
+IN,PH,US,PH,2549001RY2MTRAUQKR93,BPI Wealth Builder Multi-Asset Mutual Fund Inc. doing business under the trade names and styles of BPI Wealth Builder Fund and BPI Wealth Builder,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3515,0,1,,,,0
+IN,PH,DE,PH,894500TCKDLYH0SKGE49,Metro South Cooperative Bank,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.35,0,1,,,,0
+IN,PH,DE,PH,254900O6XH28945W2A04,"GLOBAL DOMINION FINANCING, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3498,0,1,,,,0
+IN,PH,US,PH,984500N63888EH004383,FIRST MULTI-TECH INDL. & DEV. (FMIDC) CORP.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3482,0,1,,,,0
+IN,PH,DE,PH,254900A73UX5GOI72U71,"MALAYAN INSURANCE COMPANY, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3482,0,1,,,,0
+IN,PH,DE,PH,254900ZLY098SGWTM757,KOODZYM CORP.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3481,0,1,,,,0
+IN,PH,DE,PH,3FGIIBS1PEI1FYQBGN97,"BDO UNIBANK, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.348,0,1,,,,0
+IN,PH,DE,PH,254900EG3W3FYT046H61,J & k CONSULTING INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.348,0,1,,,,0
+IN,PH,DE,PH,25490096FR9KAW5DOP07,Soldivo Strategic Growth Fund,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3475,0,1,,,,0
+IN,PH,US,PH,213800DG6WIZICM6PH10,HUAWEI TECHNOLOGIES PHILS. INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3459,0,1,,,,0
+IN,PH,DE,PH,2549005N7VTH3WDG1C74,"MAYNILAD WATER SERVICES, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3458,0,1,,,,0
+IN,PH,AMERICAS_OTHER,PH,2549003YYV0DOY3M6082,ASIA LINK FINANCE CORPORATION,PH,AMERICAS_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3454,0,1,,,,0
+IN,PH,US,PH,894500W799O1FYC0B158,SIMON AGRIBUSINESS CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3434,0,1,,,,0
+IN,PH,AMERICAS_OTHER,PH,254900OSW4JXCFQLA626,Paynamics Technologies Inc.,PH,AMERICAS_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3433,0,1,,,,0
+IN,PH,US,PH,635400U6BA5THFP3YP08,ALLIANZ PNB LIFE INSURANCE INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3422,0,1,,,,0
+IN,PH,US,PH,2549009EXUWTB03S9A32,"ATRAM Unitized Corporate Debt Vehicle, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3416,0,1,,,,0
+IN,PH,US,PH,2549000GWJ0ZIFQIZ990,UNITED PULP & PAPER CO. INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3414,0,1,,,,0
+IN,PH,US,PH,254900Z3KHM2QFSRGQ15,"DENTSU SOLUTIONS PHILIPPINES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3407,0,1,,,,0
+IN,PH,US,PH,254900CL7KEPPP9AP480,"Dentsu Creative Philippines, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3407,0,1,,,,0
+IN,PH,US,PH,984500BB38AC2CBCF765,UNICHARM (PHILIPPINES) CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.339,0,1,,,,0
+IN,PH,US,PH,254900Q0CQR67WVRV876,"First Metro Asset Management, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3385,0,1,,,,0
+IN,PH,DE,PH,254900QJ68UH8GKNGI69,AYALA CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3375,0,1,,,,0
+IN,PH,DE,PH,984500E7076B04D4T516,SPLASH CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3357,0,1,,,,0
+IN,PH,US,PH,254900WUONF7N4DKB194,PTT PHILIPPINES CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3348,0,1,,,,0
+IN,PH,US,PH,984500BCBCB2K9473B15,"CONCENTRIX CVG PHILIPPINES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3328,0,1,,,,0
+IN,PH,US,PH,2549004EIIEQY4GXG575,"RURAL BANK OF SILAY CITY, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3328,0,1,,,,0
+IN,PH,DE,PH,984500B8BBFAFB02A305,"CLEANOCEAN SHIPMANAGEMENT, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3311,0,1,,,,0
+IN,PH,US,PH,9845000D9602A4896N65,"ORANGE INTERNATIONAL RECRUITMENT SERVICES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3311,0,1,,,,0
+IN,PH,DE,PH,54930092NHZ06N7PMW15,"UNIOIL PETROLEUM PHILS., INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.33,0,1,,,,0
+IN,PH,US,PH,549300UF0WW28Z71DM64,CHINA BANKING CORP.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3282,0,1,,,,0
+IN,PH,DE,PH,984500FDAE1DB7B0FE58,BLACK PENCIL HOLDINGS INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3255,0,1,,,,0
+IN,PH,DE,PH,9845006414AVAN2C6Q20,DENSO TECHNO PHILIPPINES INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3251,0,1,,,,0
+IN,PH,DE,PH,984500A8I8J66070BF57,HUHTAMAKI PHILIPPINES INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3251,0,1,,,,0
+IN,PH,DE,PH,549300J0JNJF0GSD7L21,FIVELEAF EQUITY CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.325,0,1,,,,0
+IN,PH,US,PH,5493000MIR4XIUHQ3582,"SUN LIFE PROSPERITY WORLD INCOME FUND, INC",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3245,0,1,,,,0
+IN,PH,DE,PH,984500C5E5C9B9TD6513,GENERAL TUNA CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3239,0,1,,,,0
+IN,PH,US,PH,984500CF03882AO6DD34,"H. A. Duldulao & Co., Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3238,0,1,,,,0
+IN,PH,US,PH,984500YCDCE7BDR96492,ELECTROLUX PHILIPPINES INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3236,0,1,,,,0
+IN,PH,DE,PH,984500BFFEADC9281W74,"Wolfstorm Black Security, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3235,0,1,,,,0
+IN,PH,US,PH,2549001HKS2PFDCAN585,COMCLARK NETWORK AND TECHNOLOGY CORP.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3232,0,1,,,,0
+IN,PH,DE,PH,984500CC910A46B36E13,HEMISPHERE LEO-BURNETT INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3209,0,1,,,,0
+IN,PH,DE,PH,9845002AF8DB44C52E43,"PUBLICIS JIMENEZBASIC, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3209,0,1,,,,0
+IN,PH,DE,PH,254900OVCTK2LTBRRN33,"PRIME INFRASTRUCTURE CAPITAL, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3199,0,1,,,,0
+IN,PH,DE,PH,54930025V41YSY0QJS74,ASIA UNITED BANK CORP.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3198,0,1,,,,0
+IN,PH,US,PH,2549006UUI7RCMA9WH49,SALMON BANK (RURAL BANK) INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3198,0,1,,,,0
+IN,PH,DE,PH,254900PO506YXS3L2C19,DIMENSION-ALL MANPOWER INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3192,0,1,,,,0
+IN,PH,US,PH,984500E81C3A5362A067,PRINCESS JOY PLACEMENT AND GENERAL SERVICES INC,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3187,0,1,,,,0
+IN,PH,DE,PH,984500F1EDD708BB9F69,"SYNGENTA PHILIPPINES, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.316,0,1,,,,0
+IN,PH,US,PH,984500996D8B0C7DAF31,"TORRENT PHARMA PHILIPPINES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3159,0,1,,,,0
+IN,PH,US,PH,2549006V6M4JODGA5X09,"Del Monte Philippines, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3157,0,1,,,,0
+IN,PH,AMERICAS_OTHER,PH,984500F56AFE1543ME82,A.B. CAPITAL & INV. CORP.,PH,AMERICAS_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.315,0,1,,,,0
+IN,PH,DE,PH,549300DMJ4PEIUMTEQ37,GENERAL MILLING CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3139,0,1,,,,0
+IN,PH,DE,PH,549300BBW4HFXV4RPF06,"All Asian Countertrade, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3126,0,1,,,,0
+IN,PH,DE,PH,8945008FXJ2QCVCRJM25,"JG SUMMIT HOLDINGS, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3107,0,1,,,,0
+IN,PH,US,PH,254900Q8ACJ0DSIUJX19,JARDINE SCHINDLER ELEVATOR CORP.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3079,0,1,,,,0
+IN,PH,US,PH,254900ISCL7S0SZ7E706,Century Limitless Corporation,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3077,0,1,,,,0
+IN,PH,AMERICAS_OTHER,PH,254900MDNXYJKHXO0P61,Aboitiz Equity Ventures Inc.,PH,AMERICAS_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3064,0,1,,,,0
+IN,PH,US,PH,254900O2GL2DVQY36A42,"FIRST METRO SAVE & LEARN EQUITY FUND, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3061,0,1,,,,0
+IN,PH,US,PH,254900WDU9TVJ8YB2L71,PRIME MERIDIAN POWERGEN CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.306,0,1,,,,0
+IN,PH,US,PH,984500E49CET9FA73D38,GLOBAL TRANSPORT VENTURES CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3054,0,1,,,,0
+IN,PH,DE,PH,98450068I640ED1DDD42,COLUMBUS SHIPMANAGEMENT INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3052,0,1,,,,0
+IN,PH,US,PH,9845006085A4144AA280,GOLDEN ARCHES DEVELOPMENT CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3052,0,1,,,,0
+IN,PH,DE,PH,984500ECD785A9EZ3918,MEDICAL STAFFING RESOURCES INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3038,0,1,,,,0
+IN,PH,US,PH,9845005G98A9E859DA26,IMCD PHILIPPINES CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3036,0,1,,,,0
+IN,PH,US,PH,254900ENQK97JHASNV20,"FIRST METRO SAVE & LEARN FIXED-INCOME FUND, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3035,0,1,,,,0
+IN,PH,US,PH,254900DI9Y5JWYL5LG15,"TERRA SOLAR PHILIPPINES, INC.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3032,0,1,,,,0
+IN,PH,US,PH,98450008B4C8CE683C81,"Ardom Towergen Philippines, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3015,0,1,,,,0
+IN,PH,DE,PH,254900IB7QXHR6MSPH66,Filinvest Development Corporation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.3008,0,1,,,,0
+IN,PH,DE,PH,254900YH5X9J9UM1EC78,"BPI Investment Management, Inc.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2989,0,1,,,,0
+IN,PH,US,PH,2549008E6WZJ6VGQHJ36,"First Metro Save and Learn Money Market Fund, Inc.",PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2968,0,1,,,,0
+IN,PH,DE,PH,549300F6F75L86ROSC61,TOKTOKWALLET INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2956,0,1,,,,0
+IN,PH,US,PH,98450071D75ACB476F35,ARUDRA MAINTENANCE AND SUPPLIES INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2944,0,1,,,,0
+IN,PH,DE,PH,98450047369A4CZF5926,SOLUTION KEY LIMITED CORP.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2942,0,1,,,,0
+IN,PH,DE,PH,984500FE60C7F2ECB786,PAPA SECURITIES CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2936,0,1,,,,0
+IN,PH,DE,PH,254900V7U4ISSUGFR887,SALISBURY SECURITIES CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2933,0,1,,,,0
+IN,PH,US,PH,254900M3L8EPM2IJZ951,South Asialink Finance Corporation,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2899,0,1,,,,0
+IN,PH,DE,PH,984500BB92D3BED1C031,MUNDO BUILDERS INCORPORATED,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2898,0,1,,,,0
+IN,PH,US,PH,213800PT2RM9BOG5Q719,NTT PHILIPPINES SOLUTIONS INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2886,0,1,,,,0
+IN,PH,DE,PH,9845004C2AD94649U582,SYNERGY OCEAN MARITIME INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2877,0,1,,,,0
+IN,PH,DE,PH,98450004A8897A3UFC81,ZENITH OPTIMEDIA PHILS. INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2871,0,1,,,,0
+IN,PH,DE,PH,984500E0B5A3ED8DD497,ABBA PERSONNEL SERVICES INC,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2864,0,1,,,,0
+IN,PH,AMERICAS_OTHER,PH,254900W9XKKT87I45076,Malayan Savings Bank Inc.,PH,AMERICAS_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2853,0,1,,,,0
+IN,PH,DE,PH,984500GE5D868B5CO441,Opal Ship Management Corporation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2818,0,1,,,,0
+IN,PH,DE,PH,984500E159001B382C35,BLACK PENCIL ADVERTISING INC.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2787,0,1,,,,0
+IN,PH,DE,PH,254900LLDHIIB1F6DI16,BPI CAPITAL CORP.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2787,0,1,,,,0
+IN,PH,DE,PH,984500F14BB61A86EJ25,Qwikwire Billing Systems Inc.,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2787,0,1,,,,0
+IN,PH,US,PH,984500A6493978704563,LBS RECRUITMENT SOLUTIONS CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2768,0,1,,,,0
+IN,PH,ASIA_OTHER,PH,254900P35KIN2M2I1E88,JARDINE DISTRIBUTION INC.,PH,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2735,0,1,,,,0
+IN,PH,DE,PH,254900P8QCVL2I5IKI76,Petroleum Marang Corporation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2669,0,1,,,,0
+IN,PH,DE,PH,254900X2XG3725TUXA32,"EURONET TECHNOLOGY SERVICES, INC.",PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2667,0,1,,,,0
+IN,PH,DE,PH,254900J25GU4QVHPGO06,FWD Life Insurance Corporation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2666,0,1,,,,0
+IN,PH,DE,PH,9845009NSM41AO36BK60,Hinatuan Mining Corporation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2664,0,1,,,,0
+IN,PH,DE,PH,98450075A3ED38BFB383,Taganito Mining Corporation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2664,0,1,,,,0
+IN,PH,EUROPE,PH,254900YB8UATFP21AF80,SM INVESTMENTS CORPORATION,PH,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2634,0,1,,,,0
+IN,PH,US,PH,9845000EI61DD48S5U16,AB CAPITAL SECURITIES INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2609,0,1,,,,0
+IN,PH,DE,PH,984500EBCBD3A7R7A027,CAGDIANAO MINING CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2596,0,1,,,,0
+IN,PH,ASIA_OTHER,PH,254900M9EXJ3M6S66M06,DigiPlus Interactive Corp.,PH,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2518,0,1,,,,0
+IN,PH,DE,PH,254900G4WDEOXLMTDK48,ERAMEN HOLDINGS CORPORATION,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.25,0,1,,,,0
+IN,PH,US,PH,98450054FE86DTAAHF03,FIRST DIGITAL FINANCE CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2483,0,1,,,,0
+IN,PH,US,PH,984500FC3AEOBA4ECD29,Rio Tuba Nickel Mining Corporation,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2422,0,1,,,,0
+IN,PH,US,PH,254900AZZMZLESPUCS42,First Circle Growth Finance Corp.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2374,0,1,,,,0
+IN,PH,DE,PH,98450073FEAH515OA758,OneTeam Technology Corporation,PH,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2352,0,1,,,,0
+IN,PH,US,PH,254900G2SIX647VTQY06,LAB BIOSERV CORP.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2348,0,1,,,,0
+IN,PH,US,PH,98450078EB1E66641181,PLACEWELL INTERNATIONAL SERVICES CORPORATION,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2335,0,1,,,,0
+IN,PH,US,PH,254900KFOAORWAEHNX33,DENTSU PHILIPPINES INC.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2295,0,1,,,,0
+IN,PH,ASIA_OTHER,PH,254900N02OYFRSDCFJ74,RCBC TRUST CORPORATION,PH,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2229,0,1,,,,0
+IN,PH,US,PH,254900SN94HHEGB7FN15,PIONEER INSURANCE & SURETY CORP.,PH,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.2174,0,1,,,,0

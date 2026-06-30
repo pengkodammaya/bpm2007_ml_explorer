@@ -1,0 +1,6 @@
+source_country,destination_country,outward_observed_lei_count,known_uie_count,inferred_uie_count,model_only_count,avg_uie_confidence,outward_fdi_usd_bn,outward_lei_density
+SG,MY,370,26,344,334,0.832,44.92009290561037,8.236848502906552
+SG,ID,20,20,0,0,0.9925,84.2993725350814,0.2372496899864462
+SG,TH,11,8,3,0,0.8636,57.0235477422348,0.1929027644811512
+SG,VN,7,6,1,1,0.9763,,
+SG,PH,4,4,0,0,0.9625,9.363295448661312,0.4272000196866465

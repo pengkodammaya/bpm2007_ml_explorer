@@ -1,0 +1,3 @@
+source_country,destination_country,evidence_bucket,lei_count,known_uie_count,inferred_uie_count,model_only_count,avg_uie_confidence
+VN,SG,A_hard_or_verified,3,3,0,0,0.99
+VN,SG,D_address_inferred,3,0,3,0,0.6

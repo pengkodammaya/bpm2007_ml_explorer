@@ -1,0 +1,8 @@
+host_country,uie_country,evidence_bucket,lei_count,known_uie_count,inferred_uie_count,model_only_count,avg_uie_confidence
+BN,EUROPE,E_model_only,18,0,18,18,1.0
+BN,OTHER,E_model_only,11,0,11,11,0.9264
+BN,GB,A_hard_or_verified,5,5,0,0,1.0
+BN,ASIA_OTHER,E_model_only,3,0,3,3,0.9842
+BN,GB,C_name_inferred,3,0,3,0,1.0
+BN,DE,A_hard_or_verified,1,1,0,0,1.0
+BN,US,A_hard_or_verified,1,1,0,0,1.0

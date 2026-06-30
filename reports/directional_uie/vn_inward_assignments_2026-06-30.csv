@@ -1,0 +1,362 @@
+direction,host_country,source_country,destination_country,lei,legal_name,entity_country,uie_country,uie_name,uie_lei,uie_source,evidence_tier,evidence_bucket,uie_confidence,is_known_uie,is_inferred_uie,direct_parent_country,ultimate_parent_country,chain_parent_country,ctos_registered_malaysia
+IN,VN,CH,VN,549300YE7EDCK0ILIU11,ABB LTD,VN,CH,ABB Asea Brown Boveri Ltd,5493003DNMEAO1DT3F51,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,CH,CH,,0
+IN,VN,US,VN,549300F1WQCZRZ12ED23,AES-VCM MONG DUONG POWER COMPANY LIMITED,VN,US,THE AES CORPORATION,2NUNNB7D43COUIRE5295,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,VN,NL,VN,5493001AA3NV7CRH5459,AKZO NOBEL PAINTS VIETNAM LTD.,VN,NL,Akzo Nobel N.V.,724500XYIJUGXAA5QD70,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,NL,,0
+IN,VN,US,VN,549300JIPNWJ6OUHGV98,ALSTOM GRID VIETNAM COMPANY LIMITED,VN,US,GENERAL ELECTRIC COMPANY,3C7474T6CDKPR9K6YT90,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,US,,0
+IN,VN,US,VN,549300NI5RTG1TTICK52,ALSTOM PMTP POWER SERVICE LLC.,VN,US,GENERAL ELECTRIC COMPANY,3C7474T6CDKPR9K6YT90,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,MY,US,,0
+IN,VN,US,VN,549300IE4MDIS0R8WL18,ALSTOM RENEWABLE VIETNAM LIMITED,VN,US,GENERAL ELECTRIC COMPANY,3C7474T6CDKPR9K6YT90,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,VN,US,VN,549300UO7645NDMNUI53,ALSTOM VIETNAM COMPANY LIMITED,VN,US,GENERAL ELECTRIC COMPANY,3C7474T6CDKPR9K6YT90,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,US,,0
+IN,VN,FR,VN,5299005WCU3T9JBL2S12,Air Liquide VietNam Company Limited,VN,FR,L'AIR LIQUIDE SOCIETE ANONYME POUR L'ETUDE ET L'EXPLOITATION DES PROCEDES GEORGES CLAUDE,969500MMPQVHK671GT54,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,FR,FR,,0
+IN,VN,FR,VN,549300GUOCKHFHY0X775,"CAMSO VIETNAM CO., LTD",VN,FR,COMPAGNIE GENERALE DES ETABLISSEMENTS MICHELIN,549300SOSI58J6VIW052,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,FR,FR,,0
+IN,VN,VN,VN,2549004BNPQEWA8DOF09,CONG TY CO PHAN THE GIOI DI DONG,VN,VN,CONG TY CO PHAN DAU TU THE GIOI DI DONG,254900ZRFNB8CRAHHO95,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,VN,,0
+IN,VN,FI,VN,254900JNGC3RB1TJR895,CONG TY TNHH HUHTAMAKI (VIET NAM),VN,FI,Huhtamäki Oyj,5493007050SJVMXN6L29,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,FI,,0
+IN,VN,US,VN,254900N0J8MFD78UA365,CROWN Beverage Cans Hanoi,VN,US,"CROWN HOLDINGS, INC.",NYLWZIOY8PUNIT4JOE22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,VN,DE,VN,254900GXK6N5MWW70J28,Cong Ty TNHH Schenker Vietnam,VN,DE,Bundesrepublik Deutschland,529900AQBND3S6YJLY83,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,DE,,0
+IN,VN,TH,VN,254900ECIXFMFXYTC707,Cong Ty Trach Nhiem Huu Han Cung Ung Nhua Duong,VN,TH,บริษัท ทิปโก้แอสฟัลท์ จำกัด (มหาชน),549300UDR429KKAXP244,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,TH,TH,,0
+IN,VN,VN,VN,254900H5HHH44RBLP846,Cong ty TNHH San xuat va Kinh doanh Vinfast,VN,VN,TẬP ĐOÀN VINGROUP - CÔNG TY CP,254900MJ9C15O3O1V757,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,VN,,0
+IN,VN,US,VN,254900KIJGR71X0D4N19,Crown Beverage Cans Danang Lid,VN,US,"CROWN HOLDINGS, INC.",NYLWZIOY8PUNIT4JOE22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,VN,TH,VN,254900IPSUVPCWAQ9M94,CÔNG TY CỔ PHẦN CHĂN NUÔI C.P. VIỆT NAM,VN,TH,บริษัท เจริญโภคภัณฑ์อาหาร จำกัด (มหาชน),529900FJ3AI2GKGIWK15,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,TH,,0
+IN,VN,VN,VN,254900J52NES7YU65914,CÔNG TY CỔ PHẦN CHỨNG KHOÁN BIDV,VN,VN,Ngân hàng thương mại cổ phần Đầu tư và Phát triển Việt Nam,254900FSO240QVE6NR86,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,VN,,0
+IN,VN,HK,VN,2549005E28O59364A755,CÔNG TY CỔ PHẦN CHỨNG KHOÁN MIRAE ASSET (VIỆT NAM),VN,HK,未來資產環球投資(香港)有限公司,549300NL7HTCLIXMWU28,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,HK,HK,,0
+IN,VN,VN,VN,254900FWNYCCSBOPX190,CÔNG TY CỔ PHẦN DỊCH VỤ THƯƠNG MẠI TỔNG HỢP WINCOMMERCE,VN,VN,Masan Group Corporation,254900M1892CMJ87XD24,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,VN,,0
+IN,VN,US,VN,549300L6BP3MSYJMJ621,CÔNG TY CỔ PHẦN EWOS VIỆT NAM,VN,US,"CARGILL, INCORPORATED",QXZYQNMR4JZ5RIRN4T31,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NO,US,,0
+IN,VN,DE,VN,52990053LAO98CE7K417,CÔNG TY CỔ PHẦN FRESENIUS KABI VIỆT NAM,VN,DE,Fresenius SE & Co. KGaA,XDFJ0CYCOO1FXRFTQS51,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,VN,JP,VN,549300CYU3VRXVJWIV59,CÔNG TY CỔ PHẦN GIẤY SÀI GÒN,VN,JP,双日株式会社,5493004SE33MRLPB1W98,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,JP,JP,,0
+IN,VN,VN,VN,5493008PLXPX55H2BW96,CÔNG TY CỔ PHẦN THÉP HÒA PHÁT DUNG QUẤT,VN,VN,HOA PHAT GROUP JOINT STOCK COMPANY,549300ODJEFGL5CWKD32,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,VN,,0
+IN,VN,KR,VN,254900A0JWAYIRXKMG72,CÔNG TY CỔ PHẦN TRUNG TÂM THƯỢNG MAI LOTTE VIỆT NAM,VN,KR,롯데쇼핑 주식회사,9884003SJK2VZLLC4B08,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,KR,KR,,0
+IN,VN,VN,VN,2549007LS0F7J946DA02,CÔNG TY CỔ PHẦN VINHOMES,VN,VN,TẬP ĐOÀN VINGROUP - CÔNG TY CP,254900MJ9C15O3O1V757,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,VN,,0
+IN,VN,PT,VN,25490018TJOT0URN8E57,CÔNG TY CỔ PHẦN ĐIỆN MẶT TRỜI CMX RE SUNSEAP VIỆT NAM,VN,PT,"EDP, S.A.",529900CLC3WDMGI9VH80,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,PT,,0
+IN,VN,GB,VN,213800PTNGQXCRUOIF04,CÔNG TY LIÊN DOANH THUỐC LÁ BAT-VINATABA,VN,GB,BRITISH AMERICAN TOBACCO P.L.C.,213800FKA5MF17RJKT63,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,VN,US,VN,254900KTKEIQFNRL5Q80,CÔNG TY LIÊN DOANH TNHH CROWN SÀI GÒN,VN,US,"CROWN HOLDINGS, INC.",NYLWZIOY8PUNIT4JOE22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,US,,0
+IN,VN,NL,VN,549300C3N9BDFAY07B42,CÔNG TY TNHH AKZO NOBEL COATINGS VIETNAM,VN,NL,Akzo Nobel N.V.,724500XYIJUGXAA5QD70,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,NL,,0
+IN,VN,US,VN,549300H67HO022NZSR46,CÔNG TY TNHH ARCHER DANIELS MIDLAND VIỆT NAM,VN,US,ARCHER-DANIELS-MIDLAND COMPANY,549300LO13MQ9HYSTR83,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,VN,DE,VN,5299009CPLDBZJH8I156,CÔNG TY TNHH B. BRAUN VIỆT NAM,VN,DE,B. Braun Holding GmbH & Co. KG,5299004E1B0DK73UIY59,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,VN,DE,VN,5299004CYWSZOIM8ON05,CÔNG TY TNHH BAYER VIỆT NAM,VN,DE,Bayer Aktiengesellschaft,549300J4U55H3WP1XT59,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,VN,DE,VN,5299006LE82MKLK91731,CÔNG TY TNHH BEIERSDORF VIỆT NAM,VN,DE,maxingvest GmbH & Co. KGaA,529900DV1ODI5C2GRH81,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,VN,SG,VN,254900FCJLQJL298OI95,CÔNG TY TNHH CALOFIC,VN,SG,Wilmar International Limited,549300H2EAI4YRLWBB20,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,SG,,0
+IN,VN,US,VN,5493007F5WB18YPIGY59,CÔNG TY TNHH CARGILL VIỆT NAM,VN,US,"CARGILL, INCORPORATED",QXZYQNMR4JZ5RIRN4T31,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,US,US,0
+IN,VN,GB,VN,213800VGEHZPZ4D3RO61,CÔNG TY TNHH COATS PHONG PHÚ,VN,GB,COATS GROUP PLC,2138003SPYWGAITNFY17,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,VN,GB,VN,213800UN9GBESRO97I62,CÔNG TY TNHH DAKMAN VIỆT NAM,VN,GB,AGMAN GROUP LIMITED,213800YFKYIGIALBMK91,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,VN,DE,VN,5299003762GZGAT9YU53,CÔNG TY TNHH DURR VIỆT NAM,VN,DE,Dürr Aktiengesellschaft,5299003APZ54EDTSRO20,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,VN,SE,VN,254900WOMF4PWRVLSX19,CÔNG TY TNHH ELECTROLUX VIỆT NAM,VN,SE,Aktiebolaget Electrolux,549300Y3HHZB1ZGFPJ93,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SE,SE,,0
+IN,VN,DE,VN,52990040GOCFCJJ77Y02,CÔNG TY TNHH EVONIK VIỆT NAM,VN,DE,Evonik Industries AG,41GUOJQTALQHLF39XJ34,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,VN,NZ,VN,213800SJL6EVZ22AOE82,CÔNG TY TNHH FONTERRA BRANDS (VIỆT NAM),VN,NZ,FONTERRA CO-OPERATIVE GROUP LIMITED,549300NCQQ9E4O5JX172,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NZ,NZ,,0
+IN,VN,US,VN,213800MDJW49JKEFY289,CÔNG TY TNHH GE HEALTHCARE VIỆT NAM,VN,US,GE HEALTHCARE TECHNOLOGIES INC.,549300OI9J7XOWZMUN85,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,VN,US,VN,5493006EJ74JFYMOT229,CÔNG TY TNHH GIẢI PHÁP TIÊN TIẾN TECH DATA (VIỆT NAM),VN,US,TD SYNNEX CORPORATION,5493004HI6PFLF46NS53,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,VN,NL,VN,2138004UW4B345OMH623,CÔNG TY TNHH GOBEAR (VIỆT NAM),VN,NL,Woodpecker Holding B.V.,72450085ROINJRUDAT34,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,NL,,0
+IN,VN,DK,VN,5493008YYZ2020RC0N33,CÔNG TY TNHH GRUNDFOS VIỆT NAM,VN,DK,POUL DUE JENSENS FOND,549300MBT1C4M313G165,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DK,DK,,0
+IN,VN,US,VN,549300ORS3UQCHOWSV67,CÔNG TY TNHH GUYOMARC'H-VCN,VN,US,ARCHER-DANIELS-MIDLAND COMPANY,549300LO13MQ9HYSTR83,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,VN,DE,VN,52990080KU0010D8H090,CÔNG TY TNHH HENKEL VIỆT NAM,VN,DE,Henkel AG & Co. KGaA,549300VZCL1HTH4O4Y49,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,VN,JP,VN,2549008YIPNQ8GLRAY98,CÔNG TY TNHH HITACHI ENERGY VIỆT NAM,VN,JP,株式会社 日立製作所,549300T6IPOCDWLKC615,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,JP,,0
+IN,VN,DE,VN,529900XDAXDN57GAE794,CÔNG TY TNHH HOMAG VIỆT NAM,VN,DE,Dürr Aktiengesellschaft,5299003APZ54EDTSRO20,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,DE,,0
+IN,VN,US,VN,5493005TZB31IQ2CBB11,CÔNG TY TNHH INGREDION VIỆT NAM,VN,US,INGREDION INCORPORATED,PKSTQ48QDN0XSVS7YK88,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,US,,0
+IN,VN,US,VN,549300Z53585YR4OFO45,CÔNG TY TNHH INTEL PRODUCTS VIỆT NAM,VN,US,INTEL CORPORATION,KNX4USFCNGPY45LOCE31,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,US,,0
+IN,VN,US,VN,549300KAS2PAVQRBAY36,CÔNG TY TNHH INTEL VIỆT NAM,VN,US,INTEL CORPORATION,KNX4USFCNGPY45LOCE31,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,VN,SG,VN,549300PSPU84K2V2G268,CÔNG TY TNHH JJ-LAPP VIỆT NAM,VN,SG,Jebsen & Jessen Pte. Ltd.,254900DHWOZ32SMCYQ10,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,0
+IN,VN,FI,VN,213800I7JPDWSNWEH338,CÔNG TY TNHH KONE VIỆT NAM,VN,FI,KONE OYJ,2138001CNF45JP5XZK38,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,FI,FI,,0
+IN,VN,GB,VN,213800RNU2KSFXNZSH87,CÔNG TY TNHH LIÊN DOANH VINA-BAT,VN,GB,BRITISH AMERICAN TOBACCO P.L.C.,213800FKA5MF17RJKT63,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,VN,GB,VN,549300W9QXVXP1ZGE222,CÔNG TY TNHH MEAD JOHNSON NUTRITION (VIỆT NAM),VN,GB,RECKITT BENCKISER GROUP PLC,5493003JFSMOJG48V108,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,VN,SG,VN,549300OCNTAU97H8WD16,CÔNG TY TNHH MHE-DEMAG VIỆT NAM,VN,SG,Jebsen & Jessen Pte. Ltd.,254900DHWOZ32SMCYQ10,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,0
+IN,VN,FR,VN,5493008K1XIPLS4VDE41,CÔNG TY TNHH MICHELIN VIỆT NAM,VN,FR,COMPAGNIE GENERALE DES ETABLISSEMENTS MICHELIN,549300SOSI58J6VIW052,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,FR,FR,,0
+IN,VN,FR,VN,894500GK6PSFQO5I1683,CÔNG TY TNHH MỘT THÀNH VIÊN EXCLUSIVE NETWORKS VIỆT NAM,VN,FR,EXCLUSIVE NETWORKS CORPORATE,969500GFM1C4M1KMPL74,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,FR,,0
+IN,VN,US,VN,549300NPT2AMIC28NG88,CÔNG TY TNHH MỘT THÀNH VIÊN PROVIMI,VN,US,"CARGILL, INCORPORATED",QXZYQNMR4JZ5RIRN4T31,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,VN,NL,VN,5493001XMUB6J3FWCM24,CÔNG TY TNHH NHÀ MÁY BIA HEINEKEN VIỆT NAM,VN,NL,Heineken N.V.,724500K5PTPSST86UQ23,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,NL,,0
+IN,VN,NL,VN,549300L776T8PUDWGF45,CÔNG TY TNHH NHÀ MÁY BIA HEINEKEN VIỆT NAM - QUẢNG NAM,VN,NL,Heineken N.V.,724500K5PTPSST86UQ23,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,NL,NL,0
+IN,VN,LU,VN,8755007ECJF5KQRY7144,CÔNG TY TNHH PERFETTI VAN MELLE (VIỆT NAM),VN,LU,C+F CONFECTIONERY AND FOODS S.A.,875500UMCWW2X77MW772,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,LU,,0
+IN,VN,US,VN,549300EF215D1UPSNP53,CÔNG TY TNHH PHARMAQ VIỆT NAM,VN,US,ZOETIS INC.,549300HD9Q1LOC9KLJ48,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,VN,GB,VN,549300YSMMVVNUR1M834,CÔNG TY TNHH QUỐC TẾ UNILEVER VIỆT NAM,VN,GB,UNILEVER PLC,549300MKFYEKVRWML317,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,VN,LU,VN,529900BV9D816CIUCT48,CÔNG TY TNHH RKW VIỆT NAM,VN,LU,RKW Holding S.à r.l.,529900I7AQEU9D140650,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,LU,,0
+IN,VN,FR,VN,2549007VAEQKB7BGXH31,CÔNG TY TNHH SCHNEIDER ELECTRIC IT VIỆT NAM,VN,FR,SCHNEIDER ELECTRIC SE,969500A1YF1XUYYXS284,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,FR,FR,,0
+IN,VN,DE,VN,52990024WNDCG6OB9H85,CÔNG TY TNHH SIEMENS,VN,DE,Siemens Aktiengesellschaft,W38RGI023J3WT1HWRP32,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,VN,DE,VN,52990020W0VGSCGWNB43,CÔNG TY TNHH SIEMENS GAS AND POWER,VN,DE,Siemens Energy AG,5299005CHJZ14D4FDJ62,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,VN,PT,VN,25490026RPBMG1YN3V79,CÔNG TY TNHH SUNSEAP COMMERCIAL & INDUSTRIAL ASSETS (VIỆT NAM),VN,PT,"EDP, S.A.",529900CLC3WDMGI9VH80,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,PT,PT,,0
+IN,VN,IN,VN,2549003VAOOTSGKQK538,CÔNG TY TNHH TECH MAHINDRA VIỆT NAM,VN,IN,TECH MAHINDRA LIMITED,3358005FZUZ1I25XQH69,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,IN,IN,,0
+IN,VN,GB,VN,213800KI735CX124HN46,CÔNG TY TNHH VOLCAFE VIỆTNAM,VN,GB,AGMAN GROUP LIMITED,213800YFKYIGIALBMK91,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,VN,KR,VN,2549009VIJ80248OFY68,CÔNG TY TNHH VSSC STEEL CENTER,VN,KR,삼성물산 주식회사,988400GFRE4IDFPE9E64,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,KR,KR,,0
+IN,VN,SG,VN,254900K43MTEWCZNY371,CÔNG TY TNHH WILMAR MARKETING CLV,VN,SG,Wilmar International Limited,549300H2EAI4YRLWBB20,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,0
+IN,VN,NO,VN,213800PLM47W8GLEKH84,CÔNG TY TNHH YARA VIÊT NAM,VN,NO,YARA INTERNATIONAL ASA,213800WKOUWXWFJ5Z514,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NO,NO,,0
+IN,VN,US,VN,549300Q5NML6QBHV8237,CÔNG TY TNHH ZOETIS VIỆT NAM,VN,US,ZOETIS INC.,549300HD9Q1LOC9KLJ48,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,VN,KR,VN,254900Q2HVH3IDNYNN60,CÔNG TY TRÁCH NHIỆM HỮU HẠN HÓA CHẤT CÔNG NGHỆ SAMSUNG VIỆT NAM,VN,KR,삼성물산 주식회사,988400GFRE4IDFPE9E64,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,KR,KR,,0
+IN,VN,US,VN,254900B6V2WS9I7KB566,CÔNG TY TRÁCH NHIỆM HỮU HẠN JABIL VIỆT NAM,VN,US,JABIL INC.,5493000CGCQY2OQU7669,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,US,,0
+IN,VN,NL,VN,549300NQXVTUVL8A4646,CÔNG TY TRÁCH NHIỆM HỮU HẠN NHÀ MÁY BIA HEINEKEN VIỆT NAM-VŨNG TÀU,VN,NL,Heineken N.V.,724500K5PTPSST86UQ23,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,NL,NL,0
+IN,VN,GB,VN,2138008GPVCOS6R9L238,CÔNG TY TRÁCH NHIỆM HỮU HẠN QUẢN LÝ QUỸ EASTSPRING INVESTMENTS,VN,GB,Prudential Public Limited Company,5493001Z3ZE83NGK8Y12,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,GB,GB,0
+IN,VN,DE,VN,529900QHTCCPQB19YT62,CÔNG TY TRÁCH NHIỆM HỮU HẠN SCHAEFFLER VIỆT NAM,VN,DE,INA-Holding Schaeffler GmbH & Co. KG,5299004S1OOP9VBIQJ18,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,VN,FR,VN,254900DH4CPJPMS3O935,CÔNG TY TRÁCH NHIỆM HỮU HẠN SCHNEIDER ELECTRIC VIỆT NAM,VN,FR,SCHNEIDER ELECTRIC SE,969500A1YF1XUYYXS284,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,FR,FR,,0
+IN,VN,CZ,VN,529900BVDPFQVIWOVE71,CÔNG TY TÀI CHÍNH TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN HOME CREDIT VIỆT NAM,VN,CZ,AMALAR HOLDING s.r.o.,984500CE58365CB10V25,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,CZ,,0
+IN,VN,US,VN,2549003H5PV2RXZ3TY78,Công Ty TNHH Bao Bì Nước Giải Khát Crown Đồng Nai,VN,US,"CROWN HOLDINGS, INC.",NYLWZIOY8PUNIT4JOE22,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,VN,DE,VN,2549002VZPXCXU7UJK04,Công Ty TNHH Bosch Rexroth Việt Nam,VN,DE,R o b e r t B o s c h S t i f t u n g Gesellschaft mit beschränkter Haftung,391200PC2CUISRHYLV81,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,DE,,0
+IN,VN,DE,VN,529900R5TGYB7N0LLL44,Công Ty TNHH Mercedes-Benz Việt Nam,VN,DE,Mercedes-Benz Group AG,529900R27DL06UVNT076,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,VN,VN,VN,254900SFRDFV8O2B5M36,Công Ty TNHH Quản Lý Quỹ SSI,VN,VN,CÔNG TY CỔ PHẦN CHỨNG KHOÁN SSI,213800IF2RICE613K743,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,VN,,0
+IN,VN,JP,VN,254900JDBDSCXZRZ1B02,Công Ty TNHH Sojitz Việt Nam,VN,JP,双日株式会社,5493004SE33MRLPB1W98,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,JP,JP,0
+IN,VN,US,VN,254900LT0ER8N7Z2KD60,Công Ty Tnhh Amazon Data Services Việt Nam,VN,US,"AMAZON.COM, INC.",ZXTILKJKG63JELOEG630,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,VN,VN,VN,254900AIRLJQPPQLAF34,Công ty Cổ phần Chứng khoán VPBank,VN,VN,NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN VIỆT NAM THỊNH VƯỢNG,254900A0PM1YPJVDW880,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,VN,,0
+IN,VN,US,VN,549300KDUEM5IEU30490,Công ty TNHH Archer Daniels Midland VN,VN,US,ARCHER-DANIELS-MIDLAND COMPANY,549300LO13MQ9HYSTR83,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,VN,VN,VN,2549004V2SJN1RVH9T31,Công ty TNHH Chứng khoán ACB.,VN,VN,NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN Á CHÂU,5493001VSLUXY7LJS086,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,VN,,0
+IN,VN,KR,VN,254900SCN5GFFPMJ8Y13,Công ty TNHH LG ELectronics Việt Nam Hải Phòng,VN,KR,LG전자(주),988400RMQFTGZIOG0609,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,KR,KR,,0
+IN,VN,AT,VN,5299008PN1SJQWGC8V13,Công ty TNHH Wattens Việt Nam,VN,AT,delfortgroup AG,529900WMA05AHNPUXU27,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,AT,AT,,0
+IN,VN,DE,VN,2549004ZF4UN6WUIJI42,Công ty TNHH tesa Việt Nam,VN,DE,maxingvest GmbH & Co. KGaA,529900DV1ODI5C2GRH81,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,DE,DE,0
+IN,VN,CH,VN,549300XKYLG2BZ2GF592,DKSH TECHNOLOGY COMPANY LIMITED,VN,CH,DKSH HOLDING AG,549300HUUUNHO6FJUS42,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,CH,,0
+IN,VN,CH,VN,5493008VXNC5UC2PZ040,"DKSH VIETNAM CO., LTD",VN,CH,DKSH HOLDING AG,549300HUUUNHO6FJUS42,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,CH,,0
+IN,VN,DK,VN,529900X6I8KXC0SXSV70,"DSV SOLUTIONS CO., LTD",VN,DK,DSV A/S,529900X41C0BSLK67H70,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DK,DK,,0
+IN,VN,US,VN,549300OXB1KEYM5EOF33,GE POWER SYSTEMS VIETNAM COMPANY LIMITED,VN,US,GENERAL ELECTRIC COMPANY,3C7474T6CDKPR9K6YT90,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,US,US,,0
+IN,VN,US,VN,BTFBBNPFFZG1WCXED829,GE VIETNAM LIMITED,VN,US,GENERAL ELECTRIC COMPANY,3C7474T6CDKPR9K6YT90,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,US,,0
+IN,VN,US,VN,549300Y9OWI4GBLTGR98,GENERAL ELECTRIC HAIPHONG COMPANY LIMITED,VN,US,GENERAL ELECTRIC COMPANY,3C7474T6CDKPR9K6YT90,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,US,,0
+IN,VN,CH,VN,213800TV4T3XT15X9V56,"GIVAUDAN VIETNAM CO., LTD",VN,CH,GIVAUDAN SA,213800SVRMQA1TD91D41,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,CH,CH,,0
+IN,VN,US,VN,25490023Z2MFTRFQWN87,Golden Farm Production & Commerce Company Limited,VN,US,ARCHER-DANIELS-MIDLAND COMPANY,549300LO13MQ9HYSTR83,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,US,US,0
+IN,VN,NL,VN,54930010HBKTC1RCNU95,HEINEKEN HANOI BREWERY CO. LTD,VN,NL,Heineken N.V.,724500K5PTPSST86UQ23,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,NL,,0
+IN,VN,NL,VN,549300V4821WSDQUVZ53,HEINEKEN VIETNAM BEER AND BEVERAGES LIMITED COMPANY,VN,NL,Heineken N.V.,724500K5PTPSST86UQ23,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,NL,,0
+IN,VN,NL,VN,54930035V5P14VBR5H90,HEINEKEN VIETNAM BREWERY - DA NANG LIMITED COMPANY,VN,NL,Heineken N.V.,724500K5PTPSST86UQ23,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,NL,NL,0
+IN,VN,NL,VN,5493008JOJM9CRD85N22,HEINEKEN VIETNAM BREWERY-TIEN GIANG LIMITED COMPANY,VN,NL,Heineken N.V.,724500K5PTPSST86UQ23,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,NL,NL,0
+IN,VN,DE,VN,529900JNG1ZVTNQ0VC03,INNOMOTICS LIMITED COMPANY,VN,DE,Siemens Aktiengesellschaft,W38RGI023J3WT1HWRP32,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,VN,SG,VN,549300NYDNBPHDIHGB47,JEBSEN & JESSEN (VIETNAM) COMPANY LIMITED,VN,SG,Jebsen & Jessen Pte. Ltd.,254900DHWOZ32SMCYQ10,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,0
+IN,VN,SG,VN,5493007R9MOMM3R5U536,JEBSEN & JESSEN VIET NAM LTD,VN,SG,Jebsen & Jessen Pte. Ltd.,254900DHWOZ32SMCYQ10,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,SG,,0
+IN,VN,NL,VN,549300HFOJWQK2CFNS59,"LOUIS DREYFUS COMPANY VIETNAM TRADING AND PROCESSING CO., LTD",VN,NL,LOUIS DREYFUS COMPANY B.V.,54930077YL0GMTEGZD16,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,NL,,0
+IN,VN,JP,VN,549300FBZAGGTJ32QB68,MARUBENI-ITOCHU STEEL VIETNAM COMPANY LIMITED,VN,JP,伊藤忠丸紅鉄鋼株式会社,3538002YELCNO550N491,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,JP,JP,,0
+IN,VN,VN,VN,549300QK16VB0MOK5404,MASAN CONSUMER CORPORATION,VN,VN,Masan Group Corporation,254900M1892CMJ87XD24,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,VN,,0
+IN,VN,US,VN,5493007LT7NGWGYW4E84,MORGAN STANLEY GATEWAY SECURITIES JSC,VN,US,MORGAN STANLEY,IGJSJL3JD5P30I6NJZ34,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,US,,0
+IN,VN,CH,VN,549300IR7DQT9MJ5DK97,NESTLÉ VIETNAM LIMITED,VN,CH,NESTLÉ S.A.,KY37LUS27QQX7BB93L28,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,CH,,0
+IN,VN,AU,VN,549300RI8DC4PN54EQ93,NGÂN HÀNG TNHH MỘT THÀNH VIÊN ANZ (VIỆT NAM),VN,AU,AUSTRALIA AND NEW ZEALAND BANKING GROUP LIMITED,JHE42UYNWWTJB8YTTU19,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,AU,AU,,0
+IN,VN,GB,VN,213800H95OG9OHRT4Y78,NGÂN HÀNG TRÁCH NHIỆM HỮU HẠN MỘT THÀNH VIÊN HSBC (VIỆT NAM),VN,GB,HSBC HOLDINGS PLC,MLU0ZO3ML4LN2LL2TL39,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,HK,GB,,0
+IN,VN,US,VN,549300MZ7KIVAX4AUX28,SCOULAR VIETNAM COMPANY LIMITED,VN,US,THE SCOULAR COMPANY,MIQ8NSEAVLWZCJIZ5U19,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,,US,,0
+IN,VN,NL,VN,549300JZKBHQVXUR8D10,SIGNIFY VIETNAM LIMITED,VN,NL,SIGNIFY N.V.,549300072P3J1X8NZO35,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,NL,NL,,0
+IN,VN,GB,VN,213800GQ83ECQT7MET56,SOLV VIETNAM COMPANY LIMITED,VN,GB,STANDARD CHARTERED PLC,U4LOSYZ7YG4W3S5F2G91,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,SG,GB,GB,0
+IN,VN,GB,VN,5493002W420BT9C14552,STANDARD CHARTERED BANK (VIETNAM) LIMITED,VN,GB,STANDARD CHARTERED PLC,U4LOSYZ7YG4W3S5F2G91,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,VN,DE,VN,529900BN68Q1TN4V2J24,Siemens Healthcare Limited Company,VN,DE,Siemens Aktiengesellschaft,W38RGI023J3WT1HWRP32,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,VN,GB,VN,2138005CFOQ81HKLI320,TNHH BẢO HIỂM NHÂN THỌ PRUDENTIAL VIỆT NAM,VN,GB,Prudential Public Limited Company,5493001Z3ZE83NGK8Y12,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,VN,VN,VN,549300FCT4HCES2A8592,VICOSTONE JOINT STOCK COMPANY,VN,VN,A&A GREEN PHOENIX GROUP JOINT STOCK COMPANY,549300O66T2JZH86F575,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,VN,,0
+IN,VN,GB,VN,213800XNW7Q9I58RUX75,VIETINBANK AVIVA LIFE INSURANCE COMPANY LIMITED,VN,GB,AVIVA PLC,YF0Y5B0IB8SM0ZFG9G81,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,GB,GB,,0
+IN,VN,VN,VN,213800E51NJ9A9T3VZ29,VPBANK FINANCE COMPANY LIMITED,VN,VN,NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN VIỆT NAM THỊNH VƯỢNG,254900A0PM1YPJVDW880,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,VN,VN,,0
+IN,VN,DE,VN,529900UWWDTS8ARV2H20,Varian Medical Systems Vietnam Co. Ltd.,VN,DE,Siemens Aktiengesellschaft,W38RGI023J3WT1HWRP32,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,VN,DE,VN,549300G5M71W4USJ4C02,"ZF AUTOMOTIVE VIETNAM CO., LTD.",VN,DE,ZF Friedrichshafen AG,529900CAYOWB8YIG7X25,gleif_ultimate_parent,A_known_ultimate_parent,A_hard_or_verified,1.0,1,0,DE,DE,,0
+IN,VN,MY,VN,254900ND3AGXA6HSK906,Ngan Hang Trach Nhiem Huu Han Mot Thanh Vien Hong Leong Viet Nam,VN,MY,HONG LEONG FINANCIAL GROUP BERHAD,549300EGI40XD5GGWS62,gleif_upstream_ultimate_parent,A_known_upstream_ultimate_parent,A_hard_or_verified,0.97,1,0,MY,,MY,0
+IN,VN,KR,VN,254900WM4YLSM4KFY159,Công Ty Trách Nhiệm Hữu Hạn Chứng Khoán NH Việt Nam,VN,KR,엔에이치투자증권(주),549300LQ6NXDW1B8NT42,gleif_direct_parent,B_known_direct_parent,B_parent_or_exception,0.85,1,0,KR,,,0
+IN,VN,AT,VN,529900JZXGLZX1CODT46,Công ty TNHH Sản xuất Constantia Việt Nam,VN,AT,Constantia Flexibles GmbH,529900317WTFHPDWDI76,gleif_direct_parent,B_known_direct_parent,B_parent_or_exception,0.85,1,0,AT,,,0
+IN,VN,CH,VN,254900Y5HKSI1T4CT050,DKSH PERFORMANCE MATERIALS VIETNAM COMPANY LIMITED,VN,CH,DKSH HOLDING AG,549300HUUUNHO6FJUS42,phase1_name_match,C_name_match_high,C_name_inferred,1.0,0,1,,,,0
+IN,VN,CH,VN,25490065KIQS2B758V62,DKSH PHARMA VIETNAM CO. LTD.,VN,CH,DKSH HOLDING AG,549300HUUUNHO6FJUS42,phase1_name_match,C_name_match_high,C_name_inferred,1.0,0,1,,,,0
+IN,VN,DE,VN,529900S8AE0RWHFTSC44,Siemens Gamesa Renewable Energy LLC,VN,DE,Siemens Aktiengesellschaft,W38RGI023J3WT1HWRP32,phase1_name_match,C_name_match_high,C_name_inferred,1.0,0,1,,,,0
+IN,VN,GB,VN,549300ZL63LGTSSLY013,UNILEVER VIETNAM INTERNATIONAL COMPANY LIMITED,VN,GB,UNILEVER PLC,549300MKFYEKVRWML317,phase1_name_match,C_name_match_high,C_name_inferred,1.0,0,1,,,,0
+IN,VN,EUROPE,VN,5493007JWV82A26TGU18,CAI MEP INTERNATIONAL TERMINAL LTD,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9999,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,254900ZRFNB8CRAHHO95,CONG TY CO PHAN DAU TU THE GIOI DI DONG,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9999,0,1,,,,0
+IN,VN,EUROPE,VN,875500JJL5ZZLC6G5148,CONG TY TNHH LINGYI VIET NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9999,0,1,,,,0
+IN,VN,EUROPE,VN,254900T3VZBCBAOBSM07,CÔNG TY PHÂN BÓN VIỆT NHẬT,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9999,0,1,,,,0
+IN,VN,EUROPE,VN,254900A5J7MKQOHSAC60,CÔNG TY TNHH BRENNTAG VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9999,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,984500BFC9BF5E152A61,CÔNG TY TNHH BẢO HIỂM NHÂN THỌ SUN LIFE VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9999,0,1,,,,0
+IN,VN,EUROPE,VN,254900O20WUAQRGPXR86,CÔNG TY TNHH ENERFO VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9999,0,1,,,,0
+IN,VN,EUROPE,VN,98450061UBC887C4C212,CÔNG TY TNHH SM MEGA VIETNAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9999,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,254900SHHC9DE6P8N928,CÔNG TY TNHH ĐIỆN TỬ SAMSUNG HCMC CE COMPLEX,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9999,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,2549004TS5QUBFGAWE51,NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN NGOẠI THƯƠNG VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9999,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,2549007HTI2GPELM0894,Ngân hàng Thương mại cổ phần Sài Gòn-Hà Nội,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9999,0,1,,,,0
+IN,VN,EUROPE,VN,549300BSTQLN5J7O0473,RALPH LAUREN VIETNAM LIMITED LIABILITY COMPANY,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9999,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,254900OB9BZ6WD0GZC08,CONG TY CO PHAN TAP DOAN CONG NGHE CMC,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9998,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,8755005HRVFKEKILCI70,CÔNG TY CỔ PHẦN QUẢN LÝ TÀI SẢN VIAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9998,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,98450085C0AEE679B154,CÔNG TY CỔ PHẦN TẬP ĐOÀN ĐẦU TƯ VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9998,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,894500QKMY8P63MWSQ30,CÔNG TY CỔ PHẦN VẬN TẢI XĂNG DẦU PHƯƠNG NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9998,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,984500F0FFF795P39F89,CÔNG TY CỔ PHẦN ĐẦU TƯ PHỒN THỊNH K9,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9998,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,25490022JS6JX8A27864,CÔNG TY TNHH KHOA HỌC KỸ THUẬT GOERTEK VINA,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9998,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,254900NV5ZH6KWYXDY06,CÔNG TY TNHH TRUYỀN HÌNH SỐ VỆ TINH VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9998,0,1,,,,0
+IN,VN,EUROPE,VN,549300T4Y3S0CL432K88,SONY ELECTRONICS VIETNAM COMPANY LIMITED,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9998,0,1,,,,0
+IN,VN,EUROPE,VN,254900YECPLAA3ESXO22,CONG TY CO PHAN HIEP PHU-VICO,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9997,0,1,,,,0
+IN,VN,EUROPE,VN,254900YESYPL4Y3Z7R49,Cong TY TNHH Vonfram Masan,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9997,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,875500AQD0K3V3J44D97,CÔNG TY CỔ PHẦN CHỨNG KHOÁN KIS VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9997,0,1,,,,0
+IN,VN,EUROPE,VN,254900KWU2HDHOFGVQ72,CÔNG TY TNHH KUEHNE + NAGEL,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9997,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,254900GT6XWCQTVLAQ89,CÔNG TY TRÁCH NHIỆM HỮU HẠN OLAM VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9997,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,254900RXKD9W2JJIZR21,Công ty cổ phần năng lượng Thế giới IEA,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9997,0,1,,,,0
+IN,VN,EUROPE,VN,549300VV8X5RR9JOCN38,THE STATE BANK OF VIETNAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9997,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,529900U8PC365JIZWR18,Tổng công ty cô phần bảo hiểm toàn cầu,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9997,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,254900B4CEWABN6NH659,CÔNG TY CỔ PHẦN CHỨNG KHOÁN SÀI GÒN - HÀ NỘI,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9996,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,9845005CED8881AF8F65,CÔNG TY TNHH SAMSUNG DISPLAY VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9996,0,1,,,,0
+IN,VN,EUROPE,VN,254900WJRMHXPY3A7354,Công Ty TNHH J. Wagner,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9996,0,1,,,,0
+IN,VN,EUROPE,VN,875500OZ9QE2OE51KG35,Công ty TNHH Lumera Việt Nam,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9996,0,1,,,,0
+IN,VN,EUROPE,VN,254900YF5M2M4XS98956,Công ty TNHH Piaggio Việt Nam,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9996,0,1,,,,0
+IN,VN,EUROPE,VN,213800FEJY6717EFGC21,NTT VIETNAM SOLUTIONS LIMITED,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9996,0,1,,,,0
+IN,VN,DE,VN,52990088M9HNKNS2JP33,VINH TUONG INDUSTRIAL CORPORATION,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9996,0,1,,,,0
+IN,VN,EUROPE,VN,98450072E3958794F285,CÔNG TY AJINOMOTO VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9995,0,1,,,,0
+IN,VN,EUROPE,VN,254900EBW2I8P32C3S89,CÔNG TY CỔ PHẦN CHỨNG KHOÁN RỒNG VIỆT,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9995,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,549300DGJGJ3U1RBZ454,CÔNG TY CỔ PHẦN SỞ GIAO DỊCH HÀNG HÓA VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9995,0,1,,,,0
+IN,VN,EUROPE,VN,2138004T5S7RRDLGZA12,CÔNG TY TNHH BẢO HIỂM NHÂN THỌ VIETCOMBANK-CARDIF,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9995,0,1,,,,0
+IN,VN,EUROPE,VN,984500K88BE892E40A88,CÔNG TY TNHH SUCAFINA VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9995,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,2549009R0AWQT88BNM37,CÔNG TY TNHH THÉP HOA PHÁT - CHI NHÁNH HƯNG YÊN,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9995,0,1,,,,0
+IN,VN,EUROPE,VN,2549006W3VF6I4IU7T58,CÔNG TY TNHH TMDV BRACOM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9995,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,9845007ECB09EB82A048,CÔNG TY TNHH WISTRON INFOCOMM (VIỆT NAM),VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9995,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,984500A459FE81E50D66,CÔNG TY TNHH Ô TÔ NGÔI SAO VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9995,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,254900BX0FW1JMBHPI72,CÔNG TY TRÁCH NHIỆM HỮU HẠN WILMAR AGRO VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9995,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,254900B3SJVEC9F7HN98,Ngân hàng TNHH Một Thành Viên Shinhan Việt Nam,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9995,0,1,,,,0
+IN,VN,EUROPE,VN,8755006R3D1756V7HH83,CÔNG TY TNHH BITWEALTH,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9994,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,984500B505B044B5A549,CÔNG TY TNHH AVERY DENNISON (VIỆT NAM),VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9993,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,213800LHW17DHRGTI512,NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN CÔNG THƯƠNG VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9993,0,1,,,,0
+IN,VN,EUROPE,VN,87550020P1OD40YQ9O03,CODIX VIETNAM ONE-MEMBER LIMITED LIABILITY COMPANY,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9992,0,1,,,,0
+IN,VN,EUROPE,VN,984500DF60A7L0P74A32,CÔNG TY TNHH SG SAFEGUARDS,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9992,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,9845005BB41D3CA46241,CÔNG TY TRÁCH NHIỆM HỮU HẠN ACER VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9992,0,1,,,,0
+IN,VN,EUROPE,VN,2549008OCTC9S985IM85,Công ty TNHH Chứng khoán Maybank,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9992,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,254900PUN45PR07DEC82,CONG TY CO PHAN TAP DOAN DABACO VIET NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9989,0,1,,,,0
+IN,VN,EUROPE,VN,549300ZXU2J5LTMI2Q79,Công ty TNHH Johnson & Johnson (Việt Nam),VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9989,0,1,,,,0
+IN,VN,EUROPE,VN,5493006ZC8YQM59L3N75,DONGA JOINT STOCK COMMERCIAL BANK,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9989,0,1,,,,0
+IN,VN,EUROPE,VN,5493006M4N15PLU2B096,VIETNAM MARITIME COMMERCIAL JOINT STOCK BANK,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9988,0,1,,,,0
+IN,VN,EUROPE,VN,984500B3FBA704764F67,CÔNG TY TNHH JNTL CONSUMER HEALTH (VIỆT NAM),VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9987,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,5493001XNKHV3FNIUD50,NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN KỸ THƯƠNG VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9987,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,54930001M7ASO4OTRF83,CÔNG TY TNHH KINH DOANH NÔNG SẢN VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9986,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,98450097D774F2C68A97,CÔNG TY TRÁCH NHIỆM HỮU HẠN IMCD VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9985,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,2549005WQVD23RMNE850,NGÂN HÀN THƯỢNG MAI CỔ PHẦN LỘC PHÁT VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9985,0,1,,,,0
+IN,VN,EUROPE,VN,5493007XE88E8JRNTJ93,NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN QUÂN ĐỘI,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9985,0,1,,,,0
+IN,VN,OTHER,VN,875500BCRP6YSIXI6A18,Sustainability Investment Promotion and Development Joint Stock Company,VN,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9985,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,2549006CL6X49KOYOH16,CÔNG TY TNHH SẢN PHẨM DINH DƯỠNG DSM VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9983,0,1,,,,0
+IN,VN,EUROPE,VN,549300SEBNI67OXS4W35,UPL VIETNAM CO. LIMITED,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9983,0,1,,,,0
+IN,VN,EUROPE,VN,8755006K1KO6QCJB0J05,CÔNG TY TNHH UP BOOST,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9982,0,1,,,,0
+IN,VN,EUROPE,VN,254900JO5G9R4W36BT28,CONG TY TNHH THE SHERPA,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.998,0,1,,,,0
+IN,VN,EUROPE,VN,98450083F3E0E7R0E082,CÔNG TY TNHH DECATHLON VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.998,0,1,,,,0
+IN,VN,EUROPE,VN,9845001R0F860807B594,CÔNG TY TNHH ARCELIK HITACHI HOME APPLIANCES SALES VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9979,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,549300R6G93N6J8LIC12,Ngân hàng Thương mại cổ phần Quốc tế Việt Nam,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9978,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,5493006MVKRCEOKQQT65,NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN XUẤT NHẬP KHẨU VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9976,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,9845001DE9M792FAC996,CÔNG TY TNHH NƯỚC GIẢI KHÁT SUNTORY PEPSICO VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9975,0,1,,,,0
+IN,VN,EUROPE,VN,254900OROK5CB31QO092,VIETNAMESE-FRENCH CATTLE FEED JOINT STOCK COMPANY,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9975,0,1,,,,0
+IN,VN,EUROPE,VN,5493002OADU2ZO3ET964,NGÂN HÀNG THƯƠNG MẠI CỎ PHẦN TIÊN PHONG,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9974,0,1,,,,0
+IN,VN,EUROPE,VN,549300JROOV6D4LQYC08,BOSTIK VIETNAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9971,0,1,,,,0
+IN,VN,EUROPE,VN,213800IF2RICE613K743,CÔNG TY CỔ PHẦN CHỨNG KHOÁN SSI,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.997,0,1,,,,0
+IN,VN,EUROPE,VN,8945005TJUSNYR0KGE81,CÔNG TY TNHH DỊCH VỤ VÙNG ĐÔNG Á,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.997,0,1,,,,0
+IN,VN,DE,VN,2549003IUT1BV50L7X69,SAI GON JOINT STOCK COMMERCIAL BANK,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9969,0,1,,,,0
+IN,VN,EUROPE,VN,9845006A389A94148955,CÔNG TY TNHH COVESTRO (VIỆT NAM),VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9966,0,1,,,,0
+IN,VN,EUROPE,VN,549300EGNS46ONJTBS89,CÔNG TY TÀI CHÍNH TNHH SHINHAN VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9964,0,1,,,,0
+IN,VN,EUROPE,VN,529900II8F251BQEO359,VINH TUONG INDUSTRIAL COMPANY LIMITED NORTHERN VIET NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9964,0,1,,,,0
+IN,VN,EUROPE,VN,5493001VSLUXY7LJS086,NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN Á CHÂU,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9962,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,254900HZ24RYZJPX8A26,CÔNG TY TNHH CHẾ BIẾN THỰC PHẨM OLAM VIẾT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.996,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,25490008Y63EPI9XB932,Ngân hàng TNHH Một thành viên Public Việt Nam,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9957,0,1,,,,0
+IN,VN,EUROPE,VN,984500EC4043FG57F097,CÔNG TY TNHH ABB AUTOMATION AND ELECTRIFICATION (VIỆT NAM),VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9956,0,1,,,,0
+IN,VN,EUROPE,VN,213800D8TU57ZQLBPB84,Công ty Cổ phần Vinpearl,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9956,0,1,,,,0
+IN,VN,OTHER,VN,5493000D4DQBSYRCWG15,CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CÔNG NGHIỆP DEEP C 2B HẢI PHÒNG,VN,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9955,0,1,,,,0
+IN,VN,EUROPE,VN,254900WNV87SG32WE274,Công ty Cổ phần Kết nối Nhân tài,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9954,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,254900EFD5LHVZIE8I94,CÔNG TY CỔ PHẦN TẬP ĐOÀN ĐẦU TƯ ĐỊA ỐC NO VA,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9949,0,1,,,,0
+IN,VN,EUROPE,VN,549300YF3J6UFJW44H78,CÔNG TY TNHH BASF VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9947,0,1,,,,0
+IN,VN,EUROPE,VN,549300UGSWS3I2SMRN17,GM VIET NAM MOTOR COMPANY LTD.,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9947,0,1,,,,0
+IN,VN,EUROPE,VN,549300JA2AF0TMGHY210,HO CHI MINH CITY DEVELOPMENT JOINT STOCK COMMERCIAL BANK,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9947,0,1,,,,0
+IN,VN,EUROPE,VN,549300LTL678OLO2LD83,CÔNG TY CỔ PHẦN SANOFI VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9944,0,1,,,,0
+IN,VN,EUROPE,VN,5493008AE7RS4XK4BZ08,THE SOCIALIST REPUBLIC OF VIET NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9943,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,54930095FF41YAY5GJ59,CÔNG TY TNHH TƯ VẤN QUẢN LÝ MAJ INVEST VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9942,0,1,,,,0
+IN,VN,EUROPE,VN,254900P9O0E8OG97WA38,Công ty TNHH Samsung Electronics Việt Nam,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9942,0,1,,,,0
+IN,VN,EUROPE,VN,254900X7MRLZ8R7NF759,CÔNG TY TNHH THANG MÁY MITSUBISHI VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9939,0,1,,,,0
+IN,VN,EUROPE,VN,549300UPTIIJ3IBNIR43,BAO VIET SECURITIES JOINT STOCK COMPANY,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9938,0,1,,,,0
+IN,VN,EUROPE,VN,254900CTFRJDDYA0L594,CONG TY CO PHAN CHUNG KHOAN VNDIRECT,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9937,0,1,,,,0
+IN,VN,EUROPE,VN,213800SAZX6COB8ML838,HO CHI MINH CITY SECURITIES CORPORATION,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9928,0,1,,,,0
+IN,VN,EUROPE,VN,549300CI200LBT2L1X58,VIET CAPITAL COMMERCIAL JOINT STOCK BANK,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9928,0,1,,,,0
+IN,VN,EUROPE,VN,254900HKR2EAQLPDRS52,Công Ty Cổ Phần Chứng Khoán Vietcap,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9927,0,1,,,,0
+IN,VN,EUROPE,VN,5493003W7YWO6V78M290,CÔNG TY TNHH SANOFI-AVENTIS VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.992,0,1,,,,0
+IN,VN,EUROPE,VN,52990057NDDROAOF0K95,Công ty TNHH Dịch vụ Schlumberger Việt Nam,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9915,0,1,,,,0
+IN,VN,DE,VN,5493003CLLW6J3HYYB78,CÔNG TY TNHH TK ELEVATOR VIỆT NAM,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9914,0,1,,,,0
+IN,VN,DE,VN,5299008280SZKQKCNW10,CÔNG TY CP XUÂN THIỆN NINH THUẬN,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.991,0,1,,,,0
+IN,VN,DE,VN,5299009K11XIFSHZUH82,CÔNG TY CỔ PHẦN XUÂN THIỆN Tđộng,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.991,0,1,,,,0
+IN,VN,DE,VN,894500YSPZUHTU8Z1U52,United Overseas Bank (Vietnam) Limited,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9891,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,894500TWQIJJ3L0R6667,Cong Ty TNHH Giao Duc va Dịch Vụ Di Tru Austvina,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9883,0,1,,,,0
+IN,VN,DE,VN,5299008AR07MDY5CD596,CÔNG TY TNHH BAO BÌ MM VIDON,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9881,0,1,,,,0
+IN,VN,US,VN,549300ZVEIQH73ZXGE62,"KIM VIETNAM FUND MANAGEMENT CO., LTD",VN,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9881,0,1,,,,0
+IN,VN,EUROPE,VN,875500DL7ZRW84OCME84,CÔNG TY TNHH QUANTEX,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9879,0,1,,,,0
+IN,VN,EUROPE,VN,87550002M48UWC8LMB91,"TRUNG TÂM MÃ SỐ, MÃ VẠCH QUỐC GIA",VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9879,0,1,,,,0
+IN,VN,OTHER,VN,254900LSUMK02MJFJQ61,CÔNG TY TNHH TOTALENERGIES MARKETING VIỆT NAM,VN,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9858,0,1,,,,0
+IN,VN,DE,VN,8755008QOIOS0HZ4TS93,VATRUST COMPANY LIMITED,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9856,0,1,,,,0
+IN,VN,EUROPE,VN,2549006CQHQGVMUJND48,HOA PHAT HAI DUONG STEEL JOINT STOCK COMPANY,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9855,0,1,,,,0
+IN,VN,EUROPE,VN,254900ZRL1ESF8D3E374,Ngân Hàng Thương Mại Cổ Phần Phương Đông,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9854,0,1,,,,0
+IN,VN,EUROPE,VN,9845008B90F6C5JFC624,CÔNG TY TNHH SOLVENTUM VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9848,0,1,,,,0
+IN,VN,OTHER,VN,549300JNGQDUNU3FUA84,CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CÔNG NGHIỆP PHÚ AN THẠNH LONG AN,VN,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9844,0,1,,,,0
+IN,VN,EUROPE,VN,98450041A453758K8321,CÔNG TY TNHH SCHINDLER VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.984,0,1,,,,0
+IN,VN,EUROPE,VN,254900YPVZXJCMTIN552,Ngân hàng TMCP Đông Nam Á,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9835,0,1,,,,0
+IN,VN,EUROPE,VN,529900J6KK7GJME3RU07,NGÂN HÀNG NÔNG NGHIỆP VÀ PHÁT TRIỂN NÔNG THÔN VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.983,0,1,,,,0
+IN,VN,OTHER,VN,984500C00UEA4K5E9F65,CÔNG TY TNHH NUTRECO INTERNATIONAL (VIỆT NAM),VN,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9825,0,1,,,,0
+IN,VN,EUROPE,VN,254900HZTWFQ8DNFXG27,CÔNG TY CỔ PHẦN CHỨNG KHOÁN KỸ THƯƠNG,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9817,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,549300Y3VZJ8PV4GR334,NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN SÀI GÒN THƯƠNG TÍN,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9809,0,1,,,,0
+IN,VN,DE,VN,529900B4I1APT921SE81,CÔNG TY TNHH BASF COATINGS VIỆT NAM,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9808,0,1,,,,0
+IN,VN,EUROPE,VN,254900IHB422QYOR7V95,Công ty Cổ phần Tập đoàn Đất Xanh,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9805,0,1,,,,0
+IN,VN,EUROPE,VN,875500IDYEERED7TPP47,Ngân hàng Thương mại Cổ phần Bắc Á,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9771,0,1,,,,0
+IN,VN,DE,VN,8755009JN9OMW6U8JU69,Đakđrinh Hydropower Joint Stock Company,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9758,0,1,,,,0
+IN,VN,EUROPE,VN,549300ADQEEC5JNCE496,VIETNAM PROSPERITY JOINT STOCK COMMERCIAL BANK,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9757,0,1,,,,0
+IN,VN,EUROPE,VN,254900MJ9C15O3O1V757,TẬP ĐOÀN VINGROUP - CÔNG TY CP,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9745,0,1,,,,0
+IN,VN,EUROPE,VN,254900B9MW90NGJLAM60,Công ty Cổ phần Hàng không VietJet,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9739,0,1,,,,0
+IN,VN,EUROPE,VN,2549007IICILKV1K9737,CÔNG TY TNHH SAMSUNG ELECTRONICS VIỆT NAM THÁI NGUYÊN,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9727,0,1,,,,0
+IN,VN,EUROPE,VN,2549002K2TRBYGJMJN25,NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN AN BÌNH,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9693,0,1,,,,0
+IN,VN,US,VN,549300LUUODUY2AFZ450,PHU THAI MOBILITY IMPORT COMPANY LIMITED,VN,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9677,0,1,,,,0
+IN,VN,EUROPE,VN,549300BXTOH2Y7IORS90,GENERALI VIETNAM LIFE INSURANCE LIMITED LIABILITY COMPANY,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9672,0,1,,,,0
+IN,VN,EUROPE,VN,2549001KDPHBI9E0DU70,CÔNG TY TNHH CITY ZONE EXPRESS VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9635,0,1,,,,0
+IN,VN,US,VN,984500FAECEXBE14C562,CÔNG TY TNHH HỆ THỐNG DÂY SUMI-HANEL,VN,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9609,0,1,,,,0
+IN,VN,EUROPE,VN,2549000AE3F0QA0PIP52,CONG TY CO PHAN SAO HOA TOAN QUOC,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9559,0,1,,,,0
+IN,VN,EUROPE,VN,984500C09DBM597ETD28,CÔNG TY CỔ PHẦN CHỨNG KHOÁN TÂN VIỆT,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9553,0,1,,,,0
+IN,VN,EUROPE,VN,8755005UDL4TXYTQR906,CÔNG TY TNHH SẢN XUẤT AFD VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9546,0,1,,,,0
+IN,VN,EUROPE,VN,984500D14CD677F89611,CÔNG TY TNHH TJ TECH,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9543,0,1,,,,0
+IN,VN,EUROPE,VN,254900EKQR1YPK0AHR38,Công ty TNHH Nông nghiệp BD (Việt Nam),VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9541,0,1,,,,0
+IN,VN,EUROPE,VN,549300HEQ7F1JF03F080,Công Ty TNHH Maersk Việt Nam,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9538,0,1,,,,0
+IN,VN,EUROPE,VN,2549005EDRD72VJ2O895,Công Ty TNHH Chứng Khoán Vietcombank,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9536,0,1,,,,0
+IN,VN,DE,VN,529900BIM9105E0H6Y16,SAINT - GOBAIN VIETNAM LIMITED,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.952,0,1,,,,0
+IN,VN,DE,VN,89450031B50BGE9CHF60,Cong ty Co phan Chung khoan DNSE,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9518,0,1,,,,0
+IN,VN,EUROPE,VN,254900C3XO1I3659FY30,MNS FEED CORPORATION,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9502,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,254900Z0EGIE4ZUXCP25,CONG TY CO PHAN THUC PHAM DINH DUONG NUTIFOOD,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9491,0,1,,,,0
+IN,VN,EUROPE,VN,549300CE4YFPOSV82V40,CÔNG TY TNHH FORD VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9472,0,1,,,,0
+IN,VN,OTHER,VN,549300WL9QJ3W9EIHX62,"BARIA JOINT STOCK COMPANY OF SERVICES FOR IMPORT EXPORT OF ARGO-FORESTRY PRODUCTS AND FERTILIZERS (""BARIA SERECE"")",VN,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9454,0,1,,,,0
+IN,VN,OTHER,VN,54930042WWYQJJV9SX28,CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CÔNG NGHIỆP TÂN ĐÔNG HIỆP B BÌNH DƯƠNG,VN,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9435,0,1,,,,0
+IN,VN,EUROPE,VN,529900A8XILRH04XZ821,CÔNG TY TNHH HENKEL ADHESIVE TECHNOLOGIES VIỆT NAM.,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9435,0,1,,,,0
+IN,VN,OTHER,VN,549300EUMRMKUIVALB13,CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CÔNG NGHIỆP SÓNG THẦN 2 BÌNH DƯƠNG,VN,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.943,0,1,,,,0
+IN,VN,EUROPE,VN,984500EF96U9CDED7X56,CÔNG TY TNHH VIETNAM CONCENTRIX SERVICES,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.942,0,1,,,,0
+IN,VN,DE,VN,529900JLV5N1T0O9VK60,BSH Home Appliances (Vietnam) Co. Ltd.,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9418,0,1,,,,0
+IN,VN,EUROPE,VN,529900FVFQSRN8EP5I11,VAM Vietnam Fund Management Joint Stock Company,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.941,0,1,,,,0
+IN,VN,EUROPE,VN,5493001X11QIDI2VZ145,PURATOS GRAND-PLACE VIETNAM LIMITED,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9364,0,1,,,,0
+IN,VN,EUROPE,VN,254900YIE8RL1W4ZU194,Đại học Quốc gia Việt Nam,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9308,0,1,,,,0
+IN,VN,EUROPE,VN,2549006EK2L53MAY4J31,CÔNG TY CỔ PHẦN CHỨNG KHOÁN PHÚ HƯNG,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9302,0,1,,,,0
+IN,VN,EUROPE,VN,254900NNNYXL0PP73045,CONG TY CO PHAN TKSIC,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9242,0,1,,,,0
+IN,VN,EUROPE,VN,9845009BC99ED2E74148,CÔNG TY TNHH TRUYỀN THÔNG MMS VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9217,0,1,,,,0
+IN,VN,EUROPE,VN,549300CKN2SK9OPPKC56,CONG TY TNHH NHUA DUONG PETROLIMEX,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9177,0,1,,,,0
+IN,VN,DE,VN,254900ZSYL298NACRF96,FXCE LLC,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9156,0,1,,,,0
+IN,VN,EUROPE,VN,254900W0Z3HEIOQKKL53,Minh Pham Brothers Corporation,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9109,0,1,,,,0
+IN,VN,EUROPE,VN,87550069J41V9NV12608,CÔNG TY CỔ PHẦN CHỨNG KHOÁN VPS,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.9032,0,1,,,,0
+IN,VN,OTHER,VN,549300TTBG0L23NJ6Q47,CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ PHÁT TRIỂN CÔNG NGHIỆP LÊ MINH XUÂN 3 SAIGON,VN,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8976,0,1,,,,0
+IN,VN,US,VN,213800IZA4BJKEEJ4A73,CÔNG TY CỔ PHẦN TẬP ĐOÀN ECOPARK,VN,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8967,0,1,,,,0
+IN,VN,EUROPE,VN,254900G3OL5BY5LFFV75,CONG TY TNHH THEP CAN NGUOI HOA PHAT,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8918,0,1,,,,0
+IN,VN,US,VN,5493001I21VI0G934F30,CJ FOODS VIETNAM COMPANY LIMITED,VN,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8911,0,1,,,,0
+IN,VN,EUROPE,VN,254900FSO240QVE6NR86,Ngân hàng thương mại cổ phần Đầu tư và Phát triển Việt Nam,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8908,0,1,,,,0
+IN,VN,DE,VN,5299002N6FG43A3W0E10,CÔNG TY CỔ PHẦN PVI,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8799,0,1,,,,0
+IN,VN,EUROPE,VN,984500E2C5I98CEE5016,CÔNG TY CỔ PHẦN TẬP ĐOÀN INTIMEX,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8778,0,1,,,,0
+IN,VN,DE,VN,254900KMCJNL6Z8IR014,CONG TY CO PHAN VIEN THONG FPT,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8723,0,1,,,,0
+IN,VN,EUROPE,VN,984500F2895484859D03,CÔNG TY CỔ PHẦN MARICO SOUTH EAST ASIA,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8716,0,1,,,,0
+IN,VN,EUROPE,VN,984500360CBB6AIA9C23,CÔNG TY TNHH LYONDELLBASELL VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8712,0,1,,,,0
+IN,VN,OTHER,VN,9845004BKE92F4966C77,CÔNG TY TNHH THYSSENKRUPP POLYSIUS (VIỆT NAM),VN,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8665,0,1,,,,0
+IN,VN,EUROPE,VN,549300148GRJ07D21X63,CÔNG TY CỔ PHẦN SỮA VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8624,0,1,,,,0
+IN,VN,EUROPE,VN,549300ODJEFGL5CWKD32,HOA PHAT GROUP JOINT STOCK COMPANY,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8613,0,1,,,,0
+IN,VN,DE,VN,875500GOLL2RB1GTLN85,Bulls & Bears Capital Investment Consulting Corporation,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8575,0,1,,,,0
+IN,VN,EUROPE,VN,984500BCFB08AF2A1053,CÔNG TY TNHH THỰC PHẨM NGON CỔ ĐIỂN,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8524,0,1,,,,0
+IN,VN,EUROPE,VN,2549000Z5TX1FZJNP940,CÔNG TY TNHH AKZO NOBEL VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8413,0,1,,,,0
+IN,VN,SG,VN,2549009CJ5CK9MH82T13,Công ty TNHH Hino Motors Việt Nam,VN,SG,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8342,0,1,,,,0
+IN,VN,EUROPE,VN,984500ED85CBD9FE0P62,CÔNG TY TNHH LUXSHARE - ICT (VIỆT NAM),VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8253,0,1,,,,0
+IN,VN,OTHER,VN,984500B2BB8B4CEEEY96,CÔNG TY CỔ PHẦN QUỸ ĐẦU TƯ KHỞI NGHIỆP SÁNG TẠO BITCITYZ,VN,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8239,0,1,,,,0
+IN,VN,EUROPE,VN,984500E5BE99B86AED67,CONG TY CO PHAN BEQ HOLDINGS,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8204,0,1,,,,0
+IN,VN,DE,VN,2549002XQX808J9MFD24,The NTT Trust,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.814,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,984500ECB9B2CL669036,CÔNG TY TNHH WISTRON TECHNOLOGY (VIỆT NAM),VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.8121,0,1,,,,0
+IN,VN,EUROPE,VN,9845005398696A7A1147,CÔNG TY TNHH MASTER SOFA INTERNATIONAL,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7889,0,1,,,,0
+IN,VN,EUROPE,VN,9845006B2C2BFDF70C10,CÔNG TY TÀI CHÍNH CỔ PHẦN ĐIỆN LỰC,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.78,0,1,,,,0
+IN,VN,US,VN,2549008CSX2O832W0Q32,HOA PHAT STEEL SHEET LIMITED LIABILITY COMPANY,VN,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7759,0,1,,,,0
+IN,VN,OTHER,VN,98450086A0ADFD46F423,CÔNG TY CỔ PHẦN TẬP ĐOÀN ITL,VN,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7708,0,1,,,,0
+IN,VN,EUROPE,VN,254900UDOY5DHMH56386,CÔNG TY TNHH ĐIỆN TỬ SAMSUNG VINA,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.77,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,984500F5F3DDCA38D980,CÔNG TY TNHH S.C. JOHNSON & SON,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7625,0,1,,,,0
+IN,VN,DE,VN,2549006HP51T5OQI6Y16,CÔNG TY TNHH EUREKA CONSULTING,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7308,0,1,,,,0
+IN,VN,EUROPE,VN,984500G44075AAI69F15,CÔNG TY TNHH LUXSHARE - ICT (NGHỆ AN),VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7234,0,1,,,,0
+IN,VN,EUROPE,VN,254900IFU5L9JTRWXY29,Công Ty Cổ Phần Novagroup,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7221,0,1,,,,0
+IN,VN,DE,VN,25490004TX3D778PB622,CONG TY TNHH DE HEUS,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7202,0,1,,,,0
+IN,VN,US,VN,549300MRV4HRMUC9Y755,NAM GIANG COMMERCIAL SERVICE COMPANY LIMITED,VN,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.7038,0,1,,,,0
+IN,VN,EUROPE,VN,894500BMNLO8P4OOLQ24,MEKOLOR JOINT STOCK COMPANY,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6933,0,1,,,,0
+IN,VN,DE,VN,254900MYK2KM2DFWB663,"CJ FEED INGREDIENT VIETNAM CO., LTD",VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6862,0,1,,,,0
+IN,VN,US,VN,5493005UILTPG78BRV08,SIAM CITY CEMENT (VIETNAM) LIMITED,VN,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6499,0,1,,,,0
+IN,VN,DE,VN,254900M1892CMJ87XD24,Masan Group Corporation,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6365,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,9845003D3C04104CED36,CÔNG TY TNHH TATA COFFEE VIỆT NAM,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6347,0,1,,,,0
+IN,VN,DE,VN,254900WXXITYD2IWBV73,CPV FOOD CO.LTD,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6124,0,1,,,,0
+IN,VN,EUROPE,VN,8945009SLFSBWN6NW205,Công ty TNHH CJ Vina Agri,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6107,0,1,,,,0
+IN,VN,OTHER,VN,549300S0A45OSGK3CX56,CÔNG TY CỔ PHẦN BIM LAND,VN,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.6095,0,1,,,,0
+IN,VN,OTHER,VN,8755009Y0RZCB1KN1713,Best Way Corporation,VN,OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.599,0,1,,,,0
+IN,VN,US,VN,8755007V682KTEXZEN38,CONG TY TNHH VIETNAM ADVANCE FILM MATERIAL,VN,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5907,0,1,,,,0
+IN,VN,DE,VN,254900UZ9XPJL8YEZZ51,Công ty Cổ phần Tập đoàn GELEX,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.578,0,1,,,,0
+IN,VN,US,VN,549300CCIVEPNJWRP239,CÔNG TY CỔ PHẦN OTE GROUP,VN,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5757,0,1,,,,0
+IN,VN,EUROPE,VN,254900A0PM1YPJVDW880,NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN VIỆT NAM THỊNH VƯỢNG,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5746,0,1,,,,0
+IN,VN,US,VN,549300O66T2JZH86F575,A&A GREEN PHOENIX GROUP JOINT STOCK COMPANY,VN,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5511,0,1,,,,0
+IN,VN,DE,VN,254900K6URQ1BG94RG13,FPT Software Company Limited,VN,DE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5448,0,1,,,,0
+IN,VN,ASIA_OTHER,VN,254900WLASZR0LLGH029,Công Ty TNHH Tesa Site Hải Phòng,VN,ASIA_OTHER,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5408,0,1,,,,0
+IN,VN,EUROPE,VN,2549006UZLCJQZESZ960,CÔNG TY TNHH AKZO NOBEL VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5265,0,1,,,,0
+IN,VN,EUROPE,VN,9845009C7DBDEB480033,CÔNG TY CỔ PHẦN DỊCH VỤ BẢO VỆ CHUYÊN NGHIỆP KTC VIỆT NAM,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.5066,0,1,,,,0
+IN,VN,EUROPE,VN,213800Q9L17H8Y9EPH80,DRAGON CAPITAL VIETFUND MANAGEMENT JOINT STOCK COMPANY,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4811,0,1,,,,0
+IN,VN,EUROPE,VN,9845000K011FBD645589,Vietnam Airlines JSC,VN,EUROPE,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4727,0,1,,,,0
+IN,VN,US,VN,254900YK0737BKMW7J89,"Binh Duong Hoa Phat Steel Pipe Co.,Ltd",VN,US,,,phase3_jurisdiction_model,E_model_predicted_jurisdiction,E_model_only,0.4414,0,1,,,,0
+IN,VN,,VN,98450009FFD1CC8E1524,CÔNG TY CỔ PHẦN HÀNG TIÊU DÙNG BIÊN HÒA,VN,,,,unassigned,U_unassigned,U_unassigned,0.0,0,0,,,,0
+IN,VN,,VN,984500E03O79501CA898,CÔNG TY CỔ PHẦN KỸ THUẬT ĐIỆN TOÀN CẦU,VN,,,,unassigned,U_unassigned,U_unassigned,0.0,0,0,,,,0
+IN,VN,,VN,984500F0P425E944SB70,Công Ty TNHH Bảo Hiểm Nhân Thọ AIA (Việt Nam),VN,,,,unassigned,U_unassigned,U_unassigned,0.0,0,0,,,,0
+IN,VN,,VN,89450084JJRH1PVI4P50,PVT LOGISTICS,VN,,,,unassigned,U_unassigned,U_unassigned,0.0,0,0,,,,0
